@@ -1,0 +1,13 @@
+
+> web@0.0.1 dev /app/svadharma/apps/web
+> next dev
+
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+✓ Ready in 539ms
+
+○ Compiling / ...
+ GET / 200 in 4.9s (next.js: 4.4s, application-code: 549ms)
+ GET /assessment 200 in 2.8s (next.js: 2.7s, application-code: 58ms)
+ GET /report 200 in 677ms (next.js: 622ms, application-code: 55ms)
