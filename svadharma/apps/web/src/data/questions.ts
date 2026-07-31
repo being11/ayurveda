@@ -12,7 +12,8 @@ export const identityCategory: Category = {
       type: 'single',
       options: [
         { id: 'male', label: 'Male' },
-        { id: 'female', label: 'Female' }
+        { id: 'female', label: 'Female' },
+        { id: 'other', label: 'Other' }
       ]
     },
     {
