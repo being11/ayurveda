@@ -80,7 +80,7 @@ export const useAssessmentStore = create<AssessmentState>()(
       },
     }),
     {
-      name: 'svadharma-assessment-storage',
+      name: 'swadharma-assessment-storage',
     }
   )
 );

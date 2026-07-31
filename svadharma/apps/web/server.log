@@ -2,15 +2,11 @@
 > web@0.0.1 dev /app/svadharma/apps/web
 > next dev
 
-⚠ Port 3000 is in use by an unknown process, using available port 3001 instead.
 ▲ Next.js 16.2.6 (Turbopack)
-- Local:         http://localhost:3001
-- Network:       http://192.168.0.2:3001
-✓ Ready in 960ms
-⨯ Another next dev server is already running.
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+✓ Ready in 657ms
 
-- Local:        http://localhost:3000
-- PID:          69299
-- Dir:          /app/svadh GET / 200 in 975ms (next.js: 484ms, application-code: 491ms)
- GET /assessment 200 in 97ms (next.js: 36ms, application-code: 61ms)
- GET /report 200 in 79ms (next.js: 35ms, application-code: 45ms)
+ GET / 200 in 711ms (next.js: 355ms, application-code: 356ms)
+ GET /assessment 200 in 112ms (next.js: 37ms, application-code: 74ms)
+ GET /report 200 in 83ms (next.js: 29ms, application-code: 54ms)
