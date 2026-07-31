@@ -1,4 +1,4 @@
-# Svadharma Prakṛti - Project Roadmap
+# SwaDharma Prakṛti - Project Roadmap
 
 This document meticulously tracks the implementation of the comprehensive Ayurvedic self-discovery engine based on the original task descriptions.
 

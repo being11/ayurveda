@@ -1,4 +1,4 @@
-# Svadharma Prakṛti
+# SwaDharma Prakṛti
 
 A Personalized Ayurvedic Self-Discovery Engine.
 *Know the Self before attempting to heal the Self.*
@@ -20,7 +20,7 @@ This project implements a personalized Ayurvedic assessment platform that models
 
 ## How to Run
 
-1. `cd svadharma`
+1. `cd swadharma`
 2. `pnpm install`
 3. `pnpm --filter web run dev`
 4. Open `http://localhost:3000`
