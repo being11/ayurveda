@@ -58,7 +58,7 @@ export default function ReportPage() {
 
         <div className="text-center space-y-4">
           <h1 className="text-4xl md:text-6xl font-serif font-bold text-stone-900 tracking-tight">
-            Your Svadharma Matrix
+            Your SwaDharma Matrix
           </h1>
           <p className="text-lg md:text-xl text-stone-600 font-serif italic max-w-2xl mx-auto">
             A dimensional view of your unique physiological and mental tendencies.

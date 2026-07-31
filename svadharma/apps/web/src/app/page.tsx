@@ -6,7 +6,7 @@ export default function Home() {
     <div className="min-h-screen flex flex-col items-center justify-center p-8 text-center bg-stone-50 text-stone-900">
       <div className="max-w-3xl space-y-8">
         <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-tight text-stone-800">
-          Svadharma Prakṛti
+          SwaDharma Prakṛti
         </h1>
         <p className="text-xl md:text-2xl text-stone-600 font-serif italic">
           Know the Self before attempting to heal the Self.
