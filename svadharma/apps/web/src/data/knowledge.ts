@@ -1,0 +1,58 @@
+export interface KnowledgeNode {
+  observation: string;
+  classicalSource: string;
+  description: string;
+}
+
+export const knowledgeGraph: KnowledgeNode[] = [
+  {
+    observation: 'Vishama Agni',
+    classicalSource: 'Charaka Samhita, Chikitsasthana 15.44',
+    description: 'Variable digestion caused by Vata dosha irregularity.'
+  },
+  {
+    observation: 'Tikshna Agni',
+    classicalSource: 'Charaka Samhita, Chikitsasthana 15.43',
+    description: 'Sharp, intense digestion caused by Pitta dosha excess.'
+  },
+  {
+    observation: 'Manda Agni',
+    classicalSource: 'Charaka Samhita, Chikitsasthana 15.45',
+    description: 'Sluggish digestion caused by Kapha dosha dominance.'
+  },
+  {
+    observation: 'Sama Agni',
+    classicalSource: 'Charaka Samhita, Chikitsasthana 15.42',
+    description: 'Balanced digestion indicative of tridoshic equilibrium.'
+  },
+  {
+    observation: 'Vata Nidra disturbance',
+    classicalSource: 'Sushruta Samhita, Sharirasthana 4.41',
+    description: 'Light or disturbed sleep patterns associated with Vata imbalance.'
+  },
+  {
+    observation: 'Pitta Nidra tendency',
+    classicalSource: 'Charaka Samhita, Sutrasthana 21.43',
+    description: 'Moderate sleep but easily awakened by light or heat, associated with Pitta.'
+  },
+  {
+    observation: 'Kapha Nidra tendency',
+    classicalSource: 'Charaka Samhita, Sutrasthana 21.44',
+    description: 'Heavy, prolonged sleep associated with Kapha dosha.'
+  },
+  {
+    observation: 'Vata Manas (Rajasic)',
+    classicalSource: 'Charaka Samhita, Sutrasthana 1.57',
+    description: 'Mental tendencies toward anxiety and fear due to elevated Vata and Rajas.'
+  },
+  {
+    observation: 'Pitta Manas (Rajasic/Tikshna)',
+    classicalSource: 'Charaka Samhita, Sutrasthana 1.57',
+    description: 'Mental tendencies toward anger, intensity, and sharp focus (Pitta and Rajas).'
+  },
+  {
+    observation: 'Kapha Manas (Tamasic/Manda)',
+    classicalSource: 'Charaka Samhita, Sutrasthana 1.57',
+    description: 'Mental tendencies toward withdrawal, stability, or lethargy (Kapha and Tamas).'
+  }
+];
