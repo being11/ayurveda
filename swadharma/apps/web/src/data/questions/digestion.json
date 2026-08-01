@@ -1,0 +1,144 @@
+[
+  {
+    "id": "dig_appetite",
+    "category": "digestion",
+    "subCategory": "agni",
+    "title": "How would you describe your appetite on a normal day?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Chikitsasthana 15.43-45",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "variable",
+        "label": "Variable (sometimes starving, sometimes skip meals)",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vishama Agni",
+            "weight": 3,
+            "dimensions": ["agni:vishama", "dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "strong",
+        "label": "Strong (cannot skip meals without getting irritable)",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Tikshna Agni",
+            "weight": 3,
+            "dimensions": ["agni:tikshna", "dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "low",
+        "label": "Low or slow (can go a long time without food)",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Manda Agni",
+            "weight": 3,
+            "dimensions": ["agni:manda", "dosha:kapha"]
+          }
+        ]
+      },
+      {
+        "id": "steady",
+        "label": "Steady and predictable",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sama Agni",
+            "weight": 2,
+            "dimensions": ["agni:sama"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dig_acidity",
+    "category": "digestion",
+    "subCategory": "stomach",
+    "title": "Do you frequently experience acidity, heartburn, or acid reflux?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Sushruta Samhita, Sutrasthana 21.11",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "often",
+        "label": "Yes, quite often",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta in Amashaya",
+            "weight": 2,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "rarely",
+        "label": "Rarely or never",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      }
+    ]
+  },
+  {
+    "id": "dig_spicy",
+    "category": "digestion",
+    "subCategory": "stomach",
+    "title": "How does your stomach react to spicy or very hot foods?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Sushruta Samhita, Sutrasthana 21.11",
+    "conditions": [
+      {
+        "questionId": "dig_acidity",
+        "value": "often"
+      }
+    ],
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "aggravates",
+        "label": "It immediately causes burning or discomfort",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Tikshna Agni / Pitta aggravation",
+            "weight": 3,
+            "dimensions": ["agni:tikshna", "dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "fine",
+        "label": "I tolerate it relatively well despite general acidity",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      }
+    ]
+  }
+]

@@ -2,7 +2,7 @@
 
 import { useAssessmentStore } from '@/src/stores/assessmentStore';
 import { calculateObservations } from '@/src/engines/logic';
-import { categories } from '@/src/data/questions';
+import { categories } from '@/src/data/index';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/src/components/ui/card';
 import { Button } from '@/src/components/ui/button';
 import { useRouter } from 'next/navigation';
