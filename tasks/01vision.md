@@ -28,4 +28,4 @@ one question at a time.... typeform like experience
 
 
 
-The project should avoid reducing Ayurveda to a rigid scoring system. Classical Ayurveda is fundamentally individualized. Two people with similar symptoms may receive entirely different guidance based on constitution, age, season, geography, strength, digestive capacity, and life stage. The engine should therefore model patterns and context, not stereotypes, allowing each user to discover their own Svadharma through the lens of authentic Ayurvedic principles rather than a simplistic dosha label.
+The project should avoid reducing Ayurveda to a rigid scoring system. Classical Ayurveda is fundamentally individualized. Two people with similar symptoms may receive entirely different guidance based on constitution, age, season, geography, strength, digestive capacity, and life stage. The engine should therefore model patterns and context, not stereotypes, allowing each user to discover their own SwaDharma through the lens of authentic Ayurvedic principles rather than a simplistic dosha label.

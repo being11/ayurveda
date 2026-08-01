@@ -4,7 +4,7 @@ Initiate project with
 pnpm dlx shadcn@latest init --preset b5ZLG8MH0q --base radix --template astro --monorepo --pointer
 ```
 
-Svadharma Prakṛti
+SwaDharma Prakṛti
 A Personalized Ayurvedic Self-Discovery Engine
 
 Tagline: Know the Self before attempting to heal the Self.
