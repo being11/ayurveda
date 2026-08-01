@@ -1,1 +1,568 @@
-[]
+[
+  {
+    "id": "sh_skin_acne",
+    "category": "skin_hair",
+    "subCategory": "skin_pathology",
+    "title": "Do you experience acne or skin breakouts?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Chikitsasthana 7 (Kushtha), Sushruta Samhita Nidanasthana 13",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "inflammatory_deep",
+        "label": "Inflammatory, deep, painful cysts",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta in Rakta/Lasika",
+            "weight": 3,
+            "dimensions": ["dosha:pitta", "dhatu:rakta", "srotas:rasavaha"]
+          }
+        ]
+      },
+      {
+        "id": "blackheads_whiteheads",
+        "label": "Blackheads, whiteheads, minor blemishes",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Meda in Twak",
+            "weight": 2,
+            "dimensions": ["dosha:kapha", "dhatu:meda"]
+          }
+        ]
+      },
+      {
+        "id": "dry_rough_no_acne",
+        "label": "Dry skin, no acne",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Skin Type",
+            "weight": 1,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "hormonal_cyclical",
+        "label": "Hormonal — appears at a predictable time each month",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Artava Rakta disturbance",
+            "weight": 2,
+            "dimensions": ["dosha:pitta", "dhatu:rakta"]
+          }
+        ]
+      },
+      {
+        "id": "none",
+        "label": "No acne or breakouts",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      }
+    ]
+  },
+  {
+    "id": "sh_skin_pigmentation",
+    "category": "skin_hair",
+    "subCategory": "skin_pathology",
+    "title": "Do you have any skin discoloration or pigmentation concerns?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "multiple",
+    "importance": 1,
+    "source": "Charaka Samhita, Chikitsasthana 7 (Mahakushtha and Kshudrakushtha)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "hyperpigmentation_dark",
+        "label": "Dark patches or hyperpigmentation",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Rakta Blemish Pattern",
+            "weight": 2,
+            "dimensions": ["dosha:pitta", "dhatu:rakta"]
+          }
+        ]
+      },
+      {
+        "id": "vitiligo",
+        "label": "White patches or vitiligo",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Bhrajaka Pitta disturbance",
+            "weight": 3,
+            "dimensions": ["dosha:pitta", "dhatu:mamsa"]
+          }
+        ]
+      },
+      {
+        "id": "rashes_urticaria",
+        "label": "Rashes, hives, or eczema",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Kapha Twak Vikara",
+            "weight": 3,
+            "dimensions": ["dosha:pitta", "dosha:kapha", "dhatu:rakta"]
+          }
+        ]
+      },
+      {
+        "id": "psoriasis",
+        "label": "Psoriasis or thick scaling patches",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata-Pitta Kushtha pattern",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "dosha:pitta", "dhatu:rakta"]
+          }
+        ]
+      },
+      {
+        "id": "none",
+        "label": "None",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      }
+    ]
+  },
+  {
+    "id": "sh_skin_sensitivity",
+    "category": "skin_hair",
+    "subCategory": "skin_pathology",
+    "title": "How sensitive is your skin to products, sun, or environmental changes?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Ashtanga Hridayam, Sutrasthana 11.2-4",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "very_sensitive_many_reactions",
+        "label": "Very sensitive — reactions to many products or sun",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Twak Sensitivity",
+            "weight": 3,
+            "dimensions": ["dosha:pitta", "dhatu:rakta"]
+          },
+          {
+            "observation": "Bhrajaka Pitta excess",
+            "weight": 2,
+            "dimensions": ["dosha:pitta", "dhatu:rakta"]
+          }
+        ]
+      },
+      {
+        "id": "somewhat_sensitive",
+        "label": "Somewhat sensitive to a few specific things",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta-Vata Twak tendency",
+            "weight": 1,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "low_sensitivity",
+        "label": "Not particularly sensitive — skin is resilient",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Twak resilience",
+            "weight": 1,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sh_hair_texture",
+    "category": "skin_hair",
+    "subCategory": "hair_deep",
+    "title": "What is the texture of your hair?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 1,
+    "source": "Charaka Samhita, Sharirasthana 7.15",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "dry_brittle_split_ends",
+        "label": "Dry, brittle, prone to split ends",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Kesha Kshaya",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "dhatu:asthi"]
+          }
+        ]
+      },
+      {
+        "id": "oily_limp",
+        "label": "Oily, limp, or flat",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Meda in Kesha",
+            "weight": 2,
+            "dimensions": ["dosha:kapha", "dhatu:meda"]
+          }
+        ]
+      },
+      {
+        "id": "normal_healthy",
+        "label": "Normal, healthy texture",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      },
+      {
+        "id": "premature_grey",
+        "label": "Premature greying (before 35)",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Rakta excess",
+            "weight": 3,
+            "dimensions": ["dosha:pitta", "dhatu:rakta"]
+          },
+          {
+            "observation": "Bhrajaka Pitta burning Kesha Dhatu",
+            "weight": 2,
+            "dimensions": ["dosha:pitta", "dhatu:rakta"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sh_scalp",
+    "category": "skin_hair",
+    "subCategory": "hair_deep",
+    "title": "What is your scalp typically like?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 1,
+    "source": "Charaka Samhita, Chikitsasthana 26 (Darunaka)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "very_dry_flaky",
+        "label": "Very dry or flaky — dandruff is common",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Twak in Shirah",
+            "weight": 2,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "oily_itchy",
+        "label": "Oily or itchy",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Pitta in Shirah",
+            "weight": 2,
+            "dimensions": ["dosha:kapha", "dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "normal",
+        "label": "Normal — no significant scalp issues",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      }
+    ]
+  },
+  {
+    "id": "sh_ears",
+    "category": "skin_hair",
+    "subCategory": "ent_senses",
+    "title": "Do you experience any ear-related concerns?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "multiple",
+    "importance": 1,
+    "source": "Charaka Samhita, Sutrasthana 17.116 (Shrotavaha Srotas)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "tinnitus_ringing",
+        "label": "Ringing or noise in the ears",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata in Shrotrendriya",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "srotas:pranavaha"]
+          }
+        ]
+      },
+      {
+        "id": "excess_wax",
+        "label": "Excessive ear wax",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha in Shrotas",
+            "weight": 2,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      },
+      {
+        "id": "sensitivity_noise",
+        "label": "Sensitivity to loud sounds",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Manas sensitivity",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "srotas:manovaha"]
+          }
+        ]
+      },
+      {
+        "id": "hearing_challenges",
+        "label": "Hearing challenges or muffled hearing",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Avarana in Shrotas",
+            "weight": 2,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      },
+      {
+        "id": "none",
+        "label": "None",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      }
+    ]
+  },
+  {
+    "id": "sh_nose_sinus",
+    "category": "skin_hair",
+    "subCategory": "ent_senses",
+    "title": "Do you experience nasal or sinus issues?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "multiple",
+    "importance": 1,
+    "source": "Charaka Samhita, Sutrasthana 17.116",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "chronic_congestion",
+        "label": "Chronic congestion or blocked nose",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha in Pranavaha Srotas",
+            "weight": 3,
+            "dimensions": ["dosha:kapha", "srotas:pranavaha"]
+          }
+        ]
+      },
+      {
+        "id": "frequent_colds",
+        "label": "Frequent colds and rhinitis",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Low Ojas",
+            "weight": 2,
+            "dimensions": ["ojas:low", "dosha:kapha"]
+          },
+          {
+            "observation": "Kapha Pranavaha",
+            "weight": 2,
+            "dimensions": ["ojas:low", "dosha:kapha"]
+          }
+        ]
+      },
+      {
+        "id": "nosebleeds",
+        "label": "Frequent nosebleeds",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Rakta Urdhva Gati",
+            "weight": 3,
+            "dimensions": ["dosha:pitta", "dhatu:rakta"]
+          }
+        ]
+      },
+      {
+        "id": "dry_cracked_nose",
+        "label": "Dry or cracked nasal passages",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata in Nasika",
+            "weight": 2,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "sinusitis_headaches",
+        "label": "Sinus headaches or pressure",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Pitta in Shiro Pranavaha",
+            "weight": 2,
+            "dimensions": ["dosha:kapha", "dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "none",
+        "label": "None",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      }
+    ]
+  },
+  {
+    "id": "sh_vision",
+    "category": "skin_hair",
+    "subCategory": "ent_senses",
+    "title": "How is your vision and eye health?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "multiple",
+    "importance": 1,
+    "source": "Charaka Samhita, Sutrasthana 17.116 (Chakshuvaha Srotas)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "dry_eyes_burning",
+        "label": "Dry eyes or burning sensation",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata-Pitta in Drishti",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "dosha:pitta", "dhatu:rakta"]
+          },
+          {
+            "observation": "Alochaka Pitta disturbance",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "dosha:pitta", "dhatu:rakta"]
+          }
+        ]
+      },
+      {
+        "id": "watery_eyes",
+        "label": "Excessively watery eyes",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha in Akshi",
+            "weight": 2,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      },
+      {
+        "id": "light_sensitivity",
+        "label": "Sensitivity to bright light",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Alochaka sensitivity",
+            "weight": 2,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "blurring_strain",
+        "label": "Blurring or eye strain",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata in Akshi",
+            "weight": 2,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "no_issues",
+        "label": "No significant vision issues",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      }
+    ]
+  }
+]
