@@ -1,1 +1,248 @@
-[]
+[
+  {
+    "id": "env_heat_tolerance",
+    "category": "environment",
+    "subCategory": "climate",
+    "title": "How do you tolerate high heat?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 6.3-8 (Ritucharya — Grishma)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "hate_heat_wilts",
+        "label": "I wilt in heat — become irritable and weak",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Aggravation tendency",
+            "weight": 3,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "love_warm_weather",
+        "label": "I thrive in warm weather",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata heat comfort",
+            "weight": 1,
+            "dimensions": ["dosha:vata"]
+          },
+          {
+            "observation": "Kapha heat comfort",
+            "weight": 1,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      },
+      {
+        "id": "fine_in_any_heat",
+        "label": "Generally fine in any heat",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Sthira constitution",
+            "weight": 1,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "env_cold_tolerance",
+    "category": "environment",
+    "subCategory": "climate",
+    "title": "How do you tolerate cold weather?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 6.3-8 (Ritucharya — Hemanta)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "very_sensitive_cold",
+        "label": "Very sensitive to cold — it goes right through me",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Aggravation tendency",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "dosha:kapha"]
+          },
+          {
+            "observation": "Shita Guna excess",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "dosha:kapha"]
+          }
+        ]
+      },
+      {
+        "id": "comfortable_in_cold",
+        "label": "I actually prefer cold weather",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Agni seeking cooling",
+            "weight": 2,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "tolerate_well",
+        "label": "I tolerate cold reasonably well",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Sthira",
+            "weight": 1,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "env_seasonal_impact",
+    "category": "environment",
+    "subCategory": "climate",
+    "title": "Which season consistently affects your health or mood the most?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 6 (Ritucharya — Shadrita), Ashtanga Hridayam Sutrasthana 3.1-9",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "summer_worst",
+        "label": "Summer (excess heat)",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Aggravation tendency",
+            "weight": 2,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "late_monsoon_autumn",
+        "label": "Late monsoon/rainy season or autumn",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Aggravation tendency",
+            "weight": 2,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "winter_spring",
+        "label": "Winter or spring (cold, damp)",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Aggravation tendency",
+            "weight": 2,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      },
+      {
+        "id": "affected_by_all_equally",
+        "label": "Every seasonal change affects me",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vishama Agni seasonal sensitivity",
+            "weight": 2,
+            "dimensions": ["agni:vishama", "dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "not_much_affected",
+        "label": "Not significantly affected by seasons",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sama Agni",
+            "weight": 1,
+            "dimensions": ["agni:sama"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "env_humidity",
+    "category": "environment",
+    "subCategory": "climate",
+    "title": "How do you feel in high humidity?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 1,
+    "source": "Charaka Samhita, Sutrasthana 6.3-8",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "love_humid",
+        "label": "Love humidity — my skin feels better",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Snigdha affinity",
+            "weight": 1,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "hate_humid_lethargic",
+        "label": "Feel heavy, lethargic, or congested",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Aggravation tendency",
+            "weight": 2,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      },
+      {
+        "id": "fine",
+        "label": "Generally fine",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      }
+    ]
+  }
+]

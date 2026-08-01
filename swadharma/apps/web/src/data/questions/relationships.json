@@ -1,1 +1,182 @@
-[]
+[
+  {
+    "id": "rel_communication",
+    "category": "relationships",
+    "subCategory": "interpersonal",
+    "title": "How do you naturally communicate in close relationships?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 1,
+    "source": "Charaka Samhita, Sutrasthana 1.57",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "expressive_talkative",
+        "label": "Expressive and talkative — share freely",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Manas (Chala)",
+            "weight": 1,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "direct_assertive",
+        "label": "Direct and assertive — say what I mean",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Manas (Tikshna)",
+            "weight": 1,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "quiet_reserved",
+        "label": "Quiet and reserved — express only when ready",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Manas (Sthira)",
+            "weight": 1,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel_conflict",
+    "category": "relationships",
+    "subCategory": "interpersonal",
+    "title": "How do you handle conflict in relationships?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 1.57",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "avoid_flee",
+        "label": "Avoid it, flee, or get anxious",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Manas conflict avoidance",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "manas:rajasic"]
+          }
+        ]
+      },
+      {
+        "id": "confront_directly",
+        "label": "Confront it directly — I need to resolve it immediately",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Manas (Rajasic)",
+            "weight": 2,
+            "dimensions": ["dosha:pitta", "manas:rajasic"]
+          }
+        ]
+      },
+      {
+        "id": "slow_process_forgive",
+        "label": "Process slowly but ultimately forgive",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Manas deliberate",
+            "weight": 1,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      },
+      {
+        "id": "hold_grudge",
+        "label": "Hold on to grievances for a long time",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Manas (Tamasic)",
+            "weight": 2,
+            "dimensions": ["dosha:kapha", "manas:tamasic"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel_empathy",
+    "category": "relationships",
+    "subCategory": "interpersonal",
+    "title": "How strong is your natural empathy?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 1,
+    "source": "Charaka Samhita, Sutrasthana 8.5",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "deep_absorb_others",
+        "label": "Deep empathy — I absorb others' emotions easily",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Manas (deep empathy)",
+            "weight": 1,
+            "dimensions": ["dosha:kapha"]
+          },
+          {
+            "observation": "Vata emotional sensitivity",
+            "weight": 1,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "selective_appropriate",
+        "label": "Appropriate empathy — I connect when relevant",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sattvic Manas tendency",
+            "weight": 1,
+            "dimensions": ["manas:sattvic"]
+          }
+        ]
+      },
+      {
+        "id": "analytical_less_emotional",
+        "label": "More analytical — I understand problems, not always feelings",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Manas (Tikshna)",
+            "weight": 1,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      }
+    ]
+  }
+]
