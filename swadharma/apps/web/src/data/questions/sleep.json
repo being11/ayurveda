@@ -7,27 +7,40 @@
     "subtitle": null,
     "illustration": null,
     "type": "single",
-    "importance": 2,
-    "source": "Sushruta Samhita, Sharirasthana 4.41",
+    "importance": 3,
+    "source": "Charaka Samhita, Sutrasthana 21.36-39",
     "conditions": null,
     "nextQuestion": null,
     "options": [
       {
-        "id": "difficult",
-        "label": "My mind races, takes a long time",
+        "id": "difficult_racing_mind",
+        "label": "My mind races \u2014 takes a long time",
         "sublabel": null,
         "nextQuestion": null,
         "observations": [
           {
             "observation": "Vata in Manas",
             "weight": 2,
-            "dimensions": ["dosha:vata", "manas:rajasic"]
+            "dimensions": [
+              "dosha:vata",
+              "manas:rajasic",
+              "srotas:manovaha"
+            ]
+          },
+          {
+            "observation": "Vata Nidra disturbance",
+            "weight": 3,
+            "dimensions": [
+              "dosha:vata",
+              "manas:rajasic",
+              "srotas:manovaha"
+            ]
           }
         ]
       },
       {
-        "id": "moderate",
-        "label": "Usually within 15-30 minutes",
+        "id": "moderate_15_30min",
+        "label": "Usually within 15\u201330 minutes",
         "sublabel": null,
         "nextQuestion": null,
         "observations": [
@@ -39,7 +52,7 @@
         ]
       },
       {
-        "id": "immediate",
+        "id": "immediately",
         "label": "As soon as my head hits the pillow",
         "sublabel": null,
         "nextQuestion": null,
@@ -47,7 +60,9 @@
           {
             "observation": "Kapha Nidra tendency",
             "weight": 2,
-            "dimensions": ["dosha:kapha"]
+            "dimensions": [
+              "dosha:kapha"
+            ]
           }
         ]
       }
@@ -57,51 +72,626 @@
     "id": "slp_quality",
     "category": "sleep",
     "subCategory": "nidra",
-    "title": "What is the quality of your sleep?",
+    "title": "What is the overall quality of your sleep?",
     "subtitle": null,
     "illustration": null,
     "type": "single",
-    "importance": 2,
+    "importance": 3,
     "source": "Charaka Samhita, Sutrasthana 21.43-44",
     "conditions": null,
     "nextQuestion": null,
     "options": [
       {
-        "id": "light",
-        "label": "Light, easily disturbed, wake up often",
+        "id": "light_disturbed",
+        "label": "Light, easily disturbed, wake often",
         "sublabel": null,
         "nextQuestion": null,
         "observations": [
           {
             "observation": "Vata Nidra disturbance",
             "weight": 3,
-            "dimensions": ["dosha:vata"]
+            "dimensions": [
+              "dosha:vata",
+              "srotas:manovaha"
+            ]
           }
         ]
       },
       {
-        "id": "sound",
-        "label": "Sound, but wake up alert and maybe too early",
+        "id": "sound_early_alert",
+        "label": "Sound, but wake up early and alert",
         "sublabel": null,
         "nextQuestion": null,
         "observations": [
           {
             "observation": "Pitta Nidra tendency",
             "weight": 2,
-            "dimensions": ["dosha:pitta"]
+            "dimensions": [
+              "dosha:pitta"
+            ]
           }
         ]
       },
       {
-        "id": "heavy",
-        "label": "Deep and heavy, hard to wake up",
+        "id": "heavy_hard_to_wake",
+        "label": "Deep, heavy, hard to wake",
         "sublabel": null,
         "nextQuestion": null,
         "observations": [
           {
             "observation": "Kapha Nidra tendency",
             "weight": 3,
-            "dimensions": ["dosha:kapha"]
+            "dimensions": [
+              "dosha:kapha"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "variable",
+        "label": "Varies a lot night to night",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vishama Nidra",
+            "weight": 2,
+            "dimensions": [
+              "dosha:vata",
+              "agni:vishama"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "slp_hours",
+    "category": "sleep",
+    "subCategory": "nidra",
+    "title": "How many hours of sleep do you typically get, and how do you feel about it?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Ashtanga Hridayam, Sutrasthana 7.61 (Nidra)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "less_5_feel_ok",
+        "label": "Less than 5 hours \u2014 I feel okay",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Nidra tendency",
+            "weight": 2,
+            "dimensions": [
+              "dosha:pitta",
+              "ojas:low"
+            ]
+          },
+          {
+            "observation": "Ojas strain",
+            "weight": 1,
+            "dimensions": [
+              "dosha:pitta",
+              "ojas:low"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "5_7_tired",
+        "label": "5\u20137 hours but feel chronically tired",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Nidra disturbance",
+            "weight": 2,
+            "dimensions": [
+              "dosha:vata",
+              "ojas:low"
+            ]
+          },
+          {
+            "observation": "Low Ojas",
+            "weight": 2,
+            "dimensions": [
+              "dosha:vata",
+              "ojas:low"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "7_9_refreshed",
+        "label": "7\u20139 hours and feel refreshed",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sama Nidra",
+            "weight": 2,
+            "dimensions": [
+              "agni:sama"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "9plus_still_tired",
+        "label": "9+ hours but still feel tired",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Nidra tendency",
+            "weight": 3,
+            "dimensions": [
+              "dosha:kapha",
+              "agni:manda"
+            ]
+          },
+          {
+            "observation": "Manda Agni",
+            "weight": 1,
+            "dimensions": [
+              "dosha:kapha",
+              "agni:manda"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "slp_dreams",
+    "category": "sleep",
+    "subCategory": "nidra",
+    "title": "What are your dreams typically like?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 1,
+    "source": "Charaka Samhita, Indriyasthana 5.4-8 (Swapna Darshana)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "vivid_anxious_flying",
+        "label": "Vivid, anxious, running, flying",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Swapna pattern",
+            "weight": 2,
+            "dimensions": [
+              "dosha:vata",
+              "manas:rajasic"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "intense_conflict_fiery",
+        "label": "Intense, conflict, fire, heated",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Swapna pattern",
+            "weight": 2,
+            "dimensions": [
+              "dosha:pitta",
+              "manas:rajasic"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pleasant_calm_water",
+        "label": "Calm, pleasant, water, nature",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Swapna pattern",
+            "weight": 1,
+            "dimensions": [
+              "dosha:kapha"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "rarely_remember",
+        "label": "Rarely dream or remember dreams",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Manda Nidra",
+            "weight": 1,
+            "dimensions": [
+              "dosha:kapha"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "nightmares_repetitive",
+        "label": "Nightmares, recurring fears",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Manas disturbance",
+            "weight": 3,
+            "dimensions": [
+              "dosha:vata",
+              "manas:rajasic",
+              "srotas:manovaha"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "slp_waking_feel",
+    "category": "sleep",
+    "subCategory": "nidra",
+    "title": "How do you feel when you wake up in the morning?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 3,
+    "source": "Charaka Samhita, Sutrasthana 21.55, Ashtanga Hridayam Sutrasthana 2.1",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "exhausted_unrefreshed",
+        "label": "Exhausted, even after a full night",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Nidra tendency",
+            "weight": 3,
+            "dimensions": [
+              "dosha:kapha",
+              "ojas:low"
+            ]
+          },
+          {
+            "observation": "Low Ojas",
+            "weight": 2,
+            "dimensions": [
+              "dosha:kapha",
+              "ojas:low"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "anxious_rushed",
+        "label": "Anxious, mind immediately racing",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Nidra disturbance",
+            "weight": 2,
+            "dimensions": [
+              "dosha:vata",
+              "manas:rajasic"
+            ]
+          },
+          {
+            "observation": "Vata in Manas",
+            "weight": 2,
+            "dimensions": [
+              "dosha:vata",
+              "manas:rajasic"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "alert_but_warm",
+        "label": "Alert and ready, but sometimes too warm",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Nidra tendency",
+            "weight": 2,
+            "dimensions": [
+              "dosha:pitta"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "refreshed_calm",
+        "label": "Refreshed, clear, and calm",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sama Nidra",
+            "weight": 2,
+            "dimensions": [
+              "agni:sama"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "groggy_foggy",
+        "label": "Groggy, foggy, need coffee immediately",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Nidra tendency",
+            "weight": 2,
+            "dimensions": [
+              "dosha:kapha",
+              "agni:manda"
+            ]
+          },
+          {
+            "observation": "Manda Agni",
+            "weight": 1,
+            "dimensions": [
+              "dosha:kapha",
+              "agni:manda"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "slp_interruptions",
+    "category": "sleep",
+    "subCategory": "nidra",
+    "title": "Do you wake up during the night?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 3,
+    "source": "Charaka Samhita, Sutrasthana 21.39",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "multiple_times",
+        "label": "Yes \u2014 multiple times most nights",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Nidra disturbance",
+            "weight": 3,
+            "dimensions": [
+              "dosha:vata",
+              "srotas:manovaha"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "once_bathroom",
+        "label": "Usually once, often for the bathroom",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Ambuvaha Srotas disturbance",
+            "weight": 1,
+            "dimensions": [
+              "srotas:ambuvaha"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "rarely",
+        "label": "Rarely wake up",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      },
+      {
+        "id": "awakened_by_thoughts",
+        "label": "Awakened by thoughts or anxiety",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Manas disturbance",
+            "weight": 3,
+            "dimensions": [
+              "dosha:vata",
+              "manas:rajasic"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "slp_daytime",
+    "category": "sleep",
+    "subCategory": "nidra",
+    "title": "Do you feel sleepy during the day, especially after meals?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Ashtanga Hridayam, Sutrasthana 7.61",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "very_sleepy_post_meal",
+        "label": "Very sleepy after meals \u2014 can't resist",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Nidra tendency",
+            "weight": 3,
+            "dimensions": [
+              "dosha:kapha",
+              "agni:manda"
+            ]
+          },
+          {
+            "observation": "Manda Agni",
+            "weight": 2,
+            "dimensions": [
+              "dosha:kapha",
+              "agni:manda"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "mild_afternoon",
+        "label": "Mild afternoon dip but manageable",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Manda Agni",
+            "weight": 1,
+            "dimensions": [
+              "agni:manda"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "alert_all_day",
+        "label": "Alert throughout the day",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      },
+      {
+        "id": "exhausted_unpredictably",
+        "label": "Sudden waves of exhaustion unpredictably",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vishama Agni",
+            "weight": 2,
+            "dimensions": [
+              "agni:vishama",
+              "dosha:vata",
+              "ojas:low"
+            ]
+          },
+          {
+            "observation": "Low Ojas",
+            "weight": 2,
+            "dimensions": [
+              "agni:vishama",
+              "dosha:vata",
+              "ojas:low"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "slp_bedtime",
+    "category": "sleep",
+    "subCategory": "nidra",
+    "title": "What time do you naturally want to go to sleep?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 21.36, Ashtanga Hridayam Sutrasthana 2.1 (Dinacharya)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "before_10pm",
+        "label": "Before 10pm \u2014 I can't stay up late",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Nidra tendency",
+            "weight": 1,
+            "dimensions": [
+              "dosha:kapha"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "10pm_midnight",
+        "label": "Between 10pm and midnight",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Balanced Nidra",
+            "weight": 1,
+            "dimensions": []
+          }
+        ]
+      },
+      {
+        "id": "after_midnight",
+        "label": "After midnight \u2014 I'm a night person",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Nidra disturbance",
+            "weight": 2,
+            "dimensions": [
+              "dosha:vata",
+              "dosha:pitta"
+            ]
+          },
+          {
+            "observation": "Pitta Nidra tendency",
+            "weight": 1,
+            "dimensions": [
+              "dosha:vata",
+              "dosha:pitta"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "highly_variable",
+        "label": "Varies \u2014 no consistent pattern",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vishama Nidra",
+            "weight": 2,
+            "dimensions": [
+              "dosha:vata",
+              "agni:vishama"
+            ]
           }
         ]
       }

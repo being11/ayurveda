@@ -3,38 +3,44 @@
     "id": "dig_appetite",
     "category": "digestion",
     "subCategory": "agni",
-    "title": "How would you describe your appetite on a normal day?",
-    "subtitle": null,
+    "title": "How would you describe your appetite on a typical day?",
+    "subtitle": "Think about patterns over the past few months, not just today.",
     "illustration": null,
     "type": "single",
-    "importance": 2,
+    "importance": 3,
     "source": "Charaka Samhita, Chikitsasthana 15.43-45",
     "conditions": null,
     "nextQuestion": null,
     "options": [
       {
         "id": "variable",
-        "label": "Variable (sometimes starving, sometimes skip meals)",
+        "label": "Variable \u2014 sometimes starving, sometimes I forget to eat",
         "sublabel": null,
         "nextQuestion": null,
         "observations": [
           {
             "observation": "Vishama Agni",
             "weight": 3,
-            "dimensions": ["agni:vishama", "dosha:vata"]
+            "dimensions": [
+              "agni:vishama",
+              "dosha:vata"
+            ]
           }
         ]
       },
       {
         "id": "strong",
-        "label": "Strong (cannot skip meals without getting irritable)",
+        "label": "Strong \u2014 I get irritable if I miss a meal",
         "sublabel": null,
         "nextQuestion": null,
         "observations": [
           {
             "observation": "Tikshna Agni",
             "weight": 3,
-            "dimensions": ["agni:tikshna", "dosha:pitta"]
+            "dimensions": [
+              "agni:tikshna",
+              "dosha:pitta"
+            ]
           }
         ]
       },
@@ -47,7 +53,10 @@
           {
             "observation": "Manda Agni",
             "weight": 3,
-            "dimensions": ["agni:manda", "dosha:kapha"]
+            "dimensions": [
+              "agni:manda",
+              "dosha:kapha"
+            ]
           }
         ]
       },
@@ -60,7 +69,202 @@
           {
             "observation": "Sama Agni",
             "weight": 2,
-            "dimensions": ["agni:sama"]
+            "dimensions": [
+              "agni:sama"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dig_hunger_timing",
+    "category": "digestion",
+    "subCategory": "agni",
+    "title": "When does hunger hit you most strongly?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 8.7",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "unpredictable",
+        "label": "No pattern \u2014 it surprises me",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vishama Agni",
+            "weight": 2,
+            "dimensions": [
+              "agni:vishama",
+              "dosha:vata"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "midday_intense",
+        "label": "Strong at midday, weak at other times",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Tikshna Agni",
+            "weight": 2,
+            "dimensions": [
+              "agni:tikshna",
+              "dosha:pitta"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "rarely",
+        "label": "Rarely feel true hunger",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Manda Agni",
+            "weight": 2,
+            "dimensions": [
+              "agni:manda",
+              "dosha:kapha"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "consistent_three",
+        "label": "Consistent hunger at three regular meals",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sama Agni",
+            "weight": 2,
+            "dimensions": [
+              "agni:sama"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dig_after_meal_energy",
+    "category": "digestion",
+    "subCategory": "agni",
+    "title": "How do you feel within an hour of eating a normal-sized meal?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 3,
+    "source": "Charaka Samhita, Chikitsasthana 15.44",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "energized",
+        "label": "Energized and clear",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      },
+      {
+        "id": "bloated_heavy",
+        "label": "Heavy, bloated, need to sit or lie down",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Manda Agni",
+            "weight": 2,
+            "dimensions": [
+              "agni:manda",
+              "dosha:kapha",
+              "srotas:annavaha"
+            ]
+          },
+          {
+            "observation": "Kapha Ama accumulation",
+            "weight": 2,
+            "dimensions": [
+              "agni:manda",
+              "dosha:kapha",
+              "srotas:annavaha"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "drowsy",
+        "label": "Very sleepy or drowsy",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Manda Agni",
+            "weight": 2,
+            "dimensions": [
+              "agni:manda",
+              "dosha:kapha"
+            ]
+          },
+          {
+            "observation": "Kapha Nidra tendency",
+            "weight": 1,
+            "dimensions": [
+              "agni:manda",
+              "dosha:kapha"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "acidic_burning",
+        "label": "Acidic sensation, burning",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Tikshna Agni",
+            "weight": 2,
+            "dimensions": [
+              "agni:tikshna",
+              "dosha:pitta",
+              "srotas:annavaha"
+            ]
+          },
+          {
+            "observation": "Pitta in Amashaya",
+            "weight": 3,
+            "dimensions": [
+              "agni:tikshna",
+              "dosha:pitta",
+              "srotas:annavaha"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "gassy_uncomfortable",
+        "label": "Gassy, distended, or uncomfortable",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vishama Agni",
+            "weight": 2,
+            "dimensions": [
+              "agni:vishama",
+              "dosha:vata",
+              "srotas:annavaha"
+            ]
           }
         ]
       }
@@ -69,13 +273,13 @@
   {
     "id": "dig_acidity",
     "category": "digestion",
-    "subCategory": "stomach",
+    "subCategory": "agni",
     "title": "Do you frequently experience acidity, heartburn, or acid reflux?",
     "subtitle": null,
     "illustration": null,
     "type": "single",
-    "importance": 2,
-    "source": "Sushruta Samhita, Sutrasthana 21.11",
+    "importance": 3,
+    "source": "Charaka Samhita, Nidanasthana 8 (Amlapitta)",
     "conditions": null,
     "nextQuestion": null,
     "options": [
@@ -88,7 +292,25 @@
           {
             "observation": "Pitta in Amashaya",
             "weight": 2,
-            "dimensions": ["dosha:pitta"]
+            "dimensions": [
+              "dosha:pitta",
+              "srotas:annavaha"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sometimes",
+        "label": "Sometimes, especially after certain foods",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta in Amashaya",
+            "weight": 1,
+            "dimensions": [
+              "dosha:pitta"
+            ]
           }
         ]
       },
@@ -98,6 +320,646 @@
         "sublabel": null,
         "nextQuestion": null,
         "observations": []
+      }
+    ]
+  },
+  {
+    "id": "dig_spicy_reaction",
+    "category": "digestion",
+    "subCategory": "agni",
+    "title": "How does your stomach respond to spicy or very hot food?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Ashtanga Hridayam, Nidanasthana 12.3",
+    "conditions": [
+      {
+        "questionId": "dig_acidity",
+        "value": "often"
+      }
+    ],
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "immediate_burning",
+        "label": "Immediately causes burning or discomfort",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Tikshna Agni / Pitta aggravation",
+            "weight": 3,
+            "dimensions": [
+              "agni:tikshna",
+              "dosha:pitta"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "tolerates_somewhat",
+        "label": "I tolerate it despite general acidity",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta in Amashaya",
+            "weight": 1,
+            "dimensions": []
+          }
+        ]
+      },
+      {
+        "id": "loves_spicy",
+        "label": "I crave spicy food, it feels good",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Tikshna Agni",
+            "weight": 2,
+            "dimensions": [
+              "agni:tikshna",
+              "dosha:pitta"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dig_empty_stomach",
+    "category": "digestion",
+    "subCategory": "agni",
+    "title": "How do you feel on an empty stomach for more than 3 hours?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Chikitsasthana 15.43",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "fine_can_wait",
+        "label": "Fine \u2014 I barely notice",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Manda Agni",
+            "weight": 1,
+            "dimensions": [
+              "agni:manda",
+              "dosha:kapha"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "anxious_scattered",
+        "label": "Anxious, scattered, shaky",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vishama Agni",
+            "weight": 2,
+            "dimensions": [
+              "agni:vishama",
+              "dosha:vata"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "irritable_angry",
+        "label": "Irritable, headache, angry \u2014 I must eat",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Tikshna Agni",
+            "weight": 3,
+            "dimensions": [
+              "agni:tikshna",
+              "dosha:pitta"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "nauseous",
+        "label": "Nauseous or dizzy",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vishama Agni",
+            "weight": 2,
+            "dimensions": [
+              "agni:vishama",
+              "dosha:vata"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dig_food_intolerance",
+    "category": "digestion",
+    "subCategory": "agni",
+    "title": "Do you have foods that reliably disagree with you?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "multiple",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 8.25",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "cold_raw",
+        "label": "Cold or raw foods",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Manda Agni",
+            "weight": 2,
+            "dimensions": [
+              "agni:manda",
+              "dosha:kapha"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "oily_fried",
+        "label": "Oily or fried foods",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Manda Agni",
+            "weight": 1,
+            "dimensions": [
+              "agni:manda",
+              "dosha:kapha"
+            ]
+          },
+          {
+            "observation": "Kapha Ama accumulation",
+            "weight": 1,
+            "dimensions": [
+              "agni:manda",
+              "dosha:kapha"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spicy_hot",
+        "label": "Spicy or very hot foods",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta in Amashaya",
+            "weight": 2,
+            "dimensions": [
+              "dosha:pitta"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "dairy",
+        "label": "Dairy products",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Ama accumulation",
+            "weight": 2,
+            "dimensions": [
+              "dosha:kapha",
+              "dhatu:rasa"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "legumes",
+        "label": "Legumes (dal, beans)",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vishama Agni",
+            "weight": 2,
+            "dimensions": [
+              "agni:vishama",
+              "dosha:vata"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "none",
+        "label": "No particular intolerances",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      }
+    ]
+  },
+  {
+    "id": "dig_bloating",
+    "category": "digestion",
+    "subCategory": "agni",
+    "title": "Do you experience bloating or abdominal distension?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 3,
+    "source": "Charaka Samhita, Nidanasthana 13.16 (Adhmana)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "after_every_meal",
+        "label": "After almost every meal",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata in Annavaha Srotas",
+            "weight": 3,
+            "dimensions": [
+              "dosha:vata",
+              "agni:vishama",
+              "srotas:annavaha"
+            ]
+          },
+          {
+            "observation": "Vishama Agni",
+            "weight": 2,
+            "dimensions": [
+              "dosha:vata",
+              "agni:vishama",
+              "srotas:annavaha"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sometimes",
+        "label": "Sometimes \u2014 especially with specific foods",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vishama Agni",
+            "weight": 1,
+            "dimensions": [
+              "agni:vishama",
+              "dosha:vata"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "rarely",
+        "label": "Rarely",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      },
+      {
+        "id": "gas_without_bloat",
+        "label": "Gas without bloating \u2014 frequent gas",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata in Annavaha Srotas",
+            "weight": 2,
+            "dimensions": [
+              "dosha:vata",
+              "srotas:annavaha"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dig_stool_frequency",
+    "category": "digestion",
+    "subCategory": "bowel",
+    "title": "How often do you have a bowel movement on a typical day?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 3,
+    "source": "Charaka Samhita, Sutrasthana 17.117 (Purishavaha Srotas), Ashtanga Hridayam Sutrasthana 12.4",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "multiple",
+        "label": "Multiple times a day (3+ times)",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Tikshna Agni",
+            "weight": 2,
+            "dimensions": [
+              "agni:tikshna",
+              "dosha:pitta",
+              "srotas:purishavaha"
+            ]
+          },
+          {
+            "observation": "Pitta in Pakvashaya",
+            "weight": 2,
+            "dimensions": [
+              "agni:tikshna",
+              "dosha:pitta",
+              "srotas:purishavaha"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "once_predictable",
+        "label": "Once \u2014 very regular, predictable time",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sama Agni",
+            "weight": 2,
+            "dimensions": [
+              "agni:sama"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "irregular",
+        "label": "Irregular \u2014 sometimes once, sometimes skip",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vishama Agni",
+            "weight": 3,
+            "dimensions": [
+              "agni:vishama",
+              "dosha:vata",
+              "srotas:purishavaha"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "every_two_days",
+        "label": "Every 2-3 days",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Manda Agni",
+            "weight": 2,
+            "dimensions": [
+              "agni:manda",
+              "dosha:kapha",
+              "dosha:vata",
+              "srotas:purishavaha"
+            ]
+          },
+          {
+            "observation": "Vata in Purishavaha Srotas",
+            "weight": 2,
+            "dimensions": [
+              "agni:manda",
+              "dosha:kapha",
+              "dosha:vata",
+              "srotas:purishavaha"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "constipated",
+        "label": "Often constipated \u2014 3+ days",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Apana disturbance",
+            "weight": 3,
+            "dimensions": [
+              "dosha:vata",
+              "srotas:purishavaha"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dig_stool_consistency",
+    "category": "digestion",
+    "subCategory": "bowel",
+    "title": "What is your stool typically like?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 3,
+    "source": "Charaka Samhita, Sutrasthana 17.117, Sushruta Samhita Chikitsasthana 6.5",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "dry_hard_pellets",
+        "label": "Dry, hard, or pellet-like",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Apana disturbance",
+            "weight": 3,
+            "dimensions": [
+              "dosha:vata",
+              "srotas:purishavaha"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "well_formed_easy",
+        "label": "Well-formed, smooth, passes easily",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sama Agni",
+            "weight": 2,
+            "dimensions": [
+              "agni:sama"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "loose_soft",
+        "label": "Loose or soft, sometimes mushy",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Tikshna Agni",
+            "weight": 2,
+            "dimensions": [
+              "agni:tikshna",
+              "dosha:pitta"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "watery_urgent",
+        "label": "Watery, urgent, or with mucus",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta in Pakvashaya",
+            "weight": 3,
+            "dimensions": [
+              "dosha:pitta",
+              "agni:tikshna",
+              "srotas:purishavaha"
+            ]
+          },
+          {
+            "observation": "Tikshna Agni",
+            "weight": 2,
+            "dimensions": [
+              "dosha:pitta",
+              "agni:tikshna",
+              "srotas:purishavaha"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "oily_sticky",
+        "label": "Oily or heavy-looking",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Manda Agni",
+            "weight": 2,
+            "dimensions": [
+              "agni:manda",
+              "dosha:kapha"
+            ]
+          },
+          {
+            "observation": "Kapha Ama accumulation",
+            "weight": 2,
+            "dimensions": [
+              "agni:manda",
+              "dosha:kapha"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dig_morning_ease",
+    "category": "digestion",
+    "subCategory": "bowel",
+    "title": "How easy is your morning bowel movement?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Ashtanga Hridayam, Sutrasthana 2.1 (Dinacharya)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "easy_complete",
+        "label": "Easy, complete, satisfying",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      },
+      {
+        "id": "straining",
+        "label": "Requires straining or effort",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Apana disturbance",
+            "weight": 2,
+            "dimensions": [
+              "dosha:vata",
+              "srotas:purishavaha"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "incomplete",
+        "label": "Incomplete \u2014 feeling of unfinished",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vishama Agni",
+            "weight": 2,
+            "dimensions": [
+              "dosha:vata",
+              "agni:vishama"
+            ]
+          },
+          {
+            "observation": "Vata Apana disturbance",
+            "weight": 2,
+            "dimensions": [
+              "dosha:vata",
+              "agni:vishama"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "no_morning_urge",
+        "label": "No urge in the morning",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Manda Agni",
+            "weight": 1,
+            "dimensions": [
+              "agni:manda",
+              "dosha:kapha"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -128,7 +990,10 @@
           {
             "observation": "Tikshna Agni / Pitta aggravation",
             "weight": 3,
-            "dimensions": ["agni:tikshna", "dosha:pitta"]
+            "dimensions": [
+              "agni:tikshna",
+              "dosha:pitta"
+            ]
           }
         ]
       },
