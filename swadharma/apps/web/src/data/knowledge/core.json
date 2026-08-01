@@ -1,52 +1,2354 @@
 [
   {
     "observation": "Vishama Agni",
-    "classicalSource": "Charaka Samhita, Chikitsasthana 15.44",
-    "description": "Variable digestion caused by Vata dosha irregularity."
+    "principle": "Agni",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Chikitsasthana 15.44",
+        "quote": "Vishamashchi chaturtho'gnirvayu kopanimittatah",
+        "translation": "The fourth type of digestive fire, Vishama, arises from the aggravation of Vata dosha."
+      }
+    ],
+    "description": "Variable digestion caused by Vata dosha irregularity. The digestive fire fluctuates between high and low states, leading to unpredictable appetite and absorption.",
+    "plainEnglish": "Your digestive fire behaves like an irregular flame \u2014 sometimes burning bright, sometimes barely there. This is directly caused by an excess of Vata (air + ether) energy in the digestive system.",
+    "implications": [
+      "Appetite is unpredictable",
+      "Gas and bloating are common",
+      "Routine meal times are critical for stabilization",
+      "Foods that are warm, cooked, and gently spiced help pacify this pattern"
+    ]
   },
   {
     "observation": "Tikshna Agni",
-    "classicalSource": "Charaka Samhita, Chikitsasthana 15.43",
-    "description": "Sharp, intense digestion caused by Pitta dosha excess."
+    "principle": "Agni",
+    "dosha": [
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Chikitsasthana 15.43",
+        "quote": "Tikshnognih pitta kopa nimittah",
+        "translation": "Tikshna agni arises from the aggravation of Pitta dosha."
+      }
+    ],
+    "description": "Sharp, intense digestion caused by Pitta dosha excess, characterized by rapid digestion and intense hunger.",
+    "plainEnglish": "Your digestive fire is very strong, like a roaring bonfire. This comes from high Pitta (fire + water) energy, leading to intense hunger and quick digestion.",
+    "implications": [
+      "Hunger can be intense and lead to irritability",
+      "Prone to acid reflux or heartburn",
+      "Need regular, cooling meals",
+      "Avoid overly spicy, oily, or fried foods"
+    ]
   },
   {
     "observation": "Manda Agni",
-    "classicalSource": "Charaka Samhita, Chikitsasthana 15.45",
-    "description": "Sluggish digestion caused by Kapha dosha dominance."
+    "principle": "Agni",
+    "dosha": [
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Chikitsasthana 15.45",
+        "quote": "Mandognih kapha kopa nimittah",
+        "translation": "Manda agni arises from the aggravation of Kapha dosha."
+      }
+    ],
+    "description": "Sluggish digestion caused by Kapha dosha dominance, leading to slow processing of food and lethargy.",
+    "plainEnglish": "Your digestive fire is slow and heavy, like a smoldering ember. This is caused by excess Kapha (earth + water) energy, making digestion slow.",
+    "implications": [
+      "Digestion takes a long time",
+      "Tendency to feel heavy or sluggish after eating",
+      "Benefits from light, warm, and spiced meals",
+      "Ginger tea before meals can help ignite the digestive fire"
+    ]
   },
   {
     "observation": "Sama Agni",
-    "classicalSource": "Charaka Samhita, Chikitsasthana 15.42",
-    "description": "Balanced digestion indicative of tridoshic equilibrium."
+    "principle": "Agni",
+    "dosha": [
+      "vata",
+      "pitta",
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Chikitsasthana 15.42",
+        "quote": "Samognih samadoshah",
+        "translation": "Sama agni is the result of balanced doshas."
+      }
+    ],
+    "description": "Balanced digestion indicative of tridoshic equilibrium, where food is digested properly and health is maintained.",
+    "plainEnglish": "Your digestive fire is perfectly balanced, like a steady and controlled flame. Your doshas are working in harmony.",
+    "implications": [
+      "Appetite is healthy and steady",
+      "No discomfort after eating",
+      "Maintain current balanced eating habits",
+      "Eat according to the seasons to maintain balance"
+    ]
+  },
+  {
+    "observation": "Pitta in Amashaya",
+    "principle": "Agni",
+    "dosha": [
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Sushruta Samhita",
+        "chapter": "Sutrasthana 21.10",
+        "quote": "Pittam amashayagatam",
+        "translation": "Pitta situated in the stomach."
+      }
+    ],
+    "description": "Pitta excess in the stomach leading to hyperacidity, burning sensations, and intense early digestion.",
+    "plainEnglish": "Excess heat and fire energy (Pitta) have accumulated in your stomach, causing acidity or a burning feeling.",
+    "implications": [
+      "Prone to heartburn and acid reflux",
+      "Eat cooling, non-spicy foods",
+      "Avoid tomatoes, citrus, and caffeine",
+      "Aloe vera or coconut water can be very soothing"
+    ]
+  },
+  {
+    "observation": "Kapha Ama accumulation",
+    "principle": "Agni",
+    "dosha": [
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Chikitsasthana 15.46",
+        "quote": "Amam kaphena sahitam",
+        "translation": "Undigested material accompanied by Kapha."
+      }
+    ],
+    "description": "Kapha-type undigested material (Ama) accumulating due to slow digestion, causing heaviness and mucus.",
+    "plainEnglish": "Slow digestion has led to an accumulation of sticky, heavy toxins (Ama) associated with Kapha energy.",
+    "implications": [
+      "Feeling of heaviness and coating on the tongue",
+      "Mucus accumulation",
+      "Warm, light, and easy-to-digest foods are recommended",
+      "Fasting or a simple kitchari cleanse can be helpful"
+    ]
+  },
+  {
+    "observation": "Manda Agni fat intolerance",
+    "principle": "Agni",
+    "dosha": [
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Ashtanga Hridayam",
+        "chapter": "Sutrasthana 14.15",
+        "quote": "Mandagni snigdha asatmyam",
+        "translation": "Slow digestion is incompatible with unctuous (fatty) foods."
+      }
+    ],
+    "description": "Specific Kapha fat intolerance due to Manda Agni, where heavy fats further suppress the digestive fire.",
+    "plainEnglish": "Your slow digestive fire struggles to process heavy fats and oils, which can make you feel even more sluggish.",
+    "implications": [
+      "Difficulty digesting rich or oily meals",
+      "Nausea or extreme heaviness after eating fats",
+      "Favor lighter cooking methods like steaming or baking",
+      "Use small amounts of ghee rather than heavy oils"
+    ]
+  },
+  {
+    "observation": "Tikshna Agni fat aggravation",
+    "principle": "Agni",
+    "dosha": [
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Sushruta Samhita",
+        "chapter": "Sutrasthana 21.15",
+        "quote": "Tikshnagni snigdha vidaha",
+        "translation": "Sharp digestion causes burning of unctuous foods."
+      }
+    ],
+    "description": "Pitta fat aggravation where excessive or heavy fats trigger acid reflux and hyperacidity in a strong digestive fire.",
+    "plainEnglish": "While your digestion is strong, heavy fried foods or certain oils can overheat your system and cause acidity.",
+    "implications": [
+      "Fried foods cause heartburn or discomfort",
+      "Favor cooling fats like coconut oil or ghee",
+      "Avoid deep-fried and highly processed oily foods",
+      "Include bitter greens to help liver process fats"
+    ]
+  },
+  {
+    "observation": "Tikshna Agni / Pitta aggravation",
+    "principle": "Agni",
+    "dosha": [
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Chikitsasthana 15.43",
+        "quote": "Pitta vriddhi tikshnagni",
+        "translation": "Increase in Pitta causes sharp digestion."
+      }
+    ],
+    "description": "Combined state of strong digestion with systemic Pitta aggravation, causing systemic heat and irritability.",
+    "plainEnglish": "Your strong digestion is part of a larger pattern of excess heat (Pitta) in your body, making you prone to inflammation and irritability.",
+    "implications": [
+      "Intense hunger accompanied by anger (hangry)",
+      "Prone to systemic inflammation or rashes",
+      "Follow a strict Pitta-pacifying diet",
+      "Practice cooling activities and avoid midday sun"
+    ]
+  },
+  {
+    "observation": "Vishama Agni (stress)",
+    "principle": "Agni",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Ashtanga Hridayam",
+        "chapter": "Nidanasthana 12.1",
+        "quote": "Vatika shoka krodha...",
+        "translation": "Vata is aggravated by grief and stress..."
+      }
+    ],
+    "description": "Stress-induced variable Agni where mental tension directly destabilizes the digestive process via Vata dosha.",
+    "plainEnglish": "Stress and anxiety are directly affecting your digestion, making it unpredictable and erratic.",
+    "implications": [
+      "Digestion fluctuates based on your stress levels",
+      "Gas or bloating when anxious",
+      "Mindful eating in a calm environment is essential",
+      "Stress-management practices are just as important as diet"
+    ]
+  },
+  {
+    "observation": "Vishama Agni seasonal sensitivity",
+    "principle": "Agni",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 6.33",
+        "quote": "Hemante sheetanilau...",
+        "translation": "In winter, cold and wind..."
+      }
+    ],
+    "description": "Seasonal variable Agni, particularly sensitive during Vata seasons (Fall/Winter), requiring routine adjustment.",
+    "plainEnglish": "Your digestion becomes much more sensitive and irregular during colder, windier seasons (like Fall and Winter).",
+    "implications": [
+      "Digestion worsens during seasonal transitions",
+      "Need for warmer, heavier foods in autumn/winter",
+      "Maintain a strict routine during seasonal changes",
+      "Spiced teas and warm soups are highly beneficial"
+    ]
   },
   {
     "observation": "Vata Nidra disturbance",
-    "classicalSource": "Sushruta Samhita, Sharirasthana 4.41",
-    "description": "Light or disturbed sleep patterns associated with Vata imbalance."
+    "principle": "Nidra",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Sushruta Samhita",
+        "chapter": "Sharirasthana 4.41",
+        "quote": "Nidranasha vatajat",
+        "translation": "Loss of sleep due to Vata."
+      }
+    ],
+    "description": "Light, disturbed sleep patterns associated with Vata imbalance, often accompanied by active dreaming or waking up in the early morning.",
+    "plainEnglish": "Your sleep is light and easily disturbed, a classic sign of excess Vata (air + ether) energy keeping your nervous system active.",
+    "implications": [
+      "Difficulty falling asleep due to a racing mind",
+      "Waking up between 2 AM and 4 AM",
+      "Warm milk with nutmeg before bed can help",
+      "Establish a grounding, consistent evening routine"
+    ]
   },
   {
     "observation": "Pitta Nidra tendency",
-    "classicalSource": "Charaka Samhita, Sutrasthana 21.43",
-    "description": "Moderate sleep but easily awakened by light or heat, associated with Pitta."
+    "principle": "Nidra",
+    "dosha": [
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 21.43",
+        "quote": "Pitta prakruti nidra...",
+        "translation": "Sleep of Pitta constitution..."
+      }
+    ],
+    "description": "Moderate sleep but easily awakened by light or heat, associated with Pitta. May experience intense or problem-solving dreams.",
+    "plainEnglish": "You have moderate sleep but can be woken by heat or light. Your mind may stay active with intense or problem-solving dreams.",
+    "implications": [
+      "Tendency to wake up hot or sweating",
+      "Need a cool sleeping environment",
+      "Avoid working or screen time right before bed",
+      "Cooling foot massage with coconut oil helps"
+    ]
   },
   {
     "observation": "Kapha Nidra tendency",
-    "classicalSource": "Charaka Samhita, Sutrasthana 21.44",
-    "description": "Heavy, prolonged sleep associated with Kapha dosha."
+    "principle": "Nidra",
+    "dosha": [
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 21.44",
+        "quote": "Kapha prakruti nidra...",
+        "translation": "Sleep of Kapha constitution..."
+      }
+    ],
+    "description": "Heavy, prolonged sleep associated with Kapha dosha. Difficult to wake up and prone to grogginess in the morning.",
+    "plainEnglish": "Your sleep is very deep and heavy. Excess Kapha (earth + water) makes it hard to wake up and leaves you feeling groggy.",
+    "implications": [
+      "Deep sleep, difficult to wake up",
+      "Tendency to oversleep (more than 8-9 hours)",
+      "Need an active, stimulating morning routine",
+      "Avoid sleeping during the day"
+    ]
+  },
+  {
+    "observation": "Sama Nidra",
+    "principle": "Nidra",
+    "dosha": [
+      "vata",
+      "pitta",
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 21.35",
+        "quote": "Ratri svabhava prabhava...",
+        "translation": "Sleep naturally occurring at night..."
+      }
+    ],
+    "description": "Balanced sleep indicative of tridoshic equilibrium, providing deep rest and natural awakening.",
+    "plainEnglish": "You experience healthy, restorative sleep that aligns with natural rhythms, waking up feeling refreshed.",
+    "implications": [
+      "Easy to fall asleep and wake up naturally",
+      "Wake up feeling rested and clear",
+      "Maintain your current sleep hygiene",
+      "Align sleep with natural circadian rhythms (early to bed, early to rise)"
+    ]
+  },
+  {
+    "observation": "Vishama Nidra",
+    "principle": "Nidra",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Ashtanga Hridayam",
+        "chapter": "Sutrasthana 7.55",
+        "quote": "Vishama nidra vata...",
+        "translation": "Irregular sleep from Vata..."
+      }
+    ],
+    "description": "Irregular sleep patterns, oscillating between insomnia and hypersomnia, driven by erratic Vata energy.",
+    "plainEnglish": "Your sleep patterns are highly irregular\u2014some nights you can't sleep, other nights you sleep too much.",
+    "implications": [
+      "Unpredictable sleep quality and duration",
+      "Lack of a consistent daily routine",
+      "Vital to establish regular sleep and wake times",
+      "Grounding practices like oil massage (Abhyanga) are highly recommended"
+    ]
+  },
+  {
+    "observation": "Manda Nidra",
+    "principle": "Nidra",
+    "dosha": [
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Sushruta Samhita",
+        "chapter": "Sharirasthana 4.43",
+        "quote": "Atinidra kaphajat",
+        "translation": "Excessive sleep due to Kapha."
+      }
+    ],
+    "description": "Heavy, excessive sleep (hypersomnia) that does not leave the individual feeling rested, indicating Kapha and Tamas accumulation.",
+    "plainEnglish": "You are sleeping too much, but it doesn't leave you feeling rested. This heavy, sluggish sleep is a sign of excess Kapha.",
+    "implications": [
+      "Sleeping 9+ hours but still feeling tired",
+      "Lethargy throughout the day",
+      "Need to force an earlier wake-up time",
+      "Dry brushing and vigorous morning exercise will help"
+    ]
+  },
+  {
+    "observation": "Balanced Nidra",
+    "principle": "Nidra",
+    "dosha": [
+      "vata",
+      "pitta",
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Ashtanga Hridayam",
+        "chapter": "Sutrasthana 7.53",
+        "quote": "Nidra samyak...",
+        "translation": "Proper sleep..."
+      }
+    ],
+    "description": "Normal, healthy sleep pattern that properly restores the body and mind.",
+    "plainEnglish": "Your sleep pattern is balanced and restorative, supporting your overall health and vitality.",
+    "implications": [
+      "Restorative sleep",
+      "Consistent energy levels during the day",
+      "Maintain a regular sleep schedule",
+      "Keep electronics out of the bedroom"
+    ]
   },
   {
     "observation": "Vata Manas (Rajasic)",
-    "classicalSource": "Charaka Samhita, Sutrasthana 1.57",
-    "description": "Mental tendencies toward anxiety and fear due to elevated Vata and Rajas."
+    "principle": "Manas",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 1.57",
+        "quote": "Vayustantrayantradharah...",
+        "translation": "Vata is the controller and stimulator of the mind..."
+      }
+    ],
+    "description": "Anxious, racing, or fearful mental state due to elevated Vata and Rajas guna.",
+    "plainEnglish": "Your mind is moving too quickly, leading to feelings of anxiety, worry, or fear. This is an over-activation of Vata energy.",
+    "implications": [
+      "Racing thoughts and overthinking",
+      "Anxiety and nervousness",
+      "Need grounding, stabilizing routines",
+      "Meditation focused on the breath is highly beneficial"
+    ]
+  },
+  {
+    "observation": "Vata Manas (Chala)",
+    "principle": "Manas",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 12.8",
+        "quote": "Chalo vatah...",
+        "translation": "Vata is mobile..."
+      }
+    ],
+    "description": "Mobile, distracted, but highly creative mental state characterized by rapid shifting of focus.",
+    "plainEnglish": "Your mind is highly mobile and creative, jumping from one idea to the next, but you may struggle with focus.",
+    "implications": [
+      "Highly creative but easily distracted",
+      "Difficulty finishing projects",
+      "Channel creativity into structured activities",
+      "Grounding foods and routines help maintain focus"
+    ]
+  },
+  {
+    "observation": "Vata Manas (Chala/Laghu)",
+    "principle": "Manas",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Ashtanga Hridayam",
+        "chapter": "Sutrasthana 1.11",
+        "quote": "Tatra ruksho laghuh shitah...",
+        "translation": "Vata is dry, light, cold..."
+      }
+    ],
+    "description": "Light and mobile mental quality, often feeling spacey or ungrounded.",
+    "plainEnglish": "Your mind feels light and spacey, making it hard to feel grounded or connected to the present moment.",
+    "implications": [
+      "Feeling disconnected or 'in the clouds'",
+      "Forgetfulness and poor short-term memory",
+      "Warm, heavy, nourishing foods are needed",
+      "Physical touch and grounding exercises (like walking barefoot) are helpful"
+    ]
   },
   {
     "observation": "Pitta Manas (Rajasic/Tikshna)",
-    "classicalSource": "Charaka Samhita, Sutrasthana 1.57",
-    "description": "Mental tendencies toward anger, intensity, and sharp focus (Pitta and Rajas)."
+    "principle": "Manas",
+    "dosha": [
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 1.57",
+        "quote": "Pittam tikshnam...",
+        "translation": "Pitta is sharp..."
+      }
+    ],
+    "description": "Intense, sharp, angry or highly critical mental state driven by Pitta and Rajas.",
+    "plainEnglish": "Your mind is very sharp and focused, but this intensity can easily tip into anger, frustration, or being overly critical.",
+    "implications": [
+      "Prone to frustration, anger, and impatience",
+      "Perfectionistic tendencies",
+      "Practice cooling, calming activities",
+      "Avoid overworking and competitive situations"
+    ]
+  },
+  {
+    "observation": "Pitta Manas (Tikshna)",
+    "principle": "Manas",
+    "dosha": [
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Ashtanga Hridayam",
+        "chapter": "Sutrasthana 1.11",
+        "quote": "Pittam sasneha tikshnoshnam...",
+        "translation": "Pitta is slightly oily, sharp, hot..."
+      }
+    ],
+    "description": "Sharp, logical, analytical, and highly focused mental state.",
+    "plainEnglish": "You have a highly analytical, logical, and focused mind, able to cut through confusion and solve problems easily.",
+    "implications": [
+      "Excellent focus and problem-solving skills",
+      "Can be overly rational or detached from emotions",
+      "Balance intellect with heart-centered practices",
+      "Spend time in nature to cool the intellect"
+    ]
   },
   {
     "observation": "Kapha Manas (Tamasic/Manda)",
-    "classicalSource": "Charaka Samhita, Sutrasthana 1.57",
-    "description": "Mental tendencies toward withdrawal, stability, or lethargy (Kapha and Tamas)."
+    "principle": "Manas",
+    "dosha": [
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 1.57",
+        "quote": "Kapho mandah...",
+        "translation": "Kapha is slow..."
+      }
+    ],
+    "description": "Heavy, withdrawn, or lethargic mental state driven by Kapha and Tamas guna.",
+    "plainEnglish": "Your mind feels heavy, foggy, or resistant to change, often leading to feelings of sadness or lethargy.",
+    "implications": [
+      "Mental fog and sluggishness",
+      "Resistance to change or learning new things",
+      "Need mental stimulation and new experiences",
+      "Vigorous exercise helps clear the mental heaviness"
+    ]
+  },
+  {
+    "observation": "Kapha Manas (Sthira)",
+    "principle": "Manas",
+    "dosha": [
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Ashtanga Hridayam",
+        "chapter": "Sutrasthana 1.12",
+        "quote": "Snigdha shita gururmandah...",
+        "translation": "Kapha is unctuous, cold, heavy, slow..."
+      }
+    ],
+    "description": "Stable, steady, calm, and nurturing mental state.",
+    "plainEnglish": "Your mind is naturally calm, stable, and steady. You are a grounding presence for yourself and others.",
+    "implications": [
+      "Excellent long-term memory",
+      "Calm and difficult to anger",
+      "Maintain activity to prevent stagnation",
+      "Share your nurturing energy with others"
+    ]
+  },
+  {
+    "observation": "Vata Manas disturbance",
+    "principle": "Manas",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Sushruta Samhita",
+        "chapter": "Sharirasthana 4.38",
+        "quote": "Manaso vikara vatajat",
+        "translation": "Mental disorders arising from Vata."
+      }
+    ],
+    "description": "General disturbed mental state characterized by fear, anxiety, and instability.",
+    "plainEnglish": "Your mental state is disturbed by excess air and space elements, causing anxiety and a lack of stability.",
+    "implications": [
+      "Pervasive sense of unease or fear",
+      "Difficulty handling stress",
+      "Seek warm, grounding environments",
+      "Warm oil massage (Abhyanga) is highly recommended for the nervous system"
+    ]
+  },
+  {
+    "observation": "Excessive Rajas in Manas",
+    "principle": "Manas",
+    "dosha": [
+      "vata",
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 1.57",
+        "quote": "Rajascha tamascha manaso doshau",
+        "translation": "Rajas and Tamas are the doshas of the mind."
+      }
+    ],
+    "description": "Excess mental activation, agitation, and desire-driven action without rest.",
+    "plainEnglish": "Your mind is in overdrive, constantly seeking action, stimulation, and achievement, making it hard to rest.",
+    "implications": [
+      "Restlessness and inability to sit still",
+      "Constant desire for more (achievement, material goods)",
+      "Practice meditation and silence",
+      "Reduce stimulating media and caffeine"
+    ]
+  },
+  {
+    "observation": "Moderate Rajas in Manas",
+    "principle": "Manas",
+    "dosha": [
+      "vata",
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Ashtanga Hridayam",
+        "chapter": "Sutrasthana 1.14",
+        "quote": "Rajaso pravritti...",
+        "translation": "Rajas initiates activity..."
+      }
+    ],
+    "description": "Moderate activation necessary for motivation and daily functioning.",
+    "plainEnglish": "You have a healthy level of motivation and drive that helps you accomplish your goals without burning out.",
+    "implications": [
+      "Healthy ambition and motivation",
+      "Active but manageable lifestyle",
+      "Ensure you take time to rest and recharge",
+      "Maintain balance with calming activities"
+    ]
+  },
+  {
+    "observation": "Sattvic Manas tendency",
+    "principle": "Manas",
+    "dosha": [
+      "vata",
+      "pitta",
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 1.57",
+        "quote": "Sattvam tu kalyanansham",
+        "translation": "Sattva is the auspicious quality."
+      }
+    ],
+    "description": "Balanced, clear, peaceful, and harmonious mental state.",
+    "plainEnglish": "Your mind is clear, peaceful, and harmonious, reflecting the pure state of Sattva.",
+    "implications": [
+      "Clarity of thought and peacefulness",
+      "Compassion and understanding toward others",
+      "Continue sattvic diet (fresh, light, pure foods)",
+      "Maintain daily spiritual or mindful practices"
+    ]
+  },
+  {
+    "observation": "Manasika Ama",
+    "principle": "Manas",
+    "dosha": [
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Vimanasthana 5.8",
+        "quote": "Manasika ama...",
+        "translation": "Mental impurities..."
+      }
+    ],
+    "description": "Mental undigested content; unresolved emotions and thoughts creating mental fog and stagnation.",
+    "plainEnglish": "You are holding onto unresolved emotions or thoughts, creating a mental heaviness or 'fog'.",
+    "implications": [
+      "Feeling emotionally stuck or blocked",
+      "Brain fog and confusion",
+      "Journaling or therapy to process emotions",
+      "Fasting and light diet can help clear the mind"
+    ]
+  },
+  {
+    "observation": "Vishama Manas pattern",
+    "principle": "Manas",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Ashtanga Sangraha",
+        "chapter": "Sutrasthana 1.25",
+        "quote": "Vata vikriti manas...",
+        "translation": "Vata disorders in the mind..."
+      }
+    ],
+    "description": "Variable mental state with rapid mood swings and inconsistent focus.",
+    "plainEnglish": "Your mood and mental state are highly unpredictable, shifting rapidly from high energy to low energy.",
+    "implications": [
+      "Rapid mood swings",
+      "Inconsistent energy and focus",
+      "Establish a strict daily routine (Dinacharya)",
+      "Grounding foods and herbs are essential"
+    ]
+  },
+  {
+    "observation": "Vata Frame",
+    "principle": "Dosha",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 20.14",
+        "quote": "Krisha dirgha...",
+        "translation": "Thin and tall..."
+      }
+    ],
+    "description": "Slight, thin frame with prominent joints and low body weight.",
+    "plainEnglish": "You naturally have a lighter, thinner body frame. Your bones may be prominent, and you might struggle to gain weight.",
+    "implications": [
+      "Difficulty gaining weight",
+      "Prominent joints and veins",
+      "Need nourishing, building foods",
+      "Gentle, strength-building exercise is beneficial"
+    ]
+  },
+  {
+    "observation": "Pitta Frame",
+    "principle": "Dosha",
+    "dosha": [
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 20.14",
+        "quote": "Madhyama sharira...",
+        "translation": "Medium body..."
+      }
+    ],
+    "description": "Medium, athletic frame with moderate musculature and weight.",
+    "plainEnglish": "You have a naturally medium, well-proportioned, and athletic frame. You can gain or lose weight with relative ease.",
+    "implications": [
+      "Good muscle tone and moderate build",
+      "Tendency to run warm",
+      "Moderate exercise like swimming or cycling is ideal",
+      "Maintain balance to avoid inflammation"
+    ]
+  },
+  {
+    "observation": "Kapha Frame",
+    "principle": "Dosha",
+    "dosha": [
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 20.14",
+        "quote": "Sthula sharira...",
+        "translation": "Stout body..."
+      }
+    ],
+    "description": "Broad, sturdy frame with heavy bones and a tendency to gain weight easily.",
+    "plainEnglish": "You have a strong, solid, and broad frame. You naturally carry more weight and have great physical endurance.",
+    "implications": [
+      "Strong, heavy bones and good endurance",
+      "Tendency to gain weight easily and struggle to lose it",
+      "Vigorous, daily exercise is crucial",
+      "Favor light, warm, and spicy foods"
+    ]
+  },
+  {
+    "observation": "High Metabolic Rate (Tikshna/Vata)",
+    "principle": "Agni",
+    "dosha": [
+      "vata",
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Sushruta Samhita",
+        "chapter": "Sutrasthana 21.12",
+        "quote": "Tikshnagni kshudha...",
+        "translation": "Sharp agni and hunger..."
+      }
+    ],
+    "description": "Fast metabolism associated with high Pitta or Vata, burning through energy quickly.",
+    "plainEnglish": "Your body processes food and energy very quickly, meaning you get hungry often and burn calories fast.",
+    "implications": [
+      "Frequent hunger and difficulty skipping meals",
+      "Can become weak if meals are delayed",
+      "Eat regular, substantial meals",
+      "Avoid excess caffeine which can overstimulate metabolism"
+    ]
+  },
+  {
+    "observation": "Stable Metabolism (Sama/Pitta)",
+    "principle": "Agni",
+    "dosha": [
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Chikitsasthana 15.42",
+        "quote": "Samagni samadosha...",
+        "translation": "Balanced agni..."
+      }
+    ],
+    "description": "Balanced metabolism that efficiently processes food and maintains stable weight.",
+    "plainEnglish": "Your metabolism is stable and efficient, easily maintaining your weight and energy levels.",
+    "implications": [
+      "Consistent energy throughout the day",
+      "Easy to maintain a healthy weight",
+      "Continue eating balanced, regular meals",
+      "Listen to natural hunger cues"
+    ]
+  },
+  {
+    "observation": "Slow Metabolic Rate (Manda/Kapha)",
+    "principle": "Agni",
+    "dosha": [
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Chikitsasthana 15.45",
+        "quote": "Mandagni kaphajat...",
+        "translation": "Slow agni from Kapha..."
+      }
+    ],
+    "description": "Slow metabolism associated with Kapha dosha, leading to easy weight gain and sluggish energy.",
+    "plainEnglish": "Your body processes food and energy slowly, making it easy to gain weight and harder to lose it.",
+    "implications": [
+      "Prone to weight gain even with minimal food",
+      "Sluggish feeling after meals",
+      "Focus on warm, spiced, and light foods",
+      "Intermittent fasting can be very beneficial"
+    ]
+  },
+  {
+    "observation": "Vata Prakrti (childhood)",
+    "principle": "Dosha",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Vimanasthana 8.96",
+        "quote": "Tatra vatala...",
+        "translation": "Therein, the Vata type..."
+      }
+    ],
+    "description": "Childhood Vata constitution characterized by hyperactivity, thin build, and frequent illnesses like colds.",
+    "plainEnglish": "Since childhood, you have exhibited Vata traits like a slender build, active imagination, and perhaps a sensitive nervous system.",
+    "implications": [
+      "Lifelong tendency toward Vata imbalances",
+      "Sensitivity to cold and wind",
+      "Requires lifelong attention to grounding routines",
+      "Nourishing therapies (Brimhana) are generally favorable"
+    ]
+  },
+  {
+    "observation": "Pitta Prakrti (childhood)",
+    "principle": "Dosha",
+    "dosha": [
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Vimanasthana 8.97",
+        "quote": "Pittala...",
+        "translation": "The Pitta type..."
+      }
+    ],
+    "description": "Childhood Pitta constitution characterized by intelligence, competitiveness, and heat-related issues.",
+    "plainEnglish": "Since childhood, you have shown Pitta traits such as a sharp intellect, strong digestion, and a competitive or intense nature.",
+    "implications": [
+      "Lifelong tendency toward heat and inflammation",
+      "Strong will and determination",
+      "Requires lifelong attention to cooling practices",
+      "Avoid extreme heat and aggressive competition"
+    ]
+  },
+  {
+    "observation": "Kapha Prakrti (childhood)",
+    "principle": "Dosha",
+    "dosha": [
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Vimanasthana 8.98",
+        "quote": "Shleshmala...",
+        "translation": "The Kapha type..."
+      }
+    ],
+    "description": "Childhood Kapha constitution characterized by robust health, calm demeanor, and tendency toward heaviness.",
+    "plainEnglish": "Since childhood, you have possessed Kapha traits like a sturdy build, a calm and sweet nature, and strong immunity.",
+    "implications": [
+      "Lifelong tendency toward stagnation or weight gain",
+      "Excellent stamina and calm mind",
+      "Requires lifelong commitment to regular exercise",
+      "Stimulating therapies (Langhana) are generally favorable"
+    ]
+  },
+  {
+    "observation": "Vata Lifestyle",
+    "principle": "Dosha",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Ashtanga Hridayam",
+        "chapter": "Sutrasthana 2.1",
+        "quote": "Dinacharya...",
+        "translation": "Daily routine..."
+      }
+    ],
+    "description": "Irregular, spontaneous lifestyle lacking routine, which aggravates Vata.",
+    "plainEnglish": "Your daily habits are spontaneous and irregular, lacking a set routine. This constant change aggravates Vata energy.",
+    "implications": [
+      "Irregular meal and sleep times",
+      "Frequent travel or changing environments",
+      "Implementing a strict daily routine is the #1 remedy",
+      "Prioritize consistency over variety"
+    ]
+  },
+  {
+    "observation": "Pitta Lifestyle",
+    "principle": "Dosha",
+    "dosha": [
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Ashtanga Hridayam",
+        "chapter": "Sutrasthana 2.1",
+        "quote": "Dinacharya...",
+        "translation": "Daily routine..."
+      }
+    ],
+    "description": "Highly scheduled, structured, and goal-oriented lifestyle that can lead to Pitta burnout.",
+    "plainEnglish": "Your life is highly scheduled and driven by goals and productivity. While effective, this intensity can lead to burnout.",
+    "implications": [
+      "Overworking and lack of play",
+      "High stress and pressure to achieve",
+      "Schedule time for relaxation and doing 'nothing'",
+      "Spend time in nature, particularly near water"
+    ]
+  },
+  {
+    "observation": "Kapha Lifestyle",
+    "principle": "Dosha",
+    "dosha": [
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Ashtanga Hridayam",
+        "chapter": "Sutrasthana 2.1",
+        "quote": "Dinacharya...",
+        "translation": "Daily routine..."
+      }
+    ],
+    "description": "Routine-bound, sedentary lifestyle highly resistant to change, leading to Kapha stagnation.",
+    "plainEnglish": "Your lifestyle is very comfortable and routine, but it may be too sedentary, leading to stagnation and heaviness.",
+    "implications": [
+      "Too much sitting or lack of physical activity",
+      "Resistance to trying new things",
+      "Actively introduce variety and new challenges",
+      "Make vigorous exercise a daily non-negotiable habit"
+    ]
+  },
+  {
+    "observation": "Vata Aggravation tendency",
+    "principle": "Dosha",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 12.8",
+        "quote": "Vata prakopa...",
+        "translation": "Vata aggravation..."
+      }
+    ],
+    "description": "High sensitivity to Vata-aggravating factors like cold, wind, travel, and stress.",
+    "plainEnglish": "You are highly sensitive to elements that increase Vata, such as cold weather, wind, travel, and erratic schedules.",
+    "implications": [
+      "Easily unsettled by travel or changes in routine",
+      "Joint cracking and dry skin in cold weather",
+      "Always protect yourself from cold and wind",
+      "Oil massage is your best defense"
+    ]
+  },
+  {
+    "observation": "Pitta Aggravation tendency",
+    "principle": "Dosha",
+    "dosha": [
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 12.11",
+        "quote": "Pitta prakopa...",
+        "translation": "Pitta aggravation..."
+      }
+    ],
+    "description": "High sensitivity to Pitta-aggravating factors like heat, spicy food, and intense situations.",
+    "plainEnglish": "You are highly sensitive to elements that increase Pitta, such as hot weather, spicy foods, and high-stress environments.",
+    "implications": [
+      "Easily overheated or sunburned",
+      "Irritability when hungry or hot",
+      "Avoid spicy, sour, and fermented foods",
+      "Favor sweet, bitter, and astringent tastes"
+    ]
+  },
+  {
+    "observation": "Kapha Aggravation tendency",
+    "principle": "Dosha",
+    "dosha": [
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 12.13",
+        "quote": "Kapha prakopa...",
+        "translation": "Kapha aggravation..."
+      }
+    ],
+    "description": "High sensitivity to Kapha-aggravating factors like cold, damp weather, heavy foods, and inactivity.",
+    "plainEnglish": "You are highly sensitive to elements that increase Kapha, such as cold, damp weather, heavy foods, and lack of exercise.",
+    "implications": [
+      "Prone to congestion in damp or cold weather",
+      "Weight gain from minor dietary indiscretions",
+      "Avoid dairy and heavy sweets",
+      "Favor pungent, bitter, and astringent tastes"
+    ]
+  },
+  {
+    "observation": "Dinacharya Adherent",
+    "principle": "Dosha",
+    "dosha": [
+      "vata",
+      "pitta",
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Ashtanga Hridayam",
+        "chapter": "Sutrasthana 2.1",
+        "quote": "Dinacharya...",
+        "translation": "Daily routine..."
+      }
+    ],
+    "description": "Maintains a regular daily routine aligned with Ayurvedic principles, promoting overall balance.",
+    "plainEnglish": "You maintain a consistent and healthy daily routine, which is the foundation of Ayurvedic health.",
+    "implications": [
+      "Strong foundation for lifelong health",
+      "Better resilience against stress and disease",
+      "Continue maintaining your routine",
+      "Adjust routine slightly according to seasons (Ritucharya)"
+    ]
+  },
+  {
+    "observation": "Dinacharya Brahma Muhurta adherence",
+    "principle": "Dosha",
+    "dosha": [
+      "vata",
+      "pitta",
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Ashtanga Hridayam",
+        "chapter": "Sutrasthana 2.1",
+        "quote": "Brahme muhurte uttishthet...",
+        "translation": "One should wake up in Brahma Muhurta..."
+      }
+    ],
+    "description": "Wakes up at the ideal time (Brahma Muhurta, ~90 minutes before sunrise), capturing Sattvic energy.",
+    "plainEnglish": "You wake up early before sunrise, capturing the peaceful, clear energy of the morning.",
+    "implications": [
+      "High mental clarity and peace throughout the day",
+      "Natural alignment with circadian rhythms",
+      "Maintain early bedtime to support this habit",
+      "Use morning time for meditation or quiet reflection"
+    ]
+  },
+  {
+    "observation": "High Ojas",
+    "principle": "Ojas",
+    "dosha": [
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 17.74",
+        "quote": "Ojaso vriddhi...",
+        "translation": "Increase of Ojas..."
+      }
+    ],
+    "description": "Strong immunity, vitality, and resilience; a state of excellent health and tissue nourishment.",
+    "plainEnglish": "You have abundant vitality and a strong immune system. Your body's deep reserves of energy (Ojas) are well-nourished.",
+    "implications": [
+      "Rarely get sick",
+      "Glowing complexion and steady energy",
+      "Maintain healthy lifestyle to preserve Ojas",
+      "Avoid extreme depletion or overexertion"
+    ]
+  },
+  {
+    "observation": "Moderate Ojas",
+    "principle": "Ojas",
+    "dosha": [
+      "vata",
+      "pitta",
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 17.75",
+        "quote": "Ojaso sthiti...",
+        "translation": "Maintenance of Ojas..."
+      }
+    ],
+    "description": "Average vitality and immunity; functions well but can be depleted under stress.",
+    "plainEnglish": "Your vitality and immunity are average. You function well but need to be careful not to burn out during stressful times.",
+    "implications": [
+      "Generally healthy but susceptible to seasonal bugs",
+      "Energy fluctuates based on self-care",
+      "Incorporate Ojas-building foods (almonds, ghee, dates)",
+      "Ensure adequate rest during busy periods"
+    ]
+  },
+  {
+    "observation": "Low Ojas",
+    "principle": "Ojas",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 17.73",
+        "quote": "Ojah kshaya...",
+        "translation": "Depletion of Ojas..."
+      }
+    ],
+    "description": "Depleted immunity, chronic fatigue, and susceptibility to illness due to poor tissue nutrition.",
+    "plainEnglish": "Your deep energy reserves (Ojas) are low, leading to weak immunity, fatigue, and a feeling of depletion.",
+    "implications": [
+      "Frequent illnesses and slow recovery",
+      "Chronic fatigue and physical weakness",
+      "Require deep rest and nourishing (Brimhana) therapies",
+      "Avoid strenuous exercise, fasting, and stress"
+    ]
+  },
+  {
+    "observation": "Ojas Depletion",
+    "principle": "Ojas",
+    "dosha": [
+      "vata",
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Sushruta Samhita",
+        "chapter": "Sutrasthana 15.24",
+        "quote": "Ojah visramsa...",
+        "translation": "Displacement/loss of Ojas..."
+      }
+    ],
+    "description": "Severe depletion of vitality often due to chronic stress, trauma, or prolonged illness.",
+    "plainEnglish": "You are experiencing a severe depletion of your foundational vitality, leaving you exhausted and highly vulnerable.",
+    "implications": [
+      "Extreme fatigue, anxiety, and weakness",
+      "Dull complexion and feeling of 'emptiness'",
+      "Immediate need for restorative therapies and rest",
+      "Seek guidance from an Ayurvedic practitioner for rejuvenation (Rasayana)"
+    ]
+  },
+  {
+    "observation": "Ojas Strength",
+    "principle": "Ojas",
+    "dosha": [
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 17.74",
+        "quote": "Ojaso vriddhi...",
+        "translation": "Increase of Ojas..."
+      }
+    ],
+    "description": "Robust constitution with deep reserves of energy and excellent physical/mental endurance.",
+    "plainEnglish": "Your foundational strength and endurance are exceptionally robust, providing a deep well of energy.",
+    "implications": [
+      "Excellent physical and mental stamina",
+      "Calm and grounded demeanor",
+      "Maintain current nourishing habits",
+      "Use your energy to help and support others"
+    ]
+  },
+  {
+    "observation": "Ojas seeking",
+    "principle": "Ojas",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Ashtanga Hridayam",
+        "chapter": "Sutrasthana 11.37",
+        "quote": "Ojas kshaye...",
+        "translation": "In depletion of Ojas..."
+      }
+    ],
+    "description": "Body naturally seeking Ojas replenishment through cravings for sweet, heavy, or nourishing foods.",
+    "plainEnglish": "Your body is signaling a need to rebuild its deep energy reserves, often manifesting as cravings for sweet or rich foods.",
+    "implications": [
+      "Cravings for sweets, dairy, or heavy foods",
+      "Feeling tired and needing comfort",
+      "Satisfy cravings with healthy Ojas builders (warm milk, dates, ghee)",
+      "Avoid refined sugars which provide false energy"
+    ]
+  },
+  {
+    "observation": "Vata in Annavaha Srotas",
+    "principle": "Srotas",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Vimanasthana 5.12",
+        "quote": "Annavahanti srotamsi...",
+        "translation": "Channels carrying food..."
+      }
+    ],
+    "description": "Vata in digestive channels causing gas, bloating, and irregular movement of food.",
+    "plainEnglish": "Air and space energy (Vata) have accumulated in your digestive tract, causing irregular movement and gas.",
+    "implications": [
+      "Bloating, gas, and abdominal distension",
+      "Constipation or irregular bowel movements",
+      "Eat warm, cooked, unctuous foods",
+      "Use carminative spices like cumin, fennel, and ajwain"
+    ]
+  },
+  {
+    "observation": "Vata in Asthivaha Srotas",
+    "principle": "Srotas",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Vimanasthana 5.18",
+        "quote": "Asthivahanti srotamsi...",
+        "translation": "Channels carrying bone tissue..."
+      }
+    ],
+    "description": "Vata in bone channels causing joint cracking, pain, and issues with bone density.",
+    "plainEnglish": "Vata has entered the channels that nourish your bones and joints, leading to dryness and cracking.",
+    "implications": [
+      "Cracking joints and joint pain",
+      "Dryness in the body and potential bone thinning",
+      "Regular Abhyanga (warm oil massage) is crucial",
+      "Include healthy fats and bone-nourishing foods in diet"
+    ]
+  },
+  {
+    "observation": "Vata in Pranavaha Srotas",
+    "principle": "Srotas",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Vimanasthana 5.10",
+        "quote": "Pranavahanti srotamsi...",
+        "translation": "Channels carrying Prana..."
+      }
+    ],
+    "description": "Vata in respiratory channels causing dry cough, breathlessness, or anxiety.",
+    "plainEnglish": "Vata is affecting your respiratory channels, leading to dryness in the lungs or shallow, anxious breathing.",
+    "implications": [
+      "Dry cough and hoarse voice",
+      "Shortness of breath or tightness in the chest",
+      "Practice Pranayama (alternate nostril breathing)",
+      "Inhale steam and avoid dry, cold air"
+    ]
+  },
+  {
+    "observation": "Pitta in Pakvashaya",
+    "principle": "Srotas",
+    "dosha": [
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Sushruta Samhita",
+        "chapter": "Sutrasthana 21.10",
+        "quote": "Pakvashayagatam pittam",
+        "translation": "Pitta in the colon..."
+      }
+    ],
+    "description": "Pitta in the intestines causing diarrhea, inflammation, or burning sensation during elimination.",
+    "plainEnglish": "Heat (Pitta) has moved into your lower intestines, causing inflammation and loose or burning bowel movements.",
+    "implications": [
+      "Loose stools or diarrhea",
+      "Burning sensation during elimination",
+      "Cooling diet focusing on bitter and astringent tastes",
+      "Avoid spicy, fermented, and sour foods"
+    ]
+  },
+  {
+    "observation": "Kapha in Pranavaha Srotas",
+    "principle": "Srotas",
+    "dosha": [
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Vimanasthana 5.10",
+        "quote": "Pranavahanti srotamsi...",
+        "translation": "Channels carrying Prana..."
+      }
+    ],
+    "description": "Kapha in respiratory channels causing mucus accumulation, congestion, and asthma.",
+    "plainEnglish": "Heavy, damp Kapha energy has accumulated in your respiratory system, causing mucus and congestion.",
+    "implications": [
+      "Wet cough, congestion, and sinus issues",
+      "Heaviness in the chest",
+      "Avoid dairy, cold foods, and sweets",
+      "Use warming spices like ginger, black pepper, and pippali"
+    ]
+  },
+  {
+    "observation": "Kapha Avarana in Shrotas",
+    "principle": "Srotas",
+    "dosha": [
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Chikitsasthana 28.59",
+        "quote": "Kaphavarana...",
+        "translation": "Occlusion by Kapha..."
+      }
+    ],
+    "description": "Kapha blocking channels (Avarana) leading to stagnation, cysts, or impaired circulation.",
+    "plainEnglish": "Sticky Kapha is blocking the flow within your body's channels, causing stagnation and poor circulation.",
+    "implications": [
+      "Feeling of heaviness, blockages, or sluggish circulation",
+      "Tendency for cysts or lipomas",
+      "Vigorous exercise and dry brushing (Garshana) are needed",
+      "Pungent and bitter herbs help clear channels"
+    ]
+  },
+  {
+    "observation": "Vata Apana disturbance",
+    "principle": "Srotas",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Chikitsasthana 28.24",
+        "quote": "Apanavrita...",
+        "translation": "Apana Vata disturbance..."
+      }
+    ],
+    "description": "Apana Vata disruption affecting downward movement (elimination, menstruation, childbirth).",
+    "plainEnglish": "The downward-moving energy (Apana Vata) is disturbed, affecting your digestion, elimination, or reproductive cycles.",
+    "implications": [
+      "Constipation, gas, or irregular menstruation",
+      "Lower back pain or pelvic discomfort",
+      "Grounding yoga poses and deep belly breathing",
+      "Warm oil enemas (Basti) are a traditional remedy"
+    ]
+  },
+  {
+    "observation": "Balanced Mutravaha",
+    "principle": "Srotas",
+    "dosha": [
+      "vata",
+      "pitta",
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Vimanasthana 5.20",
+        "quote": "Mutravahanti srotamsi...",
+        "translation": "Urinary channels..."
+      }
+    ],
+    "description": "Normal urinary function indicating balanced fluid management in the body.",
+    "plainEnglish": "Your urinary system is functioning normally, indicating good hydration and balanced fluid management.",
+    "implications": [
+      "Clear, pale yellow urine",
+      "Normal frequency without urgency or pain",
+      "Maintain proper hydration",
+      "Continue balanced diet"
+    ]
+  },
+  {
+    "observation": "Vata in Mutravaha Srotas",
+    "principle": "Srotas",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Vimanasthana 5.20",
+        "quote": "Mutravahanti...",
+        "translation": "Urinary channels..."
+      }
+    ],
+    "description": "Vata in urinary channels causing frequent, scanty urination or incomplete emptying.",
+    "plainEnglish": "Vata is affecting your urinary tract, leading to irregular, frequent, or scanty urination.",
+    "implications": [
+      "Frequent urge to urinate with small amounts",
+      "Feeling of incomplete emptying",
+      "Ensure adequate hydration with warm fluids",
+      "Avoid cold drinks and excessive caffeine"
+    ]
+  },
+  {
+    "observation": "Pitta in Mutravaha Srotas",
+    "principle": "Srotas",
+    "dosha": [
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Vimanasthana 5.20",
+        "quote": "Mutravahanti...",
+        "translation": "Urinary channels..."
+      }
+    ],
+    "description": "Pitta in urinary channels causing dark, strong-smelling, or burning urination.",
+    "plainEnglish": "Excess heat (Pitta) in your urinary tract is causing the urine to become concentrated, dark, or irritating.",
+    "implications": [
+      "Dark yellow or strong-smelling urine",
+      "Burning sensation during urination",
+      "Increase intake of cooling fluids like coconut water",
+      "Avoid alcohol, spicy foods, and excess salt"
+    ]
+  },
+  {
+    "observation": "Kapha in Mutravaha Srotas",
+    "principle": "Srotas",
+    "dosha": [
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Vimanasthana 5.20",
+        "quote": "Mutravahanti...",
+        "translation": "Urinary channels..."
+      }
+    ],
+    "description": "Kapha in urinary channels causing cloudy, heavy, or slow urination.",
+    "plainEnglish": "Kapha is causing stagnation in your urinary tract, leading to cloudy or slow-moving urine.",
+    "implications": [
+      "Cloudy or dense urine",
+      "Sluggish flow or feeling of heaviness in the bladder",
+      "Drink warm water with a pinch of ginger",
+      "Diuretic herbs like Punarnava may be helpful"
+    ]
+  },
+  {
+    "observation": "Vata Rasa Kshaya",
+    "principle": "Dhatu",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Sushruta Samhita",
+        "chapter": "Sutrasthana 15.9",
+        "quote": "Rasa kshaye...",
+        "translation": "Depletion of Rasa..."
+      }
+    ],
+    "description": "Vata depleting Rasa dhatu (plasma), causing systemic dryness, fatigue, and sensitivity to noise.",
+    "plainEnglish": "Vata has dried out your body's primary nourishing fluid (plasma), leading to systemic dryness and exhaustion.",
+    "implications": [
+      "Dry skin, dry mouth, and chronic fatigue",
+      "Extreme sensitivity to loud noises",
+      "Focus on intense hydration (water with electrolytes, warm soups)",
+      "Rest and avoid overexertion"
+    ]
+  },
+  {
+    "observation": "Pitta Rakta Dhatu Disturbance",
+    "principle": "Dhatu",
+    "dosha": [
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Sushruta Samhita",
+        "chapter": "Sutrasthana 15.10",
+        "quote": "Rakta kshaye...",
+        "translation": "Disturbance in Rakta..."
+      }
+    ],
+    "description": "Pitta in blood tissue causing skin issues, inflammation, and heat in the body.",
+    "plainEnglish": "Excess heat has entered your blood tissue, leading to skin rashes, inflammation, and feeling overheated.",
+    "implications": [
+      "Acne, rashes, or inflammatory skin conditions",
+      "Tendency to bleed easily (e.g., nosebleeds)",
+      "Consume cooling herbs like Aloe Vera or Neem",
+      "Donate blood or undergo traditional blood-letting (Raktamokshana) if advised"
+    ]
+  },
+  {
+    "observation": "Vata Shukra Dhatu disturbance",
+    "principle": "Dhatu",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Sushruta Samhita",
+        "chapter": "Sutrasthana 15.14",
+        "quote": "Shukra kshaye...",
+        "translation": "Depletion of Shukra..."
+      }
+    ],
+    "description": "Vata affecting reproductive tissue, leading to low libido or reproductive issues.",
+    "plainEnglish": "Vata is depleting your reproductive tissue, lowering your vitality, libido, and overall energy.",
+    "implications": [
+      "Low libido and fatigue",
+      "Anxiety and lack of confidence",
+      "Include rejuvenating foods (dates, almonds, warm milk)",
+      "Manage stress and get adequate sleep"
+    ]
+  },
+  {
+    "observation": "Strong Shukra Dhatu",
+    "principle": "Dhatu",
+    "dosha": [
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Chikitsasthana 2.1",
+        "quote": "Shukram...",
+        "translation": "Reproductive tissue..."
+      }
+    ],
+    "description": "Robust reproductive tissue indicating deep vitality, good immunity, and strong Ojas.",
+    "plainEnglish": "Your deepest tissue layer is strong and well-nourished, providing excellent vitality and immunity.",
+    "implications": [
+      "Healthy libido and reproductive function",
+      "Bright eyes and glowing skin",
+      "Maintain nourishing diet to support tissue health",
+      "Avoid excessive stress or depletion"
+    ]
+  },
+  {
+    "observation": "Vata Shukra Kshaya",
+    "principle": "Dhatu",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Sushruta Samhita",
+        "chapter": "Sutrasthana 15.14",
+        "quote": "Shukra kshaye...",
+        "translation": "Depletion of Shukra..."
+      }
+    ],
+    "description": "Severely depleted reproductive tissue due to excess Vata, causing pain, weakness, and loss of vitality.",
+    "plainEnglish": "Severe depletion of your reproductive tissue is causing profound weakness and lack of vitality.",
+    "implications": [
+      "Extreme fatigue and weakness",
+      "Pain in the lower body or pelvis",
+      "Requires strong rejuvenating (Vajikarana) therapies",
+      "Absolute rest and highly nourishing diet"
+    ]
+  },
+  {
+    "observation": "Vata Majja Dhatu Kshaya",
+    "principle": "Dhatu",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Sushruta Samhita",
+        "chapter": "Sutrasthana 15.13",
+        "quote": "Majja kshaye...",
+        "translation": "Depletion of Majja..."
+      }
+    ],
+    "description": "Vata depleting nervous tissue, causing hollow bones, joint pain, and nervous system fragility.",
+    "plainEnglish": "Vata is drying out your nervous tissue and bone marrow, leading to a fragile nervous system and joint pain.",
+    "implications": [
+      "Anxiety, insomnia, and nervous exhaustion",
+      "Hollow feeling in bones or deep joint pain",
+      "Ghee and bone broths are highly nourishing",
+      "Calming, restorative practices are essential"
+    ]
+  },
+  {
+    "observation": "Sama Artava (balanced cycle)",
+    "principle": "Dhatu",
+    "dosha": [
+      "vata",
+      "pitta",
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Chikitsasthana 30.225",
+        "quote": "Artavam shuddham...",
+        "translation": "Pure menstrual fluid..."
+      }
+    ],
+    "description": "Balanced menstrual cycle, painless, regular, and bright red without clots.",
+    "plainEnglish": "Your menstrual cycle is balanced and healthy, functioning exactly as it should without discomfort.",
+    "implications": [
+      "Regular cycle (28-30 days)",
+      "No significant pain or mood swings",
+      "Maintain current healthy lifestyle",
+      "Rest during the first few days of the cycle"
+    ]
+  },
+  {
+    "observation": "Vishama Artava (Vata)",
+    "principle": "Dhatu",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Chikitsasthana 30.226",
+        "quote": "Vatika artava...",
+        "translation": "Vata type menstruation..."
+      }
+    ],
+    "description": "Irregular cycle from Vata, characterized by pain, dark color, and variable timing.",
+    "plainEnglish": "Excess Vata is causing your menstrual cycle to be irregular, painful, and light or dark in color.",
+    "implications": [
+      "Irregular timing and missed periods",
+      "Sharp, cramping pain",
+      "Eat warm, nourishing foods and healthy fats",
+      "Use a heating pad and warm oil massage on the lower abdomen"
+    ]
+  },
+  {
+    "observation": "Pitta Artava (excess)",
+    "principle": "Dhatu",
+    "dosha": [
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Chikitsasthana 30.227",
+        "quote": "Paittika artava...",
+        "translation": "Pitta type menstruation..."
+      }
+    ],
+    "description": "Excess/heavy cycle from Pitta, characterized by heavy bleeding, heat, and yellowish/red color.",
+    "plainEnglish": "Excess Pitta (heat) in the blood is causing heavy, warm, and sometimes uncomfortable menstrual bleeding.",
+    "implications": [
+      "Heavy bleeding and shorter cycles",
+      "Feeling hot, irritable, or having loose stools during menstruation",
+      "Avoid spicy, sour, and salty foods before and during the cycle",
+      "Cooling herbs like Shatavari and Aloe Vera are beneficial"
+    ]
+  },
+  {
+    "observation": "Vata Artava Kshaya",
+    "principle": "Dhatu",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Sushruta Samhita",
+        "chapter": "Sutrasthana 15.12",
+        "quote": "Artava kshaye...",
+        "translation": "Depletion of menstruation..."
+      }
+    ],
+    "description": "Scanty or absent cycle (amenorrhea) due to Vata depletion and undernourishment.",
+    "plainEnglish": "Your cycle is very light or absent because excess Vata has depleted the tissues needed to build the menstrual fluid.",
+    "implications": [
+      "Scanty bleeding or skipped periods",
+      "Associated with low body weight, stress, or over-exercise",
+      "Need highly nourishing, building foods",
+      "Reduce rigorous exercise and manage stress"
+    ]
+  },
+  {
+    "observation": "Kashtartava (painful periods)",
+    "principle": "Dhatu",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Chikitsasthana 30.12",
+        "quote": "Kashtartava...",
+        "translation": "Painful menstruation..."
+      }
+    ],
+    "description": "Painful menstruation (dysmenorrhea) typically caused by Vata blocking the flow of Apana Vayu.",
+    "plainEnglish": "Vata is blocking the downward flow of energy in your pelvis, causing significant pain during menstruation.",
+    "implications": [
+      "Severe cramping and lower back pain",
+      "Clots in the menstrual blood",
+      "Rest completely during the first days of menstruation",
+      "Warm ginger tea and castor oil packs can relieve pain"
+    ]
+  },
+  {
+    "observation": "Pitta in Artava",
+    "principle": "Dhatu",
+    "dosha": [
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Chikitsasthana 30.227",
+        "quote": "Paittika artava...",
+        "translation": "Pitta type menstruation..."
+      }
+    ],
+    "description": "Pitta in menstrual flow causing burning sensation and inflammation in the reproductive tract.",
+    "plainEnglish": "Heat in the reproductive tract is causing burning sensations and heavy bleeding.",
+    "implications": [
+      "Burning sensation during menstruation",
+      "Tendency for vaginal infections or irritation",
+      "Maintain excellent hygiene and use cooling washes",
+      "Avoid heat-producing foods and activities"
+    ]
+  },
+  {
+    "observation": "Pitta Artava excess",
+    "principle": "Dhatu",
+    "dosha": [
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Chikitsasthana 30.227",
+        "quote": "Paittika artava...",
+        "translation": "Pitta type menstruation..."
+      }
+    ],
+    "description": "Heavy, clotted Pitta flow, often associated with endometriosis or fibroids.",
+    "plainEnglish": "Excessive heat and stagnation are causing heavy bleeding with clots.",
+    "implications": [
+      "Very heavy bleeding with dark red clots",
+      "Inflammatory conditions in the pelvis",
+      "Seek guidance from a practitioner for herbal support",
+      "Follow a strict Pitta-pacifying diet"
+    ]
+  },
+  {
+    "observation": "Vata PMS Pattern",
+    "principle": "Manas",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Chikitsasthana 30.226",
+        "quote": "Vatika...",
+        "translation": "Vata type..."
+      }
+    ],
+    "description": "Anxiety, insomnia, and bloating occurring before menstruation due to Vata aggravation.",
+    "plainEnglish": "Before your period, excess Vata causes anxiety, trouble sleeping, and bloating.",
+    "implications": [
+      "Anxiety, worry, and mood swings",
+      "Constipation and bloating pre-menstruation",
+      "Grounding practices and warm baths before the cycle begins",
+      "Drink warm milk with nutmeg for sleep"
+    ]
+  },
+  {
+    "observation": "Pitta PMS Pattern",
+    "principle": "Manas",
+    "dosha": [
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Chikitsasthana 30.227",
+        "quote": "Paittika...",
+        "translation": "Pitta type..."
+      }
+    ],
+    "description": "Anger, irritability, acne, and loose stools before menstruation due to Pitta aggravation.",
+    "plainEnglish": "Before your period, excess heat causes irritability, frustration, and skin breakouts.",
+    "implications": [
+      "Irritability, anger, and short temper",
+      "Acne breakouts or tender breasts",
+      "Cooling activities and avoiding conflict",
+      "Drink cooling teas like mint or coriander"
+    ]
+  },
+  {
+    "observation": "Kapha PMS Pattern",
+    "principle": "Manas",
+    "dosha": [
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Chikitsasthana 30.228",
+        "quote": "Kaphaja...",
+        "translation": "Kapha type..."
+      }
+    ],
+    "description": "Depression, withdrawal, water retention, and lethargy before menstruation.",
+    "plainEnglish": "Before your period, excess Kapha causes water retention, heaviness, and feelings of sadness or lethargy.",
+    "implications": [
+      "Water retention, breast swelling, and weight gain",
+      "Lethargy, depression, and emotional eating",
+      "Exercise vigorously in the weeks before menstruation",
+      "Avoid heavy, salty, and sweet foods"
+    ]
+  },
+  {
+    "observation": "Sutika Kala (postpartum Vata)",
+    "principle": "Dhatu",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sharirasthana 8.48",
+        "quote": "Sutika...",
+        "translation": "Postpartum woman..."
+      }
+    ],
+    "description": "Postpartum state characterized by extreme Vata aggravation due to empty space in the womb and fluid loss.",
+    "plainEnglish": "The postpartum period naturally aggravates Vata due to the sudden empty space in the body and loss of fluids/energy.",
+    "implications": [
+      "Extreme fatigue, anxiety, and bodily pain",
+      "Vulnerability to cold and wind",
+      "Absolute need for rest, warmth, and daily oil massage",
+      "Diet must be exclusively warm, soupy, and highly nourishing"
+    ]
+  },
+  {
+    "observation": "Vata Rajonivritti (perimenopausal)",
+    "principle": "Dhatu",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Sushruta Samhita",
+        "chapter": "Sutrasthana 14.18",
+        "quote": "Jara...",
+        "translation": "Aging..."
+      }
+    ],
+    "description": "Perimenopausal state driven by increasing Vata, causing dryness, anxiety, and irregular cycles.",
+    "plainEnglish": "As you approach menopause, Vata naturally increases, bringing dryness, irregular cycles, and nervous system changes.",
+    "implications": [
+      "Vaginal dryness, joint pain, and anxiety",
+      "Irregular, skipped, or light periods",
+      "Emphasize Vata-pacifying diet and lifestyle",
+      "Use nourishing herbs like Ashwagandha and Shatavari"
+    ]
+  },
+  {
+    "observation": "Pitta Urdhva Gati in Rajonivritti",
+    "principle": "Srotas",
+    "dosha": [
+      "pitta",
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Chikitsasthana 30.227",
+        "quote": "Urdhwag pitta...",
+        "translation": "Upward moving Pitta..."
+      }
+    ],
+    "description": "Hot flashes caused by Pitta rising upward (Urdhva Gati) as Vata pushes it during the menopausal transition.",
+    "plainEnglish": "During menopause, erratic Vata energy pushes Pitta (heat) upward, resulting in hot flashes and night sweats.",
+    "implications": [
+      "Hot flashes and night sweats",
+      "Irritability and sleep disruption",
+      "Cooling herbs, aloe vera, and coconut water",
+      "Avoid spicy foods, alcohol, and hot drinks"
+    ]
+  },
+  {
+    "observation": "Vata Skin Type",
+    "principle": "Dhatu",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 20.14",
+        "quote": "Ruksha tvak...",
+        "translation": "Dry skin..."
+      }
+    ],
+    "description": "Dry, rough, and thin skin that ages quickly and is prone to flaking.",
+    "plainEnglish": "Your skin is naturally dry, thin, and prone to roughness or flaking, reflecting Vata energy.",
+    "implications": [
+      "Prone to early aging and wrinkles",
+      "Skin feels tight or rough, especially in winter",
+      "Daily self-massage with warm sesame oil is essential",
+      "Nourish from the inside with healthy fats"
+    ]
+  },
+  {
+    "observation": "Pitta Skin Type",
+    "principle": "Dhatu",
+    "dosha": [
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 20.14",
+        "quote": "Tamra tvak...",
+        "translation": "Coppery skin..."
+      }
+    ],
+    "description": "Sensitive, reactive skin prone to freckles, moles, redness, and inflammation.",
+    "plainEnglish": "Your skin is sensitive, warm, and prone to redness, reflecting Pitta energy.",
+    "implications": [
+      "Prone to acne, rashes, and sunburn",
+      "Many moles or freckles",
+      "Use cooling oils like coconut or sunflower for massage",
+      "Avoid harsh chemical skincare products"
+    ]
+  },
+  {
+    "observation": "Kapha Skin Type",
+    "principle": "Dhatu",
+    "dosha": [
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 20.14",
+        "quote": "Snigdha tvak...",
+        "translation": "Unctuous skin..."
+      }
+    ],
+    "description": "Oily, thick, smooth, and cool skin that ages slowly but is prone to congestion.",
+    "plainEnglish": "Your skin is naturally thick, smooth, and oily. It ages very well but can become congested.",
+    "implications": [
+      "Prone to large pores, cystic acne, and blackheads",
+      "Skin feels cool and slightly damp",
+      "Regular exfoliation (like dry brushing) is needed",
+      "Avoid heavy, pore-clogging creams"
+    ]
+  },
+  {
+    "observation": "Pitta Twak Sensitivity",
+    "principle": "Dhatu",
+    "dosha": [
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Sushruta Samhita",
+        "chapter": "Nidanasthana 5.7",
+        "quote": "Twak pitta...",
+        "translation": "Pitta in skin..."
+      }
+    ],
+    "description": "Pitta skin sensitivity leading to allergic reactions, hives, or contact dermatitis.",
+    "plainEnglish": "Your skin is highly reactive to heat, chemicals, or allergens, causing quick inflammatory responses.",
+    "implications": [
+      "Frequent hives, rashes, or allergic reactions",
+      "Skin feels hot to the touch during flare-ups",
+      "Internal cooling through diet (aloe, cucumber)",
+      "Use soothing topicals like rose water or sandalwood"
+    ]
+  },
+  {
+    "observation": "Kapha Meda in Twak",
+    "principle": "Dhatu",
+    "dosha": [
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 28.15",
+        "quote": "Meda tvak...",
+        "translation": "Fat in skin..."
+      }
+    ],
+    "description": "Kapha excess in skin and fat tissue causing benign tumors, cysts, or severe oiliness.",
+    "plainEnglish": "Excess Kapha and fat tissue are accumulating under the skin, causing congestion or growths.",
+    "implications": [
+      "Cystic acne or small fatty deposits (lipomas) under the skin",
+      "Excessive oiliness",
+      "Reduce intake of dairy, heavy meats, and sweets",
+      "Vigorous exercise to induce sweating is necessary"
+    ]
+  },
+  {
+    "observation": "Pitta Rakta Blemish Pattern",
+    "principle": "Dhatu",
+    "dosha": [
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Sushruta Samhita",
+        "chapter": "Nidanasthana 5.8",
+        "quote": "Rakta dushti...",
+        "translation": "Vitiation of blood..."
+      }
+    ],
+    "description": "Pitta pigmentation issues, rosacea, or persistent acne due to blood heat.",
+    "plainEnglish": "Heat in the blood tissue is manifesting on the skin as redness, pigmentation, or persistent breakouts.",
+    "implications": [
+      "Rosacea, uneven pigmentation, or inflammatory acne",
+      "Worsens with heat, stress, and spicy food",
+      "Blood-purifying herbs like Neem and Manjistha",
+      "Protect skin from direct sun exposure"
+    ]
+  },
+  {
+    "observation": "Pitta Kapha Twak Vikara",
+    "principle": "Dhatu",
+    "dosha": [
+      "pitta",
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Chikitsasthana 7.21",
+        "quote": "Pitta kapha kushtha...",
+        "translation": "Skin disease from Pitta and Kapha..."
+      }
+    ],
+    "description": "Combined skin disorder characterized by both inflammation (Pitta) and weeping/oozing or congestion (Kapha).",
+    "plainEnglish": "Your skin issues involve both heat (inflammation) and dampness (oozing or deep congestion).",
+    "implications": [
+      "Wet eczema, cystic acne with pus, or fungal infections",
+      "Affected areas feel warm and damp",
+      "Keep affected areas clean and dry",
+      "Avoid sour, fermented, and heavy dairy products"
+    ]
+  },
+  {
+    "observation": "Vata-Pitta Kushtha pattern",
+    "principle": "Dhatu",
+    "dosha": [
+      "vata",
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Chikitsasthana 7.19",
+        "quote": "Vata pitta kushtha...",
+        "translation": "Skin disease from Vata and Pitta..."
+      }
+    ],
+    "description": "Psoriatic tendency with dry, scaling skin (Vata) that is also red and inflamed (Pitta).",
+    "plainEnglish": "Your skin issues show signs of both dryness/scaling (Vata) and redness/inflammation (Pitta), like psoriasis.",
+    "implications": [
+      "Dry, scaling patches that are red and itchy",
+      "Worsens with stress and dry/hot weather",
+      "Needs a combination of deep moisturization and cooling therapies",
+      "Stress management is critical for healing"
+    ]
+  },
+  {
+    "observation": "Sedentary Mental Occupation",
+    "principle": "Lifestyle",
+    "dosha": [
+      "kapha",
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 5.103",
+        "quote": "Avyayama...",
+        "translation": "Lack of exercise..."
+      }
+    ],
+    "description": "Desk or mental work that increases Vata in the mind while increasing Kapha in the body.",
+    "plainEnglish": "Your work involves high mental activity but low physical movement, leading to physical stagnation and mental burnout.",
+    "implications": [
+      "Physical stiffness and weight gain",
+      "Mental fatigue and eye strain",
+      "Take frequent breaks to move and stretch",
+      "Separate work space from rest space"
+    ]
+  },
+  {
+    "observation": "Active Physical Occupation",
+    "principle": "Lifestyle",
+    "dosha": [
+      "vata",
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 5.103",
+        "quote": "Vyayama...",
+        "translation": "Exercise..."
+      }
+    ],
+    "description": "Physical work that builds strength but can aggravate Vata (depletion) or Pitta (heat) if overdone.",
+    "plainEnglish": "Your work is highly physical, which is good for circulation but can drain your energy or cause overheating.",
+    "implications": [
+      "Physical exhaustion and muscle strain",
+      "Need for high caloric intake",
+      "Ensure adequate rest and recovery time",
+      "Use cooling or restorative therapies post-work"
+    ]
+  },
+  {
+    "observation": "Vishama Ahara Krama",
+    "principle": "Lifestyle",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Vimanasthana 1.25",
+        "quote": "Vishamashana...",
+        "translation": "Irregular eating..."
+      }
+    ],
+    "description": "Irregular eating pattern that deeply disturbs Agni and aggravates Vata.",
+    "plainEnglish": "Eating at different times every day or eating different amounts constantly confuses your digestion.",
+    "implications": [
+      "Causes digestive issues like gas, bloating, and unpredictable bowels",
+      "Leads to fluctuating energy levels",
+      "Establish set meal times and stick to them",
+      "Make lunch the largest meal of the day"
+    ]
+  },
+  {
+    "observation": "Meal Skipping Pattern",
+    "principle": "Lifestyle",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 22.34",
+        "quote": "Anashana...",
+        "translation": "Fasting/Not eating..."
+      }
+    ],
+    "description": "Frequent meal skipping causing Vata aggravation, tissue depletion, and erratic Agni.",
+    "plainEnglish": "Skipping meals creates 'empty space' in the stomach, which Vata quickly fills, causing gas and anxiety.",
+    "implications": [
+      "Leads to weakness, anxiety, and poor digestion",
+      "Causes overeating later in the day",
+      "Even a small, healthy snack is better than skipping",
+      "Prioritize regular nourishment"
+    ]
+  },
+  {
+    "observation": "Vata Energy Pattern",
+    "principle": "Lifestyle",
+    "dosha": [
+      "vata"
+    ],
+    "classicalSources": [
+      {
+        "text": "Ashtanga Hridayam",
+        "chapter": "Sutrasthana 1.11",
+        "quote": "Vata chala...",
+        "translation": "Vata is mobile..."
+      }
+    ],
+    "description": "Erratic energy levels that come in bursts followed by sudden crashes.",
+    "plainEnglish": "Your energy is inconsistent\u2014you have sudden bursts of high energy followed by crashes of exhaustion.",
+    "implications": [
+      "Relying on caffeine or sugar for energy",
+      "Feeling 'tired and wired' at night",
+      "Need a consistent routine to stabilize energy",
+      "Focus on complex carbohydrates and healthy fats for sustained fuel"
+    ]
+  },
+  {
+    "observation": "Pitta Morning Pattern",
+    "principle": "Lifestyle",
+    "dosha": [
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 1.57",
+        "quote": "Pitta tikshna...",
+        "translation": "Pitta is sharp..."
+      }
+    ],
+    "description": "Morning peak energy, highly productive early in the day but prone to afternoon crashes if meals are missed.",
+    "plainEnglish": "You wake up sharp and ready to go, hitting your peak productivity in the morning and midday.",
+    "implications": [
+      "High focus and drive in the first half of the day",
+      "Irritability or 'hangry' feelings if lunch is delayed",
+      "Never skip lunch; it should be your biggest meal",
+      "Wind down work in the late afternoon to prevent burnout"
+    ]
+  },
+  {
+    "observation": "Kapha Sedentary Pattern",
+    "principle": "Lifestyle",
+    "dosha": [
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Sutrasthana 21.39",
+        "quote": "Kapha manda...",
+        "translation": "Kapha is slow..."
+      }
+    ],
+    "description": "Sedentary tendency with difficulty starting the day, but excellent endurance once moving.",
+    "plainEnglish": "You are slow to get going in the morning and prefer a sedentary lifestyle, though you have great stamina.",
+    "implications": [
+      "Difficulty waking up and getting motivated",
+      "Tendency to procrastinate physical activity",
+      "Force yourself to exercise first thing in the morning",
+      "Once you build momentum, you can sustain it all day"
+    ]
+  },
+  {
+    "observation": "Emotional eating pattern",
+    "principle": "Manas",
+    "dosha": [
+      "vata",
+      "kapha"
+    ],
+    "classicalSources": [
+      {
+        "text": "Charaka Samhita",
+        "chapter": "Vimanasthana 2.7",
+        "quote": "Shoka krodha...",
+        "translation": "Grief, anger..."
+      }
+    ],
+    "description": "Stress-driven eating, usually seeking heavy/sweet foods (Kapha) to pacify erratic emotions (Vata).",
+    "plainEnglish": "You use food to soothe emotional distress, often craving heavy, sweet, or comforting foods.",
+    "implications": [
+      "Eating when not physically hungry",
+      "Feeling sluggish or guilty after emotional binges",
+      "Address the root emotion through journaling or talking",
+      "Replace emotional eating with other comforting rituals (warm bath, tea, calling a friend)"
+    ]
+  },
+  {
+    "observation": "Moderate Rajas in Manas",
+    "principle": "Manas",
+    "dosha": [
+      "vata",
+      "pitta"
+    ],
+    "classicalSources": [
+      {
+        "text": "Ashtanga Hridayam",
+        "chapter": "Sutrasthana 1.14",
+        "quote": "Rajaso pravritti...",
+        "translation": "Rajas initiates activity..."
+      }
+    ],
+    "description": "Moderate activation necessary for motivation and daily functioning.",
+    "plainEnglish": "You have a healthy level of motivation and drive that helps you accomplish your goals without burning out.",
+    "implications": [
+      "Healthy ambition and motivation",
+      "Active but manageable lifestyle",
+      "Ensure you take time to rest and recharge",
+      "Maintain balance with calming activities"
+    ]
   }
 ]
