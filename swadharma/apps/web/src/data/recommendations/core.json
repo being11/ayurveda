@@ -1,62 +1,1292 @@
 [
   {
-    "id": "rec_diet_vishama",
+    "id": "rec_diet_vishama_agni",
     "category": "Diet",
     "subCategory": "Agni",
     "title": "Establish Regular Meal Times",
-    "description": "Eat warm, cooked, grounding meals at consistent times. Favor ghee or sesame oil. Start with small, easily digestible portions until your hunger stabilizes.",
-    "rationale": "Vishama Agni is governed by Vata. Consistency and warmth pacify Vata and stabilize Agni.",
-    "why": "Your digestive fire fluctuates unpredictably — a hallmark of Vishama Agni from Vata imbalance.",
+    "description": "Eat warm, cooked, and grounding meals at consistent times every day. Favor healthy fats like ghee or sesame oil. Avoid cold, raw, or refrigerated foods.",
+    "rationale": "Vishama Agni (variable digestion) is governed by Vata dosha. Consistency and warmth pacify Vata and stabilize the digestive fire (Agni).",
+    "why": "Your answers indicate a variable digestive fire \u2014 one that fluctuates unpredictably. In Ayurveda, this is called Vishama Agni, directly caused by excess Vata (air/ether) in the digestive channel.",
     "shastraRef": "Charaka Samhita, Chikitsasthana 15.44",
-    "alternatives": ["Start by fixing breakfast time.", "Use a small amount of ginger tea before lunch."],
-    "triggerObservations": ["Vishama Agni"]
+    "alternatives": [
+      "If warm meals are difficult, start by just fixing the meal time \u2014 even a protein bar eaten at the same time helps anchor Agni.",
+      "Eat the largest meal at midday when digestive fire is naturally strongest."
+    ],
+    "triggerObservations": [
+      "Vishama Agni",
+      "Vishama Ahara Krama",
+      "Meal Skipping Pattern"
+    ]
   },
   {
-    "id": "rec_diet_tikshna",
+    "id": "rec_diet_tikshna_agni",
     "category": "Diet",
     "subCategory": "Agni",
-    "title": "Favor Cooling, Nourishing Foods",
-    "description": "Avoid excessively spicy, sour, or salty foods. Do not skip meals. Favor cooling foods like sweet fruits, bitter greens, and adequate hydration.",
-    "rationale": "Tikshna Agni (sharp digestion) is driven by excess Pitta. Skipping meals or adding heat can lead to acidity and burnout.",
-    "why": "Your digestion is sharp and intense, indicating excess Pitta.",
-    "shastraRef": "Charaka Samhita, Sutrasthana 27",
-    "alternatives": ["Have a cooling snack like cucumber or melon if you cannot eat a full meal.", "Drink aloe vera juice in the morning."],
-    "triggerObservations": ["Tikshna Agni", "Pitta in Amashaya"]
+    "title": "Favor Cooling and Mild Foods",
+    "description": "Eat cooling, unctuous, and slightly sweet foods. Avoid excessive spices, sour foods, and skipping meals.",
+    "rationale": "Tikshna Agni (sharp digestion) is governed by Pitta. Cooling and heavier foods balance the sharp and hot qualities of Pitta.",
+    "why": "You have a very sharp digestive fire that can make you irritable if you skip a meal. We need to soothe this with cooling, nourishing foods.",
+    "shastraRef": "Charaka Samhita, Chikitsasthana 15.42",
+    "alternatives": [
+      "Keep a cooling snack like dates or coconut water handy.",
+      "Avoid hot sauces and excessive chili."
+    ],
+    "triggerObservations": [
+      "Tikshna Agni",
+      "Tikshna Agni / Pitta aggravation"
+    ]
   },
   {
-    "id": "rec_diet_manda",
+    "id": "rec_diet_manda_agni",
     "category": "Diet",
     "subCategory": "Agni",
-    "title": "Stimulate Digestion Before Meals",
-    "description": "Eat a small piece of fresh ginger with a pinch of rock salt 15 minutes before meals. Favor warm, light, and spiced foods.",
-    "rationale": "Manda Agni (sluggish digestion) is associated with Kapha dosha. Spices ignite the fire.",
-    "why": "Your digestion is sluggish and heavy, showing Kapha dominance in your digestive tract.",
-    "shastraRef": "Ashtanga Hridaya, Sutrasthana 8",
-    "alternatives": ["Drink warm water with a squeeze of lemon.", "Use black pepper liberally on your meals."],
-    "triggerObservations": ["Manda Agni"]
+    "title": "Stimulate Digestion with Light, Spiced Foods",
+    "description": "Favor light, warm, and well-spiced foods. Take a slice of fresh ginger with a pinch of salt before meals.",
+    "rationale": "Manda Agni (slow digestion) is governed by Kapha. Warming spices and light foods help kindle the sluggish digestive fire.",
+    "why": "Your digestion tends to be slow and sluggish. In Ayurveda, this is Manda Agni, and it needs a little help from warming spices to get going.",
+    "shastraRef": "Charaka Samhita, Chikitsasthana 15.43",
+    "alternatives": [
+      "Sip hot water throughout the day.",
+      "Add black pepper to your meals."
+    ],
+    "triggerObservations": [
+      "Manda Agni",
+      "Slow metabolic rate (Manda/Kapha)"
+    ]
   },
   {
-    "id": "rec_life_vata_nidra",
+    "id": "rec_diet_sama_agni",
+    "category": "Diet",
+    "subCategory": "Agni",
+    "title": "Maintain Balanced Eating Patterns",
+    "description": "Continue eating a balanced diet adjusted for the seasons. Listen to your natural hunger cues.",
+    "rationale": "Sama Agni (balanced digestion) is the ideal state where all doshas are in equilibrium in the digestive tract.",
+    "why": "Your digestion is beautifully balanced! The key now is to maintain it by adjusting your diet slightly as the seasons change.",
+    "shastraRef": "Charaka Samhita, Chikitsasthana 15.41",
+    "alternatives": [
+      "Follow seasonal guidelines (Ritucharya).",
+      "Practice mindful eating."
+    ],
+    "triggerObservations": [
+      "Sama Agni",
+      "Stable metabolism (Sama/Pitta)"
+    ]
+  },
+  {
+    "id": "rec_diet_pitta_amashaya",
+    "category": "Diet",
+    "subCategory": "Agni",
+    "title": "Adopt a Cooling Diet",
+    "description": "Favor sweet, bitter, and astringent tastes. Avoid sour, salty, and pungent foods. Emphasize cooling vegetables and fruits.",
+    "rationale": "Excess Pitta in the Amashaya (stomach) requires cooling and pacifying tastes to prevent inflammation and acidity.",
+    "why": "There is excess heat in your stomach area. Cooling foods will help soothe your digestive tract and prevent discomfort.",
+    "shastraRef": "Ashtanga Hridayam, Sutrasthana 8.42",
+    "alternatives": [
+      "Drink coriander tea.",
+      "Eat cucumber or melon as a snack."
+    ],
+    "triggerObservations": [
+      "Pitta in Amashaya"
+    ]
+  },
+  {
+    "id": "rec_diet_kapha_ama",
+    "category": "Diet",
+    "subCategory": "Agni",
+    "title": "Follow a Light, Dry Fasting Protocol",
+    "description": "Incorporate light fasting, favor dry and warm foods, and strictly avoid dairy, cold items, and heavy sweets.",
+    "rationale": "Ama (toxins) associated with Kapha requires Langhana (lightening therapy) and dry, heating qualities to clear the channels.",
+    "why": "Your body is holding onto some heaviness or sluggishness. A lighter diet with warming spices will help clear this out.",
+    "shastraRef": "Charaka Samhita, Sutrasthana 22.18",
+    "alternatives": [
+      "Try fasting for 12-14 hours overnight.",
+      "Drink ginger or cinnamon tea."
+    ],
+    "triggerObservations": [
+      "Kapha Ama accumulation",
+      "Kapha Frame"
+    ]
+  },
+  {
+    "id": "rec_diet_meal_skipping",
+    "category": "Diet",
+    "subCategory": "Routine",
+    "title": "Anchor Your Midday Meal",
+    "description": "Make lunch your largest and most consistent meal of the day, eating it between 12 PM and 2 PM.",
+    "rationale": "The midday sun corresponds with peak Pitta and Agni. Eating the main meal at this time ensures optimal digestion and prevents Vata aggravation from skipping.",
+    "why": "Skipping meals throws off your body's natural rhythms. Let's start by just making sure you have a solid, nourishing lunch every day.",
+    "shastraRef": "Ashtanga Hridayam, Sutrasthana 8",
+    "alternatives": [
+      "Set a daily alarm for lunch.",
+      "Meal prep your lunches in advance."
+    ],
+    "triggerObservations": [
+      "Meal Skipping Pattern"
+    ]
+  },
+  {
+    "id": "rec_diet_salty_cravings",
+    "category": "Diet",
+    "subCategory": "Taste",
+    "title": "Address Vata with Mineral-Rich Foods",
+    "description": "Favor mineral-rich natural salts like rock salt or sea salt in moderation. Include root vegetables and warming broths.",
+    "rationale": "Cravings for salt often indicate Vata imbalance. Natural mineral salts and grounding foods pacify Vata safely.",
+    "why": "Craving salt is often your body's way of asking for grounding. Let's use high-quality mineral salts and warm, root-vegetable soups to satisfy this deeply.",
+    "shastraRef": "Charaka Samhita, Sutrasthana 26.43",
+    "alternatives": [
+      "Add a pinch of pink Himalayan salt to warm water.",
+      "Eat roasted root vegetables."
+    ],
+    "triggerObservations": [
+      "Salty cravings",
+      "Vata Salt Craving"
+    ]
+  },
+  {
+    "id": "rec_diet_sweet_cravings",
+    "category": "Diet",
+    "subCategory": "Taste",
+    "title": "Satisfy Sweet Cravings with Ojas-Building Foods",
+    "description": "Instead of processed sugar, consume naturally sweet foods like warm milk with nutmeg, ghee, dates, or soaked almonds.",
+    "rationale": "Sweet taste (Madhura) builds tissues and Ojas. Healthy natural sweets pacify Vata and Pitta without causing Kapha derangement.",
+    "why": "When you crave sweets, your body is looking for deep nourishment and comfort. We can provide this with healthy, building foods like dates and almonds.",
+    "shastraRef": "Charaka Samhita, Sutrasthana 26.43",
+    "alternatives": [
+      "Eat 2-3 dates when a craving hits.",
+      "Drink warm almond milk before bed."
+    ],
+    "triggerObservations": [
+      "Sweet cravings (emotional)"
+    ]
+  },
+  {
+    "id": "rec_diet_spicy_cravings",
+    "category": "Diet",
+    "subCategory": "Taste",
+    "title": "Favor Naturally Warming Foods Over Extreme Heat",
+    "description": "Satisfy the desire for heat with mild spices like ginger, cumin, and coriander, rather than intense chili or capsaicin.",
+    "rationale": "Craving intense spice can indicate a Pitta imbalance seeking further stimulation. Mild, digestive spices support Agni without aggravating Pitta.",
+    "why": "You enjoy spicy foods, but extreme heat might irritate your system right now. Let's use flavorful but gentler spices like ginger and cumin instead.",
+    "shastraRef": "Ashtanga Hridayam, Sutrasthana 10.15",
+    "alternatives": [
+      "Use black pepper instead of cayenne.",
+      "Cook with a digestive spice blend."
+    ],
+    "triggerObservations": [
+      "Spicy cravings"
+    ]
+  },
+  {
+    "id": "rec_diet_vata_apana",
+    "category": "Diet",
+    "subCategory": "Elimination",
+    "title": "Support Elimination with Warmth and Oils",
+    "description": "Start your day with a large glass of warm water. Ensure all meals contain healthy oils or ghee, and favor cooked vegetables over raw.",
+    "rationale": "Apana Vata governs downward movement in the colon. Warmth and unctuousness (oils) counteract Vata's cold and dry qualities, easing elimination.",
+    "why": "To help your body's natural elimination processes, we need to introduce more warmth and healthy oils into your diet. Think cooked, not raw.",
+    "shastraRef": "Charaka Samhita, Chikitsasthana 28.79",
+    "alternatives": [
+      "Take 1 tsp of ghee with warm water in the morning.",
+      "Add sesame oil to your meals."
+    ],
+    "triggerObservations": [
+      "Vata Apana disturbance"
+    ]
+  },
+  {
+    "id": "rec_diet_pitta_pakvashaya",
+    "category": "Diet",
+    "subCategory": "Elimination",
+    "title": "Soothe the Colon with Bitter and Cooling Foods",
+    "description": "Include more bitter greens (like kale or dandelion) and cooling foods. Strictly avoid alcohol, excessive caffeine, and very spicy foods.",
+    "rationale": "Excess Pitta in the Pakvashaya (colon) can cause loose, hot, or urgent elimination. Bitter and astringent tastes cool this heat.",
+    "why": "Your body is showing signs of excess heat in the lower digestive tract. We can cool this down with bitter greens and by avoiding alcohol and strong spices.",
+    "shastraRef": "Ashtanga Hridayam, Chikitsasthana 9",
+    "alternatives": [
+      "Drink aloe vera juice (if appropriate).",
+      "Eat cooked leafy greens daily."
+    ],
+    "triggerObservations": [
+      "Pitta in Pakvashaya"
+    ]
+  },
+  {
+    "id": "rec_diet_manda_agni_fat",
+    "category": "Diet",
+    "subCategory": "Elimination",
+    "title": "Enhance Fat Digestion with Spices",
+    "description": "Consume fats in very small quantities and always paired with digestive spices like Trikatu (ginger, black pepper, long pepper).",
+    "rationale": "Manda Agni struggles to process heavy qualities like fats. Pungent spices stimulate bile flow and improve lipid metabolism.",
+    "why": "Your digestion finds heavy, fatty foods difficult right now. When you do eat fats, keep the portions small and add warming spices to help digest them.",
+    "shastraRef": "Charaka Samhita, Chikitsasthana 15.43",
+    "alternatives": [
+      "Use small amounts of olive oil or ghee.",
+      "Sprinkle dry ginger on meals."
+    ],
+    "triggerObservations": [
+      "Manda Agni fat intolerance"
+    ]
+  },
+  {
+    "id": "rec_diet_pitta_ambuvaha",
+    "category": "Diet",
+    "subCategory": "Hydration",
+    "title": "Hydrate with Cooling Infusions",
+    "description": "Drink room-temperature water infused with cooling herbs like coriander seeds, mint, or fennel. Avoid ice-cold drinks.",
+    "rationale": "Excess heat in the Ambuvaha Srotas (water channels) needs cooling, but ice water extinguishes Agni. Room temperature herbal waters are ideal.",
+    "why": "To quench your thirst and cool your system without harming your digestion, try sipping on room-temperature water with a little mint or fennel.",
+    "shastraRef": "Ashtanga Hridayam, Sutrasthana 5.14",
+    "alternatives": [
+      "Make coriander seed tea.",
+      "Add cucumber slices to your water."
+    ],
+    "triggerObservations": [
+      "Pitta Ambuvaha excess"
+    ]
+  },
+  {
+    "id": "rec_diet_kapha_ambuvaha",
+    "category": "Diet",
+    "subCategory": "Hydration",
+    "title": "Sip Warm Ginger Water Regularly",
+    "description": "Sip warm water or ginger tea regularly throughout the day rather than drinking large quantities of water at once.",
+    "rationale": "Kapha in the Ambuvaha Srotas causes fluid retention. Warm, spiced water taken in small amounts stimulates metabolism and clears channels.",
+    "why": "Your body tends to hold onto water. Instead of chugging cold water, sip on warm ginger water throughout the day to keep things flowing.",
+    "shastraRef": "Ashtanga Hridayam, Sutrasthana 5",
+    "alternatives": [
+      "Keep a thermos of hot water at your desk.",
+      "Add a pinch of dry ginger to your water."
+    ],
+    "triggerObservations": [
+      "Kapha Ambuvaha suppression"
+    ]
+  },
+  {
+    "id": "rec_lifestyle_vata_lifestyle",
+    "category": "Lifestyle",
+    "subCategory": "Routine",
+    "title": "Adopt a Grounding Morning Routine",
+    "description": "Perform a warm oil massage (Abhyanga) before showering. Maintain a fixed daily schedule and aim for early bedtime.",
+    "rationale": "Vata dosha is erratic and mobile by nature. A predictable routine and the heavy, warm qualities of oil massage provide profound stabilization.",
+    "why": "Because your energy can be scattered, having a deeply grounding routine is essential. A warm oil massage in the morning will change your day.",
+    "shastraRef": "Ashtanga Hridayam, Sutrasthana 2",
+    "alternatives": [
+      "Just oil your feet and ears if short on time.",
+      "Wake up and go to sleep at the exact same times."
+    ],
+    "triggerObservations": [
+      "Vata Lifestyle",
+      "Vata Aggravation tendency",
+      "Vata Frame"
+    ]
+  },
+  {
+    "id": "rec_lifestyle_kapha_lifestyle",
+    "category": "Lifestyle",
+    "subCategory": "Routine",
+    "title": "Embrace an Invigorating Morning Routine",
+    "description": "Wake up before sunrise (ideally by 6 AM). Engage in vigorous exercise early in the day and completely avoid daytime sleeping.",
+    "rationale": "Kapha accumulates in the morning and is exacerbated by excessive sleep. Early rising and vigorous movement counteract Kapha's heavy, static qualities.",
+    "why": "To shake off that heavy feeling, it's vital to wake up early, before the sun, and get your body moving immediately. No daytime naps!",
+    "shastraRef": "Ashtanga Hridayam, Sutrasthana 2.1",
+    "alternatives": [
+      "Do 10 sun salutations right out of bed.",
+      "Take a brisk walk in the morning air."
+    ],
+    "triggerObservations": [
+      "Kapha Lifestyle",
+      "Kapha Aggravation tendency"
+    ]
+  },
+  {
+    "id": "rec_lifestyle_pitta_lifestyle",
+    "category": "Lifestyle",
+    "subCategory": "Routine",
+    "title": "Incorporate Non-Competitive Downtime",
+    "description": "Dedicate time each evening to relaxing, non-goal-oriented activities. Spend time in cooling environments and limit evening work.",
+    "rationale": "Pitta individuals are naturally driven and intense. Deliberate relaxation is necessary to prevent burnout and excessive accumulation of heat.",
+    "why": "You push yourself hard! To maintain your edge without burning out, you must schedule time to truly unwind, with no goals attached.",
+    "shastraRef": "Ashtanga Hridayam, Sutrasthana 2",
+    "alternatives": [
+      "Take a moonlit walk.",
+      "Read for pleasure, not for work."
+    ],
+    "triggerObservations": [
+      "Pitta Lifestyle",
+      "Pitta Aggravation tendency"
+    ]
+  },
+  {
+    "id": "rec_lifestyle_vata_aggravation",
+    "category": "Lifestyle",
+    "subCategory": "Environment",
+    "title": "Prioritize Warmth and Stability",
+    "description": "Keep your living space warm, reduce drafts, and minimize excessive travel or frequent changes to your schedule.",
+    "rationale": "Vata is aggravated by cold, dry, and mobile environments. Creating a stable, warm habitat supports Vata pacification.",
+    "why": "Your nervous system needs a break from constant movement and cold. Make your home a warm, cozy sanctuary.",
+    "shastraRef": "Charaka Samhita, Sutrasthana 20.14",
+    "alternatives": [
+      "Wear warm socks and a scarf.",
+      "Limit long commutes when possible."
+    ],
+    "triggerObservations": [
+      "Vata Aggravation tendency"
+    ]
+  },
+  {
+    "id": "rec_lifestyle_pitta_aggravation",
+    "category": "Lifestyle",
+    "subCategory": "Environment",
+    "title": "Seek Cooling and Calming Environments",
+    "description": "Spend time near water or in nature. Avoid midday sun exposure and intense, heated arguments or competitive environments.",
+    "rationale": "Pitta is aggravated by heat and intensity. Cooling environments and a relaxed atmosphere help dissipate excess Pitta.",
+    "why": "When you feel overheated or irritable, step away. Spend time near a lake, river, or just in a cool, shady spot in a park.",
+    "shastraRef": "Charaka Samhita, Sutrasthana 20.15",
+    "alternatives": [
+      "Take a walk in the evening breeze.",
+      "Use cooling essential oils like sandalwood."
+    ],
+    "triggerObservations": [
+      "Pitta Aggravation tendency"
+    ]
+  },
+  {
+    "id": "rec_lifestyle_kapha_aggravation",
+    "category": "Lifestyle",
+    "subCategory": "Environment",
+    "title": "Engage with Stimulating Environments",
+    "description": "Seek out new experiences, keep your living space bright and well-ventilated, and try dry brushing (Garshana) before your shower.",
+    "rationale": "Kapha is aggravated by cold, damp, and stagnant environments. Stimulation, warmth, and dryness counteract these qualities.",
+    "why": "Routine can sometimes make you feel stuck. Change things up! Brighten your room, try dry brushing, and seek out new activities.",
+    "shastraRef": "Charaka Samhita, Sutrasthana 20.16",
+    "alternatives": [
+      "Use a raw silk glove or brush for Garshana.",
+      "Open windows daily to let fresh air in."
+    ],
+    "triggerObservations": [
+      "Kapha Aggravation tendency"
+    ]
+  },
+  {
+    "id": "rec_lifestyle_dinacharya_adherent",
+    "category": "Lifestyle",
+    "subCategory": "Routine",
+    "title": "Refine Your Daily Practices",
+    "description": "Since you already have a good routine, refine it by adding Nasya (nasal oil drops) and Gandusha (oil pulling) in the morning.",
+    "rationale": "Consistent Dinacharya is excellent. Adding subtle therapies like Nasya clears the head channels (Shira), while Gandusha strengthens oral health.",
+    "why": "You have a great foundation! Let's take it to the next level with traditional practices like oil pulling to keep your senses sharp.",
+    "shastraRef": "Ashtanga Hridayam, Sutrasthana 2",
+    "alternatives": [
+      "Swish sesame oil in your mouth for 5 minutes.",
+      "Apply a drop of sesame oil to each nostril."
+    ],
+    "triggerObservations": [
+      "Dinacharya Adherent"
+    ]
+  },
+  {
+    "id": "rec_lifestyle_sedentary_mental",
+    "category": "Lifestyle",
+    "subCategory": "Occupation",
+    "title": "Incorporate Movement Breaks",
+    "description": "Take a 5-minute movement break every 45 minutes. Rest your eyes frequently by looking at distant objects, and eat lunch outside if possible.",
+    "rationale": "Sedentary work aggravates Kapha (physical stagnation) and Vata (mental strain). Regular movement and sensory breaks reset the doshas.",
+    "why": "Sitting at a desk all day is tough on your body and mind. Small, frequent movement breaks will help you stay focused and energized.",
+    "shastraRef": "Ashtanga Hridayam, Sutrasthana 4",
+    "alternatives": [
+      "Set a timer to stretch.",
+      "Do brief desk yoga."
+    ],
+    "triggerObservations": [
+      "Sedentary Mental Occupation"
+    ]
+  },
+  {
+    "id": "rec_lifestyle_vata_nidra_risk",
+    "category": "Lifestyle",
+    "subCategory": "Evening",
+    "title": "Establish a Screen-Free Wind Down",
+    "description": "Implement a strict screen-free hour before bed. Massage warm oil onto your feet and the crown of your head.",
+    "rationale": "Screens aggravate Vata and Rajas in the mind, hindering sleep. Oil massage pulls energy downward, grounding Vata for restful sleep.",
+    "why": "To help your mind settle down for the night, we need to disconnect from screens and use grounding practices like a foot massage.",
+    "shastraRef": "Ashtanga Hridayam, Sutrasthana 2",
+    "alternatives": [
+      "Read a physical book.",
+      "Listen to calming music."
+    ],
+    "triggerObservations": [
+      "Vata Nidra disturbance risk"
+    ]
+  },
+  {
+    "id": "rec_lifestyle_rajasic_activation",
+    "category": "Lifestyle",
+    "subCategory": "Evening",
+    "title": "Reduce Evening Stimulation",
+    "description": "Avoid news, intense discussions, and social media scrolling for at least two hours before sleep.",
+    "rationale": "Rajas (activity/turbulence) in the mind prevents the transition into the Tamasic state required for sleep. Reducing input calms Rajas.",
+    "why": "Your mind is highly active in the evening. To prepare for rest, we need to intentionally lower the amount of information you are processing.",
+    "shastraRef": "Charaka Samhita, Sutrasthana 11.36",
+    "alternatives": [
+      "Practice gentle journaling.",
+      "Spend time in quiet conversation."
+    ],
+    "triggerObservations": [
+      "Rajasic Manas activation"
+    ]
+  },
+  {
+    "id": "rec_lifestyle_sutika_kala",
+    "category": "Lifestyle",
+    "subCategory": "Special",
+    "title": "Follow the Postpartum Rest Protocol",
+    "description": "Prioritize deep rest, daily warm oil massages, and nutrient-dense, warming foods. Ask for and accept help with daily tasks.",
+    "rationale": "The postpartum period (Sutika Kala) involves a massive Vata aggravation due to empty space and loss of fluids. Deep nourishment and rest are mandatory.",
+    "why": "Your body has done incredible work. Right now, your only jobs are to rest, eat warming, nourishing foods, and bond with your baby.",
+    "shastraRef": "Kashyapa Samhita, Khilasthana 11",
+    "alternatives": [
+      "Have someone give you a gentle massage.",
+      "Eat warm rice porridge with ghee."
+    ],
+    "triggerObservations": [
+      "Sutika Kala (postpartum Vata)"
+    ]
+  },
+  {
+    "id": "rec_lifestyle_vishama_ahara_routine",
+    "category": "Lifestyle",
+    "subCategory": "Routine",
+    "title": "Use Anchors to Build Consistency",
+    "description": "If your schedule is erratic, use phone reminders to establish a fixed eating window, even if it's just a small snack at a set time.",
+    "rationale": "Vishama (irregular) habits aggravate Vata. Artificial anchors (like alarms) can help re-establish natural biological rhythms.",
+    "why": "Your routine is very unpredictable right now. Let's use technology to remind you to eat or take a break at the same times every day.",
+    "shastraRef": "Charaka Samhita, Vimanasthana 1.25",
+    "alternatives": [
+      "Set an alarm for 1 PM lunch.",
+      "Keep emergency healthy snacks in your bag."
+    ],
+    "triggerObservations": [
+      "Vishama Ahara Krama"
+    ]
+  },
+  {
+    "id": "rec_sleep_vata_nidra",
     "category": "Sleep",
     "subCategory": "Nidra",
-    "title": "Grounding Evening Routine",
-    "description": "Perform a warm oil massage (Abhyanga) on your feet and head before bed. Drink warm milk with nutmeg. Avoid screens 1 hour before sleep.",
-    "rationale": "Vata sleep disturbances are caused by excess mobility and dryness. Warm oil and milk provide grounding (Sthira).",
-    "why": "You experience difficulty falling asleep or staying asleep, pointing to Vata aggravation in the nervous system.",
+    "title": "Grounding Sleep Routine",
+    "description": "Massage the soles of your feet with warm sesame oil before bed. Drink half a cup of warm milk with a pinch of nutmeg.",
+    "rationale": "Vata Nidra disturbance is characterized by light, interrupted sleep. Heavy, warm qualities (oil, milk) and mild sedatives (nutmeg) pacify Vata.",
+    "why": "You're a light sleeper and easily woken. A warm foot massage and some warm spiced milk will help draw your energy down and settle your nervous system.",
     "shastraRef": "Charaka Samhita, Sutrasthana 21.52",
-    "alternatives": ["If milk is not tolerated, try almond milk or chamomile tea.", "Simply rub warm oil on the soles of your feet for 5 minutes."],
-    "triggerObservations": ["Vata in Manas", "Vata Nidra disturbance"]
+    "alternatives": [
+      "Wear warm socks to bed after oiling feet.",
+      "Take a warm bath before bed."
+    ],
+    "triggerObservations": [
+      "Vata Nidra disturbance",
+      "Vata in Manas"
+    ]
   },
   {
-    "id": "rec_mental_pitta",
+    "id": "rec_sleep_kapha_nidra",
+    "category": "Sleep",
+    "subCategory": "Nidra",
+    "title": "Invigorating Morning Start",
+    "description": "Wake up before 6 AM consistently. Do not hit snooze. Immediately engage in a vigorous morning practice or a cool splash of water.",
+    "rationale": "Kapha Nidra involves heavy, prolonged sleep and difficulty waking. Early rising during the Vata time of morning (before 6 AM) counteracts this heaviness.",
+    "why": "You love your sleep, but oversleeping makes you feel more groggy. The trick is to get up before 6 AM and get moving right away.",
+    "shastraRef": "Charaka Samhita, Sutrasthana 21.51",
+    "alternatives": [
+      "Put your alarm clock across the room.",
+      "Splash cold water on your face immediately."
+    ],
+    "triggerObservations": [
+      "Kapha Nidra tendency"
+    ]
+  },
+  {
+    "id": "rec_sleep_pitta_nidra",
+    "category": "Sleep",
+    "subCategory": "Nidra",
+    "title": "Cooling Sleep Environment",
+    "description": "Keep your bedroom very cool. Avoid problem-solving or intense work in the evening. Practice Sheetali pranayama before bed.",
+    "rationale": "Pitta can cause difficulty falling asleep due to an active, heated mind. A cool environment and cooling breathwork reduce Pitta.",
+    "why": "Your mind races with ideas and plans at night. Keep your room cool and practice some cooling breathing exercises to help you switch off.",
+    "shastraRef": "Charaka Samhita, Sutrasthana 21.53",
+    "alternatives": [
+      "Use breathable cotton sheets.",
+      "Rub a little coconut oil on your temples."
+    ],
+    "triggerObservations": [
+      "Pitta Nidra tendency"
+    ]
+  },
+  {
+    "id": "rec_sleep_sama_nidra",
+    "category": "Sleep",
+    "subCategory": "Nidra",
+    "title": "Maintain Healthy Sleep Rhythms",
+    "description": "Maintain your excellent sleep habits. You can enhance sleep quality further by massaging your scalp with Brahmi oil once a week.",
+    "rationale": "Balanced sleep (Sama Nidra) is a pillar of health. Occasional use of Medhya (intellect-promoting) oils like Brahmi supports mental clarity.",
+    "why": "Your sleep is healthy and restorative! To support your mind even more, treat yourself to a weekly scalp massage with calming oils.",
+    "shastraRef": "Ashtanga Hridayam, Sutrasthana 2",
+    "alternatives": [
+      "Continue your current routine.",
+      "Practice gentle gratitude before sleep."
+    ],
+    "triggerObservations": [
+      "Balanced Nidra"
+    ]
+  },
+  {
+    "id": "rec_sleep_vishama_nidra",
+    "category": "Sleep",
+    "subCategory": "Nidra",
+    "title": "Fix Your Sleep and Wake Times",
+    "description": "Go to bed and wake up at the exact same time every day, regardless of how well you slept the night before.",
+    "rationale": "Irregular sleep patterns (Vishama Nidra) severely aggravate Vata. Consistency forces the circadian rhythm to reset.",
+    "why": "Your sleep pattern is all over the place. To fix it, you have to be strict: wake up at the same time every single day, even on weekends.",
+    "shastraRef": "Charaka Samhita, Sutrasthana 21.36",
+    "alternatives": [
+      "Do not nap during the day to ensure tiredness at night.",
+      "Use bright light therapy in the morning."
+    ],
+    "triggerObservations": [
+      "Vishama Nidra"
+    ]
+  },
+  {
+    "id": "rec_sleep_vata_manas_nightmares",
+    "category": "Sleep",
+    "subCategory": "Nidra",
+    "title": "Calming Evening Routine for the Mind",
+    "description": "Establish a deeply calming routine. Consider taking Ashwagandha with warm milk before bed to calm the nervous system.",
+    "rationale": "Anxious dreams or nightmares indicate Vata disturbance in the Manovaha Srotas (channels of the mind). Ashwagandha is a grounding adaptogen.",
+    "why": "If your sleep is troubled by active or anxious dreams, we need to soothe your nervous system deeply before you close your eyes.",
+    "shastraRef": "Charaka Samhita, Chikitsasthana 1.1",
+    "alternatives": [
+      "Listen to a guided yoga nidra meditation.",
+      "Journal your worries to get them out of your head."
+    ],
+    "triggerObservations": [
+      "Vata Manas disturbance (nightmares)"
+    ]
+  },
+  {
+    "id": "rec_sleep_low_ojas_sleep",
+    "category": "Sleep",
+    "subCategory": "Nidra",
+    "title": "Prioritize Maximum Rest",
+    "description": "Treat 8+ hours of sleep as an absolute non-negotiable medical requirement. Consider restorative herbs like Shatavari or Ashwagandha.",
+    "rationale": "Sleep is one of the three pillars of life (Upastambha) and is essential for rebuilding depleted Ojas. Without adequate sleep, recovery is impossible.",
+    "why": "Your deep energy reserves are low. Right now, sleep is your most important medicine. Protect your 8 hours fiercely.",
+    "shastraRef": "Charaka Samhita, Sutrasthana 21.35",
+    "alternatives": [
+      "Go to bed by 9:30 PM.",
+      "Take short, restorative naps (if you don't have high Kapha)."
+    ],
+    "triggerObservations": [
+      "Low Ojas (sleep)"
+    ]
+  },
+  {
+    "id": "rec_sleep_kapha_morning",
+    "category": "Sleep",
+    "subCategory": "Nidra",
+    "title": "Activate Immediately on Waking",
+    "description": "Splash cold water on your face and do 5-10 Surya Namaskar (Sun Salutations) the moment you get out of bed.",
+    "rationale": "Kapha accumulation overnight causes morning lethargy. Immediate, warming movement and cold stimulus clear the channels.",
+    "why": "Mornings are tough for you. The fastest way to feel better is to jumpstart your system with movement the moment your feet hit the floor.",
+    "shastraRef": "Ashtanga Hridayam, Sutrasthana 2",
+    "alternatives": [
+      "Drink hot water with lemon first thing.",
+      "Do some brisk stretching."
+    ],
+    "triggerObservations": [
+      "Kapha Morning Tendency"
+    ]
+  },
+  {
+    "id": "rec_mental_vata_manas",
     "category": "Mental",
     "subCategory": "Manas",
-    "title": "Cultivate Surrender and Cool the Mind",
-    "description": "Practice cooling pranayama (like Sheetali). Engage in activities where you are not competing. Spend time in nature, especially near water or in moonlight.",
-    "rationale": "Pitta mind tends towards intensity and over-focus. Cooling practices reduce excess Rajas.",
-    "why": "Your responses indicate intensity, frustration, or a highly driven mental state, reflecting Pitta in Manas.",
-    "shastraRef": "Sushruta Samhita, Sharirasthana 4",
-    "alternatives": ["Take a walk in the evening without a goal.", "Practice 5 minutes of alternate nostril breathing daily."],
-    "triggerObservations": ["Pitta Manas (Rajasic/Tikshna)"]
+    "title": "Implement Grounding Practices",
+    "description": "Create a strict daily schedule, practice seated meditation, and perform daily Abhyanga. Ashwagandha can be highly beneficial.",
+    "rationale": "A Rajasic/Chala (mobile) Vata mind is prone to anxiety and overthinking. Heavy, stabilizing routines and herbs anchor the mind.",
+    "why": "Your mind is quick but can easily become anxious or scattered. A solid routine and grounding practices will help you feel more centered.",
+    "shastraRef": "Charaka Samhita, Vimanasthana 8.89",
+    "alternatives": [
+      "Practice slow, deep belly breathing.",
+      "Focus on one task at a time (no multitasking)."
+    ],
+    "triggerObservations": [
+      "Vata Manas (Rajasic)",
+      "Vata Manas (Chala)"
+    ]
+  },
+  {
+    "id": "rec_mental_pitta_manas",
+    "category": "Mental",
+    "subCategory": "Manas",
+    "title": "Practice Surrender and Cooling Breathwork",
+    "description": "Engage in practices of surrender. Do Sheetali (cooling) pranayama daily, and spend frequent time in lush nature.",
+    "rationale": "A Tikshna (sharp) Pitta mind is prone to anger, judgment, and burnout. Cooling practices and releasing control pacify Pitta.",
+    "why": "You have a sharp, focused mind, but it can run hot, leading to frustration. Cooling breathwork and time in nature will soften this intensity.",
+    "shastraRef": "Charaka Samhita, Vimanasthana 8.89",
+    "alternatives": [
+      "Practice Sheetali (rolling the tongue and breathing in).",
+      "Volunteer for a cause to cultivate compassion."
+    ],
+    "triggerObservations": [
+      "Pitta Manas (Rajasic/Tikshna)",
+      "Pitta Manas (Tikshna)"
+    ]
+  },
+  {
+    "id": "rec_mental_kapha_manas",
+    "category": "Mental",
+    "subCategory": "Manas",
+    "title": "Stimulate the Mind with New Experiences",
+    "description": "Break your routine regularly. Engage in stimulating movement, seek out new experiences, and practice Kapalabhati pranayama.",
+    "rationale": "A Tamasic/Manda (slow) Kapha mind can become lethargic or depressed. Stimulation, vigorous breathing, and novelty remove stagnation.",
+    "why": "When you feel stuck or unmotivated, you need to intentionally shake things up. Try a new activity or do some energizing breathing exercises.",
+    "shastraRef": "Charaka Samhita, Vimanasthana 8.89",
+    "alternatives": [
+      "Take a different route to work.",
+      "Do 3 rounds of Kapalabhati breathing in the morning."
+    ],
+    "triggerObservations": [
+      "Kapha Manas (Tamasic/Manda)",
+      "Kapha Manas (Sthira)"
+    ]
+  },
+  {
+    "id": "rec_mental_excessive_rajas",
+    "category": "Mental",
+    "subCategory": "Manas",
+    "title": "Implement a Digital Detox",
+    "description": "Schedule regular digital detoxes, immerse yourself in nature, and practice 'Mouna' (intentional silence) for a few hours weekly.",
+    "rationale": "Excessive Rajas (agitation) is fueled by constant sensory input. Withdrawing the senses (Pratyahara) allows the mind to calm.",
+    "why": "Your mind is overstimulated by constant input. Give yourself the gift of silence and unplug from your devices regularly.",
+    "shastraRef": "Bhagavad Gita 14.12",
+    "alternatives": [
+      "Leave your phone in another room during dinner.",
+      "Take a silent walk in the woods."
+    ],
+    "triggerObservations": [
+      "Excessive Rajas in Manas"
+    ]
+  },
+  {
+    "id": "rec_mental_manasika_ama",
+    "category": "Mental",
+    "subCategory": "Manas",
+    "title": "Clear Mental Toxins",
+    "description": "Start a daily journaling practice to process emotions. Adopt a strictly Sattvic diet and consider a contemplative practice like Vipassana.",
+    "rationale": "Manasika Ama refers to unprocessed emotions and trauma. Processing these through journaling and eating pure foods clears the mental channels.",
+    "why": "Just as the body holds onto toxins, the mind can hold onto unprocessed emotions. Journaling is a powerful way to help digest these feelings.",
+    "shastraRef": "Charaka Samhita, Sutrasthana 11.54",
+    "alternatives": [
+      "Write three pages stream-of-consciousness every morning.",
+      "Talk to a trusted friend or therapist."
+    ],
+    "triggerObservations": [
+      "Manasika Ama"
+    ]
+  },
+  {
+    "id": "rec_mental_emotional_eating",
+    "category": "Mental",
+    "subCategory": "Manas",
+    "title": "Pause Before Meals",
+    "description": "Take three slow, deep breaths before taking your first bite of food. Ask yourself if you are physically hungry or emotionally hungry.",
+    "rationale": "Emotional eating disconnects the mind from the physical Agni. Taking a pause re-establishes the connection between Manas (mind) and Anna (food).",
+    "why": "Food is often used for comfort. By taking three deep breaths before you eat, you give yourself a moment to check in with what you really need.",
+    "shastraRef": "Ashtanga Hridayam, Sutrasthana 8",
+    "alternatives": [
+      "Drink a glass of water and wait 10 minutes when a craving hits.",
+      "Keep a food and mood journal."
+    ],
+    "triggerObservations": [
+      "Emotional eating pattern"
+    ]
+  },
+  {
+    "id": "rec_mental_vata_conflict",
+    "category": "Mental",
+    "subCategory": "Manas",
+    "title": "Support Grounded Communication",
+    "description": "Consider herbs like Vacha (calamus) in small amounts to clarify speech. Practice assertiveness training or non-violent communication.",
+    "rationale": "Vata types often avoid conflict due to fear or anxiety. Vacha is a specific herb for the throat chakra and clarifying communication.",
+    "why": "Conflict can be very anxiety-inducing for you. Practicing grounded communication techniques will help you speak your truth without fear.",
+    "shastraRef": "Bhavaprakasha, Haritakyadi Varga",
+    "alternatives": [
+      "Write down what you want to say before a difficult conversation.",
+      "Practice speaking slowly and deliberately."
+    ],
+    "triggerObservations": [
+      "Vata Manas conflict avoidance"
+    ]
+  },
+  {
+    "id": "rec_mental_kapha_withdrawal",
+    "category": "Mental",
+    "subCategory": "Manas",
+    "title": "Engage with Community",
+    "description": "Prioritize 'Satsanga' (uplifting company), engage in regular social activities, and find an accountability partner for your goals.",
+    "rationale": "Kapha in a Tamasic state tends toward isolation and lethargy. Positive social engagement provides external stimulation to overcome inertia.",
+    "why": "When you feel like withdrawing from the world, that's exactly when you need a friend. Reach out and connect with uplifting people.",
+    "shastraRef": "Charaka Samhita, Sutrasthana 11.54",
+    "alternatives": [
+      "Join a club or group class.",
+      "Schedule a weekly call with a friend."
+    ],
+    "triggerObservations": [
+      "Kapha Manas (Tamasic) withdrawal"
+    ]
+  },
+  {
+    "id": "rec_mental_low_ojas_mental",
+    "category": "Mental",
+    "subCategory": "Manas",
+    "title": "Nourish the Mind with Medhya Rasayanas",
+    "description": "Incorporate Brahmi (Gotu Kola or Bacopa), ideally taken with ghee. Follow a strict Medhya Rasayana protocol for mental rejuvenation.",
+    "rationale": "Low mental Ojas presents as brain fog, poor memory, and anxiety. Medhya Rasayanas specific for the brain rebuild the nervous system tissue.",
+    "why": "Your mental energy is depleted, leading to brain fog or fatigue. We need to nourish your brain deeply with specific herbs like Brahmi and healthy fats like ghee.",
+    "shastraRef": "Charaka Samhita, Chikitsasthana 1.3",
+    "alternatives": [
+      "Take 1 tsp of Brahmi ghee with warm water in the morning.",
+      "Ensure you are eating enough healthy fats."
+    ],
+    "triggerObservations": [
+      "Low Ojas (mental)"
+    ]
+  },
+  {
+    "id": "rec_mental_sattvic_deepen",
+    "category": "Mental",
+    "subCategory": "Manas",
+    "title": "Deepen Your Spiritual Practice",
+    "description": "Increase your time spent in Satsanga (spiritual company), study uplifting texts, and practice Dana (charitable giving).",
+    "rationale": "A Sattvic mind is characterized by clarity, peace, and truth. Engaging in higher spiritual practices maintains and deepens this state.",
+    "why": "You have a beautifully clear and peaceful mind. Keep nourishing it by reading inspiring texts, spending time with wise people, and giving back.",
+    "shastraRef": "Bhagavad Gita 14.11",
+    "alternatives": [
+      "Read a philosophical or spiritual book daily.",
+      "Volunteer your time or resources."
+    ],
+    "triggerObservations": [
+      "Sattvic Manas tendency"
+    ]
+  },
+  {
+    "id": "rec_exercise_vata_bala",
+    "category": "Exercise",
+    "subCategory": "Bala",
+    "title": "Choose Gentle, Grounding Exercises",
+    "description": "Focus on gentle yoga, walking, or swimming. Avoid high-intensity, erratic workouts. Always do a warm oil massage before exercise.",
+    "rationale": "Vata types have lower stamina (Bala) and are prone to joint wear. Gentle, consistent exercise builds strength without depleting energy.",
+    "why": "High-intensity workouts might actually drain you. Stick to gentle, grounding exercises like yoga or walking, and be sure to protect your joints.",
+    "shastraRef": "Sushruta Samhita, Chikitsasthana 24",
+    "alternatives": [
+      "Try Tai Chi or Qigong.",
+      "Limit workouts to 30 minutes of moderate effort."
+    ],
+    "triggerObservations": [
+      "Vata Bala (low stamina)"
+    ]
+  },
+  {
+    "id": "rec_exercise_pitta_bala",
+    "category": "Exercise",
+    "subCategory": "Bala",
+    "title": "Engage in Cooling, Moderate Exercises",
+    "description": "Enjoy swimming, moderate yoga, or cycling. Strictly avoid exercising in the midday sun or becoming overly competitive.",
+    "rationale": "Pitta types are strong but can overheat easily. Cooling exercises and a non-competitive mindset prevent Pitta aggravation.",
+    "why": "You love a challenge, but pushing too hard can cause you to overheat. Enjoy moderate exercises like swimming, and remember to have fun, not just win.",
+    "shastraRef": "Sushruta Samhita, Chikitsasthana 24",
+    "alternatives": [
+      "Exercise in the early morning or evening.",
+      "Focus on endurance rather than max effort."
+    ],
+    "triggerObservations": [
+      "Pitta Bala (competitive)"
+    ]
+  },
+  {
+    "id": "rec_exercise_kapha_sedentary",
+    "category": "Exercise",
+    "subCategory": "Bala",
+    "title": "Commit to Daily Vigorous Exercise",
+    "description": "Daily, sweat-inducing exercise is mandatory. Focus on brisk walking, jogging, vigorous yoga (sun salutations), or cardio workouts.",
+    "rationale": "Kapha types have the most physical strength and endurance but lack motivation. Vigorous exercise is essential to mobilize Kapha and prevent weight gain.",
+    "why": "Your body is built for endurance! You need strong, vigorous daily exercise to feel your best and clear out any physical or mental heaviness.",
+    "shastraRef": "Sushruta Samhita, Chikitsasthana 24",
+    "alternatives": [
+      "Do a sweaty workout first thing in the morning.",
+      "Find a workout buddy to keep you accountable."
+    ],
+    "triggerObservations": [
+      "Kapha Sedentary Pattern"
+    ]
+  },
+  {
+    "id": "rec_exercise_kapha_stiffness",
+    "category": "Exercise",
+    "subCategory": "Bala",
+    "title": "Warm Up Thoroughly Before Exercising",
+    "description": "Never skip your warm-up. Take a hot shower before exercising or spend extra time mobilizing joints before a workout.",
+    "rationale": "Kapha accumulation can cause stiffness in the channels and joints. Heat and gradual mobilization liquefy Kapha, preventing injury.",
+    "why": "Because you tend to feel stiff, warming up is non-negotiable for you. Try a quick hot shower before your workout to loosen up your muscles.",
+    "shastraRef": "Ashtanga Hridayam, Sutrasthana 2",
+    "alternatives": [
+      "Do 10 minutes of dynamic stretching.",
+      "Use a heating pad on stiff areas before moving."
+    ],
+    "triggerObservations": [
+      "Kapha Stiffness Pattern"
+    ]
+  },
+  {
+    "id": "rec_exercise_vata_asthi",
+    "category": "Exercise",
+    "subCategory": "Bala",
+    "title": "Protect Your Joints",
+    "description": "Focus on low-impact, joint-supporting exercises. Apply warm sesame oil or Mahanarayan oil to your joints before moving.",
+    "rationale": "Vata easily accumulates in the Asthi Dhatu (bone tissue), causing joint cracking and pain. Lubrication and low impact protect the joints.",
+    "why": "Your joints need some extra love. Avoid high-impact jumping and always lubricate your joints with warm oil before you exercise.",
+    "shastraRef": "Charaka Samhita, Chikitsasthana 28",
+    "alternatives": [
+      "Try water aerobics or swimming.",
+      "Focus on isometric strengthening exercises."
+    ],
+    "triggerObservations": [
+      "Vata in Asthivaha Srotas"
+    ]
+  },
+  {
+    "id": "rec_exercise_low_ojas_exercise",
+    "category": "Exercise",
+    "subCategory": "Bala",
+    "title": "Shift to Restorative Movement",
+    "description": "Temporarily stop all high-intensity exercise. Focus solely on restorative practices like Yoga Nidra, gentle stretching, and short walks.",
+    "rationale": "When Ojas is depleted, exercise causes further tissue depletion (Kshaya). Energy must be conserved for healing.",
+    "why": "Your body is asking for deep rest. Right now, a hard workout will do more harm than good. Stick to very gentle stretching until your energy returns.",
+    "shastraRef": "Charaka Samhita, Sutrasthana 17",
+    "alternatives": [
+      "Do 15 minutes of gentle floor stretches.",
+      "Practice Yoga Nidra (yogic sleep) daily."
+    ],
+    "triggerObservations": [
+      "Low Ojas (exercise)"
+    ]
+  },
+  {
+    "id": "rec_seasonal_pitta_summer",
+    "category": "Seasonal",
+    "subCategory": "Ritucharya",
+    "title": "Adopt a Pitta-Pacifying Summer Routine",
+    "description": "In summer, use coconut oil for massage, drink cooling herbal teas, and ensure you rest during the peak heat of the day.",
+    "rationale": "Pitta naturally aggravates in Grishma Ritu (summer). Cooling foods, herbs, and avoiding the sun prevent Pitta-related disorders.",
+    "why": "Summer heat easily gets to you. Keep your cool by using coconut oil, sipping mint water, and staying in the shade during midday.",
+    "shastraRef": "Ashtanga Hridayam, Sutrasthana 3",
+    "alternatives": [
+      "Eat more juicy fruits like watermelon.",
+      "Wear light, breathable cotton or linen."
+    ],
+    "triggerObservations": [
+      "Pitta Aggravation tendency (summer)"
+    ]
+  },
+  {
+    "id": "rec_seasonal_vata_autumn",
+    "category": "Seasonal",
+    "subCategory": "Ritucharya",
+    "title": "Adopt a Vata-Pacifying Autumn Routine",
+    "description": "In autumn, favor warm, heavy, and unctuous foods (soups, stews). Perform daily warm sesame oil massage.",
+    "rationale": "Vata naturally aggravates in Sharad and Hemanta Ritu (autumn/early winter). Grounding, warming regimens counteract the cold, dry winds.",
+    "why": "The windy, dry autumn weather can make you feel scattered. Counteract this with warm, heavy soups and a daily oil massage.",
+    "shastraRef": "Ashtanga Hridayam, Sutrasthana 3",
+    "alternatives": [
+      "Wear a scarf to protect your neck from the wind.",
+      "Eat more root vegetables."
+    ],
+    "triggerObservations": [
+      "Vata Aggravation tendency (autumn)"
+    ]
+  },
+  {
+    "id": "rec_seasonal_kapha_spring",
+    "category": "Seasonal",
+    "subCategory": "Ritucharya",
+    "title": "Adopt a Kapha-Pacifying Spring Routine",
+    "description": "In spring, eat lighter, spicier foods. Increase your exercise intensity and try dry massage (Garshana) to stimulate lymph.",
+    "rationale": "Kapha naturally liquefies and aggravates in Vasanta Ritu (spring). Light, dry, and active regimens prevent spring colds and allergies.",
+    "why": "Spring is the time to shed winter sluggishness. Eat lighter foods, add more spices, and increase your exercise to feel vibrant.",
+    "shastraRef": "Ashtanga Hridayam, Sutrasthana 3",
+    "alternatives": [
+      "Drink ginger and black pepper tea.",
+      "Try a short, supervised spring cleanse."
+    ],
+    "triggerObservations": [
+      "Kapha Aggravation tendency (winter/spring)"
+    ]
+  },
+  {
+    "id": "rec_seasonal_vishama_agni_seasonal",
+    "category": "Seasonal",
+    "subCategory": "Ritucharya",
+    "title": "Adjust Digestive Herbs Seasonally",
+    "description": "Use warming herbs like Trikatu in winter and cooling herbs like Chandana (sandalwood) or coriander in the summer.",
+    "rationale": "Vishama Agni is highly sensitive to environmental changes. Adapting digestive spices to the season maintains balance year-round.",
+    "why": "Your digestion changes with the weather. Keep it steady by using warming spices in the winter and cooling herbs in the summer.",
+    "shastraRef": "Charaka Samhita, Sutrasthana 6",
+    "alternatives": [
+      "Switch from ginger tea in winter to mint tea in summer.",
+      "Pay close attention to how your stomach feels as seasons change."
+    ],
+    "triggerObservations": [
+      "Vishama Agni seasonal sensitivity"
+    ]
+  },
+  {
+    "id": "rec_seasonal_sama_agni_seasonal",
+    "category": "Seasonal",
+    "subCategory": "Ritucharya",
+    "title": "Incorporate Seasonal Rasayanas",
+    "description": "Use seasonal rejuvenatives (Rasayanas) \u2014 Chyawanprash in winter, and Amalaki or Brahma Rasayana in the summer.",
+    "rationale": "Sama Agni allows for excellent assimilation of Rasayanas. Seasonal adaptogens preserve health and build Ojas.",
+    "why": "Your digestion is strong enough to really benefit from rejuvenative herbs. Try taking Chyawanprash in the winter for immunity.",
+    "shastraRef": "Ashtanga Hridayam, Sutrasthana 3",
+    "alternatives": [
+      "Eat seasonal, local produce.",
+      "Take a spoonful of Chyawanprash daily in cold months."
+    ],
+    "triggerObservations": [
+      "Sama Agni (seasonal)"
+    ]
+  },
+  {
+    "id": "rec_spiritual_sattvic_deepen_spiritual",
+    "category": "Spiritual",
+    "subCategory": "Practice",
+    "title": "Engage in Advanced Contemplation",
+    "description": "Deepen your practice through Shravana (listening to wisdom), Manana (reflection), and Nididhyasana (deep meditation).",
+    "rationale": "A Sattvic mind is prepared for higher spiritual pursuits. These classical Vedanta practices lead to self-realization.",
+    "why": "You have the mental clarity for deep spiritual work. Spend time studying wisdom texts, reflecting on them, and meditating.",
+    "shastraRef": "Vivekachudamani",
+    "alternatives": [
+      "Join a study group for spiritual texts.",
+      "Dedicate 30 minutes daily to silent meditation."
+    ],
+    "triggerObservations": [
+      "Sattvic Manas tendency"
+    ]
+  },
+  {
+    "id": "rec_spiritual_vata_karma_yoga",
+    "category": "Spiritual",
+    "subCategory": "Practice",
+    "title": "Find Grounding in Karma Yoga",
+    "description": "Engage in Karma Yoga (selfless action). Find spiritual practice in physical, grounded tasks rather than just philosophical contemplation.",
+    "rationale": "Vata minds can become ungrounded if spiritual practice is purely intellectual or abstract. Action-oriented service grounds the energy.",
+    "why": "Too much philosophy can make you feel ungrounded. Try finding your spiritual practice in acts of service or mindful physical work.",
+    "shastraRef": "Bhagavad Gita, Chapter 3",
+    "alternatives": [
+      "Volunteer at an animal shelter or food bank.",
+      "Practice mindfulness while doing household chores."
+    ],
+    "triggerObservations": [
+      "Vata Manas existential searching"
+    ]
+  },
+  {
+    "id": "rec_spiritual_kapha_community",
+    "category": "Spiritual",
+    "subCategory": "Practice",
+    "title": "Seek Spiritual Community (Satsanga)",
+    "description": "Join a spiritual community, attend group meditations, or engage in regular volunteer work with others.",
+    "rationale": "Kapha in a Tamasic state needs external motivation and connection. Group energy provides the necessary upliftment.",
+    "why": "Practicing alone can be difficult for you right now. Joining a group or community will give you the energy and inspiration you need.",
+    "shastraRef": "Bhagavad Gita",
+    "alternatives": [
+      "Find a local meditation or yoga group.",
+      "Commit to a regular group volunteering schedule."
+    ],
+    "triggerObservations": [
+      "Kapha Manas (Tamasic) disconnected"
+    ]
+  },
+  {
+    "id": "rec_spiritual_ojas_brahmacharya",
+    "category": "Spiritual",
+    "subCategory": "Practice",
+    "title": "Conserve Your Deep Vitality",
+    "description": "Practice Brahmacharya (energy conservation): reduce social media, limit sensory overstimulation, and conserve sexual energy.",
+    "rationale": "Ojas depletion requires strict conservation of all vital energies. Brahmacharya in thoughts, words, and actions prevents further depletion.",
+    "why": "You are running on empty. It's time to deeply conserve your energy\u2014limit scrolling, talking too much, and intense sensory experiences.",
+    "shastraRef": "Patanjali Yoga Sutras 2.38",
+    "alternatives": [
+      "Take a vow of silence for one day a week.",
+      "Significantly reduce screen time."
+    ],
+    "triggerObservations": [
+      "Ojas Depletion"
+    ]
+  },
+  {
+    "id": "rec_spiritual_rajasic_tamasic",
+    "category": "Spiritual",
+    "subCategory": "Practice",
+    "title": "Cultivate Purity (Sattva)",
+    "description": "Adopt a strictly Sattvic diet, eliminate stimulants (caffeine, alcohol), and spend significant time in quiet nature.",
+    "rationale": "When Rajas and Tamas dominate, the mind is caught between agitation and lethargy. Cultivating Sattva through diet and environment is the first step.",
+    "why": "Your mind fluctuates between feeling agitated and lethargic. The best medicine is a pure, simple diet and spending quiet time in nature.",
+    "shastraRef": "Bhagavad Gita 14",
+    "alternatives": [
+      "Eat fresh, simple, lightly cooked meals.",
+      "Go for a walk in a forest or park daily."
+    ],
+    "triggerObservations": [
+      "Rajasic-Tamasic Manas"
+    ]
+  },
+  {
+    "id": "rec_ojas_low_ojas_protocol",
+    "category": "Ojas",
+    "subCategory": "Rebuilding",
+    "title": "Start an Ojas-Building Diet",
+    "description": "Include Ojas-building foods daily: warm milk with ghee, soaked almonds, dates, and Ashwagandha or Shatavari.",
+    "rationale": "Low Ojas compromises immunity and vitality. Sweet, heavy, and unctuous foods combined with adaptogenic herbs rebuild this vital essence.",
+    "why": "Your deep energy reserves need rebuilding. Make a daily habit of having warm milk with a little ghee and dates to nourish yourself.",
+    "shastraRef": "Charaka Samhita, Sutrasthana 17",
+    "alternatives": [
+      "Eat 5 soaked, peeled almonds every morning.",
+      "Take a high-quality Ashwagandha supplement."
+    ],
+    "triggerObservations": [
+      "Low Ojas"
+    ]
+  },
+  {
+    "id": "rec_ojas_ojas_depletion_complete",
+    "category": "Ojas",
+    "subCategory": "Rebuilding",
+    "title": "Initiate Complete Rest and Rasayana",
+    "description": "Implement a protocol of complete rest. Take Rasayanas like Chyawanprash, Amalaki, and Brahmi under guidance.",
+    "rationale": "Severe Ojas depletion (Ojo Kshaya) is a critical state requiring immediate cessation of draining activities and intensive rejuvenative therapy.",
+    "why": "You are severely depleted. You must stop pushing yourself, rest deeply, and use strong rejuvenative herbs like Chyawanprash to recover.",
+    "shastraRef": "Charaka Samhita, Sutrasthana 17.73",
+    "alternatives": [
+      "Take time off work if possible.",
+      "Focus entirely on gentle recovery, no exertion."
+    ],
+    "triggerObservations": [
+      "Ojas Depletion"
+    ]
+  },
+  {
+    "id": "rec_ojas_high_ojas_maintain",
+    "category": "Ojas",
+    "subCategory": "Maintenance",
+    "title": "Preserve Your Vitality",
+    "description": "Maintain your high Ojas by continuing early sleep habits, eating Sattvic food, and practicing mindfulness in speech and action.",
+    "rationale": "High Ojas is a sign of excellent health. It must be protected from degradation by maintaining the wholesome habits that built it.",
+    "why": "You have excellent vitality and immunity! Protect this treasure by sticking to your healthy routines and avoiding excessive stress.",
+    "shastraRef": "Charaka Samhita, Sutrasthana 30",
+    "alternatives": [
+      "Practice gratitude daily.",
+      "Avoid excessive exposure to negative news or environments."
+    ],
+    "triggerObservations": [
+      "High Ojas"
+    ]
+  },
+  {
+    "id": "rec_ojas_sutika_ojas",
+    "category": "Ojas",
+    "subCategory": "Rebuilding",
+    "title": "Postpartum Ojas Rebuilding",
+    "description": "Follow a strict 40-day postpartum protocol: consume copious amounts of ghee, warm milk, dates, and rest as much as possible.",
+    "rationale": "Childbirth naturally depletes Ojas and aggravates Vata. The 40-day rest period is critical for rebuilding the mother's vitality.",
+    "why": "Childbirth has used a lot of your deep energy. Focus on eating nourishing, rich foods like ghee and dates, and rest as much as you can for 40 days.",
+    "shastraRef": "Kashyapa Samhita, Khilasthana",
+    "alternatives": [
+      "Have bone broth or rich vegetarian soups daily.",
+      "Avoid cold foods and drinks entirely."
+    ],
+    "triggerObservations": [
+      "Sutika Kala (postpartum Vata)"
+    ]
+  },
+  {
+    "id": "rec_ojas_ojas_seeking",
+    "category": "Ojas",
+    "subCategory": "Cravings",
+    "title": "Address the Root of Cravings",
+    "description": "When craving sweets, recognize it as a need for Ojas. Choose sweet, nourishing foods (like sweet potatoes or dates) instead of processed sugar.",
+    "rationale": "Cravings for sweets are often a misdirected desire for Ojas. Providing true nourishment satisfies the craving without toxic load.",
+    "why": "Your sweet cravings are actually your body asking for deep nourishment. Reach for a date or a sweet potato instead of candy.",
+    "shastraRef": "Charaka Samhita, Sutrasthana 26",
+    "alternatives": [
+      "Drink a cup of warm, spiced milk.",
+      "Eat a small bowl of rice pudding made with natural sweeteners."
+    ],
+    "triggerObservations": [
+      "Ojas seeking (cravings)"
+    ]
+  },
+  {
+    "id": "rec_womens_health_vishama_artava",
+    "category": "Women's Health",
+    "subCategory": "Artava",
+    "title": "Soothe Irregularity with Warmth",
+    "description": "Massage your lower belly with warm castor oil before your cycle begins. Eat warm, nourishing foods and consider taking Shatavari.",
+    "rationale": "Vishama (irregular) cycles are driven by Vata. Warmth, unctuousness (castor oil), and Vata-pacifying herbs like Shatavari regulate the flow.",
+    "why": "To help regulate your cycle, try massaging your lower abdomen with warm castor oil in the days leading up to your period.",
+    "shastraRef": "Bhavaprakasha, Nighantu",
+    "alternatives": [
+      "Drink warm ginger tea daily.",
+      "Keep your lower back and abdomen warm."
+    ],
+    "triggerObservations": [
+      "Vishama Artava (Vata)"
+    ]
+  },
+  {
+    "id": "rec_womens_health_pitta_artava",
+    "category": "Women's Health",
+    "subCategory": "Artava",
+    "title": "Cool Excess Heat During Your Cycle",
+    "description": "Favor cooling herbs like Lodhra or Shatavari. Strictly avoid heating foods, caffeine, and intense exercise during your cycle.",
+    "rationale": "Heavy or hot cycles indicate Pitta aggravation in the Artavavaha Srotas. Cooling practices reduce bleeding and inflammation.",
+    "why": "If your cycles run hot or heavy, your body needs cooling. Avoid spicy foods and intense workouts during this time.",
+    "shastraRef": "Charaka Samhita, Chikitsasthana 30",
+    "alternatives": [
+      "Drink coriander or fennel tea.",
+      "Rest in cool environments."
+    ],
+    "triggerObservations": [
+      "Pitta Artava (excess)"
+    ]
+  },
+  {
+    "id": "rec_womens_health_kashtartava",
+    "category": "Women's Health",
+    "subCategory": "Artava",
+    "title": "Relieve Painful Cycles",
+    "description": "Apply a warm castor oil pack to your abdomen. Drink Dashamula decoction or strong ginger tea to ease cramps.",
+    "rationale": "Pain (Kashtartava) is always associated with Vata. Anti-spasmodic herbs (Dashamula) and localized heat relieve the obstruction causing pain.",
+    "why": "For painful cramps, warmth is your best friend. A warm castor oil pack and some ginger tea can provide significant relief.",
+    "shastraRef": "Sushruta Samhita, Sharirasthana",
+    "alternatives": [
+      "Use a hot water bottle on your lower back.",
+      "Practice gentle, restorative yoga poses like Child's Pose."
+    ],
+    "triggerObservations": [
+      "Kashtartava (painful periods)"
+    ]
+  },
+  {
+    "id": "rec_womens_health_vata_pms",
+    "category": "Women's Health",
+    "subCategory": "PMS",
+    "title": "Ground Yourself in the Luteal Phase",
+    "description": "In the week before your period, stick to a strict routine, reduce Vata-aggravating foods (cold, dry), and take Ashwagandha.",
+    "rationale": "Vata PMS (anxiety, bloating, insomnia) requires proactive grounding in the luteal phase before symptoms peak.",
+    "why": "If you tend to feel anxious or bloated before your period, start grounding yourself a week prior. Eat warm foods and stick to a routine.",
+    "shastraRef": "Charaka Samhita, Chikitsasthana 30",
+    "alternatives": [
+      "Get extra sleep in the week before your period.",
+      "Take warm baths with Epsom salts."
+    ],
+    "triggerObservations": [
+      "Vata PMS Pattern"
+    ]
+  },
+  {
+    "id": "rec_womens_health_pitta_pms",
+    "category": "Women's Health",
+    "subCategory": "PMS",
+    "title": "Cool Down Before Your Cycle",
+    "description": "In the week before your period, drink Shatavari milk, eat cooling foods, and reduce spicy, sour, and salty tastes.",
+    "rationale": "Pitta PMS (irritability, acne, breast tenderness) needs cooling and soothing therapies before the cycle begins.",
+    "why": "If you get irritable or break out before your period, your body is running too hot. Cool down with Shatavari milk and mild foods.",
+    "shastraRef": "Charaka Samhita, Chikitsasthana 30",
+    "alternatives": [
+      "Avoid alcohol and coffee in the week before your period.",
+      "Engage in calming activities like walking in nature."
+    ],
+    "triggerObservations": [
+      "Pitta PMS Pattern"
+    ]
+  },
+  {
+    "id": "rec_womens_health_vata_rajonivritti",
+    "category": "Women's Health",
+    "subCategory": "Menopause",
+    "title": "Support the Menopausal Transition",
+    "description": "Take a combination of Shatavari and Ashwagandha. Use daily warm sesame oil massage to counter the dryness and erratic energy of this phase.",
+    "rationale": "Menopause (Rajonivritti) is a natural transition into the Vata stage of life. Nourishing herbs and oils ease the transition and prevent severe Vata symptoms.",
+    "why": "As your body transitions, it needs extra nourishment and grounding. Daily oil massage and supportive herbs will make a huge difference.",
+    "shastraRef": "Ashtanga Hridayam, Sharirasthana",
+    "alternatives": [
+      "Include phytoestrogen-rich foods like yams and flaxseeds.",
+      "Prioritize rest and stress reduction."
+    ],
+    "triggerObservations": [
+      "Vata Rajonivritti (perimenopausal)"
+    ]
+  },
+  {
+    "id": "rec_mens_health_vata_shukra",
+    "category": "Men's Health",
+    "subCategory": "Shukra",
+    "title": "Adopt a Vajikarana (Nourishing) Diet",
+    "description": "Include Ashwagandha, Shilajit, warm milk, ghee, and dates in your diet. Reduce overexertion and ensure adequate rest.",
+    "rationale": "Depletion of Shukra Dhatu (reproductive tissue) due to Vata requires heavy, nourishing (Vajikarana) therapies and energy conservation.",
+    "why": "To rebuild your vital energy, you need deep nourishment. Foods like warm milk with ghee, dates, and herbs like Ashwagandha will help.",
+    "shastraRef": "Charaka Samhita, Chikitsasthana 2",
+    "alternatives": [
+      "Take a high-quality Ashwagandha supplement.",
+      "Avoid excessive strenuous exercise until energy returns."
+    ],
+    "triggerObservations": [
+      "Vata Shukra Kshaya"
+    ]
+  },
+  {
+    "id": "rec_mens_health_ojas_depletion_male",
+    "category": "Men's Health",
+    "subCategory": "Ojas",
+    "title": "Conserve Energy for Deep Recovery",
+    "description": "Practice strict energy conservation (Brahmacharya). Reduce late-night screen time and prioritize deep, restorative sleep.",
+    "rationale": "Ojas and Shukra are closely linked in men. Conserving reproductive and mental energy allows the body to rebuild its deepest reserves.",
+    "why": "Your reserves are low. The fastest way to recover is to conserve your energy\u2014prioritize sleep and reduce late-night stimulation.",
+    "shastraRef": "Charaka Samhita, Chikitsasthana 2.4",
+    "alternatives": [
+      "Aim for 8-9 hours of sleep nightly.",
+      "Practice stress-reduction techniques daily."
+    ],
+    "triggerObservations": [
+      "Ojas Depletion (male)"
+    ]
+  },
+  {
+    "id": "rec_mens_health_pitta_rakta",
+    "category": "Men's Health",
+    "subCategory": "Rakta",
+    "title": "Purify and Cool the Blood",
+    "description": "Use cooling, blood-purifying herbs like Manjistha or Neem. Strictly reduce alcohol, spicy foods, and prolonged sun exposure.",
+    "rationale": "Excess Pitta often accumulates in the Rakta Dhatu (blood), leading to inflammation or skin issues. Bitter, cooling herbs purify the blood.",
+    "why": "Excess heat is showing up in your system. We need to cool and purify your blood by reducing alcohol and spices, and using herbs like Neem.",
+    "shastraRef": "Charaka Samhita, Sutrasthana 24",
+    "alternatives": [
+      "Drink aloe vera juice.",
+      "Eat more bitter greens like kale and dandelion."
+    ],
+    "triggerObservations": [
+      "Pitta Rakta excess"
+    ]
   }
 ]
