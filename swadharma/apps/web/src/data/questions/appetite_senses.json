@@ -1,1 +1,559 @@
-[]
+[
+  {
+    "id": "as_taste_preference",
+    "category": "appetite_senses",
+    "subCategory": "taste_cravings",
+    "title": "Which taste or flavor do you naturally crave or enjoy most?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "multiple",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 26 (Dravya Guna — Shad Rasa)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "sweet",
+        "label": "Sweet (fruits, honey, dairy, starchy)",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha/Ojas taste craving",
+            "weight": 1,
+            "dimensions": ["dosha:kapha", "ojas:moderate"]
+          }
+        ]
+      },
+      {
+        "id": "salty",
+        "label": "Salty (cured, pickled, processed)",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Salt Craving",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "agni:vishama"]
+          }
+        ]
+      },
+      {
+        "id": "sour",
+        "label": "Sour (fermented, citrus, tamarind)",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta-Vata Sour Craving",
+            "weight": 2,
+            "dimensions": ["dosha:pitta", "dosha:vata", "agni:tikshna"]
+          }
+        ]
+      },
+      {
+        "id": "bitter",
+        "label": "Bitter (coffee, kale, bitter gourd)",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Cleansing tendency",
+            "weight": 1,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "spicy_pungent",
+        "label": "Spicy or pungent (chili, pepper, ginger)",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Pungent Craving",
+            "weight": 2,
+            "dimensions": ["dosha:pitta", "agni:tikshna"]
+          },
+          {
+            "observation": "Tikshna Agni",
+            "weight": 1,
+            "dimensions": ["dosha:pitta", "agni:tikshna"]
+          }
+        ]
+      },
+      {
+        "id": "astringent",
+        "label": "Astringent (pomegranate, beans, unripe fruit)",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Ruksha tendency",
+            "weight": 1,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "as_craving_types",
+    "category": "appetite_senses",
+    "subCategory": "taste_cravings",
+    "title": "What do you crave most when you're emotionally stressed or depleted?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "multiple",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 8.25 (Pathya-Apathya)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "sweets_comfort",
+        "label": "Sweets and comfort foods",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Emotional eating pattern",
+            "weight": 2,
+            "dimensions": ["ojas:low", "dosha:kapha"]
+          },
+          {
+            "observation": "Ojas seeking",
+            "weight": 1,
+            "dimensions": ["ojas:low", "dosha:kapha"]
+          }
+        ]
+      },
+      {
+        "id": "salty_crunchy",
+        "label": "Salty or crunchy foods",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Manas craving",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "manas:rajasic"]
+          }
+        ]
+      },
+      {
+        "id": "caffeine_stimulants",
+        "label": "Caffeine or stimulants",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Rajas stimulation seeking",
+            "weight": 2,
+            "dimensions": ["manas:rajasic", "ojas:low", "dosha:vata"]
+          },
+          {
+            "observation": "Low Ojas",
+            "weight": 1,
+            "dimensions": ["manas:rajasic", "ojas:low", "dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "no_appetite_at_all",
+        "label": "My appetite disappears entirely",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vishama Agni (stress)",
+            "weight": 2,
+            "dimensions": ["agni:vishama", "dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "spicy_or_heavy",
+        "label": "Spicy or very heavy foods",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Manas craving",
+            "weight": 1,
+            "dimensions": ["dosha:pitta", "manas:rajasic"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "as_thirst",
+    "category": "appetite_senses",
+    "subCategory": "taste_cravings",
+    "title": "How is your thirst throughout the day?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 17.117 (Ambuvaha Srotas)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "very_thirsty_always",
+        "label": "Very thirsty — always reaching for water",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Ambuvaha excess",
+            "weight": 2,
+            "dimensions": ["dosha:pitta", "srotas:ambuvaha", "agni:tikshna"]
+          },
+          {
+            "observation": "Tikshna Agni",
+            "weight": 1,
+            "dimensions": ["dosha:pitta", "srotas:ambuvaha", "agni:tikshna"]
+          }
+        ]
+      },
+      {
+        "id": "moderate_normal",
+        "label": "Moderate — drink a normal amount",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Balanced Ambuvaha",
+            "weight": 1,
+            "dimensions": ["srotas:ambuvaha"]
+          }
+        ]
+      },
+      {
+        "id": "rarely_thirsty",
+        "label": "Rarely feel thirsty — often forget to drink",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Manda Agni",
+            "weight": 1,
+            "dimensions": ["agni:manda", "dosha:kapha", "srotas:ambuvaha"]
+          },
+          {
+            "observation": "Kapha Ambuvaha suppression",
+            "weight": 1,
+            "dimensions": ["agni:manda", "dosha:kapha", "srotas:ambuvaha"]
+          }
+        ]
+      },
+      {
+        "id": "variable_intense_spells",
+        "label": "Variable — periods of intense thirst then none",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vishama Ambuvaha",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "srotas:ambuvaha"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "as_ghee_oil_tolerance",
+    "category": "appetite_senses",
+    "subCategory": "taste_cravings",
+    "title": "How do you tolerate dietary fats — ghee, oils, and fatty foods?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 13 (Snehana)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "love_handle_well",
+        "label": "Love them and digest them well",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sama Agni tolerance",
+            "weight": 1,
+            "dimensions": ["agni:sama", "dosha:vata"]
+          },
+          {
+            "observation": "Vata Snehana affinity",
+            "weight": 1,
+            "dimensions": ["agni:sama", "dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "feel_heavy_nauseous",
+        "label": "Feel heavy, nauseous, or sluggish after",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Manda Agni fat intolerance",
+            "weight": 2,
+            "dimensions": ["agni:manda", "dosha:kapha"]
+          }
+        ]
+      },
+      {
+        "id": "heartburn_reflux",
+        "label": "Cause heartburn or reflux",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Tikshna Agni fat aggravation",
+            "weight": 2,
+            "dimensions": ["agni:tikshna", "dosha:pitta"]
+          },
+          {
+            "observation": "Pitta in Amashaya",
+            "weight": 1,
+            "dimensions": ["agni:tikshna", "dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "no_preference",
+        "label": "No particular feeling either way",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      }
+    ]
+  },
+  {
+    "id": "as_milk_dairy",
+    "category": "appetite_senses",
+    "subCategory": "taste_cravings",
+    "title": "How does your body respond to dairy (milk, yogurt, cheese)?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 1,
+    "source": "Charaka Samhita, Sutrasthana 27 (Annapanavidhi)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "digests_well_enjoy",
+        "label": "Digests well, I enjoy it",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Snigdha affinity",
+            "weight": 1,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      },
+      {
+        "id": "causes_mucus_congestion",
+        "label": "Causes mucus, congestion, or heaviness",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Ama accumulation",
+            "weight": 2,
+            "dimensions": ["dosha:kapha", "srotas:pranavaha"]
+          }
+        ]
+      },
+      {
+        "id": "causes_gas_bloat",
+        "label": "Causes gas or bloating",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Annavaha Srotas dairy sensitivity",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "srotas:annavaha"]
+          }
+        ]
+      },
+      {
+        "id": "avoid_all_dairy",
+        "label": "I avoid all dairy",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Ama Accumulation avoidance",
+            "weight": 1,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "as_satiety",
+    "category": "appetite_senses",
+    "subCategory": "taste_cravings",
+    "title": "How is your sense of satisfaction after meals?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 8.7 (Ashtau Ahara Visheshayatana)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "often_unsatisfied",
+        "label": "I often feel unsatisfied even after eating",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vishama Agni",
+            "weight": 2,
+            "dimensions": ["agni:vishama", "dosha:vata"]
+          },
+          {
+            "observation": "Vata Manas restlessness",
+            "weight": 1,
+            "dimensions": ["agni:vishama", "dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "satisfied_normal",
+        "label": "I feel satisfied and stop naturally",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sama Agni",
+            "weight": 1,
+            "dimensions": []
+          }
+        ]
+      },
+      {
+        "id": "overeat_before_satisfied",
+        "label": "I tend to overeat before feeling full",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Manda Agni delayed satiety",
+            "weight": 2,
+            "dimensions": ["agni:manda", "dosha:kapha"]
+          },
+          {
+            "observation": "Kapha Ama",
+            "weight": 1,
+            "dimensions": ["agni:manda", "dosha:kapha"]
+          }
+        ]
+      },
+      {
+        "id": "satisfied_quickly_small",
+        "label": "I feel full very quickly — can eat very little",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Manda Agni",
+            "weight": 2,
+            "dimensions": ["agni:manda", "dosha:kapha"]
+          },
+          {
+            "observation": "Vishama Agni",
+            "weight": 1,
+            "dimensions": ["agni:vishama"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "as_urine_color",
+    "category": "appetite_senses",
+    "subCategory": "urine",
+    "title": "What color is your urine typically?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 1,
+    "source": "Charaka Samhita, Sutrasthana 17.118 (Mutravaha Srotas), Sushruta Samhita Sharirasthana 6",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "pale_clear",
+        "label": "Pale or clear",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Ambuvaha excess",
+            "weight": 1,
+            "dimensions": ["dosha:kapha", "srotas:ambuvaha"]
+          }
+        ]
+      },
+      {
+        "id": "light_yellow_normal",
+        "label": "Light yellow — normal",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Balanced Mutravaha",
+            "weight": 1,
+            "dimensions": []
+          }
+        ]
+      },
+      {
+        "id": "dark_yellow_amber",
+        "label": "Dark yellow or amber",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Ambuvaha dehydration",
+            "weight": 2,
+            "dimensions": ["dosha:pitta", "agni:tikshna"]
+          },
+          {
+            "observation": "Tikshna Agni",
+            "weight": 1,
+            "dimensions": ["dosha:pitta", "agni:tikshna"]
+          }
+        ]
+      },
+      {
+        "id": "very_dark_strong_odor",
+        "label": "Very dark with strong odor",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Mutravaha excess",
+            "weight": 3,
+            "dimensions": ["dosha:pitta", "srotas:mutravaha"]
+          }
+        ]
+      }
+    ]
+  }
+]
