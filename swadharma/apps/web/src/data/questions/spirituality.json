@@ -1,1 +1,281 @@
-[]
+[
+  {
+    "id": "spi_meditation_practice",
+    "category": "spirituality",
+    "subCategory": "practice",
+    "title": "Do you have a meditation or contemplative practice?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 1,
+    "source": "Charaka Samhita, Sutrasthana 1.58 (Sattvavajaya)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "daily_consistent",
+        "label": "Daily, consistent practice",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sattvic Manas tendency",
+            "weight": 3,
+            "dimensions": ["manas:sattvic"]
+          }
+        ]
+      },
+      {
+        "id": "occasional",
+        "label": "Occasionally, not regular",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Moderate Sattvic Practice",
+            "weight": 1,
+            "dimensions": ["manas:sattvic"]
+          }
+        ]
+      },
+      {
+        "id": "tried_cannot_sit_still",
+        "label": "I've tried but cannot sit still — the mind races",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Manas (Chala)",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "manas:rajasic"]
+          }
+        ]
+      },
+      {
+        "id": "no_interest",
+        "label": "No practice or interest",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      }
+    ]
+  },
+  {
+    "id": "spi_purpose",
+    "category": "spirituality",
+    "subCategory": "purpose",
+    "title": "Do you have a clear sense of your life's purpose or dharma?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 1,
+    "source": "Charaka Samhita, Sutrasthana 8.5 (Sadvritta — Right Living)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "very_clear_living_it",
+        "label": "Very clear — I am living it",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "High Ojas",
+            "weight": 1,
+            "dimensions": ["ojas:high", "manas:sattvic"]
+          },
+          {
+            "observation": "Sattvic Manas tendency",
+            "weight": 2,
+            "dimensions": ["ojas:high", "manas:sattvic"]
+          }
+        ]
+      },
+      {
+        "id": "sense_of_purpose_not_fully",
+        "label": "I have a sense, but I'm not fully aligned",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sattvic Manas seeking",
+            "weight": 1,
+            "dimensions": []
+          }
+        ]
+      },
+      {
+        "id": "searching_uncertain",
+        "label": "Still searching, feel uncertain",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Manas existential",
+            "weight": 1,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "disconnected",
+        "label": "Feeling disconnected from purpose",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Manas (Tamasic)",
+            "weight": 1,
+            "dimensions": ["dosha:kapha", "ojas:low"]
+          },
+          {
+            "observation": "Low Ojas",
+            "weight": 1,
+            "dimensions": ["dosha:kapha", "ojas:low"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "spi_silence",
+    "category": "spirituality",
+    "subCategory": "practice",
+    "title": "How comfortable are you with silence and solitude?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 1,
+    "source": "Charaka Samhita, Sutrasthana 8.18 (Sadvritta)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "thrive_love_silence",
+        "label": "Thrive in silence — I seek it actively",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sattvic Manas tendency",
+            "weight": 2,
+            "dimensions": ["manas:sattvic"]
+          }
+        ]
+      },
+      {
+        "id": "tolerate_occasional",
+        "label": "Can tolerate it but prefer company",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Social Pattern",
+            "weight": 1,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "uncomfortable_avoid",
+        "label": "Uncomfortable — I fill every silence",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Manas (Chala)",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "manas:rajasic"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "spi_ritual_discipline",
+    "category": "spirituality",
+    "subCategory": "practice",
+    "title": "Do you observe regular ritual or spiritual disciplines (prayer, puja, fasting, mantra, study)?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "multiple",
+    "importance": 1,
+    "source": "Charaka Samhita, Sutrasthana 8.18 (Sadvritta — Right Conduct)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "prayer_puja",
+        "label": "Daily prayer or puja",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sattvic Manas tendency",
+            "weight": 2,
+            "dimensions": ["manas:sattvic", "lifestyle:regulated"]
+          }
+        ]
+      },
+      {
+        "id": "mantra_japa",
+        "label": "Mantra or japa",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sattvic Manas tendency",
+            "weight": 2,
+            "dimensions": ["manas:sattvic"]
+          }
+        ]
+      },
+      {
+        "id": "fasting",
+        "label": "Regular fasting",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Agni purification practice",
+            "weight": 1,
+            "dimensions": ["agni:sama"]
+          }
+        ]
+      },
+      {
+        "id": "scriptural_study",
+        "label": "Study of scriptures or philosophical texts",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sattvic Manas tendency",
+            "weight": 2,
+            "dimensions": ["manas:sattvic"]
+          }
+        ]
+      },
+      {
+        "id": "seva",
+        "label": "Regular selfless service",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sattvic Manas tendency",
+            "weight": 2,
+            "dimensions": ["manas:sattvic", "ojas:high"]
+          }
+        ]
+      },
+      {
+        "id": "none",
+        "label": "No regular spiritual discipline",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      }
+    ]
+  }
+]

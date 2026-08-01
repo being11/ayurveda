@@ -1,1 +1,184 @@
-[]
+[
+  {
+    "id": "age_energy_changes",
+    "category": "aging",
+    "subCategory": "energy",
+    "title": "How has your energy changed compared to your 20s or 30s?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 30.10 (Kala — age stages)",
+    "conditions": [
+      {
+        "questionId": "intro_age_range",
+        "value": "mature"
+      }
+    ],
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "significant_decline",
+        "label": "Significant decline — I tire much faster",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Vriddha Kala",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "ojas:low"]
+          },
+          {
+            "observation": "Ojas Depletion",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "ojas:low"]
+          }
+        ]
+      },
+      {
+        "id": "moderate_decline",
+        "label": "Moderate — somewhat less energy but manageable",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Moderate Vata Vriddha",
+            "weight": 2,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "maintained_well",
+        "label": "I've maintained energy surprisingly well",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "High Ojas (aging)",
+            "weight": 2,
+            "dimensions": ["ojas:high"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "age_memory_cognition",
+    "category": "aging",
+    "subCategory": "cognitive",
+    "title": "Have you noticed any changes in memory or cognitive sharpness with age?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Chikitsasthana 2 (Rasayana — cognitive aging)",
+    "conditions": [
+      {
+        "questionId": "intro_age_range",
+        "value": "mature"
+      }
+    ],
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "significant_forgetfulness",
+        "label": "Noticeable forgetfulness",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Majja Dhatu Kshaya",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "dhatu:majja"]
+          }
+        ]
+      },
+      {
+        "id": "moderate_word_finding",
+        "label": "Occasional word-finding difficulty",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Vriddha Manas",
+            "weight": 2,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "sharp_as_ever",
+        "label": "Sharp as ever",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "High Ojas (aging)",
+            "weight": 2,
+            "dimensions": ["ojas:high", "dhatu:majja"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "age_mobility",
+    "category": "aging",
+    "subCategory": "physical",
+    "title": "How is your joint mobility and physical flexibility compared to younger years?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Sushruta Samhita, Sharirasthana 5.29 (Sandhi)",
+    "conditions": [
+      {
+        "questionId": "intro_age_range",
+        "value": "mature"
+      }
+    ],
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "significant_stiffness",
+        "label": "Significant stiffness or pain",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata in Asthivaha Srotas (aging)",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "dhatu:asthi"]
+          }
+        ]
+      },
+      {
+        "id": "some_stiffness",
+        "label": "Some stiffness, manageable",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Moderate Vata Asthi tendency",
+            "weight": 2,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "still_flexible",
+        "label": "Still quite flexible",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Shleshaka Kapha support",
+            "weight": 1,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,1 +1,452 @@
-[]
+[
+  {
+    "id": "men_focus",
+    "category": "mental",
+    "subCategory": "cognitive",
+    "title": "How is your ability to sustain focus on a single task?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 8.5",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "easily_distracted",
+        "label": "Easily distracted, mind jumps from topic to topic",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Manas (Chala)",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "manas:rajasic"]
+          }
+        ]
+      },
+      {
+        "id": "hyperfocused_intense",
+        "label": "I can hyperfocus intensely but then crash",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Manas (Tikshna)",
+            "weight": 2,
+            "dimensions": ["dosha:pitta", "manas:rajasic"]
+          }
+        ]
+      },
+      {
+        "id": "steady_sustained",
+        "label": "Steady, sustained focus without burning out",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Manas (Sthira)",
+            "weight": 2,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      },
+      {
+        "id": "variable_depends",
+        "label": "Varies significantly day to day",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vishama Manas pattern",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "agni:vishama"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "men_learning_style",
+    "category": "mental",
+    "subCategory": "cognitive",
+    "title": "How do you prefer to learn or process new information?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 1,
+    "source": "Ashtanga Hridayam, Sutrasthana 1.9",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "quick_overview_intuitive",
+        "label": "Quick overview is enough — I grasp intuitively",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Manas (Chala)",
+            "weight": 2,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "structured_detailed",
+        "label": "Need structured, detailed, logical explanation",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Manas (Tikshna)",
+            "weight": 2,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "repetition_practice",
+        "label": "Need repetition and practice — I learn by doing",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Manas (Sthira)",
+            "weight": 2,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "men_overthinking",
+    "category": "mental",
+    "subCategory": "cognitive",
+    "title": "Do you experience excessive thinking or overthinking?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 3,
+    "source": "Charaka Samhita, Sutrasthana 1.57",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "constant_cant_stop",
+        "label": "Constant — I can't stop my mind even when I try",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Manas (Chala/Laghu)",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "manas:rajasic", "srotas:manovaha"]
+          },
+          {
+            "observation": "Excessive Rajas in Manas",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "manas:rajasic", "srotas:manovaha"]
+          }
+        ]
+      },
+      {
+        "id": "occasional_manageable",
+        "label": "Occasionally, but I can redirect",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Moderate Rajas in Manas",
+            "weight": 1,
+            "dimensions": ["manas:rajasic"]
+          }
+        ]
+      },
+      {
+        "id": "rarely_mostly_calm",
+        "label": "Rarely — my mind is generally calm",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sattvic Manas tendency",
+            "weight": 2,
+            "dimensions": ["manas:sattvic"]
+          }
+        ]
+      },
+      {
+        "id": "cyclic_obsessive",
+        "label": "Cyclic — the same thoughts return obsessively",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Manas disturbance",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "manas:rajasic", "srotas:manovaha"]
+          },
+          {
+            "observation": "Manasika Ama",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "manas:rajasic", "srotas:manovaha"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "men_creativity",
+    "category": "mental",
+    "subCategory": "cognitive",
+    "title": "How naturally creative or imaginative are you?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 1,
+    "source": "Charaka Samhita, Sutrasthana 8.5",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "very_creative_ideas_flow",
+        "label": "Very creative — ideas flow constantly",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Manas (creative)",
+            "weight": 2,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "analytical_precise",
+        "label": "More analytical and precise than creative",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Manas (Tikshna)",
+            "weight": 1,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "practical_steady",
+        "label": "Practical and steady — not particularly creative",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Manas (Sthira)",
+            "weight": 1,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "men_stress_coping",
+    "category": "mental",
+    "subCategory": "cognitive",
+    "title": "What do you most often do when you feel overwhelmed?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "multiple",
+    "importance": 3,
+    "source": "Charaka Samhita, Sutrasthana 1.57",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "physical_activity",
+        "label": "Go for a walk, exercise, or move",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Grounding coping",
+            "weight": 1,
+            "dimensions": ["lifestyle:active"]
+          }
+        ]
+      },
+      {
+        "id": "food_comfort",
+        "label": "Seek comfort food or overeat",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Emotional eating pattern",
+            "weight": 2,
+            "dimensions": ["dosha:kapha", "ojas:low"]
+          },
+          {
+            "observation": "Kapha Ama",
+            "weight": 1,
+            "dimensions": ["dosha:kapha", "ojas:low"]
+          }
+        ]
+      },
+      {
+        "id": "social_talk",
+        "label": "Talk to someone, seek social support",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Social coping",
+            "weight": 1,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "isolate",
+        "label": "Withdraw and isolate",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Manas (Tamasic) withdrawal",
+            "weight": 2,
+            "dimensions": ["dosha:kapha", "manas:tamasic"]
+          }
+        ]
+      },
+      {
+        "id": "worry_overthink",
+        "label": "Worry and overthink endlessly",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Manas (Rajasic)",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "manas:rajasic"]
+          }
+        ]
+      },
+      {
+        "id": "spiritual_prayer",
+        "label": "Prayer, meditation, or spiritual practice",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sattvic Manas coping",
+            "weight": 2,
+            "dimensions": ["manas:sattvic"]
+          }
+        ]
+      },
+      {
+        "id": "substance",
+        "label": "Use substances (alcohol, caffeine, etc.)",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Ojas Depletion risk",
+            "weight": 3,
+            "dimensions": ["ojas:low", "manas:rajasic", "manas:tamasic"]
+          },
+          {
+            "observation": "Rajasic-Tamasic Manas",
+            "weight": 2,
+            "dimensions": ["ojas:low", "manas:rajasic", "manas:tamasic"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "men_burnout",
+    "category": "mental",
+    "subCategory": "cognitive",
+    "title": "Have you experienced burnout — persistent exhaustion that rest doesn't fix?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 3,
+    "source": "Charaka Samhita, Chikitsasthana 2 (Rasayana — Ojas depletion), Sushruta Samhita Sharirasthana 15",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "currently_in_burnout",
+        "label": "Currently experiencing it",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Ojas Depletion",
+            "weight": 3,
+            "dimensions": ["ojas:low", "dosha:pitta", "dosha:vata", "manas:rajasic"]
+          },
+          {
+            "observation": "Low Ojas",
+            "weight": 3,
+            "dimensions": ["ojas:low", "dosha:pitta", "dosha:vata", "manas:rajasic"]
+          },
+          {
+            "observation": "Pitta Vata Manas excess",
+            "weight": 2,
+            "dimensions": ["ojas:low", "dosha:pitta", "dosha:vata", "manas:rajasic"]
+          }
+        ]
+      },
+      {
+        "id": "recovering_from_burnout",
+        "label": "Recovering from a period of burnout",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Low Ojas",
+            "weight": 2,
+            "dimensions": ["ojas:low", "dhatu:rasa"]
+          },
+          {
+            "observation": "Vata Rasa Kshaya",
+            "weight": 2,
+            "dimensions": ["ojas:low", "dhatu:rasa"]
+          }
+        ]
+      },
+      {
+        "id": "experienced_past",
+        "label": "Have experienced it in the past",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Low Ojas history",
+            "weight": 1,
+            "dimensions": ["ojas:moderate"]
+          }
+        ]
+      },
+      {
+        "id": "never",
+        "label": "Never experienced burnout",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "High Ojas",
+            "weight": 1,
+            "dimensions": ["ojas:high"]
+          }
+        ]
+      }
+    ]
+  }
+]

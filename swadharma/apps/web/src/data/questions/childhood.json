@@ -1,1 +1,270 @@
-[]
+[
+  {
+    "id": "chi_childhood_frame",
+    "category": "childhood",
+    "subCategory": "constitution",
+    "title": "As a child (before puberty), what was your natural body type?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 3,
+    "source": "Charaka Samhita, Sharirasthana 3 (Katidhapurusha Sharira — constitutional analysis)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "always_thin",
+        "label": "Always thin, hard to gain weight",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Prakrti (childhood)",
+            "weight": 3,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "athletic_muscular",
+        "label": "Athletic or muscular, medium build",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Prakrti (childhood)",
+            "weight": 3,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "heavier_stocky",
+        "label": "Heavier or stockier, gained weight easily",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Prakrti (childhood)",
+            "weight": 3,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      },
+      {
+        "id": "changed_dramatically",
+        "label": "Changed dramatically between child and adult",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Mixed Prakrti",
+            "weight": 1,
+            "dimensions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chi_childhood_digestion",
+    "category": "childhood",
+    "subCategory": "digestion",
+    "title": "What was your digestion like as a child?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sharirasthana 3.10-11",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "frequent_stomach_aches",
+        "label": "Frequent stomach aches or gas",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Agni tendency (childhood)",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "agni:vishama"]
+          }
+        ]
+      },
+      {
+        "id": "strong_always_hungry",
+        "label": "Strong appetite, always hungry",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Tikshna Agni tendency (childhood)",
+            "weight": 2,
+            "dimensions": ["agni:tikshna", "dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "picky_slow_eater",
+        "label": "Picky eater, slow eater",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Manda Agni tendency (childhood)",
+            "weight": 2,
+            "dimensions": ["agni:manda", "dosha:kapha"]
+          }
+        ]
+      },
+      {
+        "id": "no_particular_issues",
+        "label": "No significant digestive issues",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sama Agni (childhood)",
+            "weight": 1,
+            "dimensions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chi_childhood_activity",
+    "category": "childhood",
+    "subCategory": "activity",
+    "title": "As a child, how were your activity levels?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 1,
+    "source": "Charaka Samhita, Sharirasthana 3.10",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "hyperactive_restless",
+        "label": "Hyperactive, always on the move, restless",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Bala (high activity)",
+            "weight": 2,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "competitive_sporty",
+        "label": "Competitive, sporty, driven to win",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Bala (competitive)",
+            "weight": 2,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "calm_preferred_sitting",
+        "label": "Calm, preferred quiet activities, sitting",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Bala (sedentary tendency)",
+            "weight": 2,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chi_childhood_illnesses",
+    "category": "childhood",
+    "subCategory": "health",
+    "title": "What illnesses did you frequently get as a child?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "multiple",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 17 (Srotas — childhood vulnerabilities)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "colds_coughs_mucus",
+        "label": "Frequent colds, coughs, mucus",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Pranavaha Srotas tendency",
+            "weight": 2,
+            "dimensions": ["dosha:kapha", "srotas:pranavaha"]
+          }
+        ]
+      },
+      {
+        "id": "fevers_infections",
+        "label": "Frequent fevers or infections",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Tikshna Agni / Pitta Rakta tendency",
+            "weight": 2,
+            "dimensions": ["dosha:pitta", "dhatu:rakta"]
+          }
+        ]
+      },
+      {
+        "id": "constipation_gas",
+        "label": "Constipation or gas",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Apana disturbance",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "srotas:purishavaha"]
+          }
+        ]
+      },
+      {
+        "id": "skin_rashes_eczema",
+        "label": "Skin rashes or eczema",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Twak tendency",
+            "weight": 2,
+            "dimensions": ["dosha:pitta", "dhatu:rakta"]
+          }
+        ]
+      },
+      {
+        "id": "generally_healthy",
+        "label": "Generally healthy, rarely sick",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "High Ojas (childhood)",
+            "weight": 2,
+            "dimensions": ["ojas:high"]
+          }
+        ]
+      }
+    ]
+  }
+]
