@@ -1,113 +1,138 @@
+// apps/web/src/stores/assessmentStore.ts
+'use client'
+
 import { create } from 'zustand';
-import { persist, createJSONStorage, StateStorage } from 'zustand/middleware';
-import { AssessmentState } from '../types/assessment';
-import { getNextQuestionId } from '../engines/logic';
+import { persist, createJSONStorage } from 'zustand/middleware';
 import { categories } from '../data/index';
-import { get, set as idbSet, del } from 'idb-keyval';
+import {
+  getNextQuestionId,
+  getPreviousQuestionId,
+  getObservationsForAnswer,
+  calculateObservations,
+  countRemainingQuestions,
+} from '../engines/logic';
+import type { AssessmentState } from '../types/assessment';
 
-// Custom storage adapter for IndexedDB
-const idbStorage: StateStorage = {
-  getItem: async (name: string): Promise<string | null> => {
-    return (await get(name)) || null;
-  },
-  setItem: async (name: string, value: string): Promise<void> => {
-    await idbSet(name, value);
-  },
-  removeItem: async (name: string): Promise<void> => {
-    await del(name);
-  },
-};
+const firstCategory = categories[0];
+const firstQuestion = firstCategory?.questions[0] ?? null;
 
-export const useAssessmentStore = create<AssessmentState>()(
+const useAssessmentStore = create<AssessmentState>()(
   persist(
     (set, get) => ({
       answers: {},
       observations: {},
       currentCategoryIndex: 0,
-      currentQuestionId: categories[0]?.questions[0]?.id || null,
-      history: [],
+      currentQuestionId: firstQuestion?.id ?? null,
+      history: firstQuestion ? [firstQuestion.id] : [],
       isComplete: false,
 
-      setAnswer: (questionId, value) => set((state) => ({
-        answers: { ...state.answers, [questionId]: value }
-      })),
+      setAnswer: (questionId, value) => {
+        const state = get();
+        const allQuestions = categories.flatMap(cat => cat.questions);
+        const question = allQuestions.find(q => q.id === questionId);
+        if (!question) return;
 
-      reset: () => {
-        useAssessmentStore.persist.clearStorage();
+        // Accumulate new observations
+        const newObs = getObservationsForAnswer(question, value);
+        const updatedObservations = { ...state.observations };
+        for (const [key, weight] of Object.entries(newObs)) {
+          updatedObservations[key] = (updatedObservations[key] || 0) + weight;
+        }
+
+        // Navigate to next question
+        const { nextQuestionId, nextCategoryIndex, isComplete } = getNextQuestionId(
+          categories,
+          questionId,
+          state.currentCategoryIndex,
+          state.answers,
+          value
+        );
+
+        const newHistory = nextQuestionId
+          ? [...state.history, nextQuestionId]
+          : state.history;
+
         set({
-          answers: {},
-          observations: {},
-          currentCategoryIndex: 0,
-          currentQuestionId: categories[0]?.questions[0]?.id || null,
-          history: [],
-          isComplete: false,
+          answers: { ...state.answers, [questionId]: value },
+          observations: updatedObservations,
+          currentQuestionId: nextQuestionId,
+          currentCategoryIndex: nextCategoryIndex,
+          history: newHistory,
+          isComplete,
         });
       },
 
       nextQuestion: () => {
-        const { currentCategoryIndex, currentQuestionId, answers, history } = get();
-
-        if (!currentQuestionId) return;
-
-        const currentCategory = categories[currentCategoryIndex];
-        const currentQuestion = currentCategory?.questions.find(q => q.id === currentQuestionId);
-
-        if (!currentQuestion) return;
-
-        const nextId = getNextQuestionId(currentQuestion, currentCategory?.questions ?? [], answers);
-
-        if (nextId) {
+        // Called for manual advance (shouldn't normally be needed)
+        const state = get();
+        const { nextQuestionId, nextCategoryIndex, isComplete } = getNextQuestionId(
+          categories,
+          state.currentQuestionId ?? '',
+          state.currentCategoryIndex,
+          state.answers,
+          state.answers[state.currentQuestionId ?? ''] ?? ''
+        );
+        if (nextQuestionId) {
           set({
-            currentQuestionId: nextId,
-            history: [...history, currentQuestionId]
+            currentQuestionId: nextQuestionId,
+            currentCategoryIndex: nextCategoryIndex,
+            history: [...state.history, nextQuestionId],
+            isComplete,
           });
-        } else {
-          if (currentCategoryIndex + 1 < categories.length) {
-            const nextCategory = categories[currentCategoryIndex + 1];
-            const firstValidQuestion = nextCategory?.questions.find(q => {
-               return true;
-            });
-
-            if (firstValidQuestion) {
-               set({
-                 currentCategoryIndex: currentCategoryIndex + 1,
-                 currentQuestionId: firstValidQuestion.id,
-                 history: [...history, currentQuestionId]
-               });
-            }
-          } else {
-            set({ isComplete: true, history: [...history, currentQuestionId] });
-          }
         }
       },
 
       prevQuestion: () => {
-        const { history, currentCategoryIndex } = get();
-        if (history.length === 0) return;
+        const state = get();
+        if (state.history.length <= 1) return;
+        const prevId = state.history[state.history.length - 2];
+        const newHistory = state.history.slice(0, -1);
 
-        const newHistory = [...history];
-        const previousQuestionId = newHistory.pop();
-
-        let targetCategoryIndex = currentCategoryIndex;
-        if (previousQuestionId) {
-           const currentCategory = categories[currentCategoryIndex];
-           const isInCurrent = currentCategory?.questions.some(q => q.id === previousQuestionId);
-           if (!isInCurrent && currentCategoryIndex > 0) {
-               targetCategoryIndex = currentCategoryIndex - 1;
-           }
+        // Find which category the previous question belongs to
+        let prevCatIdx = state.currentCategoryIndex;
+        for (let i = 0; i < categories.length; i++) {
+          if (categories[i]?.questions?.some(q => q.id === prevId)) {
+            prevCatIdx = i;
+            break;
+          }
         }
 
         set({
-          currentQuestionId: previousQuestionId || null,
+          currentQuestionId: prevId ?? null,
+          currentCategoryIndex: prevCatIdx,
           history: newHistory,
-          currentCategoryIndex: targetCategoryIndex,
           isComplete: false,
         });
       },
+
+      reset: () => {
+        set({
+          answers: {},
+          observations: {},
+          currentCategoryIndex: 0,
+          currentQuestionId: firstQuestion?.id ?? null,
+          history: firstQuestion ? [firstQuestion.id] : [],
+          isComplete: false,
+        });
+        try {
+          useAssessmentStore.persist.clearStorage();
+        } catch {}
+      },
     }),
     {
-      name: 'swadharma-assessment-storage',
-      storage: createJSONStorage(() => idbStorage),
+      name: 'swadharma-assessment',
+      storage: createJSONStorage(() => {
+        // Use localStorage with IDB fallback
+        if (typeof window === 'undefined') return {
+          getItem: () => null,
+          setItem: () => {},
+          removeItem: () => {},
+        };
+        return localStorage;
+      }),
     }
   )
 );
+
+export { useAssessmentStore, calculateObservations, countRemainingQuestions };
+export default useAssessmentStore;
