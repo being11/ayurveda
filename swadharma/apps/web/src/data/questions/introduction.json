@@ -1,0 +1,146 @@
+[
+  {
+    "id": "id_gender",
+    "category": "introduction",
+    "subCategory": "demographics",
+    "title": "What is your sex assigned at birth?",
+    "subtitle": "This helps tailor specific physiological and hormonal questions later.",
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "General context for physiological assessment",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "male",
+        "label": "Male",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      },
+      {
+        "id": "female",
+        "label": "Female",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      },
+      {
+        "id": "other",
+        "label": "Other",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      }
+    ]
+  },
+  {
+    "id": "id_frame",
+    "category": "introduction",
+    "subCategory": "physical",
+    "title": "How would you describe your natural physical frame?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Vimanasthana 8.94",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "slight",
+        "label": "Slight, thin, prominent joints",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Frame",
+            "weight": 2,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "moderate",
+        "label": "Moderate, athletic, well-proportioned",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Frame",
+            "weight": 2,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "broad",
+        "label": "Broad, sturdy, heavy-set",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Frame",
+            "weight": 2,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "id_weight_tendency",
+    "category": "introduction",
+    "subCategory": "metabolism",
+    "title": "How does your body typically respond to weight?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Sushruta Samhita, Sutrasthana 15.32",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "lose_easily",
+        "label": "Hard to gain, easy to lose",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "High metabolic rate (Tikshna/Vata)",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "stable",
+        "label": "Relatively stable, can gain or lose if I try",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Stable metabolism (Sama/Pitta)",
+            "weight": 2,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "gain_easily",
+        "label": "Easy to gain, very hard to lose",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Slow metabolic rate (Manda/Kapha)",
+            "weight": 2,
+            "dimensions": ["dosha:kapha", "agni:manda"]
+          }
+        ]
+      }
+    ]
+  }
+]

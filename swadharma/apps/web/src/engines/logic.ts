@@ -1,6 +1,6 @@
 import { Question, Condition } from '../types/assessment';
 
-export function areConditionsMet(conditions: Condition[] | undefined, answers: Record<string, string | string[]>): boolean {
+export function areConditionsMet(conditions: Condition[] | null | undefined, answers: Record<string, string | string[]>): boolean {
   if (!conditions || conditions.length === 0) return true;
 
   return conditions.every(condition => {

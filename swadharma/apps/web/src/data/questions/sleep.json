@@ -1,0 +1,110 @@
+[
+  {
+    "id": "slp_falling",
+    "category": "sleep",
+    "subCategory": "nidra",
+    "title": "How easily do you fall asleep?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Sushruta Samhita, Sharirasthana 4.41",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "difficult",
+        "label": "My mind races, takes a long time",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata in Manas",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "manas:rajasic"]
+          }
+        ]
+      },
+      {
+        "id": "moderate",
+        "label": "Usually within 15-30 minutes",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Balanced Nidra",
+            "weight": 1,
+            "dimensions": []
+          }
+        ]
+      },
+      {
+        "id": "immediate",
+        "label": "As soon as my head hits the pillow",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Nidra tendency",
+            "weight": 2,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "slp_quality",
+    "category": "sleep",
+    "subCategory": "nidra",
+    "title": "What is the quality of your sleep?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 21.43-44",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "light",
+        "label": "Light, easily disturbed, wake up often",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Nidra disturbance",
+            "weight": 3,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "sound",
+        "label": "Sound, but wake up alert and maybe too early",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Nidra tendency",
+            "weight": 2,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "heavy",
+        "label": "Deep and heavy, hard to wake up",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Nidra tendency",
+            "weight": 3,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      }
+    ]
+  }
+]

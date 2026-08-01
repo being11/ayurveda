@@ -2,7 +2,7 @@ import { create } from 'zustand';
 import { persist, createJSONStorage, StateStorage } from 'zustand/middleware';
 import { AssessmentState } from '../types/assessment';
 import { getNextQuestionId } from '../engines/logic';
-import { categories } from '../data/questions';
+import { categories } from '../data/index';
 import { get, set as idbSet, del } from 'idb-keyval';
 
 // Custom storage adapter for IndexedDB
@@ -31,6 +31,18 @@ export const useAssessmentStore = create<AssessmentState>()(
       setAnswer: (questionId, value) => set((state) => ({
         answers: { ...state.answers, [questionId]: value }
       })),
+
+      reset: () => {
+        useAssessmentStore.persist.clearStorage();
+        set({
+          answers: {},
+          observations: {},
+          currentCategoryIndex: 0,
+          currentQuestionId: categories[0]?.questions[0]?.id || null,
+          history: [],
+          isComplete: false,
+        });
+      },
 
       nextQuestion: () => {
         const { currentCategoryIndex, currentQuestionId, answers, history } = get();
