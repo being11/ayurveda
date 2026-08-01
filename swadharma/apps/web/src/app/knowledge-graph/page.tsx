@@ -44,7 +44,7 @@ export default function KnowledgeGraphPage() {
                   <CardTitle className="text-lg">{node.observation}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-stone-700 font-medium mb-1">Source: {node.classicalSource}</p>
+                  <p className="text-stone-700 font-medium mb-1">Source: {node.classicalSources && node.classicalSources.length > 0 ? `${node.classicalSources[0]?.text}, ${node.classicalSources[0]?.chapter}` : 'Unknown Source'}</p>
                   <p className="text-stone-600">{node.description}</p>
                 </CardContent>
               </Card>
