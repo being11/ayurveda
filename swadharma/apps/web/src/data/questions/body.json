@@ -1,1 +1,463 @@
-[]
+[
+  {
+    "id": "body_frame",
+    "category": "body",
+    "subCategory": "frame",
+    "title": "How would you describe your natural physical frame — the body you were born with, independent of any weight changes?",
+    "subtitle": "Think of your skeletal structure, not your current weight.",
+    "type": "single",
+    "importance": 3,
+    "source": "Charaka Samhita, Vimansthana 8.96, Sushruta Samhita Sharirasthana 4.63",
+    "options": [
+      {
+        "id": "slight",
+        "label": "Slight and thin — narrow shoulders, prominent joints, visible veins",
+        "observations": [
+          {
+            "observation": "Vata Frame",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "dhatu:asthi"]
+          }
+        ]
+      },
+      {
+        "id": "moderate",
+        "label": "Medium and proportionate — well-developed musculature",
+        "observations": [
+          {
+            "observation": "Pitta Frame",
+            "weight": 3,
+            "dimensions": ["dosha:pitta", "dhatu:mamsa"]
+          }
+        ]
+      },
+      {
+        "id": "broad",
+        "label": "Broad and sturdy — wide shoulders, large bone structure",
+        "observations": [
+          {
+            "observation": "Kapha Frame",
+            "weight": 3,
+            "dimensions": ["dosha:kapha", "dhatu:meda"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "body_weight_tendency",
+    "category": "body",
+    "subCategory": "frame",
+    "title": "How does your body naturally respond to weight — regardless of what you eat?",
+    "type": "single",
+    "importance": 3,
+    "source": "Charaka Samhita, Sutrasthana 21.18",
+    "options": [
+      {
+        "id": "lose_easily",
+        "label": "Hard to gain weight, lose it very easily",
+        "observations": [
+          {
+            "observation": "High Metabolic Rate (Tikshna/Vata)",
+            "weight": 2,
+            "dimensions": ["agni:tikshna", "dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "stable",
+        "label": "Relatively stable — I can gain or lose if I try",
+        "observations": [
+          {
+            "observation": "Stable Metabolism (Sama/Pitta)",
+            "weight": 2,
+            "dimensions": ["agni:sama", "dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "gain_easily",
+        "label": "Very easy to gain, extremely hard to lose",
+        "observations": [
+          {
+            "observation": "Slow Metabolic Rate (Manda/Kapha)",
+            "weight": 2,
+            "dimensions": ["agni:manda", "dosha:kapha"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "body_skin_type",
+    "category": "body",
+    "subCategory": "skin",
+    "title": "What is your skin naturally like throughout the year?",
+    "type": "single",
+    "importance": 2,
+    "source": "Ashtanga Hridayam, Sutrasthana 11.2-4",
+    "options": [
+      {
+        "id": "dry_rough",
+        "label": "Dry, rough, or flaky — especially in winter",
+        "observations": [
+          {
+            "observation": "Vata Skin Type",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "dhatu:rasa"]
+          }
+        ]
+      },
+      {
+        "id": "sensitive_redness",
+        "label": "Sensitive, prone to redness, acne, or irritation",
+        "observations": [
+          {
+            "observation": "Pitta Skin Type",
+            "weight": 3,
+            "dimensions": ["dosha:pitta", "dhatu:rakta"]
+          }
+        ]
+      },
+      {
+        "id": "oily_thick",
+        "label": "Oily, thick, and smooth — rarely gets dry",
+        "observations": [
+          {
+            "observation": "Kapha Skin Type",
+            "weight": 3,
+            "dimensions": ["dosha:kapha", "dhatu:meda"]
+          }
+        ]
+      },
+      {
+        "id": "combination",
+        "label": "Combination — oily in some places, dry in others",
+        "observations": [
+          {
+            "observation": "Vata-Pitta Skin Type",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "dosha:pitta"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "body_skin_healing",
+    "category": "body",
+    "subCategory": "skin",
+    "title": "When you get a cut or wound, how does your skin typically heal?",
+    "type": "single",
+    "importance": 1,
+    "source": "Sushruta Samhita, Sutrasthana 17",
+    "options": [
+      {
+        "id": "slow_dry",
+        "label": "Slowly, skin stays dry, may crack",
+        "observations": [
+          {
+            "observation": "Vata Tissue Healing",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "dhatu:rasa"]
+          }
+        ]
+      },
+      {
+        "id": "inflamed_fast",
+        "label": "Quickly but often with redness or inflammation",
+        "observations": [
+          {
+            "observation": "Pitta Tissue Healing",
+            "weight": 2,
+            "dimensions": ["dosha:pitta", "dhatu:rakta"]
+          }
+        ]
+      },
+      {
+        "id": "slow_moist",
+        "label": "Slowly, skin stays moist and soft",
+        "observations": [
+          {
+            "observation": "Kapha Tissue Healing",
+            "weight": 2,
+            "dimensions": ["dosha:kapha", "dhatu:meda"]
+          }
+        ]
+      },
+      {
+        "id": "normal",
+        "label": "Heals normally without any notable pattern",
+        "observations": []
+      }
+    ]
+  },
+  {
+    "id": "body_hair_type",
+    "category": "body",
+    "subCategory": "hair",
+    "title": "What is your hair naturally like when left untreated?",
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sharirasthana 7.15",
+    "options": [
+      {
+        "id": "dry_thin_frizzy",
+        "label": "Dry, thin, frizzy, or prone to splitting",
+        "observations": [
+          {
+            "observation": "Vata Hair Type",
+            "weight": 3,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "fine_oily_early_grey",
+        "label": "Fine, slightly oily, or prone to premature greying",
+        "observations": [
+          {
+            "observation": "Pitta Hair Type",
+            "weight": 3,
+            "dimensions": ["dosha:pitta", "dhatu:rakta"]
+          }
+        ]
+      },
+      {
+        "id": "thick_lustrous_wavy",
+        "label": "Thick, lustrous, wavy, grows slowly",
+        "observations": [
+          {
+            "observation": "Kapha Hair Type",
+            "weight": 3,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "body_hair_loss",
+    "category": "body",
+    "subCategory": "hair",
+    "title": "Do you experience noticeable hair thinning or loss?",
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Chikitsasthana 26",
+    "options": [
+      {
+        "id": "significant",
+        "label": "Yes — significant thinning or patchy loss",
+        "observations": [
+          {
+            "observation": "Pitta Rakta Dhatu Disturbance",
+            "weight": 3,
+            "dimensions": ["dosha:pitta", "dhatu:rakta"]
+          },
+          {
+            "observation": "Excessive Vata in Shirah",
+            "weight": 2,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "some",
+        "label": "Some seasonal shedding but not excessive",
+        "observations": [
+          {
+            "observation": "Seasonal Hair Loss Pattern",
+            "weight": 1,
+            "dimensions": []
+          }
+        ]
+      },
+      {
+        "id": "none",
+        "label": "None — hair remains full",
+        "observations": []
+      }
+    ]
+  },
+  {
+    "id": "body_eyes_type",
+    "category": "body",
+    "subCategory": "eyes",
+    "title": "How would you describe your eyes most of the time?",
+    "type": "single",
+    "importance": 1,
+    "source": "Ashtanga Hridayam, Sutrasthana 11.3-6",
+    "options": [
+      {
+        "id": "dry_small_active",
+        "label": "Small, active, dry, or frequently blinking",
+        "observations": [
+          {
+            "observation": "Vata Eye Type",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "srotas:annavaha"]
+          }
+        ]
+      },
+      {
+        "id": "sharp_sensitive_light",
+        "label": "Sharp, sensitive to light, prone to redness",
+        "observations": [
+          {
+            "observation": "Pitta Eye Type",
+            "weight": 2,
+            "dimensions": ["dosha:pitta", "dhatu:rakta"]
+          }
+        ]
+      },
+      {
+        "id": "large_moist_calm",
+        "label": "Large, moist, calm, beautiful",
+        "observations": [
+          {
+            "observation": "Kapha Eye Type",
+            "weight": 2,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "body_joints",
+    "category": "body",
+    "subCategory": "joints",
+    "title": "How do your joints generally feel?",
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Chikitsasthana 28",
+    "options": [
+      {
+        "id": "cracking_dry",
+        "label": "They crack or pop easily, feel dry",
+        "observations": [
+          {
+            "observation": "Vata in Asthivaha Srotas",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "dhatu:asthi", "srotas:asthivaha"]
+          }
+        ]
+      },
+      {
+        "id": "inflamed_warm",
+        "label": "Sometimes feel warm, swollen, or tender",
+        "observations": [
+          {
+            "observation": "Pitta in Rakta/Sandhi",
+            "weight": 3,
+            "dimensions": ["dosha:pitta", "dhatu:rakta"]
+          }
+        ]
+      },
+      {
+        "id": "stiff_heavy",
+        "label": "Feel stiff, especially in the morning, tend to feel heavy",
+        "observations": [
+          {
+            "observation": "Kapha in Asthivaha Srotas",
+            "weight": 2,
+            "dimensions": ["dosha:kapha", "dhatu:asthi"]
+          }
+        ]
+      },
+      {
+        "id": "flexible_no_issues",
+        "label": "Flexible and pain-free",
+        "observations": []
+      }
+    ]
+  },
+  {
+    "id": "body_nails",
+    "category": "body",
+    "subCategory": "nails",
+    "title": "What are your nails typically like?",
+    "type": "single",
+    "importance": 1,
+    "source": "Charaka Samhita, Sharirasthana 7.15",
+    "options": [
+      {
+        "id": "brittle_dry",
+        "label": "Brittle, dry, breaking, or cracking easily",
+        "observations": [
+          {
+            "observation": "Vata Nail Tendency",
+            "weight": 2,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "pink_soft_medium",
+        "label": "Pink, soft, medium strength",
+        "observations": [
+          {
+            "observation": "Pitta Nail Tendency",
+            "weight": 2,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "thick_strong_smooth",
+        "label": "Thick, strong, smooth, and slow-growing",
+        "observations": [
+          {
+            "observation": "Kapha Nail Tendency",
+            "weight": 2,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "body_voice",
+    "category": "body",
+    "subCategory": "voice",
+    "title": "How would you naturally describe your speaking voice?",
+    "type": "single",
+    "importance": 1,
+    "source": "Charaka Samhita, Vimansthana 8.96",
+    "options": [
+      {
+        "id": "low_quick_talkative",
+        "label": "Low volume but fast, talkative, often trailing off",
+        "observations": [
+          {
+            "observation": "Vata Voice Pattern",
+            "weight": 1,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "sharp_commanding_clear",
+        "label": "Clear, sharp, commanding, or loud",
+        "observations": [
+          {
+            "observation": "Pitta Voice Pattern",
+            "weight": 1,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "deep_slow_melodic",
+        "label": "Deep, slow, melodic, or resonant",
+        "observations": [
+          {
+            "observation": "Kapha Voice Pattern",
+            "weight": 1,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      }
+    ]
+  }
+]
