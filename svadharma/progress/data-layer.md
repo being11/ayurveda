@@ -1,5 +1,5 @@
 # Data & Sync Layer Module
-**Completion:** 10%
+**Completion:** 50%
 
-- Basic LocalStorage state persistence via Zustand.
-- **Pending:** IndexedDB implementation for robust offline-first caching, profile export/import, and longitudinal tracking.
+- IndexedDB state persistence via Zustand and idb-keyval.
+- **Pending:** Profile export/import, and longitudinal tracking.

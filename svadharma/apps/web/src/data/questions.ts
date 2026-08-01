@@ -109,8 +109,68 @@ export const sleepCategory: Category = {
   ]
 };
 
+export const emotionsCategory: Category = {
+  id: 'emotions',
+  title: 'Emotions & Mental State (Manas)',
+  questions: [
+    {
+      id: 'emo_stress',
+      category: 'emotions',
+      title: 'How do you typically react under severe stress?',
+      type: 'single',
+      options: [
+        { id: 'anxiety', label: 'Anxiety, worry, overwhelm, fear', observations: [{ observation: 'Vata Manas (Rajasic)', weight: 3 }] },
+        { id: 'anger', label: 'Irritability, anger, frustration, intensely focused', observations: [{ observation: 'Pitta Manas (Rajasic/Tikshna)', weight: 3 }] },
+        { id: 'withdrawal', label: 'Withdrawal, depression, lethargy, stubbornness', observations: [{ observation: 'Kapha Manas (Tamasic/Manda)', weight: 3 }] }
+      ]
+    },
+    {
+      id: 'emo_memory',
+      category: 'emotions',
+      title: 'How would you describe your memory and learning style?',
+      type: 'single',
+      options: [
+        { id: 'quick', label: 'Quick to learn, quick to forget', observations: [{ observation: 'Vata Manas (Chala)', weight: 2 }] },
+        { id: 'sharp', label: 'Sharp memory, good at logical deduction', observations: [{ observation: 'Pitta Manas (Tikshna)', weight: 2 }] },
+        { id: 'slow', label: 'Slow to learn, but never forget', observations: [{ observation: 'Kapha Manas (Sthira)', weight: 2 }] }
+      ]
+    }
+  ]
+};
+
+export const lifestyleCategory: Category = {
+  id: 'lifestyle',
+  title: 'Lifestyle & Routine',
+  questions: [
+    {
+      id: 'life_routine',
+      category: 'lifestyle',
+      title: 'How do you handle daily routines?',
+      type: 'single',
+      options: [
+        { id: 'dislike', label: 'Dislike routine, prefer spontaneity', observations: [{ observation: 'Vata Lifestyle', weight: 2 }] },
+        { id: 'driven', label: 'Driven by lists and schedules, get annoyed if disrupted', observations: [{ observation: 'Pitta Lifestyle', weight: 2 }] },
+        { id: 'comfortable', label: 'Comfortable with routine, can become stuck in a rut', observations: [{ observation: 'Kapha Lifestyle', weight: 2 }] }
+      ]
+    },
+    {
+      id: 'life_climate',
+      category: 'lifestyle',
+      title: 'What type of weather do you struggle with the most?',
+      type: 'single',
+      options: [
+        { id: 'cold_wind', label: 'Cold, windy weather', observations: [{ observation: 'Vata Aggravation tendency', weight: 2 }] },
+        { id: 'hot', label: 'Hot, humid weather', observations: [{ observation: 'Pitta Aggravation tendency', weight: 2 }] },
+        { id: 'cold_damp', label: 'Cold, damp, gloomy weather', observations: [{ observation: 'Kapha Aggravation tendency', weight: 2 }] }
+      ]
+    }
+  ]
+};
+
 export const categories: Category[] = [
   identityCategory,
   digestionCategory,
-  sleepCategory
+  sleepCategory,
+  emotionsCategory,
+  lifestyleCategory
 ];

@@ -120,6 +120,26 @@ export default function ReportPage() {
               {!sortedObservations.some(([obs]) => obs.includes('Nidra')) && "More data is needed to fully map your sleep patterns."}
             </p>
           </div>
+
+          <div className="space-y-6">
+            <h3 className="text-2xl font-serif border-b border-stone-200 pb-2">Manas (Mind & Emotions)</h3>
+            <p className="text-stone-700 leading-relaxed text-lg">
+              {sortedObservations.some(([obs]) => obs.includes('Vata Manas')) && "Your mind is highly active, creative, and quick, but prone to anxiety, overthinking, and worry under stress. Grounding practices and routine are essential."}
+              {sortedObservations.some(([obs]) => obs.includes('Pitta Manas')) && "Your mind is sharp, focused, and goal-oriented. Under stress, you may become irritable, demanding, or angry. Cultivating patience and cooling practices is key."}
+              {sortedObservations.some(([obs]) => obs.includes('Kapha Manas')) && "Your mind is stable, calm, and steady. However, under stress, you may tend towards lethargy, stubbornness, or withdrawal. Stimulating activities and new experiences are beneficial."}
+              {!sortedObservations.some(([obs]) => obs.includes('Manas')) && "More data is needed to fully map your mental and emotional tendencies."}
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            <h3 className="text-2xl font-serif border-b border-stone-200 pb-2">Vihara (Lifestyle & Environment)</h3>
+            <p className="text-stone-700 leading-relaxed text-lg">
+              {sortedObservations.some(([obs]) => obs.includes('Vata Lifestyle') || obs.includes('Vata Aggravation')) && "You may struggle with cold, windy conditions and irregular routines. Focusing on warmth, oiliness, and a steady daily rhythm will bring profound balance."}
+              {sortedObservations.some(([obs]) => obs.includes('Pitta Lifestyle') || obs.includes('Pitta Aggravation')) && "You may struggle with hot, humid conditions and overly rigid schedules. Prioritize cooling environments, moderate your intensity, and allow for unstructured downtime."}
+              {sortedObservations.some(([obs]) => obs.includes('Kapha Lifestyle') || obs.includes('Kapha Aggravation')) && "You may struggle with cold, damp weather and a tendency to become too comfortable in routine. Embrace warmth, light, and regular vigorous activity."}
+              {!sortedObservations.some(([obs]) => obs.includes('Lifestyle') || obs.includes('Aggravation')) && "More data is needed to fully map your lifestyle and environmental interactions."}
+            </p>
+          </div>
         </div>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4 pt-12 border-t border-stone-200">

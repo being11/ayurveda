@@ -1,8 +1,22 @@
 import { create } from 'zustand';
-import { persist } from 'zustand/middleware';
+import { persist, createJSONStorage, StateStorage } from 'zustand/middleware';
 import { AssessmentState } from '../types/assessment';
 import { getNextQuestionId } from '../engines/logic';
 import { categories } from '../data/questions';
+import { get, set as idbSet, del } from 'idb-keyval';
+
+// Custom storage adapter for IndexedDB
+const idbStorage: StateStorage = {
+  getItem: async (name: string): Promise<string | null> => {
+    return (await get(name)) || null;
+  },
+  setItem: async (name: string, value: string): Promise<void> => {
+    await idbSet(name, value);
+  },
+  removeItem: async (name: string): Promise<void> => {
+    await del(name);
+  },
+};
 
 export const useAssessmentStore = create<AssessmentState>()(
   persist(
@@ -81,6 +95,7 @@ export const useAssessmentStore = create<AssessmentState>()(
     }),
     {
       name: 'swadharma-assessment-storage',
+      storage: createJSONStorage(() => idbStorage),
     }
   )
 );

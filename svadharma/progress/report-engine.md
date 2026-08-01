@@ -1,7 +1,8 @@
 # Report Engine Module
-**Completion:** 25%
+**Completion:** 50%
 
 - Matrix view UI implemented.
-- Base observation mapping (Agni, Nidra, Frame).
+- Base observation mapping (Agni, Nidra, Frame, Manas, Vihara).
 - Weight aggregation.
-- **Pending:** Implement full spectrum of reporting (Ritucharya, Dinacharya, Mental tendencies) and PDF Export.
+- Included Diet, Lifestyle, and Mental contextual sections.
+- **Pending:** Implement full spectrum of reporting (Ritucharya, Dinacharya) and PDF Export.

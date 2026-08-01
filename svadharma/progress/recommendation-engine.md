@@ -1,4 +1,6 @@
 # Recommendation Engine Module
-**Completion:** 0%
+**Completion:** 30%
 
-- **Pending:** Logic to generate practical, classical-text-backed advice (diet, lifestyle, spiritual practices) derived from the user's specific weighted observations (not just generic dosha tips).
+- Initial recommendation engine created to generate advice based on weighted observations.
+- Basic UI implemented to display categorized recommendations with Ayurvedic rationale.
+- **Pending:** Expand recommendations database to cover all observations across Diet, Lifestyle, Mental, and Exercise categories.

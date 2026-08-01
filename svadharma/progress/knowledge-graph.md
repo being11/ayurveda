@@ -1,4 +1,6 @@
 # Knowledge Graph Module
-**Completion:** 0%
+**Completion:** 30%
 
-- **Pending:** Map every observation to classical Ayurvedic shastra (Charaka Samhita, Sushruta Samhita, etc.) and construct a navigable data model linking attributes to sources.
+- Initial data model created linking observations to classical Ayurvedic shastra.
+- Basic UI implemented to display matched sources based on user observations.
+- **Pending:** Expand knowledge base to cover all possible observations and create a fully navigable graph.
