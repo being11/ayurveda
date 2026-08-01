@@ -1,0 +1,26 @@
+
+> swadharma@0.0.1 dev
+> turbo dev
+
+• turbo 2.10.5
+
+   • Packages in scope: @workspace/eslint-config, @workspace/typescript-config, @workspace/ui, web
+   • Running dev in 4 packages
+   • Remote caching disabled
+
+web:dev: cache bypass, force executing e3ec3636d0fd5221
+web:dev:
+web:dev: > web@0.0.1 dev /app/swadharma/apps/web
+web:dev: > next dev
+web:dev:
+web:dev: ▲ Next.js 16.2.6 (Turbopack)
+web:dev: - Local:         http://localhost:3000
+web:dev: - Network:       http://192.168.0.2:3000
+web:dev: ✓ Ready in 540ms
+web:dev:
+web:dev: ○ Compiling /report ...
+web:dev:  GET /report 200 in 5.4s (next.js: 4.9s, application-code: 568ms)
+web:dev:  GET / 200 in 788ms (next.js: 626ms, application-code: 162ms)
+web:dev:  GET /assessment 200 in 2.5s (next.js: 2.3s, application-code: 213ms)
+web:dev:  GET /report 200 in 69ms (next.js: 5ms, application-code: 64ms)
+web:dev: ✓ Compiled in 424ms
