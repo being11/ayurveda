@@ -1,1 +1,397 @@
-[]
+[
+  {
+    "id": "ex_endurance",
+    "category": "exercise",
+    "subCategory": "physical",
+    "title": "How is your natural physical endurance or stamina?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 21.18 (Bala)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "low_tires_quickly",
+        "label": "Low — I tire quickly and need long recovery",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Bala (low stamina)",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "dhatu:mamsa"]
+          }
+        ]
+      },
+      {
+        "id": "moderate_average",
+        "label": "Moderate — average for my age",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Bala (moderate stamina)",
+            "weight": 1,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "high_can_keep_going",
+        "label": "High — I can sustain physical effort for a long time",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Bala (high stamina)",
+            "weight": 2,
+            "dimensions": ["dosha:kapha", "dhatu:mamsa"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ex_recovery",
+    "category": "exercise",
+    "subCategory": "physical",
+    "title": "After intense physical exercise, how long do you need to fully recover?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 21.18",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "1_to_2_days",
+        "label": "1–2 days before I feel ready again",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Bala (slow recovery)",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "ojas:low"]
+          }
+        ]
+      },
+      {
+        "id": "same_day_or_next",
+        "label": "Same day or next morning — I bounce back fast",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Bala (fast recovery)",
+            "weight": 2,
+            "dimensions": ["dosha:pitta", "agni:tikshna"]
+          }
+        ]
+      },
+      {
+        "id": "3_plus_days",
+        "label": "3+ days — I get sore very easily",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Bala (slow recovery)",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "ojas:low"]
+          },
+          {
+            "observation": "Low Ojas",
+            "weight": 1,
+            "dimensions": ["dosha:vata", "ojas:low"]
+          }
+        ]
+      },
+      {
+        "id": "never_exercise",
+        "label": "I rarely exercise vigorously",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Sedentary Pattern",
+            "weight": 2,
+            "dimensions": ["dosha:kapha", "lifestyle:sedentary"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ex_preferred_type",
+    "category": "exercise",
+    "subCategory": "physical",
+    "title": "What kind of physical movement feels most natural or enjoyable to you?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "multiple",
+    "importance": 1,
+    "source": "Ashtanga Hridayam, Sutrasthana 2.10 (Vyayama)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "walking_nature",
+        "label": "Walking, especially in nature",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sattvic Exercise Pattern",
+            "weight": 1,
+            "dimensions": ["manas:sattvic"]
+          }
+        ]
+      },
+      {
+        "id": "yoga_stretching",
+        "label": "Yoga or stretching",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Balancing Exercise",
+            "weight": 1,
+            "dimensions": ["lifestyle:regulated"]
+          }
+        ]
+      },
+      {
+        "id": "high_intensity",
+        "label": "High-intensity training, running, CrossFit",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Exercise Pattern",
+            "weight": 2,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "team_sports",
+        "label": "Team sports",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Social Pattern",
+            "weight": 1,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "swimming",
+        "label": "Swimming or water activities",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Cooling Pattern",
+            "weight": 1,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "nothing_dislike_exercise",
+        "label": "I avoid exercise — I generally dislike it",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Sedentary Pattern",
+            "weight": 3,
+            "dimensions": ["dosha:kapha", "lifestyle:sedentary"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ex_morning_vs_evening",
+    "category": "exercise",
+    "subCategory": "physical",
+    "title": "When do you naturally feel most physically energized?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 1,
+    "source": "Charaka Samhita, Sutrasthana 30.10 (Tridosha Kala)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "morning",
+        "label": "Morning — full of energy early in the day",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Morning Pattern",
+            "weight": 1,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "afternoon",
+        "label": "Afternoon — peak around 2–4pm",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Afternoon Pattern",
+            "weight": 1,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "evening",
+        "label": "Evening — I warm up as the day goes on",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Late Energy Pattern",
+            "weight": 1,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      },
+      {
+        "id": "variable_unpredictable",
+        "label": "Completely variable — energy spikes and crashes",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Energy Pattern",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "agni:vishama"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ex_joint_flexibility",
+    "category": "exercise",
+    "subCategory": "physical",
+    "title": "How flexible are your joints?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 1,
+    "source": "Sushruta Samhita, Sharirasthana 5.29 (Sandhi)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "very_flexible_hypermobile",
+        "label": "Very flexible — sometimes hypermobile",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Shleshaka Kapha disturbance",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "dosha:kapha"]
+          }
+        ]
+      },
+      {
+        "id": "average_flexibility",
+        "label": "Average",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      },
+      {
+        "id": "stiff_needs_warmup",
+        "label": "Stiff — especially before warming up",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Stiffness Pattern",
+            "weight": 2,
+            "dimensions": ["dosha:kapha", "dhatu:asthi"]
+          }
+        ]
+      },
+      {
+        "id": "pain_with_movement",
+        "label": "Movement causes pain or discomfort",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata in Asthivaha Srotas",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "dhatu:asthi", "srotas:asthivaha"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ex_breath_capacity",
+    "category": "exercise",
+    "subCategory": "physical",
+    "title": "When you do aerobic exercise, how is your breathing?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 17.116 (Pranavaha Srotas)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "get_breathless_quickly",
+        "label": "I get breathless very quickly",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata in Pranavaha Srotas",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "srotas:pranavaha"]
+          }
+        ]
+      },
+      {
+        "id": "moderate_endurance",
+        "label": "Moderate endurance, breathe normally",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      },
+      {
+        "id": "strong_sustained",
+        "label": "Strong sustained breathing capacity",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Pranavaha Srotas strength",
+            "weight": 2,
+            "dimensions": ["dosha:kapha", "srotas:pranavaha"]
+          }
+        ]
+      }
+    ]
+  }
+]

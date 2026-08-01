@@ -2,19 +2,19 @@
   {
     "id": "life_routine",
     "category": "lifestyle",
-    "subCategory": "vihara",
-    "title": "How do you handle daily routines?",
+    "subCategory": "routine",
+    "title": "How do you relate to daily routines?",
     "subtitle": null,
     "illustration": null,
     "type": "single",
     "importance": 2,
-    "source": "Charaka Samhita, Sutrasthana 6 (Ritucharya)",
+    "source": "Charaka Samhita, Sutrasthana 8.18 (Dinacharya)",
     "conditions": null,
     "nextQuestion": null,
     "options": [
       {
-        "id": "dislike",
-        "label": "Dislike routine, prefer spontaneity",
+        "id": "dislike_spontaneity",
+        "label": "Dislike routine, prefer spontaneity, often forget scheduled things",
         "sublabel": null,
         "nextQuestion": null,
         "observations": [
@@ -26,7 +26,7 @@
         ]
       },
       {
-        "id": "driven",
+        "id": "list_driven_rigid",
         "label": "Driven by lists and schedules, get annoyed if disrupted",
         "sublabel": null,
         "nextQuestion": null,
@@ -39,8 +39,8 @@
         ]
       },
       {
-        "id": "comfortable",
-        "label": "Comfortable with routine, can become stuck in a rut",
+        "id": "comfortable_stable",
+        "label": "Comfortable with routine, resist change",
         "sublabel": null,
         "nextQuestion": null,
         "observations": [
@@ -54,21 +54,195 @@
     ]
   },
   {
-    "id": "life_climate",
+    "id": "life_wake_time",
     "category": "lifestyle",
-    "subCategory": "environment",
-    "title": "What type of weather do you struggle with the most?",
+    "subCategory": "routine",
+    "title": "What time do you naturally wake up without an alarm?",
     "subtitle": null,
     "illustration": null,
     "type": "single",
     "importance": 2,
-    "source": "Ashtanga Hridayam, Sutrasthana 3.1",
+    "source": "Ashtanga Hridayam, Sutrasthana 2.1 (Dinacharya)",
     "conditions": null,
     "nextQuestion": null,
     "options": [
       {
-        "id": "cold_wind",
-        "label": "Cold, windy weather",
+        "id": "before_6am",
+        "label": "Before 6am, naturally",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Dinacharya Brahma Muhurta adherence",
+            "weight": 2,
+            "dimensions": ["lifestyle:regulated"]
+          }
+        ]
+      },
+      {
+        "id": "6_to_8am",
+        "label": "Between 6am and 8am",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Moderate Dinacharya",
+            "weight": 1,
+            "dimensions": []
+          }
+        ]
+      },
+      {
+        "id": "after_8am",
+        "label": "After 8am, I need an alarm",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Morning Tendency",
+            "weight": 2,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      },
+      {
+        "id": "highly_variable",
+        "label": "Completely variable depending on the day",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Lifestyle",
+            "weight": 2,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "life_screen_time",
+    "category": "lifestyle",
+    "subCategory": "routine",
+    "title": "How much screen time (phone/computer) do you have in the 2 hours before bed?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Ashtanga Hridayam, Sutrasthana 7.61 (Nidra)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "none_or_minimal",
+        "label": "Minimal or none — I wind down without screens",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Dinacharya Adherent",
+            "weight": 1,
+            "dimensions": ["lifestyle:regulated"]
+          }
+        ]
+      },
+      {
+        "id": "one_hour",
+        "label": "About one hour",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      },
+      {
+        "id": "two_plus",
+        "label": "2+ hours — I'm usually on screens until I sleep",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Nidra disturbance risk",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "manas:rajasic"]
+          },
+          {
+            "observation": "Rajasic Manas activation",
+            "weight": 1,
+            "dimensions": ["dosha:vata", "manas:rajasic"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "life_nature_exposure",
+    "category": "lifestyle",
+    "subCategory": "routine",
+    "title": "How much time do you typically spend outdoors in nature each week?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 1,
+    "source": "Charaka Samhita, Sutrasthana 8.18",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "daily",
+        "label": "Daily — at least an hour",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sattvic Lifestyle",
+            "weight": 1,
+            "dimensions": ["manas:sattvic"]
+          }
+        ]
+      },
+      {
+        "id": "few_times_week",
+        "label": "A few times a week",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Moderate Sattvic Practice",
+            "weight": 1,
+            "dimensions": []
+          }
+        ]
+      },
+      {
+        "id": "rarely",
+        "label": "Rarely — mostly indoors",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Sedentary Pattern",
+            "weight": 1,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "life_climate",
+    "category": "lifestyle",
+    "subCategory": "routine",
+    "title": "Which type of weather do you feel worst in?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 6.3-8 (Ritucharya)",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "cold_windy",
+        "label": "Cold, windy, dry weather",
         "sublabel": null,
         "nextQuestion": null,
         "observations": [
@@ -80,7 +254,7 @@
         ]
       },
       {
-        "id": "hot",
+        "id": "hot_humid",
         "label": "Hot, humid weather",
         "sublabel": null,
         "nextQuestion": null,
@@ -93,8 +267,8 @@
         ]
       },
       {
-        "id": "cold_damp",
-        "label": "Cold, damp, gloomy weather",
+        "id": "cold_damp_overcast",
+        "label": "Cold, damp, cloudy weather",
         "sublabel": null,
         "nextQuestion": null,
         "observations": [
@@ -102,6 +276,127 @@
             "observation": "Kapha Aggravation tendency",
             "weight": 2,
             "dimensions": ["dosha:kapha"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "life_travel",
+    "category": "lifestyle",
+    "subCategory": "routine",
+    "title": "How does frequent travel or irregular schedule affect you?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 1,
+    "source": "Charaka Samhita, Sutrasthana 7.24",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "thrives_loves_it",
+        "label": "I thrive on it — variety energizes me",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Lifestyle",
+            "weight": 1,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "manageable_adaptable",
+        "label": "Manageable — I adapt reasonably well",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Lifestyle",
+            "weight": 1,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "disrupts_significantly",
+        "label": "It significantly disrupts my digestion, sleep, and mood",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Aggravation tendency",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "agni:vishama"]
+          }
+        ]
+      },
+      {
+        "id": "strongly_dislike",
+        "label": "I strongly dislike disruption — prefer my stable routine",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Lifestyle",
+            "weight": 2,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "life_sleep_schedule",
+    "category": "lifestyle",
+    "subCategory": "routine",
+    "title": "Do you generally go to bed and wake up at the same times every day?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Ashtanga Hridayam, Sutrasthana 2",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "very_consistent",
+        "label": "Yes, very consistent even on weekends",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Consistent Lifestyle",
+            "weight": 1,
+            "dimensions": ["dosha:kapha", "lifestyle:regulated"]
+          }
+        ]
+      },
+      {
+        "id": "somewhat_consistent",
+        "label": "Mostly consistent, might sleep in a bit on weekends",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Moderate Dinacharya",
+            "weight": 1,
+            "dimensions": []
+          }
+        ]
+      },
+      {
+        "id": "highly_irregular",
+        "label": "Highly irregular, changes every day",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Lifestyle",
+            "weight": 2,
+            "dimensions": ["dosha:vata"]
           }
         ]
       }
