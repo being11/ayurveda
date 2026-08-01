@@ -1,143 +1,386 @@
 [
   {
-    "id": "id_gender",
+    "id": "intro_gender",
     "category": "introduction",
-    "subCategory": "demographics",
+    "subCategory": "identity",
     "title": "What is your sex assigned at birth?",
-    "subtitle": "This helps tailor specific physiological and hormonal questions later.",
-    "illustration": null,
+    "subtitle": "This helps us tailor specific physiological questions to your experience.",
     "type": "single",
-    "importance": 2,
-    "source": "General context for physiological assessment",
-    "conditions": null,
-    "nextQuestion": null,
+    "importance": 3,
+    "source": "Charaka Samhita, Sharirasthana 3.3",
     "options": [
       {
         "id": "male",
-        "label": "Male",
-        "sublabel": null,
-        "nextQuestion": null,
+        "label": "male",
         "observations": []
       },
       {
         "id": "female",
-        "label": "Female",
-        "sublabel": null,
-        "nextQuestion": null,
+        "label": "female",
         "observations": []
       },
       {
         "id": "other",
-        "label": "Other",
-        "sublabel": null,
-        "nextQuestion": null,
+        "label": "other",
         "observations": []
       }
     ]
   },
   {
-    "id": "id_frame",
+    "id": "intro_age_range",
     "category": "introduction",
-    "subCategory": "physical",
-    "title": "How would you describe your natural physical frame?",
-    "subtitle": null,
-    "illustration": null,
+    "subCategory": "identity",
+    "title": "Which life stage best describes where you are right now?",
+    "subtitle": "Ayurveda recognizes distinct phases of life (Bala, Madhya, Vriddha) that profoundly shape your constitution.",
     "type": "single",
-    "importance": 2,
-    "source": "Charaka Samhita, Vimanasthana 8.94",
-    "conditions": null,
-    "nextQuestion": null,
+    "importance": 3,
+    "source": "Charaka Samhita, Sutrasthana 30.10, Ashtanga Hridayam Sutrasthana 1.8",
     "options": [
       {
-        "id": "slight",
-        "label": "Slight, thin, prominent joints",
-        "sublabel": null,
-        "nextQuestion": null,
+        "id": "child_teen",
+        "label": "Under 20",
         "observations": [
           {
-            "observation": "Vata Frame",
+            "observation": "Kapha Bala Phase tendency",
             "weight": 2,
+            "dimensions": ["dhatu:kapha_dominant_phase"]
+          }
+        ]
+      },
+      {
+        "id": "young_adult",
+        "label": "20–35",
+        "observations": [
+          {
+            "observation": "Pitta Madhya Phase tendency",
+            "weight": 2,
+            "dimensions": ["dhatu:pitta_dominant_phase"]
+          }
+        ]
+      },
+      {
+        "id": "middle",
+        "label": "36–55",
+        "observations": [
+          {
+            "observation": "Pitta-Vata transition tendency",
+            "weight": 2,
+            "dimensions": ["dosha:pitta", "dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "mature",
+        "label": "56+",
+        "observations": [
+          {
+            "observation": "Vata Vriddha Phase tendency",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "dhatu:vata_dominant_phase"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intro_climate",
+    "category": "introduction",
+    "subCategory": "environment",
+    "title": "What is the predominant climate where you live most of the year?",
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 6.3-8",
+    "options": [
+      {
+        "id": "hot_dry",
+        "label": "Hot and dry (desert, arid)",
+        "observations": [
+          {
+            "observation": "Hot Dry Climate Exposure",
+            "weight": 1,
+            "dimensions": ["env:hot_dry"]
+          }
+        ]
+      },
+      {
+        "id": "hot_humid",
+        "label": "Hot and humid (tropical, coastal)",
+        "observations": [
+          {
+            "observation": "Hot Humid Climate Exposure",
+            "weight": 1,
+            "dimensions": ["env:hot_humid"]
+          }
+        ]
+      },
+      {
+        "id": "cold_dry",
+        "label": "Cold and dry (mountains, plains in winter)",
+        "observations": [
+          {
+            "observation": "Cold Dry Climate Exposure",
+            "weight": 1,
+            "dimensions": ["env:cold_dry"]
+          }
+        ]
+      },
+      {
+        "id": "cold_wet",
+        "label": "Cold and wet (rainy, temperate)",
+        "observations": [
+          {
+            "observation": "Cold Wet Climate Exposure",
+            "weight": 1,
+            "dimensions": ["env:cold_wet"]
+          }
+        ]
+      },
+      {
+        "id": "temperate",
+        "label": "Mild and variable",
+        "observations": [
+          {
+            "observation": "Temperate Climate Exposure",
+            "weight": 1,
+            "dimensions": ["env:temperate"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intro_occupation_type",
+    "category": "introduction",
+    "subCategory": "lifestyle",
+    "title": "Which best describes how you spend most of your working day?",
+    "subtitle": "Not what your job title says — but what your body actually does most of the time.",
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 7.24",
+    "options": [
+      {
+        "id": "sedentary_mental",
+        "label": "Mostly seated, mental work",
+        "observations": [
+          {
+            "observation": "Sedentary Mental Occupation",
+            "weight": 2,
+            "dimensions": ["lifestyle:sedentary"]
+          }
+        ]
+      },
+      {
+        "id": "active_physical",
+        "label": "Standing, walking, physical work",
+        "observations": [
+          {
+            "observation": "Active Physical Occupation",
+            "weight": 2,
+            "dimensions": ["lifestyle:active"]
+          }
+        ]
+      },
+      {
+        "id": "mixed",
+        "label": "Mix of both",
+        "observations": [
+          {
+            "observation": "Mixed Occupation Pattern",
+            "weight": 1,
+            "dimensions": ["lifestyle:mixed"]
+          }
+        ]
+      },
+      {
+        "id": "caregiving",
+        "label": "Care for others (children, elderly, patients)",
+        "observations": [
+          {
+            "observation": "Caregiving Occupation",
+            "weight": 1,
+            "dimensions": ["lifestyle:caregiving"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intro_meal_timing",
+    "category": "introduction",
+    "subCategory": "lifestyle",
+    "title": "How regular is the timing of your meals on most days?",
+    "type": "single",
+    "importance": 3,
+    "source": "Charaka Samhita, Sutrasthana 8.25",
+    "options": [
+      {
+        "id": "very_regular",
+        "label": "Same times every day, rarely skip",
+        "observations": [
+          {
+            "observation": "Dinacharya Adherent",
+            "weight": 2,
+            "dimensions": ["lifestyle:regulated"]
+          }
+        ]
+      },
+      {
+        "id": "mostly_regular",
+        "label": "Usually on time, occasionally irregular",
+        "observations": [
+          {
+            "observation": "Moderate Routine Adherence",
+            "weight": 1,
+            "dimensions": ["lifestyle:moderate"]
+          }
+        ]
+      },
+      {
+        "id": "irregular",
+        "label": "Eat when I can — no fixed pattern",
+        "observations": [
+          {
+            "observation": "Vishama Ahara Krama",
+            "weight": 2,
+            "dimensions": ["agni:vishama", "dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "skip_often",
+        "label": "Often skip meals or eat very late",
+        "observations": [
+          {
+            "observation": "Meal Skipping Pattern",
+            "weight": 3,
+            "dimensions": ["agni:vishama", "dosha:vata"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intro_primary_goal",
+    "category": "introduction",
+    "subCategory": "intention",
+    "title": "What brings you here today?",
+    "subtitle": "Ayurveda works best when we understand your core intention.",
+    "type": "single",
+    "importance": 1,
+    "source": "General context for personalized assessment",
+    "options": [
+      {
+        "id": "curiosity",
+        "label": "Just curious about my Ayurvedic constitution",
+        "observations": []
+      },
+      {
+        "id": "health_issue",
+        "label": "Seeking support for a specific health concern",
+        "observations": []
+      },
+      {
+        "id": "general_wellness",
+        "label": "Looking for general wellness and lifestyle guidance",
+        "observations": []
+      }
+    ]
+  },
+  {
+    "id": "intro_health_status",
+    "category": "introduction",
+    "subCategory": "baseline",
+    "title": "How would you describe your overall vitality right now?",
+    "subtitle": "Think about how you feel on an average day.",
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 11.3",
+    "options": [
+      {
+        "id": "excellent",
+        "label": "Excellent, full of life and energy",
+        "observations": [
+          {
+            "observation": "High Ojas",
+            "weight": 2,
+            "dimensions": ["ojas:high"]
+          }
+        ]
+      },
+      {
+        "id": "good",
+        "label": "Good, but I have my off days",
+        "observations": [
+          {
+            "observation": "Moderate Ojas",
+            "weight": 1,
+            "dimensions": ["ojas:moderate"]
+          }
+        ]
+      },
+      {
+        "id": "struggling",
+        "label": "Struggling, I often feel depleted or unwell",
+        "observations": [
+          {
+            "observation": "Low Ojas",
+            "weight": 2,
+            "dimensions": ["ojas:low", "dosha:vata"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intro_energy_baseline",
+    "category": "introduction",
+    "subCategory": "baseline",
+    "title": "When during the day do you feel your best?",
+    "type": "single",
+    "importance": 2,
+    "source": "Ashtanga Hridayam, Sutrasthana 1.7",
+    "options": [
+      {
+        "id": "morning",
+        "label": "Early morning, I wake up refreshed",
+        "observations": [
+          {
+            "observation": "Kapha Morning Energy",
+            "weight": 1,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      },
+      {
+        "id": "afternoon",
+        "label": "Midday to afternoon, when things are busy",
+        "observations": [
+          {
+            "observation": "Pitta Midday Energy",
+            "weight": 1,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "evening",
+        "label": "Late evening or night, I'm a night owl",
+        "observations": [
+          {
+            "observation": "Vata Night Energy",
+            "weight": 1,
             "dimensions": ["dosha:vata"]
           }
         ]
       },
       {
-        "id": "moderate",
-        "label": "Moderate, athletic, well-proportioned",
-        "sublabel": null,
-        "nextQuestion": null,
+        "id": "variable",
+        "label": "It varies a lot from day to day",
         "observations": [
           {
-            "observation": "Pitta Frame",
-            "weight": 2,
-            "dimensions": ["dosha:pitta"]
-          }
-        ]
-      },
-      {
-        "id": "broad",
-        "label": "Broad, sturdy, heavy-set",
-        "sublabel": null,
-        "nextQuestion": null,
-        "observations": [
-          {
-            "observation": "Kapha Frame",
-            "weight": 2,
-            "dimensions": ["dosha:kapha"]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "id_weight_tendency",
-    "category": "introduction",
-    "subCategory": "metabolism",
-    "title": "How does your body typically respond to weight?",
-    "subtitle": null,
-    "illustration": null,
-    "type": "single",
-    "importance": 2,
-    "source": "Sushruta Samhita, Sutrasthana 15.32",
-    "conditions": null,
-    "nextQuestion": null,
-    "options": [
-      {
-        "id": "lose_easily",
-        "label": "Hard to gain, easy to lose",
-        "sublabel": null,
-        "nextQuestion": null,
-        "observations": [
-          {
-            "observation": "High metabolic rate (Tikshna/Vata)",
-            "weight": 2,
-            "dimensions": ["dosha:vata", "dosha:pitta"]
-          }
-        ]
-      },
-      {
-        "id": "stable",
-        "label": "Relatively stable, can gain or lose if I try",
-        "sublabel": null,
-        "nextQuestion": null,
-        "observations": [
-          {
-            "observation": "Stable metabolism (Sama/Pitta)",
-            "weight": 2,
-            "dimensions": ["dosha:pitta"]
-          }
-        ]
-      },
-      {
-        "id": "gain_easily",
-        "label": "Easy to gain, very hard to lose",
-        "sublabel": null,
-        "nextQuestion": null,
-        "observations": [
-          {
-            "observation": "Slow metabolic rate (Manda/Kapha)",
-            "weight": 2,
-            "dimensions": ["dosha:kapha", "agni:manda"]
+            "observation": "Variable Energy Pattern",
+            "weight": 1,
+            "dimensions": ["dosha:vata"]
           }
         ]
       }
