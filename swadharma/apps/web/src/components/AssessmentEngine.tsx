@@ -2,7 +2,7 @@
 
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAssessmentStore } from '@/src/stores/assessmentStore';
-import { categories } from '@/src/data/questions';
+import { categories } from '@/src/data/index';
 import { Button } from '@/src/components/ui/button';
 import { Progress } from '@/src/components/ui/progress';
 import { ArrowLeft, ArrowRight, CheckCircle2 } from 'lucide-react';

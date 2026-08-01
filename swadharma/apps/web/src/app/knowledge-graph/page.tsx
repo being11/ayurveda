@@ -2,7 +2,7 @@
 
 import { useAssessmentStore } from '@/src/stores/assessmentStore';
 import { calculateObservations } from '@/src/engines/logic';
-import { categories } from '@/src/data/questions';
+import { categories } from '@/src/data/index';
 import { knowledgeGraph } from '@/src/data/knowledge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/src/components/ui/card';
 import { useEffect, useState } from 'react';

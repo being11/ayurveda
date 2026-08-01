@@ -1,0 +1,110 @@
+[
+  {
+    "id": "emo_stress",
+    "category": "emotions",
+    "subCategory": "manas",
+    "title": "How do you typically react under severe stress?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 1.57",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "anxiety",
+        "label": "Anxiety, worry, overwhelm, fear",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Manas (Rajasic)",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "manas:rajasic"]
+          }
+        ]
+      },
+      {
+        "id": "anger",
+        "label": "Irritability, anger, frustration, intensely focused",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Manas (Rajasic/Tikshna)",
+            "weight": 3,
+            "dimensions": ["dosha:pitta", "manas:rajasic"]
+          }
+        ]
+      },
+      {
+        "id": "withdrawal",
+        "label": "Withdrawal, depression, lethargy, stubbornness",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Manas (Tamasic/Manda)",
+            "weight": 3,
+            "dimensions": ["dosha:kapha", "manas:tamasic"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "emo_memory",
+    "category": "emotions",
+    "subCategory": "manas",
+    "title": "How would you describe your memory and learning style?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Vimanasthana 8.94",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "quick",
+        "label": "Quick to learn, quick to forget",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Manas (Chala)",
+            "weight": 2,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "sharp",
+        "label": "Sharp memory, good at logical deduction",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Manas (Tikshna)",
+            "weight": 2,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "slow",
+        "label": "Slow to learn, but never forget",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Manas (Sthira)",
+            "weight": 2,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      }
+    ]
+  }
+]
