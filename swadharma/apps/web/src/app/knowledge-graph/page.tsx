@@ -90,7 +90,7 @@ export default function KnowledgeGraphPage() {
     const matchesSearch = searchQuery === '' ||
       node.observation.toLowerCase().includes(searchLower) ||
       node.description.toLowerCase().includes(searchLower) ||
-      node.classicalSource.toLowerCase().includes(searchLower);
+      node.classicalSources?.some(s => s.text.toLowerCase().includes(searchLower) || s.chapter.toLowerCase().includes(searchLower));
 
     return matchesPrinciple && matchesSearch;
   });
@@ -261,7 +261,11 @@ export default function KnowledgeGraphPage() {
                                 className="overflow-hidden"
                               >
                                 <div className="mt-3 p-4 bg-stone-50 rounded-lg border border-stone-200">
-                                  <p className="text-stone-800 font-medium font-serif">{node.classicalSource}</p>
+                                  <p className="text-stone-800 font-medium font-serif">
+                                    {node.classicalSources && node.classicalSources.length > 0
+                                      ? `${node.classicalSources[0]?.text}, ${node.classicalSources[0]?.chapter}`
+                                      : 'Classical Source'}
+                                  </p>
                                   <div className="mt-3 flex items-center gap-2">
                                     <span className="text-xs font-semibold text-stone-500">Related Dosha:</span>
                                     <span className="text-xs px-2 py-1 bg-white border border-stone-200 rounded text-stone-700">
