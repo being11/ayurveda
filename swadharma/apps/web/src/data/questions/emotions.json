@@ -3,31 +3,31 @@
     "id": "emo_stress",
     "category": "emotions",
     "subCategory": "manas",
-    "title": "How do you typically react under severe stress?",
+    "title": "When you are under severe stress, what is your most common first reaction?",
     "subtitle": null,
     "illustration": null,
     "type": "single",
-    "importance": 2,
+    "importance": 3,
     "source": "Charaka Samhita, Sutrasthana 1.57",
     "conditions": null,
     "nextQuestion": null,
     "options": [
       {
-        "id": "anxiety",
-        "label": "Anxiety, worry, overwhelm, fear",
+        "id": "anxiety_worry",
+        "label": "Anxiety, worry, overwhelm, fear, scatteredness",
         "sublabel": null,
         "nextQuestion": null,
         "observations": [
           {
             "observation": "Vata Manas (Rajasic)",
             "weight": 3,
-            "dimensions": ["dosha:vata", "manas:rajasic"]
+            "dimensions": ["dosha:vata", "manas:rajasic", "srotas:manovaha"]
           }
         ]
       },
       {
-        "id": "anger",
-        "label": "Irritability, anger, frustration, intensely focused",
+        "id": "anger_frustration",
+        "label": "Irritability, anger, frustration, intense focus",
         "sublabel": null,
         "nextQuestion": null,
         "observations": [
@@ -39,7 +39,7 @@
         ]
       },
       {
-        "id": "withdrawal",
+        "id": "withdrawal_depression",
         "label": "Withdrawal, depression, lethargy, stubbornness",
         "sublabel": null,
         "nextQuestion": null,
@@ -57,30 +57,30 @@
     "id": "emo_memory",
     "category": "emotions",
     "subCategory": "manas",
-    "title": "How would you describe your memory and learning style?",
+    "title": "How would you describe your memory and how you learn new things?",
     "subtitle": null,
     "illustration": null,
     "type": "single",
     "importance": 2,
-    "source": "Charaka Samhita, Vimanasthana 8.94",
+    "source": "Charaka Samhita, Sutrasthana 8.5, Ashtanga Hridayam Sutrasthana 1.9",
     "conditions": null,
     "nextQuestion": null,
     "options": [
       {
-        "id": "quick",
-        "label": "Quick to learn, quick to forget",
+        "id": "quick_learn_quick_forget",
+        "label": "Quick to grasp, quick to forget",
         "sublabel": null,
         "nextQuestion": null,
         "observations": [
           {
             "observation": "Vata Manas (Chala)",
             "weight": 2,
-            "dimensions": ["dosha:vata"]
+            "dimensions": ["dosha:vata", "manas:rajasic"]
           }
         ]
       },
       {
-        "id": "sharp",
+        "id": "sharp_logical",
         "label": "Sharp memory, good at logical deduction",
         "sublabel": null,
         "nextQuestion": null,
@@ -93,8 +93,8 @@
         ]
       },
       {
-        "id": "slow",
-        "label": "Slow to learn, but never forget",
+        "id": "slow_never_forget",
+        "label": "Slow to learn but never forgets",
         "sublabel": null,
         "nextQuestion": null,
         "observations": [
@@ -102,6 +102,536 @@
             "observation": "Kapha Manas (Sthira)",
             "weight": 2,
             "dimensions": ["dosha:kapha"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "emo_fear",
+    "category": "emotions",
+    "subCategory": "manas",
+    "title": "How does fear typically show up for you?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 1.57",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "constant_anxiety",
+        "label": "Persistent, low-grade anxiety even when nothing is wrong",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Manas (Rajasic)",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "manas:rajasic"]
+          },
+          {
+            "observation": "Excessive Rajas in Manas",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "manas:rajasic"]
+          }
+        ]
+      },
+      {
+        "id": "specific_triggers",
+        "label": "Only in genuinely threatening situations",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Balanced Fear Response",
+            "weight": 1,
+            "dimensions": ["manas:sattvic"]
+          }
+        ]
+      },
+      {
+        "id": "anger_instead",
+        "label": "I rarely feel fear — it comes out as anger",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Manas (Rajasic/Tikshna)",
+            "weight": 2,
+            "dimensions": ["dosha:pitta", "manas:rajasic"]
+          }
+        ]
+      },
+      {
+        "id": "avoidance_paralysis",
+        "label": "I avoid situations that might cause fear",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Manas (Tamasic/Manda)",
+            "weight": 2,
+            "dimensions": ["dosha:kapha", "manas:tamasic"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "emo_anger",
+    "category": "emotions",
+    "subCategory": "manas",
+    "title": "How do you handle anger?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 1.57",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "explode_release_forget",
+        "label": "Explode quickly, release it, then move on",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Manas (Rajasic/Tikshna)",
+            "weight": 3,
+            "dimensions": ["dosha:pitta", "manas:rajasic"]
+          }
+        ]
+      },
+      {
+        "id": "suppress_boil",
+        "label": "Suppress it, but it simmers inside",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Manas (Rajasic/Tikshna)",
+            "weight": 2,
+            "dimensions": ["dosha:pitta", "dosha:vata"]
+          },
+          {
+            "observation": "Vata Apana suppression pattern",
+            "weight": 1,
+            "dimensions": ["dosha:pitta", "dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "rarely_calm",
+        "label": "Rarely feel anger — generally calm",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Manas (Sthira)",
+            "weight": 2,
+            "dimensions": ["dosha:kapha", "manas:sattvic"]
+          },
+          {
+            "observation": "Sattvic Manas tendency",
+            "weight": 1,
+            "dimensions": ["dosha:kapha", "manas:sattvic"]
+          }
+        ]
+      },
+      {
+        "id": "anxiety_not_anger",
+        "label": "I feel anxiety rather than anger",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Manas (Rajasic)",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "manas:rajasic"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "emo_grief_loss",
+    "category": "emotions",
+    "subCategory": "manas",
+    "title": "When you experience loss or grief, how do you process it?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 1.57",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "process_then_release",
+        "label": "I feel it fully, process it, and release it",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sattvic Manas tendency",
+            "weight": 2,
+            "dimensions": ["manas:sattvic"]
+          }
+        ]
+      },
+      {
+        "id": "long_rumination",
+        "label": "I ruminate and it stays with me for a very long time",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Manas (Tamasic/Manda)",
+            "weight": 2,
+            "dimensions": ["dosha:kapha", "manas:tamasic"]
+          }
+        ]
+      },
+      {
+        "id": "scattered_anxious",
+        "label": "I get scattered, anxious, lose sleep over it",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Manas (Rajasic)",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "manas:rajasic"]
+          }
+        ]
+      },
+      {
+        "id": "intensely_focused",
+        "label": "I intensely focus on solving or understanding it",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Manas (Rajasic/Tikshna)",
+            "weight": 2,
+            "dimensions": ["dosha:pitta", "manas:rajasic"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "emo_forgiveness",
+    "category": "emotions",
+    "subCategory": "manas",
+    "title": "How quickly do you forgive — truly forgive, not just say you have?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 1,
+    "source": "Charaka Samhita, Sutrasthana 8.5",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "naturally_quick",
+        "label": "Naturally and quickly — I don't hold grudges",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sattvic Manas tendency",
+            "weight": 2,
+            "dimensions": ["manas:sattvic"]
+          }
+        ]
+      },
+      {
+        "id": "slow_but_manage",
+        "label": "Slow, but I manage to let go eventually",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Manas (Sthira)",
+            "weight": 1,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      },
+      {
+        "id": "very_difficult",
+        "label": "Very difficult — I remember hurts for a long time",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Manas (Rajasic/Tikshna)",
+            "weight": 2,
+            "dimensions": ["dosha:pitta", "manas:rajasic"]
+          }
+        ]
+      },
+      {
+        "id": "flip_flop",
+        "label": "I say I forgive, then get triggered again",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Manas (Rajasic)",
+            "weight": 1,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "emo_decision_making",
+    "category": "emotions",
+    "subCategory": "personality",
+    "title": "How do you make decisions?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Ashtanga Hridayam, Sutrasthana 1.9",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "impulsive_change_mind",
+        "label": "Impulsively, and I often change my mind",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Manas (Chala)",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "manas:rajasic"]
+          }
+        ]
+      },
+      {
+        "id": "quick_decisive",
+        "label": "Quickly and confidently, rarely second-guess",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Manas (Tikshna)",
+            "weight": 3,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "slow_deliberate",
+        "label": "Slowly, after much deliberation",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Manas (Sthira)",
+            "weight": 2,
+            "dimensions": ["dosha:kapha"]
+          }
+        ]
+      },
+      {
+        "id": "research_plan",
+        "label": "Research extensively, then decide",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Manas (Tikshna)",
+            "weight": 2,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "emo_social_energy",
+    "category": "emotions",
+    "subCategory": "personality",
+    "title": "How do social interactions affect your energy?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 1,
+    "source": "Charaka Samhita, Sutrasthana 1.57",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "energized_by_people",
+        "label": "People energize me — I thrive socially",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Social Pattern",
+            "weight": 1,
+            "dimensions": ["dosha:pitta", "dosha:kapha"]
+          },
+          {
+            "observation": "Kapha Attachment tendency",
+            "weight": 1,
+            "dimensions": ["dosha:pitta", "dosha:kapha"]
+          }
+        ]
+      },
+      {
+        "id": "drained_need_alone",
+        "label": "Social interactions drain me — I need recovery time",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Manas (Rajasic)",
+            "weight": 2,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "variable",
+        "label": "Depends entirely on the people and context",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vishama Manas pattern",
+            "weight": 1,
+            "dimensions": ["dosha:vata"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "emo_attachment",
+    "category": "emotions",
+    "subCategory": "personality",
+    "title": "How do you relate to attachment in relationships and material things?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 1,
+    "source": "Charaka Samhita, Sutrasthana 8.5",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "deeply_attached_possessive",
+        "label": "Deeply attached, struggle to let go",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Attachment tendency",
+            "weight": 3,
+            "dimensions": ["dosha:kapha", "manas:tamasic"]
+          }
+        ]
+      },
+      {
+        "id": "passionate_intense",
+        "label": "Passionate but can let go when needed",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Manas (Rajasic/Tikshna)",
+            "weight": 1,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "detached_non_attachment",
+        "label": "Naturally non-attached, move on easily",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sattvic Manas tendency",
+            "weight": 2,
+            "dimensions": ["manas:sattvic"]
+          }
+        ]
+      },
+      {
+        "id": "inconsistent_anxious",
+        "label": "Anxious attachment — fear of loss",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Manas (Rajasic)",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "manas:rajasic"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "emo_mood_stability",
+    "category": "emotions",
+    "subCategory": "personality",
+    "title": "How stable is your mood generally?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Vimanasthana 8.94",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "highly_variable",
+        "label": "It fluctuates a lot, sometimes for no obvious reason",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Manas (Chala)",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "manas:rajasic"]
+          }
+        ]
+      },
+      {
+        "id": "fairly_stable_reactive",
+        "label": "Fairly stable, but I react strongly when things go wrong",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Manas (Tikshna)",
+            "weight": 1,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "very_even_keel",
+        "label": "Very even-keel, not much bothers me",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Manas (Sthira)",
+            "weight": 2,
+            "dimensions": ["dosha:kapha", "manas:sattvic"]
           }
         ]
       }
