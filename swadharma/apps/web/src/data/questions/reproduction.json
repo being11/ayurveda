@@ -1,1 +1,1134 @@
-[]
+[
+  {
+    "id": "rep_libido",
+    "category": "reproduction",
+    "subCategory": "shared_hormonal",
+    "title": "How would you describe your general vitality and desire for life?",
+    "subtitle": "This includes physical desire, but also your appetite for experience, work, and connection.",
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Chikitsasthana 2 (Rasayana), Sushruta Samhita Sharirasthana 2.33",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "strong_consistent",
+        "label": "Strong and consistent",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Ojas Strength",
+            "weight": 2,
+            "dimensions": ["ojas:high", "dhatu:shukra"]
+          }
+        ]
+      },
+      {
+        "id": "moderate_fluctuating",
+        "label": "Moderate but fluctuating",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Moderate Ojas",
+            "weight": 1,
+            "dimensions": ["ojas:moderate"]
+          }
+        ]
+      },
+      {
+        "id": "low_diminished",
+        "label": "Low or significantly diminished",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Ojas Depletion",
+            "weight": 3,
+            "dimensions": ["ojas:low", "dhatu:shukra", "dosha:vata"]
+          },
+          {
+            "observation": "Vata Shukra Dhatu disturbance",
+            "weight": 2,
+            "dimensions": ["ojas:low", "dhatu:shukra", "dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "high_exhausting",
+        "label": "Very high but exhausting — scattered energy",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Shukra excess / Rajas",
+            "weight": 2,
+            "dimensions": ["dosha:pitta", "manas:rajasic"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rep_ojas_resilience",
+    "category": "reproduction",
+    "subCategory": "shared_hormonal",
+    "title": "How would you describe your overall resilience — your ability to bounce back from illness, stress, or depletion?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 3,
+    "source": "Charaka Samhita, Sutrasthana 17.73 (Ojas), Ashtanga Hridayam Sutrasthana 11.37-38",
+    "conditions": null,
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "very_resilient",
+        "label": "I recover quickly, rarely stay depleted",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "High Ojas",
+            "weight": 3,
+            "dimensions": ["ojas:high"]
+          }
+        ]
+      },
+      {
+        "id": "moderate_recovery",
+        "label": "I recover at an average pace",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Moderate Ojas",
+            "weight": 1,
+            "dimensions": ["ojas:moderate"]
+          }
+        ]
+      },
+      {
+        "id": "slow_prolonged",
+        "label": "Recovery takes a long time, I feel depleted easily",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Low Ojas",
+            "weight": 3,
+            "dimensions": ["ojas:low", "dhatu:rasa"]
+          },
+          {
+            "observation": "Ojas Depletion",
+            "weight": 2,
+            "dimensions": ["ojas:low", "dhatu:rasa"]
+          }
+        ]
+      },
+      {
+        "id": "depends_on_sleep",
+        "label": "Depends entirely on whether I sleep well",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Nidra disturbance",
+            "weight": 1,
+            "dimensions": ["ojas:moderate", "dosha:vata"]
+          },
+          {
+            "observation": "Moderate Ojas",
+            "weight": 1,
+            "dimensions": ["ojas:moderate", "dosha:vata"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rep_cycle_regularity",
+    "category": "reproduction",
+    "subCategory": "female_cycle",
+    "title": "How regular is your menstrual cycle?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 3,
+    "source": "Charaka Samhita, Sharirasthana 4.10-12 (Artava), Sushruta Samhita Sharirasthana 3.5-8",
+    "conditions": [
+      {
+        "questionId": "intro_gender",
+        "value": "female"
+      }
+    ],
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "very_regular_28_30",
+        "label": "Very regular — roughly 28–30 days every cycle",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sama Artava (balanced cycle)",
+            "weight": 2,
+            "dimensions": ["dosha:kapha", "dhatu:rakta"]
+          }
+        ]
+      },
+      {
+        "id": "regular_but_varies_5days",
+        "label": "Regular with some variation (±5 days)",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Moderate Artava balance",
+            "weight": 1,
+            "dimensions": ["dhatu:rakta"]
+          }
+        ]
+      },
+      {
+        "id": "irregular_skips",
+        "label": "Irregular — frequently skips months or comes early/late",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vishama Artava (Vata)",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "dhatu:rakta", "srotas:artavavaha"]
+          }
+        ]
+      },
+      {
+        "id": "very_heavy_frequent",
+        "label": "Comes too frequently or is very heavy",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Artava (excess)",
+            "weight": 3,
+            "dimensions": ["dosha:pitta", "dhatu:rakta", "srotas:artavavaha"]
+          }
+        ]
+      },
+      {
+        "id": "absent_amenorrhea",
+        "label": "Absent or suppressed (not due to pregnancy)",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Artava Kshaya",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "dhatu:rakta", "ojas:low"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rep_flow_heaviness",
+    "category": "reproduction",
+    "subCategory": "female_cycle",
+    "title": "How heavy is your menstrual flow?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 3,
+    "source": "Charaka Samhita, Sharirasthana 4.10-12, Ashtanga Hridayam Sharirasthana 1.22",
+    "conditions": [
+      {
+        "questionId": "intro_gender",
+        "value": "female"
+      }
+    ],
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "very_light_spotting",
+        "label": "Very light — almost spotting",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Artava Kshaya",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "dhatu:rakta"]
+          }
+        ]
+      },
+      {
+        "id": "moderate_normal",
+        "label": "Moderate and predictable",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sama Artava",
+            "weight": 2,
+            "dimensions": ["dhatu:rakta"]
+          }
+        ]
+      },
+      {
+        "id": "heavy_clots",
+        "label": "Heavy with clots",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Artava excess",
+            "weight": 3,
+            "dimensions": ["dosha:pitta", "dosha:kapha", "dhatu:rakta", "srotas:artavavaha"]
+          },
+          {
+            "observation": "Kapha Ama in Artava",
+            "weight": 2,
+            "dimensions": ["dosha:pitta", "dosha:kapha", "dhatu:rakta", "srotas:artavavaha"]
+          }
+        ]
+      },
+      {
+        "id": "extremely_heavy",
+        "label": "Extremely heavy — soaking through protection",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Rakta Dhatu disturbance",
+            "weight": 3,
+            "dimensions": ["dosha:pitta", "dhatu:rakta"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rep_cycle_pain",
+    "category": "reproduction",
+    "subCategory": "female_cycle",
+    "title": "Do you experience pain during your period?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 3,
+    "source": "Sushruta Samhita, Uttaratantra 38 (Yonivyapad), Charaka Samhita Chikitsasthana 30",
+    "conditions": [
+      {
+        "questionId": "intro_gender",
+        "value": "female"
+      }
+    ],
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "severe_cramping",
+        "label": "Severe cramping that disrupts daily life",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Apana Vayu disturbance",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "srotas:artavavaha", "srotas:purishavaha"]
+          },
+          {
+            "observation": "Kashtartava (painful periods)",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "srotas:artavavaha", "srotas:purishavaha"]
+          }
+        ]
+      },
+      {
+        "id": "moderate_manageable",
+        "label": "Moderate pain, manageable",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata-Pitta Artava imbalance",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "mild_or_none",
+        "label": "Mild or none",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sama Artava",
+            "weight": 1,
+            "dimensions": ["dhatu:rakta"]
+          }
+        ]
+      },
+      {
+        "id": "burning_inflammation",
+        "label": "Burning sensation or intense heat with periods",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta in Artava",
+            "weight": 3,
+            "dimensions": ["dosha:pitta", "dhatu:rakta"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rep_pms",
+    "category": "reproduction",
+    "subCategory": "female_cycle",
+    "title": "In the week before your period, what do you typically experience?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "multiple",
+    "importance": 2,
+    "source": "Charaka Samhita, Chikitsasthana 30.12-15",
+    "conditions": [
+      {
+        "questionId": "intro_gender",
+        "value": "female"
+      }
+    ],
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "anxiety_insomnia",
+        "label": "Anxiety, restlessness, insomnia",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata PMS Pattern",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "manas:rajasic"]
+          }
+        ]
+      },
+      {
+        "id": "anger_irritability",
+        "label": "Anger, irritability, intensity",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta PMS Pattern",
+            "weight": 3,
+            "dimensions": ["dosha:pitta", "manas:rajasic"]
+          }
+        ]
+      },
+      {
+        "id": "depression_withdrawal",
+        "label": "Depression, crying, withdrawal",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha PMS Pattern",
+            "weight": 3,
+            "dimensions": ["dosha:kapha", "manas:tamasic"]
+          }
+        ]
+      },
+      {
+        "id": "bloating_water_retention",
+        "label": "Bloating or water retention",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha-Vata Artava Purva",
+            "weight": 2,
+            "dimensions": ["dosha:kapha", "dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "cravings_sugar_sweet",
+        "label": "Intense sweet cravings",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Ojas Seeking Pattern",
+            "weight": 1,
+            "dimensions": ["ojas:low", "dosha:kapha"]
+          }
+        ]
+      },
+      {
+        "id": "no_pms",
+        "label": "I have minimal or no premenstrual symptoms",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sama Artava",
+            "weight": 2,
+            "dimensions": ["dhatu:rakta"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rep_pregnancy_history",
+    "category": "reproduction",
+    "subCategory": "female_cycle",
+    "title": "Have you experienced pregnancy or pregnancy-related changes?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 1,
+    "source": "Charaka Samhita, Sharirasthana 4.2 (Garbhavakranti), Kashyapa Samhita",
+    "conditions": [
+      {
+        "questionId": "intro_gender",
+        "value": "female"
+      }
+    ],
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "pregnant_now",
+        "label": "I am currently pregnant",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      },
+      {
+        "id": "postpartum_within_year",
+        "label": "I gave birth within the last year",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Sutika Kala (postpartum Vata)",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "ojas:low"]
+          }
+        ]
+      },
+      {
+        "id": "history_no_current",
+        "label": "History of pregnancy, not currently",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Stri Garbhashaya history",
+            "weight": 1,
+            "dimensions": []
+          }
+        ]
+      },
+      {
+        "id": "never_pregnant",
+        "label": "Never been pregnant",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      },
+      {
+        "id": "fertility_challenges",
+        "label": "Have faced fertility challenges",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vandhyatva tendency",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "dhatu:shukra", "ojas:low"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rep_pcos_endometriosis",
+    "category": "reproduction",
+    "subCategory": "female_cycle",
+    "title": "Have you ever been diagnosed with or experienced symptoms similar to PCOS or Endometriosis?",
+    "subtitle": "Ayurveda looks at these as imbalances of kapha blocking vata (PCOS) or retrograde vata pushing pitta/kapha (Endometriosis).",
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Sushruta Samhita, Uttaratantra 38 (Yonivyapad)",
+    "conditions": [
+      {
+        "questionId": "intro_gender",
+        "value": "female"
+      }
+    ],
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "pcos_diagnosed",
+        "label": "Yes, PCOS (Polycystic Ovary Syndrome)",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha-Vata Granthi (PCOS tendency)",
+            "weight": 3,
+            "dimensions": ["dosha:kapha", "dosha:vata", "srotas:artavavaha"]
+          }
+        ]
+      },
+      {
+        "id": "endo_diagnosed",
+        "label": "Yes, Endometriosis",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata-Pitta Udavarta (Endometriosis tendency)",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "dosha:pitta", "srotas:artavavaha"]
+          }
+        ]
+      },
+      {
+        "id": "both_or_other",
+        "label": "Both or other complex female reproductive issues",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Complex Yonivyapad",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "dosha:pitta", "dosha:kapha", "srotas:artavavaha"]
+          }
+        ]
+      },
+      {
+        "id": "neither",
+        "label": "No, neither",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      }
+    ]
+  },
+  {
+    "id": "rep_breastfeeding",
+    "category": "reproduction",
+    "subCategory": "female_cycle",
+    "title": "Are you currently breastfeeding?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 1,
+    "source": "Charaka Samhita, Sharirasthana 4.14 (Stanya)",
+    "conditions": [
+      {
+        "questionId": "intro_gender",
+        "value": "female"
+      }
+    ],
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "currently_breastfeeding",
+        "label": "Yes, currently breastfeeding",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Stanyada Avastha (Lactation phase)",
+            "weight": 2,
+            "dimensions": ["dhatu:rasa", "ojas:low"]
+          }
+        ]
+      },
+      {
+        "id": "not_breastfeeding",
+        "label": "No",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      }
+    ]
+  },
+  {
+    "id": "rep_menopause_status",
+    "category": "reproduction",
+    "subCategory": "female_cycle",
+    "title": "Are you in perimenopause or menopause?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Ashtanga Hridayam, Sharirasthana 1.22 (Rajonivritti)",
+    "conditions": [
+      {
+        "questionId": "intro_gender",
+        "value": "female"
+      }
+    ],
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "perimenopausal",
+        "label": "Yes — perimenopause (cycles becoming irregular, symptoms beginning)",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Rajonivritti (perimenopausal)",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "dosha:pitta", "dhatu:rakta"]
+          }
+        ]
+      },
+      {
+        "id": "postmenopausal",
+        "label": "Yes — post-menopause (no cycle for 12+ months)",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Vriddha Kala",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "ojas:low"]
+          }
+        ]
+      },
+      {
+        "id": "not_applicable",
+        "label": "No — not in this phase",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      }
+    ]
+  },
+  {
+    "id": "rep_menopause_symptoms",
+    "category": "reproduction",
+    "subCategory": "female_cycle",
+    "title": "Which symptoms are you currently experiencing?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "multiple",
+    "importance": 3,
+    "source": "Charaka Samhita, Sharirasthana 4.10, Ashtanga Hridayam Sharirasthana 1.22",
+    "conditions": [
+      {
+        "questionId": "intro_gender",
+        "value": "female"
+      },
+      {
+        "questionId": "rep_menopause_status",
+        "value": "perimenopausal"
+      }
+    ],
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "hot_flashes",
+        "label": "Hot flashes or night sweats",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Urdhva Gati in Rajonivritti",
+            "weight": 3,
+            "dimensions": ["dosha:pitta", "srotas:rasavaha"]
+          }
+        ]
+      },
+      {
+        "id": "insomnia",
+        "label": "Insomnia or disrupted sleep",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Nidra disturbance",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "srotas:manovaha"]
+          }
+        ]
+      },
+      {
+        "id": "mood_swings",
+        "label": "Mood swings or irritability",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta-Vata Manas disturbance",
+            "weight": 2,
+            "dimensions": ["dosha:pitta", "dosha:vata", "manas:rajasic"]
+          }
+        ]
+      },
+      {
+        "id": "vaginal_dryness",
+        "label": "Vaginal dryness",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Rasa Dhatu Kshaya",
+            "weight": 3,
+            "dimensions": ["dosha:vata", "dhatu:rasa"]
+          }
+        ]
+      },
+      {
+        "id": "bone_joint_aches",
+        "label": "Bone or joint aches",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata in Asthivaha Srotas",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "dhatu:asthi"]
+          }
+        ]
+      },
+      {
+        "id": "weight_gain",
+        "label": "Weight gain, especially around the middle",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha Meda Dhatu accumulation",
+            "weight": 2,
+            "dimensions": ["dosha:kapha", "dhatu:meda"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rep_male_vitality",
+    "category": "reproduction",
+    "subCategory": "male_reproductive",
+    "title": "How would you describe your current physical vitality and strength?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 3,
+    "source": "Charaka Samhita, Chikitsasthana 2 (Rasayana/Vajikarana), Sushruta Samhita Chikitsasthana 26",
+    "conditions": [
+      {
+        "questionId": "intro_gender",
+        "value": "male"
+      }
+    ],
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "strong_building",
+        "label": "Strong and building — I feel at my peak",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "High Ojas",
+            "weight": 2,
+            "dimensions": ["ojas:high", "dhatu:shukra"]
+          },
+          {
+            "observation": "Strong Shukra Dhatu",
+            "weight": 2,
+            "dimensions": ["ojas:high", "dhatu:shukra"]
+          }
+        ]
+      },
+      {
+        "id": "moderate_maintaining",
+        "label": "Moderate — maintaining but not building",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Moderate Ojas",
+            "weight": 1,
+            "dimensions": ["ojas:moderate"]
+          }
+        ]
+      },
+      {
+        "id": "declining_noticeable",
+        "label": "Noticeable decline from my peak",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata Shukra Kshaya",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "dhatu:shukra", "ojas:low"]
+          }
+        ]
+      },
+      {
+        "id": "very_depleted",
+        "label": "Very depleted — I feel significantly weaker",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Ojas Depletion",
+            "weight": 3,
+            "dimensions": ["ojas:low", "dhatu:shukra", "dosha:vata"]
+          },
+          {
+            "observation": "Vata Shukra Kshaya",
+            "weight": 3,
+            "dimensions": ["ojas:low", "dhatu:shukra", "dosha:vata"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rep_male_urination",
+    "category": "reproduction",
+    "subCategory": "male_reproductive",
+    "title": "How is your urination typically?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Sutrasthana 17.118 (Mutravaha Srotas)",
+    "conditions": [
+      {
+        "questionId": "intro_gender",
+        "value": "male"
+      }
+    ],
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "normal_clear",
+        "label": "Normal frequency, clear or light yellow",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Balanced Mutravaha Srotas",
+            "weight": 1,
+            "dimensions": ["srotas:mutravaha"]
+          }
+        ]
+      },
+      {
+        "id": "frequent_nighttime",
+        "label": "Frequent, especially at night",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Vata in Mutravaha Srotas",
+            "weight": 2,
+            "dimensions": ["dosha:vata", "srotas:mutravaha"]
+          }
+        ]
+      },
+      {
+        "id": "difficulty_stream",
+        "label": "Difficulty initiating or weak stream",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha in Mutravaha Srotas",
+            "weight": 2,
+            "dimensions": ["dosha:kapha", "srotas:mutravaha"]
+          }
+        ]
+      },
+      {
+        "id": "burning_discomfort",
+        "label": "Burning or discomfort",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta in Mutravaha Srotas",
+            "weight": 3,
+            "dimensions": ["dosha:pitta", "srotas:mutravaha"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rep_male_prostate",
+    "category": "reproduction",
+    "subCategory": "male_reproductive",
+    "title": "Have you ever experienced or been diagnosed with prostate issues (e.g., enlarged prostate)?",
+    "subtitle": "Ayurveda considers this an accumulation involving Kapha and Apana Vata in the Mutravaha Srotas.",
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Charaka Samhita, Chikitsasthana 26 (Mutrakrichha)",
+    "conditions": [
+      {
+        "questionId": "intro_gender",
+        "value": "male"
+      }
+    ],
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "enlarged_prostate",
+        "label": "Yes, enlarged prostate (BPH) or similar",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Kapha-Vata Mutraghata",
+            "weight": 3,
+            "dimensions": ["dosha:kapha", "dosha:vata", "srotas:mutravaha"]
+          }
+        ]
+      },
+      {
+        "id": "prostatitis",
+        "label": "Yes, prostatitis or inflammation",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta in Mutravaha Srotas",
+            "weight": 3,
+            "dimensions": ["dosha:pitta", "srotas:mutravaha"]
+          }
+        ]
+      },
+      {
+        "id": "no_prostate_issues",
+        "label": "No, never had prostate issues",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      }
+    ]
+  },
+  {
+    "id": "rep_male_fertility",
+    "category": "reproduction",
+    "subCategory": "male_reproductive",
+    "title": "Have you ever experienced fertility challenges or been diagnosed with low sperm count/motility?",
+    "subtitle": "This helps assess the strength and purity of Shukra Dhatu.",
+    "illustration": null,
+    "type": "single",
+    "importance": 2,
+    "source": "Sushruta Samhita, Sharirasthana 2",
+    "conditions": [
+      {
+        "questionId": "intro_gender",
+        "value": "male"
+      }
+    ],
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "fertility_issues",
+        "label": "Yes, I have faced fertility challenges",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Shukra Dosha / Shukra Kshaya",
+            "weight": 3,
+            "dimensions": ["dhatu:shukra", "dosha:vata"]
+          }
+        ]
+      },
+      {
+        "id": "no_fertility_issues",
+        "label": "No, I have not had these challenges",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      },
+      {
+        "id": "unknown_fertility",
+        "label": "I don't know / not applicable",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      }
+    ]
+  },
+  {
+    "id": "rep_male_hair_pattern",
+    "category": "reproduction",
+    "subCategory": "male_reproductive",
+    "title": "Have you noticed significant hair thinning or male pattern baldness?",
+    "subtitle": null,
+    "illustration": null,
+    "type": "single",
+    "importance": 1,
+    "source": "Charaka Samhita, Chikitsasthana 26 (Khalitya)",
+    "conditions": [
+      {
+        "questionId": "intro_gender",
+        "value": "male"
+      }
+    ],
+    "nextQuestion": null,
+    "options": [
+      {
+        "id": "significant_early",
+        "label": "Significant hair loss, began before 35",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Rakta Dhatu excess",
+            "weight": 3,
+            "dimensions": ["dosha:pitta", "dhatu:rakta"]
+          },
+          {
+            "observation": "Premature aging pattern",
+            "weight": 2,
+            "dimensions": ["dosha:pitta", "dhatu:rakta"]
+          }
+        ]
+      },
+      {
+        "id": "moderate_age_appropriate",
+        "label": "Moderate, age-appropriate",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": [
+          {
+            "observation": "Pitta Rakta tendency",
+            "weight": 1,
+            "dimensions": ["dosha:pitta"]
+          }
+        ]
+      },
+      {
+        "id": "minimal",
+        "label": "Minimal or none",
+        "sublabel": null,
+        "nextQuestion": null,
+        "observations": []
+      }
+    ]
+  }
+]
