@@ -27,6 +27,12 @@ const useAssessmentStore = create<AssessmentState>()(
       isComplete: false,
       activeNadiPoint: null,
 
+      herbSearchQuery: '',
+      herbDoshaFilter: null,
+      herbOrganFilter: null,
+
+      selectedSrotas: null,
+
       setAnswer: (questionId, value) => {
         const state = get();
         const allQuestions = categories.flatMap(cat => cat.questions);
@@ -115,6 +121,10 @@ const useAssessmentStore = create<AssessmentState>()(
           history: firstQuestion ? [firstQuestion.id] : [],
           isComplete: false,
           activeNadiPoint: null,
+          herbSearchQuery: '',
+          herbDoshaFilter: null,
+          herbOrganFilter: null,
+          selectedSrotas: null,
         });
         try {
           useAssessmentStore.persist.clearStorage();
@@ -122,6 +132,10 @@ const useAssessmentStore = create<AssessmentState>()(
       },
       
       setActiveNadiPoint: (point) => set({ activeNadiPoint: point }),
+      setHerbSearchQuery: (query) => set({ herbSearchQuery: query }),
+      setHerbDoshaFilter: (dosha) => set({ herbDoshaFilter: dosha }),
+      setHerbOrganFilter: (organ) => set({ herbOrganFilter: organ }),
+      setSelectedSrotas: (srotasId) => set({ selectedSrotas: srotasId }),
     }),
     {
       name: 'swadharma-assessment',

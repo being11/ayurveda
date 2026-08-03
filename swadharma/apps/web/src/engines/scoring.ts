@@ -95,3 +95,6 @@ export function detectDoshaDominance(profile: DoshaProfile): string {
 
     return `Single Dosha (${first.name})`;
 }
+
+export const calculateDoshaScores = (_categories: any, answers: Record<string, string | string[]>) => calculateQuizScores(answers);
+export const getDoshaType = detectDoshaDominance;

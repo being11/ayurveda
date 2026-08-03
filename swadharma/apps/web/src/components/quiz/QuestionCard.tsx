@@ -5,13 +5,15 @@ import type { Question } from '../../types/assessment';
 
 interface QuestionCardProps {
   question: Question;
-  currentAnswer: string | string[];
-  onAnswer: (optionId: string) => void;
+  currentAnswer?: string | string[];
+  onAnswer?: (optionId: string) => void;
+  onOptionClick?: (optionId: string) => void;
 }
 
-export function QuestionCard({ question, currentAnswer, onAnswer }: QuestionCardProps) {
+export function QuestionCard({ question, currentAnswer = '', onAnswer, onOptionClick }: QuestionCardProps) {
   const handleOptionClick = (optionId: string) => {
-    onAnswer(optionId);
+    if (onOptionClick) onOptionClick(optionId);
+    if (onAnswer) onAnswer(optionId);
   };
 
   return (

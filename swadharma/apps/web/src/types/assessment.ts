@@ -91,6 +91,27 @@ export interface RoutineData {
   seasons: Record<string, SeasonAdjustment>;
 }
 
+export interface DoshaMatrix {
+  vata: string;
+  pitta: string;
+  kapha: string;
+}
+
+export interface Herb {
+  id: string;
+  sanskritName: string;
+  commonName: string;
+  botanicalName: string;
+  rasa: string[];
+  virya: string;
+  vipaka: string;
+  prabhava?: string;
+  doshaMatrix: DoshaMatrix;
+  organSystems: string[];
+  useCases: string[];
+  description: string;
+}
+
 export interface AssessmentState {
   answers: Record<string, string | string[]>;
   observations: Record<string, number>;
@@ -101,11 +122,23 @@ export interface AssessmentState {
 
   activeNadiPoint: DoshaType | null;
 
+  herbSearchQuery: string;
+  herbDoshaFilter: string | null;
+  herbOrganFilter: string | null;
+
+  selectedSrotas: string | null;
+
   setAnswer: (questionId: string, value: string | string[]) => void;
   nextQuestion: () => void;
   prevQuestion: () => void;
   reset: () => void;
   setActiveNadiPoint: (point: DoshaType | null) => void;
+
+  setHerbSearchQuery: (query: string) => void;
+  setHerbDoshaFilter: (dosha: string | null) => void;
+  setHerbOrganFilter: (organ: string | null) => void;
+
+  setSelectedSrotas: (srotasId: string | null) => void;
 }
 
 // Nadi Pariksha Educational Guide Types
