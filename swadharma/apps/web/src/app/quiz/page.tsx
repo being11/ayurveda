@@ -12,6 +12,10 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { cn } from '@workspace/ui/lib/utils';
 import { motion } from 'framer-motion';
 
+/**
+ * Main Dosha Quiz Page Component
+ * Handles the interactive multi-step dosha assessment flow.
+ */
 export default function QuizPage() {
   const [mounted, setMounted] = useState(false);
   
