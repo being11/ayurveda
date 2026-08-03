@@ -1,26 +1,30 @@
 diff a/swadharma/apps/web/src/components/herbs/HerbCard.tsx b/swadharma/apps/web/src/components/herbs/HerbCard.tsx	(rejected hunks)
-@@ -66,14 +66,14 @@ export function HerbCard({ herb, className }: HerbCardProps) {
-         <div>
-           <h4 className="text-xs font-semibold text-stone-500 uppercase tracking-wider mb-2">Systems & Uses</h4>
-           <div className="flex flex-wrap gap-1 mb-2">
--            {herb.organSystems.map(sys => (
-+            {herb.organSystems.map((sys: string) => (
-               <Badge key={sys} variant="outline" className="text-xs border-[#4A7C59]/30 text-[#4A7C59]">
-                 {sys}
-               </Badge>
+@@ -1,3 +1,7 @@
++/**
++ * @file HerbCard
++ * @description Displays detailed information for a single herb, including its dosha matrix, properties, and uses.
++ */
+ import React from 'react';
+ import { Herb } from '../../types/assessment';
+ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '../ui/card';
+@@ -73,11 +77,11 @@ export function HerbCard({ herb, className }: HerbCardProps) {
              ))}
            </div>
            <ul className="list-disc list-inside text-sm text-stone-700 space-y-1">
--            {herb.useCases?.slice(0, 3).map((use, i) => (
-+            {herb.useCases?.slice(0, 3).map((use: string, i: number) => (
+-            {herb.traditionalUses?.slice(0, 3).map((use, i) => (
++            {herb.useCases?.slice(0, 3).map((use, i) => (
                <li key={i} className="truncate">{use}</li>
              ))}
-             {herb.useCases&&herb.useCases.length > 3 && (
-@@ -85,6 +85,3 @@ export function HerbCard({ herb, className }: HerbCardProps) {
-     </Card>
-   );
+-            {herb.traditionalUses&&herb.traditionalUses.length > 3 && (
+-              <li className="text-xs text-stone-500">+{herb.traditionalUses&&herb.traditionalUses.length - 3} more</li>
++            {herb.useCases&&herb.useCases.length > 3 && (
++              <li className="text-xs text-stone-500">+{herb.useCases&&herb.useCases.length - 3} more</li>
+             )}
+           </ul>
+         </div>
+@@ -87,4 +91,3 @@ export function HerbCard({ herb, className }: HerbCardProps) {
  }
--// End of HerbCard
--
+ // End of HerbCard
+ 
 -// trigger change
 \ No newline at end of file
