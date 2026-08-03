@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useMemo } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import { HerbSearchBar } from '../../components/herbs/HerbSearchBar';
 import { HerbCard } from '../../components/herbs/HerbCard';
 import useAssessmentStore from '../../stores/assessmentStore';
@@ -8,6 +8,12 @@ import herbsData from '../../data/herbs.json';
 import { Herb } from '../../types/assessment';
 
 export default function HerbsPage() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const { herbSearchQuery, herbDoshaFilter, herbOrganFilter } = useAssessmentStore();
   const herbs: Herb[] = herbsData as Herb[];
 
@@ -32,6 +38,23 @@ export default function HerbsPage() {
       return matchesSearch && matchesDosha && matchesOrgan;
     });
   }, [herbs, herbSearchQuery, herbDoshaFilter, herbOrganFilter]);
+
+  if (!mounted) {
+    return (
+      <div className="min-h-screen bg-[#FBF8F2] pt-24 pb-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-8">
+            <h1 className="text-3xl font-bold text-[#4A7C59] mb-2 font-serif">
+              Dravyaguna Vijnana
+            </h1>
+            <p className="text-stone-600 text-lg">
+              Ayurvedic Herb & Remedy Database
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-[#FBF8F2] pt-24 pb-12">
