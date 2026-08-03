@@ -1,10 +1,10 @@
 diff a/swadharma/apps/web/src/components/PurvakarmaChecklist.tsx b/swadharma/apps/web/src/components/PurvakarmaChecklist.tsx	(rejected hunks)
-@@ -62,7 +62,7 @@ export function PurvakarmaChecklist({ steps }: PurvakarmaChecklistProps) {
-                     "font-medium transition-colors",
-                     isCompleted ? "text-[#4A7C59]" : "text-[#3D2B1F]"
-                   )}>
--                    {step.step}
-+                    {step.task}
-                   </h4>
-                   <p className={cn(
-                     "text-sm mt-1 transition-colors",
+@@ -2,7 +2,7 @@
+ 
+ import React, { useState } from 'react';
+ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
+-import type { PurvakarmaTask } from '../engines/panchakarma';
++import type { PurvakarmaStep as PurvakarmaTask } from '../types/assessment';
+ import { cn } from '@workspace/ui/lib/utils';
+ 
+ interface PurvakarmaChecklistProps {

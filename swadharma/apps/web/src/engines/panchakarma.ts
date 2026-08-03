@@ -45,5 +45,5 @@ export function getRecommendedTherapies(profile: AyurvedaProfile): PanchakarmaTh
  * Retrieves the Purvakarma preparation checklist.
  */
 export function getPurvakarmaChecklist(): PurvakarmaStep[] {
-  return panchakarmaData.purvakarma as PurvakarmaStep[];
+  return panchakarmaData.purvakarma as unknown as PurvakarmaStep[];
 }
