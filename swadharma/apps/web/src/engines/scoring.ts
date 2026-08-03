@@ -16,6 +16,10 @@ const PRAKRITI_CATEGORIES = ['introduction', 'body', 'childhood', 'aging'];
  * Uses category matching to separate questions into innate baseline indicators vs
  * dynamic, lifestyle-driven indicators in order to provide a nuanced two-part profile.
  */
+/**
+ * Calculates the overall dosha profile scores from quiz answers.
+ * Separates prakriti (innate constitution) and vikriti (current state).
+ */
 export function calculateQuizScores(answers: Record<string, string | string[]>): {
   prakriti: DoshaProfile;
   vikriti: DoshaProfile;

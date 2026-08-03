@@ -21,6 +21,10 @@ interface QuizProgressProps {
  * It shows a unified progress bar, estimated time remaining, and optionally
  * a mini dosha distribution bar that reflects real-time scores across Vata, Pitta, and Kapha.
  */
+/**
+ * QuizProgress displays the current progress in the assessment.
+ * Shows overall progress, time estimate, and dosha score distribution.
+ */
 export function QuizProgress({ 
     currentStep, 
     totalSteps, 

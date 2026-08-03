@@ -16,6 +16,10 @@ interface QuestionCardProps {
  * options as either a Likert scale or a standard list based on their structure.
  * Integrates with Framer Motion for smooth entry and exit transitions.
  */
+/**
+ * QuestionCard component responsible for rendering a single assessment question.
+ * Handles multiple choice options and animated transitions.
+ */
 export function QuestionCard({ question, currentAnswer = '', onAnswer, onOptionClick }: QuestionCardProps) {
   const handleOptionClick = (optionId: string) => {
     if (onOptionClick) onOptionClick(optionId);
