@@ -1,0 +1,22 @@
+[
+  {
+    "id": "deepana_pachana",
+    "title": "Deepana & Pachana",
+    "description": "Kindling digestive fire (Agni) and digesting toxins (Ama) through light diet and specific herbs."
+  },
+  {
+    "id": "snehana_internal",
+    "title": "Internal Snehana (Oleation)",
+    "description": "Consuming medicated ghee or oil in increasing doses for 3-7 days to lubricate tissues and loosen toxins."
+  },
+  {
+    "id": "snehana_external",
+    "title": "External Snehana (Abhyanga)",
+    "description": "Full body warm oil massage to move loosened doshas toward the gastrointestinal tract."
+  },
+  {
+    "id": "svedana",
+    "title": "Svedana (Fomentation/Sweating)",
+    "description": "Therapeutic heat therapy (steam) immediately following external snehana to open channels (srotas)."
+  }
+]
