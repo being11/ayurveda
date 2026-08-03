@@ -2,8 +2,8 @@ import React from 'react';
 import { ArrowLeft } from 'lucide-react';
 
 interface QuizProgressProps {
-  currentStep?: number;
-  totalSteps?: number;
+  currentStep: number;
+  totalSteps: number;
   categoryTitle: string;
   progressPercentage?: number;
   currentCategoryIndex?: number;
