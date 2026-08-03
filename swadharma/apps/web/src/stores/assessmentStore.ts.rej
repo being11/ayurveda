@@ -1,56 +1,29 @@
 diff a/swadharma/apps/web/src/stores/assessmentStore.ts b/swadharma/apps/web/src/stores/assessmentStore.ts	(rejected hunks)
-@@ -11,7 +11,8 @@ import {
-   calculateObservations,
-   countRemainingQuestions,
- } from '../engines/logic';
--import type { AssessmentState, PanchakarmaTherapy } from '../types/assessment';
-+import type { AssessmentState } from '../types/assessment';
-+import type { PanchakarmaTherapy } from '../engines/panchakarma';
- import { computeProfile, getDominantDosha } from '../engines/report';
- import panchakarmaData from '../data/panchakarma.json';
- 
-@@ -32,9 +33,25 @@ const useAssessmentStore = create<AssessmentState>()(
-       herbSearchQuery: '',
-       herbDoshaFilter: null,
+@@ -34,6 +34,7 @@ const useAssessmentStore = create<AssessmentState>()(
        herbOrganFilter: null,
-+      currentSeasonId: null,
  
        selectedSrotas: null,
++      currentSeasonId: null,
  
-+      autoDetectSeason: () => {
-+        const month = new Date().getMonth();
-+        let seasonId = 'vasanta'; // default spring
-+        if (month >= 1 && month <= 2) seasonId = 'shishira'; // late winter
-+        else if (month >= 3 && month <= 4) seasonId = 'vasanta'; // spring
-+        else if (month >= 5 && month <= 6) seasonId = 'grishma'; // summer
-+        else if (month >= 7 && month <= 8) seasonId = 'varsha'; // monsoon
-+        else if (month >= 9 && month <= 10) seasonId = 'sharad'; // autumn
-+        else seasonId = 'hemanta'; // early winter
-+        
-+        set({ currentSeasonId: seasonId });
-+      },
-+
-+      setCurrentSeasonId: (seasonId) => set({ currentSeasonId: seasonId }),
-+
        setAnswer: (questionId, value) => {
          const state = get();
-         const allQuestions = categories.flatMap(cat => cat.questions);
-@@ -118,8 +135,8 @@ const useAssessmentStore = create<AssessmentState>()(
+@@ -118,8 +119,8 @@ const useAssessmentStore = create<AssessmentState>()(
          const state = get();
          const profile = computeProfile(state.observations, state.answers);
          const dominantDosha = getDominantDosha(profile.prakrtiDosha).toLowerCase();
 -        return (panchakarmaData as PanchakarmaTherapy[]).filter((therapy) =>
 -          therapy.indicatedDoshas.includes(dominantDosha)
-+        return (panchakarmaData.therapies as PanchakarmaTherapy[]).filter((therapy) =>
-+          therapy.dosha.toLowerCase() === dominantDosha
++        return ((panchakarmaData as any).therapies as PanchakarmaTherapy[]).filter((therapy) =>
++          therapy.indicatedDoshas && therapy.indicatedDoshas.includes(dominantDosha)
          );
        },
        reset: () => {
-@@ -135,6 +152,7 @@ const useAssessmentStore = create<AssessmentState>()(
-           herbDoshaFilter: null,
-           herbOrganFilter: null,
-           selectedSrotas: null,
-+          currentSeasonId: null,
-         });
-         try {
-           useAssessmentStore.persist.clearStorage();
+@@ -146,6 +147,8 @@ const useAssessmentStore = create<AssessmentState>()(
+       setHerbDoshaFilter: (dosha) => set({ herbDoshaFilter: dosha }),
+       setHerbOrganFilter: (organ) => set({ herbOrganFilter: organ }),
+       setSelectedSrotas: (srotasId) => set({ selectedSrotas: srotasId }),
++      setCurrentSeasonId: (id) => set({ currentSeasonId: id }),
++      autoDetectSeason: () => set({ currentSeasonId: 'hemanta' }),
+     }),
+     {
+       name: 'swadharma-assessment',
