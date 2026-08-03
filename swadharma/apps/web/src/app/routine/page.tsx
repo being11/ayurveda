@@ -16,7 +16,8 @@ const seasons: Season[] = seasonsData as Season[];
 export default function RoutinePage() {
   const [mounted, setMounted] = useState(false);
   const { observations, answers } = useAssessmentStore();
-  const { currentSeasonId, autoDetectSeason } = useSeasonsStore();
+  const currentSeasonId = useAssessmentStore(state => state.currentSeasonId);
+  const autoDetectSeason = useAssessmentStore(state => state.autoDetectSeason);
 
   useEffect(() => {
     setMounted(true);
