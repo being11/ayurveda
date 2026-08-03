@@ -14,6 +14,7 @@ import {
 import type { AssessmentState, PanchakarmaTherapy } from '../types/assessment';
 import { computeProfile, getDominantDosha } from '../engines/report';
 import panchakarmaData from '../data/panchakarma.json';
+import seasonsData from '../data/seasons.json';
 
 const firstCategory = categories[0];
 const firstQuestion = firstCategory?.questions[0] ?? null;
@@ -34,6 +35,8 @@ const useAssessmentStore = create<AssessmentState>()(
       herbOrganFilter: null,
 
       selectedSrotas: null,
+
+      currentSeasonId: null,
 
       setAnswer: (questionId, value) => {
         const state = get();
@@ -135,6 +138,8 @@ const useAssessmentStore = create<AssessmentState>()(
           herbDoshaFilter: null,
           herbOrganFilter: null,
           selectedSrotas: null,
+          currentSeasonId: null,
+
         });
         try {
           useAssessmentStore.persist.clearStorage();
@@ -146,6 +151,28 @@ const useAssessmentStore = create<AssessmentState>()(
       setHerbDoshaFilter: (dosha) => set({ herbDoshaFilter: dosha }),
       setHerbOrganFilter: (organ) => set({ herbOrganFilter: organ }),
       setSelectedSrotas: (srotasId) => set({ selectedSrotas: srotasId }),
+
+      setCurrentSeasonId: (seasonId) => set({ currentSeasonId: seasonId }),
+      autoDetectSeason: () => {
+        const today = new Date();
+        const md = `${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+        const seasons = seasonsData;
+        let found = seasons[0]?.id || 'vasanta';
+        for (const s of seasons) {
+            if (s.startDate <= s.endDate) {
+                if (md >= s.startDate && md <= s.endDate) {
+                    found = s.id;
+                    break;
+                }
+            } else {
+                if (md >= s.startDate || md <= s.endDate) {
+                    found = s.id;
+                    break;
+                }
+            }
+        }
+        set({ currentSeasonId: found });
+      },
     }),
     {
       name: 'swadharma-assessment',
