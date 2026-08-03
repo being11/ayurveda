@@ -21,6 +21,7 @@ export default function HerbsPage() {
   const herbSearchQuery = useAssessmentStore(state => state.herbSearchQuery);
   const herbDoshaFilter = useAssessmentStore(state => state.herbDoshaFilter);
   const herbOrganFilter = useAssessmentStore(state => state.herbOrganFilter);
+  const reset = useAssessmentStore(state => state.reset);
   const filteredHerbs = useMemo(() => getFilteredHerbs(), [getFilteredHerbs, herbSearchQuery, herbDoshaFilter, herbOrganFilter]);
 
   if (!mounted) {

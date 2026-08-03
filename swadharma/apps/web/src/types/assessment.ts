@@ -149,6 +149,7 @@ export interface AssessmentState {
   getRecommendedPanchakarma: () => PanchakarmaTherapy[];
 
   setSelectedSrotas: (srotasId: string | null) => void;
+  getFilteredHerbs: () => any[];
 }
 
 // Nadi Pariksha Educational Guide Types
@@ -199,29 +200,16 @@ export interface Herb {
   rasa: string[];
   virya: string;
   vipaka: string;
-  prabhava: string;
-  doshaMatrix: Record<string, string>;
-  organSystems: string[];
-  useCases: string[];
-  description: string;
-}
-
-
-
-
-
-export interface Herb {
-  id: string;
-  sanskritName: string;
-  commonName: string;
-  botanicalName: string;
-  rasa: string[];
-  virya: string;
-  vipaka: string;
-  prabhava: string;
-  doshaMatrix: DoshaMatrix;
+  prabhava?: string;
+  doshaMatrix: DoshaMatrix | Record<string, string>;
   organSystems: string[];
   useCases?: string[];
   traditionalUses?: string[];
   description?: string;
 }
+
+
+
+
+
+
