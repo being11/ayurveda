@@ -41,6 +41,9 @@ export default function Navigation() {
             <Link href="/recommendations" className="hover:text-foreground transition-colors">
               Guidance
             </Link>
+            <Link href="/diet" className="hover:text-foreground transition-colors">
+              Diet Plan
+            </Link>
             <Link href="/knowledge-graph" className="hover:text-foreground transition-colors">
               Sources
             </Link>
@@ -49,6 +52,9 @@ export default function Navigation() {
           <nav className="flex md:hidden items-center space-x-4 text-xs font-medium text-muted-foreground">
             <Link href="/report" className="hover:text-foreground transition-colors">
               Report
+            </Link>
+            <Link href="/diet" className="hover:text-foreground transition-colors">
+              Diet Plan
             </Link>
           </nav>
         </div>

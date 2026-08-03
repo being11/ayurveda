@@ -65,6 +65,32 @@ export interface AyurvedaProfile {
   age?: number;
 }
 
+export interface RoutineActivity {
+  time: string;
+  activity: string;
+  description: string;
+}
+
+export interface DoshaRoutine {
+  morning: RoutineActivity[];
+  afternoon: RoutineActivity[];
+  evening: RoutineActivity[];
+  night: RoutineActivity[];
+  yoga: string[];
+  pranayama: string[];
+}
+
+export interface SeasonAdjustment {
+  name: string;
+  doshaFocus: string;
+  adjustment: string;
+}
+
+export interface RoutineData {
+  routines: Record<string, DoshaRoutine>;
+  seasons: Record<string, SeasonAdjustment>;
+}
+
 export interface AssessmentState {
   answers: Record<string, string | string[]>;
   observations: Record<string, number>;
@@ -73,8 +99,41 @@ export interface AssessmentState {
   history: string[];
   isComplete: boolean;
 
+  activeNadiPoint: DoshaType | null;
+
   setAnswer: (questionId: string, value: string | string[]) => void;
   nextQuestion: () => void;
   prevQuestion: () => void;
   reset: () => void;
+  setActiveNadiPoint: (point: DoshaType | null) => void;
+}
+
+// Nadi Pariksha Educational Guide Types
+
+export type FingerPosition = 'index' | 'middle' | 'ring';
+export type DoshaType = 'vata' | 'pitta' | 'kapha';
+
+export interface SubDosha {
+  name: string;
+  description: string;
+  location: string;
+}
+
+export interface PulseQuality {
+  animal: string;
+  movement: string;
+  characteristics: string[];
+}
+
+export interface DoshaPulseInfo {
+  dosha: DoshaType;
+  finger: FingerPosition;
+  quality: PulseQuality;
+  subDoshas: SubDosha[];
+}
+
+export interface NadiData {
+  title: string;
+  description: string;
+  pulses: DoshaPulseInfo[];
 }

@@ -8,7 +8,7 @@
    • Running dev in 4 packages
    • Remote caching disabled
 
-web:dev: cache bypass, force executing 0d20b23536c584f1
+web:dev: cache bypass, force executing eea2e7ff53fa674a
 web:dev: 
 web:dev: > web@0.0.1 dev /app/swadharma/apps/web
 web:dev: > next dev
@@ -16,9 +16,9 @@ web:dev:
 web:dev: ▲ Next.js 16.2.6 (Turbopack)
 web:dev: - Local:         http://localhost:3000
 web:dev: - Network:       http://192.168.0.2:3000
-web:dev: ✓ Ready in 539ms
+web:dev: ✓ Ready in 527ms
 web:dev: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
 web:dev: 
-web:dev: ○ Compiling /routine ...
-web:dev:  HEAD /routine 200 in 4.3s (next.js: 3.7s, proxy.ts: 128ms, application-code: 381ms)
-web:dev:  GET /routine 200 in 127ms (next.js: 15ms, proxy.ts: 17ms, application-code: 94ms)
+web:dev: ○ Compiling / ...
+web:dev:  GET / 200 in 6.9s (next.js: 5.1s, proxy.ts: 123ms, application-code: 1602ms)
+web:dev:  GET /panchakarma 200 in 957ms (next.js: 814ms, proxy.ts: 13ms, application-code: 130ms)

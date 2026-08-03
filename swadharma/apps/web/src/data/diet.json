@@ -1,0 +1,86 @@
+{
+  "tastes": {
+    "Vata": {
+      "favor": ["Sweet", "Sour", "Salty"],
+      "reduce": ["Bitter", "Pungent", "Astringent"]
+    },
+    "Pitta": {
+      "favor": ["Sweet", "Bitter", "Astringent"],
+      "reduce": ["Pungent", "Sour", "Salty"]
+    },
+    "Kapha": {
+      "favor": ["Pungent", "Bitter", "Astringent"],
+      "reduce": ["Sweet", "Sour", "Salty"]
+    },
+    "Balanced": {
+      "favor": ["All 6 tastes in moderation"],
+      "reduce": ["Extremes of any one taste"]
+    }
+  },
+  "foods": {
+    "Vata": {
+      "favor": ["Cooked root vegetables", "Ghee", "Warm milk", "Almonds", "Oats", "Sweet fruits"],
+      "reduce": ["Raw vegetables", "Cold drinks", "Dry crackers", "Beans", "Cabbage"],
+      "avoid": ["Excessive caffeine", "Processed snacks", "Ice cream"]
+    },
+    "Pitta": {
+      "favor": ["Cooling vegetables (cucumber, zucchini)", "Coconut water", "Basmati rice", "Sweet fruits", "Mint"],
+      "reduce": ["Spicy foods", "Tomatoes", "Garlic", "Sour fruits", "Fried foods"],
+      "avoid": ["Alcohol", "Excessive coffee", "Fermented foods"]
+    },
+    "Kapha": {
+      "favor": ["Leafy greens", "Legumes", "Quinoa", "Apples", "Ginger", "Black pepper"],
+      "reduce": ["Dairy", "Wheat", "Heavy meats", "Sweets", "Nuts"],
+      "avoid": ["Deep fried foods", "Cold dairy", "Heavy desserts"]
+    },
+    "Balanced": {
+      "favor": ["Seasonal vegetables", "Whole grains", "Fresh fruits", "Moderate proteins"],
+      "reduce": ["Processed foods", "Excessive sugar"],
+      "avoid": ["Stale foods"]
+    }
+  },
+  "seasons": {
+    "Vata": {
+      "season": "Autumn/Early Winter",
+      "recommendation": "Focus on warm, grounding, and oily foods. Soups, stews, and root vegetables are ideal.",
+      "menu": [
+        "Breakfast: Warm oatmeal with ghee and cooked apples.",
+        "Lunch: Kitchari or hearty root vegetable stew.",
+        "Dinner: Sweet potato soup with a side of warm grains."
+      ]
+    },
+    "Pitta": {
+      "season": "Summer",
+      "recommendation": "Focus on cooling, hydrating, and sweet foods. Avoid hot spices.",
+      "menu": [
+        "Breakfast: Coconut water and fresh sweet fruits (melons).",
+        "Lunch: Cooling cucumber salad and basmati rice.",
+        "Dinner: Light zucchini soup with mint and coriander."
+      ]
+    },
+    "Kapha": {
+      "season": "Late Winter/Spring",
+      "recommendation": "Focus on light, dry, and warming foods. Incorporate spices.",
+      "menu": [
+        "Breakfast: Stewed apples with cinnamon and ginger tea.",
+        "Lunch: Quinoa with steamed leafy greens and black pepper.",
+        "Dinner: Light vegetable broth or lentil soup."
+      ]
+    },
+    "Balanced": {
+      "season": "All Seasons",
+      "recommendation": "Adjust your diet slightly based on the current season, maintaining a balance of all six tastes.",
+      "menu": [
+        "Breakfast: Seasonal fruits and light grains.",
+        "Lunch: Balanced plate with cooked vegetables, grains, and protein.",
+        "Dinner: Lighter meal, mostly vegetables and soup."
+      ]
+    }
+  },
+  "timing": {
+    "Vata": "Eat small, regular meals. Do not skip meals. Best times: 8 AM, 12 PM, 6 PM.",
+    "Pitta": "Eat substantial meals at regular times. Strongest digestion is at noon. Best times: 7 AM, 12 PM, 6 PM.",
+    "Kapha": "Light breakfast or skip it. Main meal at lunch. Light early dinner. Best times: 10 AM, 2 PM, 6 PM.",
+    "Balanced": "Eat when naturally hungry, typically 3 meals a day. Best times: 8 AM, 1 PM, 7 PM."
+  }
+}
