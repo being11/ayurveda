@@ -9,7 +9,6 @@ import { getRoutineForProfile } from '../../engines/routine';
 import { RoutineTimeline } from '../../components/routine/RoutineTimeline';
 import { SeasonalAdjustmentCard } from '../../components/routine/SeasonalAdjustmentCard';
 import Navigation from '../../components/Navigation';
-import { useSeasonsStore } from '../../stores/seasonsStore';
 import seasonsData from '../../data/seasons.json';
 import type { Season } from '../../types/seasons';
 

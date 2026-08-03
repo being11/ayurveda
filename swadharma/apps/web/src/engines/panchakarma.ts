@@ -5,16 +5,18 @@ export interface PanchakarmaTherapy {
   id: string;
   name: string;
   dosha: string;
+  indicatedDoshas?: string[];
   benefits: string[];
   contraindications: string[];
   duration: string;
   description?: string;
 }
 
-export interface PurvakarmaTask {
+export interface PurvakarmaStep {
   id: string;
   task: string;
   description: string;
+  step?: string;
 }
 
 /**
