@@ -4,25 +4,32 @@
 import React, { useEffect, useState } from 'react';
 import { useAssessmentStore } from '../../stores/assessmentStore';
 import { computeProfile, getDominantDosha } from '../../engines/report';
-import { getRoutineForProfile, getCurrentSeason } from '../../engines/routine';
+import { getRoutineForProfile } from '../../engines/routine';
 import { RoutineTimeline } from '../../components/routine/RoutineTimeline';
 import { SeasonalAdjustmentCard } from '../../components/routine/SeasonalAdjustmentCard';
 import Navigation from '../../components/Navigation';
+import seasonsData from '../../data/seasons.json';
+import type { Season } from '../../types/seasons';
+
+const seasons: Season[] = seasonsData as Season[];
 
 export default function RoutinePage() {
   const [mounted, setMounted] = useState(false);
-  const { observations, answers } = useAssessmentStore();
+  const { observations, answers, currentSeasonId, autoDetectSeason } = useAssessmentStore();
 
   useEffect(() => {
     setMounted(true);
-  }, []);
+    if (!currentSeasonId) {
+      autoDetectSeason();
+    }
+  }, [currentSeasonId, autoDetectSeason]);
 
   if (!mounted) return null; // Prevent hydration mismatch
 
   const profile = computeProfile(observations, answers);
   const dominantDosha = getDominantDosha(profile.prakrtiDosha);
   const routine = getRoutineForProfile(profile.prakrtiDosha);
-  const season = getCurrentSeason();
+  const season = seasons.find((s) => s.id === currentSeasonId) || seasons[0];
 
   if (!routine || !season) {
     return (

@@ -3,12 +3,12 @@
 import React, { useEffect, useState } from 'react';
 import SeasonalCalendarWheel from '../../components/SeasonalCalendarWheel';
 import SeasonHealthCard from '../../components/SeasonHealthCard';
-import { useSeasonsStore } from '../../stores/seasonsStore';
+import { useAssessmentStore } from '../../stores/assessmentStore';
 
 export default function SeasonsPage() {
   const [mounted, setMounted] = useState(false);
-  const autoDetectSeason = useSeasonsStore((state) => state.autoDetectSeason);
-  const currentSeasonId = useSeasonsStore((state) => state.currentSeasonId);
+  const autoDetectSeason = useAssessmentStore((state) => state.autoDetectSeason);
+  const currentSeasonId = useAssessmentStore((state) => state.currentSeasonId);
 
   useEffect(() => {
     setMounted(true);
