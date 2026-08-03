@@ -1,0 +1,146 @@
+[
+  {
+    "id": "shishira",
+    "name": "Late Winter",
+    "sanskritName": "Shishira",
+    "description": "The season of cold and wet. Kapha begins to accumulate in the body.",
+    "dominantDosha": "Kapha",
+    "startDate": "01-15",
+    "endDate": "03-14",
+    "diet": [
+      "Favor warm, heavy, oily, and nourishing foods.",
+      "Include sweet, sour, and salty tastes.",
+      "Avoid cold drinks and raw, light foods."
+    ],
+    "lifestyle": [
+      "Engage in vigorous exercise.",
+      "Practice daily Abhyanga (warm oil massage) with sesame oil.",
+      "Stay warm and avoid exposure to cold winds."
+    ],
+    "herbs": [
+      "Ginger",
+      "Black Pepper",
+      "Ashwagandha"
+    ]
+  },
+  {
+    "id": "vasanta",
+    "name": "Spring",
+    "sanskritName": "Vasanta",
+    "description": "The season of renewal. Accumulated Kapha liquefies, which can weaken the digestive fire (Agni).",
+    "dominantDosha": "Kapha",
+    "startDate": "03-15",
+    "endDate": "05-14",
+    "diet": [
+      "Favor light, easily digestible, and dry foods.",
+      "Include bitter, pungent, and astringent tastes.",
+      "Avoid heavy, oily, sweet, and sour foods."
+    ],
+    "lifestyle": [
+      "Perform dry massage (Garshana) to stimulate lymph.",
+      "Engage in regular, moderate to vigorous exercise.",
+      "Avoid day sleep as it increases Kapha."
+    ],
+    "herbs": [
+      "Triphala",
+      "Tulsi",
+      "Turmeric"
+    ]
+  },
+  {
+    "id": "grishma",
+    "name": "Summer",
+    "sanskritName": "Grishma",
+    "description": "The season of heat. Pitta accumulates and Vata begins to increase due to dryness.",
+    "dominantDosha": "Pitta",
+    "startDate": "05-15",
+    "endDate": "07-14",
+    "diet": [
+      "Favor sweet, bitter, and astringent tastes.",
+      "Drink plenty of cooling liquids, but avoid ice-cold drinks.",
+      "Avoid spicy, sour, and salty foods."
+    ],
+    "lifestyle": [
+      "Avoid excessive exercise and overexertion.",
+      "Take cool baths and apply cooling essential oils like sandalwood.",
+      "Rest during the hottest part of the day."
+    ],
+    "herbs": [
+      "Brahmi",
+      "Shatavari",
+      "Coriander"
+    ]
+  },
+  {
+    "id": "varsha",
+    "name": "Monsoon",
+    "sanskritName": "Varsha",
+    "description": "The rainy season. Vata becomes highly aggravated, and digestive fire is typically at its lowest.",
+    "dominantDosha": "Vata",
+    "startDate": "07-15",
+    "endDate": "09-14",
+    "diet": [
+      "Favor light, fresh, and warm meals.",
+      "Include sour, salty, and a little sweet taste to pacify Vata.",
+      "Drink boiled or purified water, often warm."
+    ],
+    "lifestyle": [
+      "Maintain a steady, grounding daily routine.",
+      "Avoid getting wet in the rain or exposed to cold drafts.",
+      "Practice gentle yoga and meditation."
+    ],
+    "herbs": [
+      "Ginger",
+      "Haritaki",
+      "Cumin"
+    ]
+  },
+  {
+    "id": "sharad",
+    "name": "Autumn",
+    "sanskritName": "Sharad",
+    "description": "The season of transition. Pitta that accumulated during the monsoon gets aggravated by the returning heat.",
+    "dominantDosha": "Pitta",
+    "startDate": "09-15",
+    "endDate": "11-14",
+    "diet": [
+      "Favor sweet, bitter, and astringent tastes to pacify Pitta.",
+      "Include cooling and slightly heavy foods.",
+      "Avoid heavy, spicy, and sour foods."
+    ],
+    "lifestyle": [
+      "Spend time in the moonlight (moon bathing) to cool Pitta.",
+      "Purify drinking water using sunlight and moonlight.",
+      "Engage in calming activities and avoid anger or stress."
+    ],
+    "herbs": [
+      "Amalaki",
+      "Guduchi",
+      "Aloe Vera"
+    ]
+  },
+  {
+    "id": "hemanta",
+    "name": "Early Winter",
+    "sanskritName": "Hemanta",
+    "description": "The season of chill. Digestive fire becomes very strong. Vata is pacified and Kapha begins to build.",
+    "dominantDosha": "Vata",
+    "startDate": "11-15",
+    "endDate": "01-14",
+    "diet": [
+      "Favor rich, nourishing, and heavy foods to satisfy the strong Agni.",
+      "Include sweet, sour, and salty tastes.",
+      "Consume warm dairy, healthy fats, and root vegetables."
+    ],
+    "lifestyle": [
+      "Engage in vigorous physical activity.",
+      "Perform daily self-massage with warm, heavy oils.",
+      "Wear warm clothing and seek sunlight."
+    ],
+    "herbs": [
+      "Ashwagandha",
+      "Licorice",
+      "Cardamom"
+    ]
+  }
+]

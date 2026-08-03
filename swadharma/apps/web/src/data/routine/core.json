@@ -1,0 +1,110 @@
+{
+  "routines": {
+    "Vata": {
+      "morning": [
+        { "time": "6:00 AM", "activity": "Wake Up", "description": "Wake up gently. Vata types need more rest and should avoid rushing." },
+        { "time": "6:30 AM", "activity": "Hydration", "description": "Drink warm water with a pinch of salt and lime." },
+        { "time": "7:00 AM", "activity": "Movement", "description": "Gentle, grounding yoga and slow walks." },
+        { "time": "8:00 AM", "activity": "Breakfast", "description": "Warm, nourishing breakfast like oatmeal or stewed apples." }
+      ],
+      "afternoon": [
+        { "time": "12:00 PM", "activity": "Lunch", "description": "Heaviest meal of the day. Warm, moist, and grounding foods." },
+        { "time": "2:00 PM", "activity": "Rest", "description": "Short rest or meditation to ground excess Vata energy." }
+      ],
+      "evening": [
+        { "time": "6:00 PM", "activity": "Dinner", "description": "Light, warm, and easily digestible meal (e.g., soups, stews)." },
+        { "time": "8:00 PM", "activity": "Wind Down", "description": "Warm oil massage (Abhyanga), reading, or calming music." }
+      ],
+      "night": [
+        { "time": "10:00 PM", "activity": "Sleep", "description": "In bed by 10 PM. Vata needs sufficient, deep sleep." }
+      ],
+      "yoga": ["Child's pose", "Tree pose", "Seated forward bend"],
+      "pranayama": ["Nadi Shodhana (Alternate Nostril Breathing)"]
+    },
+    "Pitta": {
+      "morning": [
+        { "time": "5:30 AM", "activity": "Wake Up", "description": "Wake up with the sunrise." },
+        { "time": "6:00 AM", "activity": "Hydration", "description": "Drink room temperature water or water with aloe vera/coriander." },
+        { "time": "6:30 AM", "activity": "Movement", "description": "Moderate exercise, swimming, or cooling yoga sequences." },
+        { "time": "7:30 AM", "activity": "Breakfast", "description": "Cooling, sweet, and satisfying breakfast (e.g., fruit bowl, toast)." }
+      ],
+      "afternoon": [
+        { "time": "12:30 PM", "activity": "Lunch", "description": "Substantial, cooling lunch with raw salads or sweet vegetables." },
+        { "time": "4:00 PM", "activity": "Nature Time", "description": "Take a short walk outdoors, ideally near water or in a garden." }
+      ],
+      "evening": [
+        { "time": "6:30 PM", "activity": "Dinner", "description": "Moderate dinner avoiding excessively spicy or sour foods." },
+        { "time": "8:30 PM", "activity": "Wind Down", "description": "Relaxing activities, avoid intense discussions or screen time." }
+      ],
+      "night": [
+        { "time": "10:30 PM", "activity": "Sleep", "description": "Ensure the bedroom is cool." }
+      ],
+      "yoga": ["Moon Salutations", "Cobra pose", "Spinal twists"],
+      "pranayama": ["Sheetali (Cooling Breath)"]
+    },
+    "Kapha": {
+      "morning": [
+        { "time": "5:00 AM", "activity": "Wake Up", "description": "Wake up early before sunrise to avoid sluggishness." },
+        { "time": "5:30 AM", "activity": "Hydration", "description": "Drink warm water with honey and lemon/ginger." },
+        { "time": "6:00 AM", "activity": "Movement", "description": "Vigorous exercise, brisk walking, or active yoga (Sun Salutations)." },
+        { "time": "8:00 AM", "activity": "Breakfast", "description": "Light breakfast or skip if not hungry. Fresh fruit or light tea." }
+      ],
+      "afternoon": [
+        { "time": "1:00 PM", "activity": "Lunch", "description": "Warm, light, and spiced meal. Largest meal of the day." },
+        { "time": "3:00 PM", "activity": "Activity", "description": "Stay active, avoid daytime sleeping." }
+      ],
+      "evening": [
+        { "time": "6:00 PM", "activity": "Dinner", "description": "Very light dinner (e.g., vegetable soup) before 7 PM." },
+        { "time": "8:00 PM", "activity": "Wind Down", "description": "Dry brushing (Garshana) or stimulating hobbies." }
+      ],
+      "night": [
+        { "time": "11:00 PM", "activity": "Sleep", "description": "Kapha types need less sleep than Vata or Pitta." }
+      ],
+      "yoga": ["Sun Salutations", "Warrior poses", "Backbends"],
+      "pranayama": ["Bhastrika (Bellows Breath)", "Kapalabhati"]
+    },
+    "Balanced": {
+      "morning": [
+        { "time": "6:00 AM", "activity": "Wake Up", "description": "Wake up feeling refreshed." },
+        { "time": "6:30 AM", "activity": "Hydration", "description": "Drink warm or room temperature water." },
+        { "time": "7:00 AM", "activity": "Movement", "description": "Balanced yoga or walking." },
+        { "time": "8:00 AM", "activity": "Breakfast", "description": "Balanced, seasonal breakfast." }
+      ],
+      "afternoon": [
+        { "time": "12:30 PM", "activity": "Lunch", "description": "Nourishing, balanced meal." },
+        { "time": "2:30 PM", "activity": "Activity", "description": "Steady focus on daily tasks." }
+      ],
+      "evening": [
+        { "time": "6:30 PM", "activity": "Dinner", "description": "Moderate, easy-to-digest dinner." },
+        { "time": "8:30 PM", "activity": "Wind Down", "description": "Relaxing routine, disconnect from work." }
+      ],
+      "night": [
+        { "time": "10:30 PM", "activity": "Sleep", "description": "Aim for 7-8 hours of restful sleep." }
+      ],
+      "yoga": ["Hatha yoga sequences", "Downward dog"],
+      "pranayama": ["Anulom Vilom"]
+    }
+  },
+  "seasons": {
+    "Spring": {
+      "name": "Vasanta (Spring)",
+      "doshaFocus": "Kapha",
+      "adjustment": "Spring is Kapha season. Focus on lighter diets, vigorous exercise, and warming spices to melt accumulated winter Kapha."
+    },
+    "Summer": {
+      "name": "Grishma (Summer)",
+      "doshaFocus": "Pitta",
+      "adjustment": "Summer is Pitta season. Stay cool, favor sweet and astringent tastes, and avoid excessive sun exposure."
+    },
+    "Autumn": {
+      "name": "Sharad (Autumn)",
+      "doshaFocus": "Vata/Pitta",
+      "adjustment": "Autumn marks a transition. Begin incorporating grounding, warming foods to prepare for Vata season, while clearing summer Pitta."
+    },
+    "Winter": {
+      "name": "Hemanta/Shishira (Winter)",
+      "doshaFocus": "Vata",
+      "adjustment": "Winter is Vata season. Prioritize warm, heavy, unctuous foods and grounding routines to combat cold and dryness."
+    }
+  }
+}

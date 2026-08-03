@@ -1,0 +1,2919 @@
+[
+  {
+    "id": "herb_001",
+    "sanskritName": "Ashwagandha",
+    "commonName": "Common Ashwagandha",
+    "botanicalName": "Botanical ashwagandha",
+    "rasa": [
+      "Bitter",
+      "Astringent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Ashwagandha",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "-",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Digestive"
+    ],
+    "useCases": [
+      "Good for reproductive issues",
+      "Balances doshas"
+    ],
+    "description": "Ashwagandha is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_002",
+    "sanskritName": "Shatavari",
+    "commonName": "Common Shatavari",
+    "botanicalName": "Botanical shatavari",
+    "rasa": [
+      "Pungent",
+      "Bitter"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Shatavari",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "-",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Reproductive",
+      "Respiratory",
+      "Nervous"
+    ],
+    "useCases": [
+      "Good for skeletal issues",
+      "Balances doshas"
+    ],
+    "description": "Shatavari is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_003",
+    "sanskritName": "Brahmi",
+    "commonName": "Common Brahmi",
+    "botanicalName": "Botanical brahmi",
+    "rasa": [
+      "Bitter",
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Brahmi",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "-",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Muscular"
+    ],
+    "useCases": [
+      "Good for reproductive issues",
+      "Balances doshas"
+    ],
+    "description": "Brahmi is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_004",
+    "sanskritName": "Amalaki",
+    "commonName": "Common Amalaki",
+    "botanicalName": "Botanical amalaki",
+    "rasa": [
+      "Sour"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Amalaki",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "+",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Muscular",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Good for respiratory issues",
+      "Balances doshas"
+    ],
+    "description": "Amalaki is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_005",
+    "sanskritName": "Haritaki",
+    "commonName": "Common Haritaki",
+    "botanicalName": "Botanical haritaki",
+    "rasa": [
+      "Sour",
+      "Bitter"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Haritaki",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "0",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Circulatory",
+      "Skeletal"
+    ],
+    "useCases": [
+      "Good for skeletal issues",
+      "Balances doshas"
+    ],
+    "description": "Haritaki is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_006",
+    "sanskritName": "Bibhitaki",
+    "commonName": "Common Bibhitaki",
+    "botanicalName": "Botanical bibhitaki",
+    "rasa": [
+      "Astringent",
+      "Sour",
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Bibhitaki",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "0",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Integumentary",
+      "Nervous",
+      "Reproductive"
+    ],
+    "useCases": [
+      "Good for muscular issues",
+      "Balances doshas"
+    ],
+    "description": "Bibhitaki is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_007",
+    "sanskritName": "Guduchi",
+    "commonName": "Common Guduchi",
+    "botanicalName": "Botanical guduchi",
+    "rasa": [
+      "Sour"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Guduchi",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "+",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Digestive",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Good for skeletal issues",
+      "Balances doshas"
+    ],
+    "description": "Guduchi is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_008",
+    "sanskritName": "Tulsi",
+    "commonName": "Common Tulsi",
+    "botanicalName": "Botanical tulsi",
+    "rasa": [
+      "Sweet"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Tulsi",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "-",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Skeletal"
+    ],
+    "useCases": [
+      "Good for nervous issues",
+      "Balances doshas"
+    ],
+    "description": "Tulsi is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_009",
+    "sanskritName": "Turmeric",
+    "commonName": "Common Turmeric",
+    "botanicalName": "Botanical turmeric",
+    "rasa": [
+      "Sour",
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Turmeric",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "+",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Skeletal",
+      "Reproductive"
+    ],
+    "useCases": [
+      "Good for skeletal issues",
+      "Balances doshas"
+    ],
+    "description": "Turmeric is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_010",
+    "sanskritName": "Ginger",
+    "commonName": "Common Ginger",
+    "botanicalName": "Botanical ginger",
+    "rasa": [
+      "Sour",
+      "Astringent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Ginger",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "+",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Integumentary",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Good for skeletal issues",
+      "Balances doshas"
+    ],
+    "description": "Ginger is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_011",
+    "sanskritName": "Cardamom",
+    "commonName": "Common Cardamom",
+    "botanicalName": "Botanical cardamom",
+    "rasa": [
+      "Pungent"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Cardamom",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "+",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Integumentary",
+      "Nervous"
+    ],
+    "useCases": [
+      "Good for digestive issues",
+      "Balances doshas"
+    ],
+    "description": "Cardamom is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_012",
+    "sanskritName": "Cumin",
+    "commonName": "Common Cumin",
+    "botanicalName": "Botanical cumin",
+    "rasa": [
+      "Astringent",
+      "Salty",
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Cumin",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "0",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Skeletal",
+      "Digestive"
+    ],
+    "useCases": [
+      "Good for skeletal issues",
+      "Balances doshas"
+    ],
+    "description": "Cumin is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_013",
+    "sanskritName": "Coriander",
+    "commonName": "Common Coriander",
+    "botanicalName": "Botanical coriander",
+    "rasa": [
+      "Pungent"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Coriander",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "-",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Muscular",
+      "Skeletal"
+    ],
+    "useCases": [
+      "Good for muscular issues",
+      "Balances doshas"
+    ],
+    "description": "Coriander is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_014",
+    "sanskritName": "Fennel",
+    "commonName": "Common Fennel",
+    "botanicalName": "Botanical fennel",
+    "rasa": [
+      "Bitter",
+      "Pungent",
+      "Astringent"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Fennel",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "+",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Reproductive",
+      "Nervous",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Good for circulatory issues",
+      "Balances doshas"
+    ],
+    "description": "Fennel is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_015",
+    "sanskritName": "Cinnamon",
+    "commonName": "Common Cinnamon",
+    "botanicalName": "Botanical cinnamon",
+    "rasa": [
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Cinnamon",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "+",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Reproductive"
+    ],
+    "useCases": [
+      "Good for nervous issues",
+      "Balances doshas"
+    ],
+    "description": "Cinnamon is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_016",
+    "sanskritName": "Clove",
+    "commonName": "Common Clove",
+    "botanicalName": "Botanical clove",
+    "rasa": [
+      "Salty",
+      "Astringent"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Clove",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "+",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Reproductive",
+      "Integumentary"
+    ],
+    "useCases": [
+      "Good for integumentary issues",
+      "Balances doshas"
+    ],
+    "description": "Clove is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_017",
+    "sanskritName": "Black Pepper",
+    "commonName": "Common Black Pepper",
+    "botanicalName": "Botanical black pepper",
+    "rasa": [
+      "Sweet",
+      "Bitter"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Black Pepper",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "0",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Muscular",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Good for integumentary issues",
+      "Balances doshas"
+    ],
+    "description": "Black Pepper is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_018",
+    "sanskritName": "Long Pepper",
+    "commonName": "Common Long Pepper",
+    "botanicalName": "Botanical long pepper",
+    "rasa": [
+      "Salty"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Long Pepper",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "+",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Digestive",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Good for skeletal issues",
+      "Balances doshas"
+    ],
+    "description": "Long Pepper is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_019",
+    "sanskritName": "Gotu Kola",
+    "commonName": "Common Gotu Kola",
+    "botanicalName": "Botanical gotu kola",
+    "rasa": [
+      "Pungent"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Gotu Kola",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "0",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Reproductive",
+      "Nervous",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Good for reproductive issues",
+      "Balances doshas"
+    ],
+    "description": "Gotu Kola is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_020",
+    "sanskritName": "Arjuna",
+    "commonName": "Common Arjuna",
+    "botanicalName": "Botanical arjuna",
+    "rasa": [
+      "Pungent",
+      "Astringent"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Arjuna",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "0",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Reproductive",
+      "Integumentary",
+      "Digestive"
+    ],
+    "useCases": [
+      "Good for circulatory issues",
+      "Balances doshas"
+    ],
+    "description": "Arjuna is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_021",
+    "sanskritName": "Guggulu",
+    "commonName": "Common Guggulu",
+    "botanicalName": "Botanical guggulu",
+    "rasa": [
+      "Pungent"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Guggulu",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "0",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Skeletal"
+    ],
+    "useCases": [
+      "Good for integumentary issues",
+      "Balances doshas"
+    ],
+    "description": "Guggulu is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_022",
+    "sanskritName": "Boswellia",
+    "commonName": "Common Boswellia",
+    "botanicalName": "Botanical boswellia",
+    "rasa": [
+      "Astringent",
+      "Sour",
+      "Salty"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Boswellia",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "0",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Nervous",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Good for reproductive issues",
+      "Balances doshas"
+    ],
+    "description": "Boswellia is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_023",
+    "sanskritName": "Neem",
+    "commonName": "Common Neem",
+    "botanicalName": "Botanical neem",
+    "rasa": [
+      "Salty"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Neem",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "-",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Circulatory",
+      "Integumentary",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Good for muscular issues",
+      "Balances doshas"
+    ],
+    "description": "Neem is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_024",
+    "sanskritName": "Manjistha",
+    "commonName": "Common Manjistha",
+    "botanicalName": "Botanical manjistha",
+    "rasa": [
+      "Bitter"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Manjistha",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "+",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Good for nervous issues",
+      "Balances doshas"
+    ],
+    "description": "Manjistha is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_025",
+    "sanskritName": "Triphala",
+    "commonName": "Common Triphala",
+    "botanicalName": "Botanical triphala",
+    "rasa": [
+      "Bitter",
+      "Astringent",
+      "Salty"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Triphala",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "0",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Good for reproductive issues",
+      "Balances doshas"
+    ],
+    "description": "Triphala is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_026",
+    "sanskritName": "Dashamoola",
+    "commonName": "Common Dashamoola",
+    "botanicalName": "Botanical dashamoola",
+    "rasa": [
+      "Pungent",
+      "Salty"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Dashamoola",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "0",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Reproductive",
+      "Integumentary",
+      "Digestive"
+    ],
+    "useCases": [
+      "Good for skeletal issues",
+      "Balances doshas"
+    ],
+    "description": "Dashamoola is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_027",
+    "sanskritName": "Chyawanprash",
+    "commonName": "Common Chyawanprash",
+    "botanicalName": "Botanical chyawanprash",
+    "rasa": [
+      "Salty",
+      "Sweet",
+      "Astringent"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Chyawanprash",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "+",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Nervous",
+      "Digestive",
+      "Integumentary"
+    ],
+    "useCases": [
+      "Good for skeletal issues",
+      "Balances doshas"
+    ],
+    "description": "Chyawanprash is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_028",
+    "sanskritName": "Bala",
+    "commonName": "Common Bala",
+    "botanicalName": "Botanical bala",
+    "rasa": [
+      "Pungent",
+      "Sweet"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Bala",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "-",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Circulatory"
+    ],
+    "useCases": [
+      "Good for respiratory issues",
+      "Balances doshas"
+    ],
+    "description": "Bala is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_029",
+    "sanskritName": "Vidari",
+    "commonName": "Common Vidari",
+    "botanicalName": "Botanical vidari",
+    "rasa": [
+      "Astringent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Vidari",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "-",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Nervous",
+      "Circulatory",
+      "Muscular"
+    ],
+    "useCases": [
+      "Good for skeletal issues",
+      "Balances doshas"
+    ],
+    "description": "Vidari is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_030",
+    "sanskritName": "Kapikacchu",
+    "commonName": "Common Kapikacchu",
+    "botanicalName": "Botanical kapikacchu",
+    "rasa": [
+      "Sweet",
+      "Sour",
+      "Bitter"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Kapikacchu",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "-",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Digestive",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Good for skeletal issues",
+      "Balances doshas"
+    ],
+    "description": "Kapikacchu is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_031",
+    "sanskritName": "Shilajit",
+    "commonName": "Common Shilajit",
+    "botanicalName": "Botanical shilajit",
+    "rasa": [
+      "Sweet"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Shilajit",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "-",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Skeletal"
+    ],
+    "useCases": [
+      "Good for nervous issues",
+      "Balances doshas"
+    ],
+    "description": "Shilajit is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_032",
+    "sanskritName": "Gokshura",
+    "commonName": "Common Gokshura",
+    "botanicalName": "Botanical gokshura",
+    "rasa": [
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Gokshura",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "0",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Reproductive",
+      "Muscular"
+    ],
+    "useCases": [
+      "Good for respiratory issues",
+      "Balances doshas"
+    ],
+    "description": "Gokshura is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_033",
+    "sanskritName": "Punarnava",
+    "commonName": "Common Punarnava",
+    "botanicalName": "Botanical punarnava",
+    "rasa": [
+      "Salty",
+      "Pungent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Punarnava",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "+",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Muscular",
+      "Skeletal"
+    ],
+    "useCases": [
+      "Good for muscular issues",
+      "Balances doshas"
+    ],
+    "description": "Punarnava is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_034",
+    "sanskritName": "Bhringaraj",
+    "commonName": "Common Bhringaraj",
+    "botanicalName": "Botanical bhringaraj",
+    "rasa": [
+      "Bitter",
+      "Sweet",
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Bhringaraj",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "+",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Circulatory",
+      "Respiratory",
+      "Digestive"
+    ],
+    "useCases": [
+      "Good for nervous issues",
+      "Balances doshas"
+    ],
+    "description": "Bhringaraj is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_035",
+    "sanskritName": "Aloe Vera",
+    "commonName": "Common Aloe Vera",
+    "botanicalName": "Botanical aloe vera",
+    "rasa": [
+      "Pungent",
+      "Sour",
+      "Salty"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Aloe Vera",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "0",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Nervous"
+    ],
+    "useCases": [
+      "Good for integumentary issues",
+      "Balances doshas"
+    ],
+    "description": "Aloe Vera is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_036",
+    "sanskritName": "Licorice",
+    "commonName": "Common Licorice",
+    "botanicalName": "Botanical licorice",
+    "rasa": [
+      "Astringent",
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Licorice",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "0",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Integumentary"
+    ],
+    "useCases": [
+      "Good for skeletal issues",
+      "Balances doshas"
+    ],
+    "description": "Licorice is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_037",
+    "sanskritName": "Musta",
+    "commonName": "Common Musta",
+    "botanicalName": "Botanical musta",
+    "rasa": [
+      "Pungent",
+      "Bitter"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Musta",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "-",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Nervous",
+      "Integumentary"
+    ],
+    "useCases": [
+      "Good for digestive issues",
+      "Balances doshas"
+    ],
+    "description": "Musta is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_038",
+    "sanskritName": "Kutki",
+    "commonName": "Common Kutki",
+    "botanicalName": "Botanical kutki",
+    "rasa": [
+      "Salty",
+      "Sweet",
+      "Sour"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Kutki",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "0",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Reproductive"
+    ],
+    "useCases": [
+      "Good for respiratory issues",
+      "Balances doshas"
+    ],
+    "description": "Kutki is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_039",
+    "sanskritName": "Chitraka",
+    "commonName": "Common Chitraka",
+    "botanicalName": "Botanical chitraka",
+    "rasa": [
+      "Sweet",
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Chitraka",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "+",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Circulatory"
+    ],
+    "useCases": [
+      "Good for skeletal issues",
+      "Balances doshas"
+    ],
+    "description": "Chitraka is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_040",
+    "sanskritName": "Vidanga",
+    "commonName": "Common Vidanga",
+    "botanicalName": "Botanical vidanga",
+    "rasa": [
+      "Sour",
+      "Pungent",
+      "Salty"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Vidanga",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "0",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Integumentary",
+      "Skeletal",
+      "Reproductive"
+    ],
+    "useCases": [
+      "Good for reproductive issues",
+      "Balances doshas"
+    ],
+    "description": "Vidanga is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_041",
+    "sanskritName": "Pippali",
+    "commonName": "Common Pippali",
+    "botanicalName": "Botanical pippali",
+    "rasa": [
+      "Sweet",
+      "Sour",
+      "Pungent"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Pippali",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "+",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Skeletal",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Good for integumentary issues",
+      "Balances doshas"
+    ],
+    "description": "Pippali is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_042",
+    "sanskritName": "Vacha",
+    "commonName": "Common Vacha",
+    "botanicalName": "Botanical vacha",
+    "rasa": [
+      "Bitter"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Vacha",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "-",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Muscular"
+    ],
+    "useCases": [
+      "Good for circulatory issues",
+      "Balances doshas"
+    ],
+    "description": "Vacha is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_043",
+    "sanskritName": "Jatamansi",
+    "commonName": "Common Jatamansi",
+    "botanicalName": "Botanical jatamansi",
+    "rasa": [
+      "Astringent",
+      "Bitter"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Jatamansi",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "+",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Integumentary",
+      "Muscular",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Good for integumentary issues",
+      "Balances doshas"
+    ],
+    "description": "Jatamansi is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_044",
+    "sanskritName": "Shankhapushpi",
+    "commonName": "Common Shankhapushpi",
+    "botanicalName": "Botanical shankhapushpi",
+    "rasa": [
+      "Salty",
+      "Sweet"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Shankhapushpi",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "+",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Respiratory"
+    ],
+    "useCases": [
+      "Good for circulatory issues",
+      "Balances doshas"
+    ],
+    "description": "Shankhapushpi is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_045",
+    "sanskritName": "Kalmegh",
+    "commonName": "Common Kalmegh",
+    "botanicalName": "Botanical kalmegh",
+    "rasa": [
+      "Astringent",
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Kalmegh",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "+",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Integumentary",
+      "Reproductive"
+    ],
+    "useCases": [
+      "Good for reproductive issues",
+      "Balances doshas"
+    ],
+    "description": "Kalmegh is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_046",
+    "sanskritName": "Sarpagandha",
+    "commonName": "Common Sarpagandha",
+    "botanicalName": "Botanical sarpagandha",
+    "rasa": [
+      "Sour",
+      "Salty"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Sarpagandha",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "-",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Muscular"
+    ],
+    "useCases": [
+      "Good for circulatory issues",
+      "Balances doshas"
+    ],
+    "description": "Sarpagandha is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_047",
+    "sanskritName": "Ashoka",
+    "commonName": "Common Ashoka",
+    "botanicalName": "Botanical ashoka",
+    "rasa": [
+      "Astringent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Ashoka",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "+",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Skeletal"
+    ],
+    "useCases": [
+      "Good for integumentary issues",
+      "Balances doshas"
+    ],
+    "description": "Ashoka is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_048",
+    "sanskritName": "Kumari",
+    "commonName": "Common Kumari",
+    "botanicalName": "Botanical kumari",
+    "rasa": [
+      "Sweet",
+      "Astringent"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Kumari",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "0",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Good for reproductive issues",
+      "Balances doshas"
+    ],
+    "description": "Kumari is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_049",
+    "sanskritName": "Lajjalu",
+    "commonName": "Common Lajjalu",
+    "botanicalName": "Botanical lajjalu",
+    "rasa": [
+      "Pungent",
+      "Astringent"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Lajjalu",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "+",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Reproductive",
+      "Muscular",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Good for integumentary issues",
+      "Balances doshas"
+    ],
+    "description": "Lajjalu is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_050",
+    "sanskritName": "Tagara",
+    "commonName": "Common Tagara",
+    "botanicalName": "Botanical tagara",
+    "rasa": [
+      "Pungent"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Tagara",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "-",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Circulatory",
+      "Respiratory",
+      "Reproductive"
+    ],
+    "useCases": [
+      "Good for respiratory issues",
+      "Balances doshas"
+    ],
+    "description": "Tagara is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_051",
+    "sanskritName": "Devadaru",
+    "commonName": "Common Devadaru",
+    "botanicalName": "Botanical devadaru",
+    "rasa": [
+      "Pungent"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Devadaru",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "-",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Integumentary"
+    ],
+    "useCases": [
+      "Good for integumentary issues",
+      "Balances doshas"
+    ],
+    "description": "Devadaru is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_052",
+    "sanskritName": "Kantakari",
+    "commonName": "Common Kantakari",
+    "botanicalName": "Botanical kantakari",
+    "rasa": [
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Kantakari",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "-",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Muscular",
+      "Reproductive"
+    ],
+    "useCases": [
+      "Good for reproductive issues",
+      "Balances doshas"
+    ],
+    "description": "Kantakari is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_053",
+    "sanskritName": "Brihati",
+    "commonName": "Common Brihati",
+    "botanicalName": "Botanical brihati",
+    "rasa": [
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Brihati",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "0",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Circulatory"
+    ],
+    "useCases": [
+      "Good for skeletal issues",
+      "Balances doshas"
+    ],
+    "description": "Brihati is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_054",
+    "sanskritName": "Prishniparni",
+    "commonName": "Common Prishniparni",
+    "botanicalName": "Botanical prishniparni",
+    "rasa": [
+      "Salty"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Prishniparni",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "+",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Nervous",
+      "Respiratory",
+      "Reproductive"
+    ],
+    "useCases": [
+      "Good for digestive issues",
+      "Balances doshas"
+    ],
+    "description": "Prishniparni is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_055",
+    "sanskritName": "Shalaparni",
+    "commonName": "Common Shalaparni",
+    "botanicalName": "Botanical shalaparni",
+    "rasa": [
+      "Sweet",
+      "Bitter",
+      "Sour"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Shalaparni",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "-",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Integumentary",
+      "Muscular"
+    ],
+    "useCases": [
+      "Good for reproductive issues",
+      "Balances doshas"
+    ],
+    "description": "Shalaparni is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_056",
+    "sanskritName": "Gokshur",
+    "commonName": "Common Gokshur",
+    "botanicalName": "Botanical gokshur",
+    "rasa": [
+      "Astringent",
+      "Bitter",
+      "Salty"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Gokshur",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "-",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Reproductive",
+      "Respiratory",
+      "Muscular"
+    ],
+    "useCases": [
+      "Good for digestive issues",
+      "Balances doshas"
+    ],
+    "description": "Gokshur is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_057",
+    "sanskritName": "Eranda",
+    "commonName": "Common Eranda",
+    "botanicalName": "Botanical eranda",
+    "rasa": [
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Eranda",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "+",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Reproductive"
+    ],
+    "useCases": [
+      "Good for integumentary issues",
+      "Balances doshas"
+    ],
+    "description": "Eranda is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_058",
+    "sanskritName": "Nirgundi",
+    "commonName": "Common Nirgundi",
+    "botanicalName": "Botanical nirgundi",
+    "rasa": [
+      "Astringent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Nirgundi",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "0",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Nervous"
+    ],
+    "useCases": [
+      "Good for circulatory issues",
+      "Balances doshas"
+    ],
+    "description": "Nirgundi is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_059",
+    "sanskritName": "Rasna",
+    "commonName": "Common Rasna",
+    "botanicalName": "Botanical rasna",
+    "rasa": [
+      "Astringent"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Rasna",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "0",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Reproductive"
+    ],
+    "useCases": [
+      "Good for integumentary issues",
+      "Balances doshas"
+    ],
+    "description": "Rasna is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_060",
+    "sanskritName": "Bhumyamalaki",
+    "commonName": "Common Bhumyamalaki",
+    "botanicalName": "Botanical bhumyamalaki",
+    "rasa": [
+      "Salty"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Bhumyamalaki",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "+",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Integumentary",
+      "Nervous"
+    ],
+    "useCases": [
+      "Good for muscular issues",
+      "Balances doshas"
+    ],
+    "description": "Bhumyamalaki is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_061",
+    "sanskritName": "Daruharidra",
+    "commonName": "Common Daruharidra",
+    "botanicalName": "Botanical daruharidra",
+    "rasa": [
+      "Salty"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Daruharidra",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "0",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Respiratory"
+    ],
+    "useCases": [
+      "Good for reproductive issues",
+      "Balances doshas"
+    ],
+    "description": "Daruharidra is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_062",
+    "sanskritName": "Haridra",
+    "commonName": "Common Haridra",
+    "botanicalName": "Botanical haridra",
+    "rasa": [
+      "Pungent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Haridra",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "0",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Skeletal",
+      "Integumentary"
+    ],
+    "useCases": [
+      "Good for skeletal issues",
+      "Balances doshas"
+    ],
+    "description": "Haridra is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_063",
+    "sanskritName": "Jambu",
+    "commonName": "Common Jambu",
+    "botanicalName": "Botanical jambu",
+    "rasa": [
+      "Salty",
+      "Sweet",
+      "Pungent"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Jambu",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "+",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Skeletal",
+      "Reproductive",
+      "Integumentary"
+    ],
+    "useCases": [
+      "Good for respiratory issues",
+      "Balances doshas"
+    ],
+    "description": "Jambu is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_064",
+    "sanskritName": "Karela",
+    "commonName": "Common Karela",
+    "botanicalName": "Botanical karela",
+    "rasa": [
+      "Pungent",
+      "Bitter"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Karela",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "-",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Integumentary",
+      "Reproductive"
+    ],
+    "useCases": [
+      "Good for muscular issues",
+      "Balances doshas"
+    ],
+    "description": "Karela is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_065",
+    "sanskritName": "Meshashringi",
+    "commonName": "Common Meshashringi",
+    "botanicalName": "Botanical meshashringi",
+    "rasa": [
+      "Bitter",
+      "Pungent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Meshashringi",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "-",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Digestive",
+      "Nervous",
+      "Muscular"
+    ],
+    "useCases": [
+      "Good for integumentary issues",
+      "Balances doshas"
+    ],
+    "description": "Meshashringi is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_066",
+    "sanskritName": "Tulasi",
+    "commonName": "Common Tulasi",
+    "botanicalName": "Botanical tulasi",
+    "rasa": [
+      "Pungent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Tulasi",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "+",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Muscular",
+      "Integumentary"
+    ],
+    "useCases": [
+      "Good for integumentary issues",
+      "Balances doshas"
+    ],
+    "description": "Tulasi is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_067",
+    "sanskritName": "Pudina",
+    "commonName": "Common Pudina",
+    "botanicalName": "Botanical pudina",
+    "rasa": [
+      "Sweet",
+      "Sour"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Pudina",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "0",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Reproductive"
+    ],
+    "useCases": [
+      "Good for digestive issues",
+      "Balances doshas"
+    ],
+    "description": "Pudina is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_068",
+    "sanskritName": "Dhanyaka",
+    "commonName": "Common Dhanyaka",
+    "botanicalName": "Botanical dhanyaka",
+    "rasa": [
+      "Pungent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Dhanyaka",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "-",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Integumentary",
+      "Digestive",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Good for nervous issues",
+      "Balances doshas"
+    ],
+    "description": "Dhanyaka is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_069",
+    "sanskritName": "Jeeraka",
+    "commonName": "Common Jeeraka",
+    "botanicalName": "Botanical jeeraka",
+    "rasa": [
+      "Pungent",
+      "Sweet",
+      "Sour"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Jeeraka",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "+",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Circulatory",
+      "Digestive",
+      "Reproductive"
+    ],
+    "useCases": [
+      "Good for nervous issues",
+      "Balances doshas"
+    ],
+    "description": "Jeeraka is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_070",
+    "sanskritName": "Mishreya",
+    "commonName": "Common Mishreya",
+    "botanicalName": "Botanical mishreya",
+    "rasa": [
+      "Pungent"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Mishreya",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "+",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Respiratory"
+    ],
+    "useCases": [
+      "Good for integumentary issues",
+      "Balances doshas"
+    ],
+    "description": "Mishreya is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_071",
+    "sanskritName": "Ajamoda",
+    "commonName": "Common Ajamoda",
+    "botanicalName": "Botanical ajamoda",
+    "rasa": [
+      "Bitter",
+      "Sour",
+      "Sweet"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Ajamoda",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "-",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Muscular",
+      "Nervous",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Good for circulatory issues",
+      "Balances doshas"
+    ],
+    "description": "Ajamoda is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_072",
+    "sanskritName": "Hingu",
+    "commonName": "Common Hingu",
+    "botanicalName": "Botanical hingu",
+    "rasa": [
+      "Pungent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Hingu",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "0",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Circulatory",
+      "Digestive",
+      "Nervous"
+    ],
+    "useCases": [
+      "Good for skeletal issues",
+      "Balances doshas"
+    ],
+    "description": "Hingu is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_073",
+    "sanskritName": "Methi",
+    "commonName": "Common Methi",
+    "botanicalName": "Botanical methi",
+    "rasa": [
+      "Sweet",
+      "Astringent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Methi",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "-",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Muscular"
+    ],
+    "useCases": [
+      "Good for nervous issues",
+      "Balances doshas"
+    ],
+    "description": "Methi is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_074",
+    "sanskritName": "Sarshapa",
+    "commonName": "Common Sarshapa",
+    "botanicalName": "Botanical sarshapa",
+    "rasa": [
+      "Bitter",
+      "Sour",
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Sarshapa",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "-",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Digestive",
+      "Integumentary",
+      "Muscular"
+    ],
+    "useCases": [
+      "Good for circulatory issues",
+      "Balances doshas"
+    ],
+    "description": "Sarshapa is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_075",
+    "sanskritName": "Tila",
+    "commonName": "Common Tila",
+    "botanicalName": "Botanical tila",
+    "rasa": [
+      "Astringent"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Tila",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "+",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Nervous",
+      "Reproductive",
+      "Digestive"
+    ],
+    "useCases": [
+      "Good for circulatory issues",
+      "Balances doshas"
+    ],
+    "description": "Tila is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_076",
+    "sanskritName": "Mudga",
+    "commonName": "Common Mudga",
+    "botanicalName": "Botanical mudga",
+    "rasa": [
+      "Pungent",
+      "Sour"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Mudga",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "+",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Digestive",
+      "Integumentary"
+    ],
+    "useCases": [
+      "Good for digestive issues",
+      "Balances doshas"
+    ],
+    "description": "Mudga is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_077",
+    "sanskritName": "Masha",
+    "commonName": "Common Masha",
+    "botanicalName": "Botanical masha",
+    "rasa": [
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Masha",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "0",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Circulatory",
+      "Reproductive",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Good for integumentary issues",
+      "Balances doshas"
+    ],
+    "description": "Masha is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_078",
+    "sanskritName": "Godhuma",
+    "commonName": "Common Godhuma",
+    "botanicalName": "Botanical godhuma",
+    "rasa": [
+      "Salty",
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Godhuma",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "+",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Circulatory"
+    ],
+    "useCases": [
+      "Good for reproductive issues",
+      "Balances doshas"
+    ],
+    "description": "Godhuma is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_079",
+    "sanskritName": "Yava",
+    "commonName": "Common Yava",
+    "botanicalName": "Botanical yava",
+    "rasa": [
+      "Sour",
+      "Pungent",
+      "Astringent"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Yava",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "0",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Digestive",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Good for integumentary issues",
+      "Balances doshas"
+    ],
+    "description": "Yava is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_080",
+    "sanskritName": "Shali",
+    "commonName": "Common Shali",
+    "botanicalName": "Botanical shali",
+    "rasa": [
+      "Sour",
+      "Salty",
+      "Bitter"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Shali",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "-",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Digestive",
+      "Reproductive",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Good for nervous issues",
+      "Balances doshas"
+    ],
+    "description": "Shali is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_081",
+    "sanskritName": "Raktashali",
+    "commonName": "Common Raktashali",
+    "botanicalName": "Botanical raktashali",
+    "rasa": [
+      "Astringent",
+      "Pungent",
+      "Bitter"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Raktashali",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "-",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Circulatory",
+      "Reproductive",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Good for circulatory issues",
+      "Balances doshas"
+    ],
+    "description": "Raktashali is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_082",
+    "sanskritName": "Shastika",
+    "commonName": "Common Shastika",
+    "botanicalName": "Botanical shastika",
+    "rasa": [
+      "Salty",
+      "Sweet",
+      "Bitter"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Shastika",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "0",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Muscular",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Good for respiratory issues",
+      "Balances doshas"
+    ],
+    "description": "Shastika is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_083",
+    "sanskritName": "Kulattha",
+    "commonName": "Common Kulattha",
+    "botanicalName": "Botanical kulattha",
+    "rasa": [
+      "Pungent",
+      "Astringent"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Kulattha",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "0",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Reproductive"
+    ],
+    "useCases": [
+      "Good for nervous issues",
+      "Balances doshas"
+    ],
+    "description": "Kulattha is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_084",
+    "sanskritName": "Chana",
+    "commonName": "Common Chana",
+    "botanicalName": "Botanical chana",
+    "rasa": [
+      "Bitter",
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Chana",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "-",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Integumentary"
+    ],
+    "useCases": [
+      "Good for respiratory issues",
+      "Balances doshas"
+    ],
+    "description": "Chana is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_085",
+    "sanskritName": "Masura",
+    "commonName": "Common Masura",
+    "botanicalName": "Botanical masura",
+    "rasa": [
+      "Sweet",
+      "Pungent",
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Masura",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "-",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Digestive",
+      "Muscular"
+    ],
+    "useCases": [
+      "Good for reproductive issues",
+      "Balances doshas"
+    ],
+    "description": "Masura is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_086",
+    "sanskritName": "Adraka",
+    "commonName": "Common Adraka",
+    "botanicalName": "Botanical adraka",
+    "rasa": [
+      "Salty",
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Adraka",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "0",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Nervous",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Good for circulatory issues",
+      "Balances doshas"
+    ],
+    "description": "Adraka is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_087",
+    "sanskritName": "Rasona",
+    "commonName": "Common Rasona",
+    "botanicalName": "Botanical rasona",
+    "rasa": [
+      "Sweet",
+      "Pungent",
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Rasona",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "0",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Reproductive"
+    ],
+    "useCases": [
+      "Good for muscular issues",
+      "Balances doshas"
+    ],
+    "description": "Rasona is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_088",
+    "sanskritName": "Palandu",
+    "commonName": "Common Palandu",
+    "botanicalName": "Botanical palandu",
+    "rasa": [
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Palandu",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "-",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Muscular"
+    ],
+    "useCases": [
+      "Good for skeletal issues",
+      "Balances doshas"
+    ],
+    "description": "Palandu is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_089",
+    "sanskritName": "Kushmanda",
+    "commonName": "Common Kushmanda",
+    "botanicalName": "Botanical kushmanda",
+    "rasa": [
+      "Astringent",
+      "Pungent"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Kushmanda",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "0",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Nervous",
+      "Respiratory",
+      "Integumentary"
+    ],
+    "useCases": [
+      "Good for reproductive issues",
+      "Balances doshas"
+    ],
+    "description": "Kushmanda is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_090",
+    "sanskritName": "Ervaru",
+    "commonName": "Common Ervaru",
+    "botanicalName": "Botanical ervaru",
+    "rasa": [
+      "Sweet",
+      "Astringent",
+      "Pungent"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Ervaru",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "0",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Reproductive"
+    ],
+    "useCases": [
+      "Good for muscular issues",
+      "Balances doshas"
+    ],
+    "description": "Ervaru is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_091",
+    "sanskritName": "Trapusha",
+    "commonName": "Common Trapusha",
+    "botanicalName": "Botanical trapusha",
+    "rasa": [
+      "Pungent",
+      "Sour"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Trapusha",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "-",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Skeletal"
+    ],
+    "useCases": [
+      "Good for nervous issues",
+      "Balances doshas"
+    ],
+    "description": "Trapusha is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_092",
+    "sanskritName": "Kadali",
+    "commonName": "Common Kadali",
+    "botanicalName": "Botanical kadali",
+    "rasa": [
+      "Sour"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Kadali",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "0",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Respiratory"
+    ],
+    "useCases": [
+      "Good for digestive issues",
+      "Balances doshas"
+    ],
+    "description": "Kadali is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_093",
+    "sanskritName": "Amra",
+    "commonName": "Common Amra",
+    "botanicalName": "Botanical amra",
+    "rasa": [
+      "Astringent",
+      "Bitter"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Amra",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "0",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Skeletal",
+      "Nervous"
+    ],
+    "useCases": [
+      "Good for integumentary issues",
+      "Balances doshas"
+    ],
+    "description": "Amra is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_094",
+    "sanskritName": "Dadima",
+    "commonName": "Common Dadima",
+    "botanicalName": "Botanical dadima",
+    "rasa": [
+      "Pungent",
+      "Astringent",
+      "Sour"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Dadima",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "0",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Integumentary",
+      "Skeletal"
+    ],
+    "useCases": [
+      "Good for reproductive issues",
+      "Balances doshas"
+    ],
+    "description": "Dadima is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_095",
+    "sanskritName": "Draksha",
+    "commonName": "Common Draksha",
+    "botanicalName": "Botanical draksha",
+    "rasa": [
+      "Astringent",
+      "Salty"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Draksha",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "0",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Digestive",
+      "Skeletal",
+      "Integumentary"
+    ],
+    "useCases": [
+      "Good for circulatory issues",
+      "Balances doshas"
+    ],
+    "description": "Draksha is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_096",
+    "sanskritName": "Kharjura",
+    "commonName": "Common Kharjura",
+    "botanicalName": "Botanical kharjura",
+    "rasa": [
+      "Bitter"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Kharjura",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "0",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Reproductive",
+      "Skeletal",
+      "Digestive"
+    ],
+    "useCases": [
+      "Good for digestive issues",
+      "Balances doshas"
+    ],
+    "description": "Kharjura is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_097",
+    "sanskritName": "Narikela",
+    "commonName": "Common Narikela",
+    "botanicalName": "Botanical narikela",
+    "rasa": [
+      "Sour",
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Narikela",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "0",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Integumentary",
+      "Nervous",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Good for circulatory issues",
+      "Balances doshas"
+    ],
+    "description": "Narikela is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_098",
+    "sanskritName": "Badama",
+    "commonName": "Common Badama",
+    "botanicalName": "Botanical badama",
+    "rasa": [
+      "Pungent"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Badama",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "-",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Muscular",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Good for respiratory issues",
+      "Balances doshas"
+    ],
+    "description": "Badama is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_099",
+    "sanskritName": "Akshota",
+    "commonName": "Common Akshota",
+    "botanicalName": "Botanical akshota",
+    "rasa": [
+      "Sour",
+      "Astringent",
+      "Bitter"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Akshota",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "0",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Nervous",
+      "Reproductive",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Good for respiratory issues",
+      "Balances doshas"
+    ],
+    "description": "Akshota is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_100",
+    "sanskritName": "Vatada",
+    "commonName": "Common Vatada",
+    "botanicalName": "Botanical vatada",
+    "rasa": [
+      "Pungent",
+      "Sour",
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Vatada",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "0",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Muscular",
+      "Respiratory",
+      "Digestive"
+    ],
+    "useCases": [
+      "Good for integumentary issues",
+      "Balances doshas"
+    ],
+    "description": "Vatada is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_101",
+    "sanskritName": "Abhraka",
+    "commonName": "Common Abhraka",
+    "botanicalName": "Botanical abhraka",
+    "rasa": [
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Abhraka",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "+",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Circulatory",
+      "Nervous",
+      "Integumentary"
+    ],
+    "useCases": [
+      "Good for respiratory issues",
+      "Balances doshas"
+    ],
+    "description": "Abhraka is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_102",
+    "sanskritName": "Swarna",
+    "commonName": "Common Swarna",
+    "botanicalName": "Botanical swarna",
+    "rasa": [
+      "Sour",
+      "Pungent",
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Swarna",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "+",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Circulatory",
+      "Digestive"
+    ],
+    "useCases": [
+      "Good for muscular issues",
+      "Balances doshas"
+    ],
+    "description": "Swarna is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_103",
+    "sanskritName": "Rajat",
+    "commonName": "Common Rajat",
+    "botanicalName": "Botanical rajat",
+    "rasa": [
+      "Sweet",
+      "Bitter"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Rajat",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "0",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Integumentary"
+    ],
+    "useCases": [
+      "Good for muscular issues",
+      "Balances doshas"
+    ],
+    "description": "Rajat is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_104",
+    "sanskritName": "Tamra",
+    "commonName": "Common Tamra",
+    "botanicalName": "Botanical tamra",
+    "rasa": [
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Tamra",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "0",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Nervous",
+      "Skeletal"
+    ],
+    "useCases": [
+      "Good for reproductive issues",
+      "Balances doshas"
+    ],
+    "description": "Tamra is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_105",
+    "sanskritName": "Loha",
+    "commonName": "Common Loha",
+    "botanicalName": "Botanical loha",
+    "rasa": [
+      "Pungent",
+      "Astringent",
+      "Bitter"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Loha",
+    "doshaMatrix": {
+      "vata": "-",
+      "pitta": "+",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Digestive",
+      "Reproductive",
+      "Nervous"
+    ],
+    "useCases": [
+      "Good for nervous issues",
+      "Balances doshas"
+    ],
+    "description": "Loha is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_106",
+    "sanskritName": "Naga",
+    "commonName": "Common Naga",
+    "botanicalName": "Botanical naga",
+    "rasa": [
+      "Astringent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": "Special action of Naga",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "+",
+      "kapha": "+"
+    },
+    "organSystems": [
+      "Muscular"
+    ],
+    "useCases": [
+      "Good for nervous issues",
+      "Balances doshas"
+    ],
+    "description": "Naga is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_107",
+    "sanskritName": "Vanga",
+    "commonName": "Common Vanga",
+    "botanicalName": "Botanical vanga",
+    "rasa": [
+      "Bitter",
+      "Astringent",
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": "Special action of Vanga",
+    "doshaMatrix": {
+      "vata": "+",
+      "pitta": "+",
+      "kapha": "0"
+    },
+    "organSystems": [
+      "Reproductive",
+      "Respiratory",
+      "Skeletal"
+    ],
+    "useCases": [
+      "Good for integumentary issues",
+      "Balances doshas"
+    ],
+    "description": "Vanga is a powerful Ayurvedic herb known for its healing properties."
+  },
+  {
+    "id": "herb_108",
+    "sanskritName": "Yashada",
+    "commonName": "Common Yashada",
+    "botanicalName": "Botanical yashada",
+    "rasa": [
+      "Bitter"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": "Special action of Yashada",
+    "doshaMatrix": {
+      "vata": "0",
+      "pitta": "-",
+      "kapha": "-"
+    },
+    "organSystems": [
+      "Integumentary",
+      "Reproductive"
+    ],
+    "useCases": [
+      "Good for digestive issues",
+      "Balances doshas"
+    ],
+    "description": "Yashada is a powerful Ayurvedic herb known for its healing properties."
+  }
+]

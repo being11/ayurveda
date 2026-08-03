@@ -1,0 +1,119 @@
+{
+  "therapies": [
+    {
+      "id": "vamana",
+      "name": "Vamana (Therapeutic Emesis)",
+      "dosha": "Kapha",
+      "benefits": [
+        "Eliminates excess Kapha dosha from the upper body.",
+        "Improves respiratory conditions (asthma, bronchitis).",
+        "Clears sinuses and allergies.",
+        "Helps with weight management and sluggish digestion."
+      ],
+      "contraindications": [
+        "Pregnancy",
+        "Extreme weakness or emaciation",
+        "Heart conditions",
+        "Active bleeding disorders",
+        "Acute fever"
+      ],
+      "duration": "1 day (main procedure), preceded by 3-7 days of Purvakarma"
+    },
+    {
+      "id": "virechana",
+      "name": "Virechana (Therapeutic Purgation)",
+      "dosha": "Pitta",
+      "benefits": [
+        "Clears excess Pitta from the gastrointestinal tract, liver, and gallbladder.",
+        "Improves skin conditions (acne, eczema, psoriasis).",
+        "Reduces hyperacidity and acid reflux.",
+        "Relieves chronic fevers and inflammatory conditions."
+      ],
+      "contraindications": [
+        "Pregnancy",
+        "Severe weakness",
+        "Anal fissures or severe hemorrhoids",
+        "Diarrhea",
+        "Ulcerative colitis in active flare"
+      ],
+      "duration": "1 day (main procedure), preceded by 3-7 days of Purvakarma"
+    },
+    {
+      "id": "basti",
+      "name": "Basti (Therapeutic Enema)",
+      "dosha": "Vata",
+      "benefits": [
+        "Deeply pacifies Vata dosha in its main seat (colon).",
+        "Relieves constipation, gas, and bloating.",
+        "Strengthens the nervous system (helps with anxiety, insomnia).",
+        "Improves joint health and relieves lower back pain."
+      ],
+      "contraindications": [
+        "Immediately after eating",
+        "Severe diarrhea or dysentery",
+        "Bowel obstruction or perforation",
+        "Active bleeding in the colon"
+      ],
+      "duration": "8-30 days (varying protocols like Kala Basti, Karma Basti)"
+    },
+    {
+      "id": "nasya",
+      "name": "Nasya (Nasal Administration)",
+      "dosha": "Kapha",
+      "benefits": [
+        "Clears the head, neck, and sinuses.",
+        "Relieves headaches, migraines, and stiffness in the neck/shoulders.",
+        "Improves clarity of mind, memory, and sleep.",
+        "Helps with hair loss and premature graying."
+      ],
+      "contraindications": [
+        "Immediately after meals, drinking water, or bathing",
+        "During acute fever or acute sinusitis (without proper guidance)",
+        "Pregnancy",
+        "Intoxication"
+      ],
+      "duration": "7-14 days"
+    },
+    {
+      "id": "raktamokshana",
+      "name": "Raktamokshana (Blood Letting)",
+      "dosha": "Pitta",
+      "benefits": [
+        "Purifies the blood and deeply pacifies Pitta.",
+        "Highly effective for severe skin diseases (leukoderma, severe eczema).",
+        "Relieves localized pain and inflammation (gout).",
+        "Improves liver and spleen function."
+      ],
+      "contraindications": [
+        "Anemia",
+        "Bleeding disorders (hemophilia)",
+        "Pregnancy",
+        "Extreme weakness or very young/old age",
+        "Edema"
+      ],
+      "duration": "1-3 sessions as needed"
+    }
+  ],
+  "purvakarma": [
+    {
+      "id": "snehana_internal",
+      "task": "Internal Snehana (Oleation)",
+      "description": "Drinking medicated ghee or oil in increasing doses every morning on an empty stomach to loosen toxins."
+    },
+    {
+      "id": "snehana_external",
+      "task": "External Snehana (Abhyanga)",
+      "description": "Full-body warm herbal oil massage to move loosened toxins towards the gastrointestinal tract."
+    },
+    {
+      "id": "svedana",
+      "task": "Svedana (Sweating/Fomentation)",
+      "description": "Herbal steam therapy to dilate bodily channels (srotas) and facilitate the movement of toxins."
+    },
+    {
+      "id": "dietary",
+      "task": "Dietary Preparation (Kitchari Cleanse)",
+      "description": "Eating a simple, mono-diet of Kitchari (mung beans and rice) to rest the digestive system (Agni) and prevent the formation of new Ama (toxins)."
+    }
+  ]
+}

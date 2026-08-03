@@ -25,6 +25,7 @@ const useAssessmentStore = create<AssessmentState>()(
       currentQuestionId: firstQuestion?.id ?? null,
       history: firstQuestion ? [firstQuestion.id] : [],
       isComplete: false,
+      activeNadiPoint: null,
 
       setAnswer: (questionId, value) => {
         const state = get();
@@ -113,11 +114,14 @@ const useAssessmentStore = create<AssessmentState>()(
           currentQuestionId: firstQuestion?.id ?? null,
           history: firstQuestion ? [firstQuestion.id] : [],
           isComplete: false,
+          activeNadiPoint: null,
         });
         try {
           useAssessmentStore.persist.clearStorage();
         } catch {}
       },
+      
+      setActiveNadiPoint: (point) => set({ activeNadiPoint: point }),
     }),
     {
       name: 'swadharma-assessment',

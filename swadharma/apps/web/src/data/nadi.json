@@ -1,0 +1,114 @@
+{
+  "title": "Nadi Pariksha: The Science of Pulse Diagnosis",
+  "description": "Nadi Pariksha is an ancient Ayurvedic technique of diagnosis through the pulse. It can accurately diagnose physical, mental, and emotional imbalances as well as diseases. It is a non-invasive science that enables doctors to reach the root cause of health issues and not just address the symptoms.",
+  "pulses": [
+    {
+      "dosha": "vata",
+      "finger": "index",
+      "quality": {
+        "animal": "Snake (Sarpa)",
+        "movement": "Slithering, rapid, irregular, feeble",
+        "characteristics": ["Cold", "Light", "Dry", "Subtle"]
+      },
+      "subDoshas": [
+        {
+          "name": "Prana Vata",
+          "description": "Governs inhalation, perception through senses, and mind.",
+          "location": "Head, brain, chest"
+        },
+        {
+          "name": "Udana Vata",
+          "description": "Governs exhalation, speech, effort, enthusiasm.",
+          "location": "Diaphragm, throat, chest"
+        },
+        {
+          "name": "Samana Vata",
+          "description": "Governs digestion, assimilation, and balance.",
+          "location": "Stomach, small intestine"
+        },
+        {
+          "name": "Apana Vata",
+          "description": "Governs downward elimination (urine, feces, menses).",
+          "location": "Colon, pelvic cavity"
+        },
+        {
+          "name": "Vyana Vata",
+          "description": "Governs circulation, heart rhythm, locomotion.",
+          "location": "Heart, entire body"
+        }
+      ]
+    },
+    {
+      "dosha": "pitta",
+      "finger": "middle",
+      "quality": {
+        "animal": "Frog (Manduka)",
+        "movement": "Jumping, bounding, prominent, regular",
+        "characteristics": ["Hot", "Sharp", "Liquid", "Spreading"]
+      },
+      "subDoshas": [
+        {
+          "name": "Pachaka Pitta",
+          "description": "Governs digestion of food and body temperature.",
+          "location": "Stomach, small intestine"
+        },
+        {
+          "name": "Ranjaka Pitta",
+          "description": "Governs formation of blood (Rakta) and bile.",
+          "location": "Liver, spleen, stomach"
+        },
+        {
+          "name": "Sadhaka Pitta",
+          "description": "Governs intellect, memory, and realization.",
+          "location": "Heart, brain"
+        },
+        {
+          "name": "Alochaka Pitta",
+          "description": "Governs visual perception.",
+          "location": "Eyes"
+        },
+        {
+          "name": "Bhrajaka Pitta",
+          "description": "Governs skin color, complexion, and temperature.",
+          "location": "Skin"
+        }
+      ]
+    },
+    {
+      "dosha": "kapha",
+      "finger": "ring",
+      "quality": {
+        "animal": "Swan (Hamsa)",
+        "movement": "Slow, steady, broad, gliding",
+        "characteristics": ["Heavy", "Cold", "Oily", "Stable"]
+      },
+      "subDoshas": [
+        {
+          "name": "Kledaka Kapha",
+          "description": "Governs moistening and liquefying of food.",
+          "location": "Stomach"
+        },
+        {
+          "name": "Avalambaka Kapha",
+          "description": "Governs lubrication of heart and lungs, provides strength.",
+          "location": "Chest, heart, lungs"
+        },
+        {
+          "name": "Bodhaka Kapha",
+          "description": "Governs taste perception and saliva.",
+          "location": "Tongue, mouth"
+        },
+        {
+          "name": "Tarpaka Kapha",
+          "description": "Governs nourishment of sense organs and brain.",
+          "location": "Head, sinus"
+        },
+        {
+          "name": "Shleshaka Kapha",
+          "description": "Governs lubrication of all joints.",
+          "location": "Joints"
+        }
+      ]
+    }
+  ]
+}

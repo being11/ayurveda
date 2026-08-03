@@ -70,3 +70,4 @@ This document meticulously tracks the implementation of the comprehensive Ayurve
 - [x] Searchable, filterable Knowledge Graph page with 50+ classical text source entries.
 - [x] Categorized Recommendation Engine with 60+ Shastra-backed recommendations across 10 categories.
 - [x] Personalized "Why this for you" explanations and practical alternatives for every recommendation.
+- [x] Ahara — Dosha-Specific Diet Plan Builder (`/diet` page, `SeasonalMenuCard`, `FoodCategoryGrid`).
