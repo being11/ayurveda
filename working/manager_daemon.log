@@ -1,0 +1,6 @@
+[2026-08-03 07:57:27] [INFO] Extracted gitPatch and created branch feature/i994-idea--automated-implemen-10457344314988491388 for session 104573443149
+[2026-08-03 07:57:27] [INFO] Extracted gitPatch and created branch feature/i989-idea--automated-implemen-16635332446421467635 for session 166353324464
+[2026-08-03 07:57:28] [INFO] Extracted gitPatch and created branch feature/i988-idea--automated-implemen-5825342546505470195 for session 582534254650
+[2026-08-03 07:57:29] [WARN] Merge conflict: feature/i988-idea--automated-implemen-5825342546505470195 — error: The following untracked working tree files would be overwritten by merge:
+	working/manager_daemon.log
+Please move or remove them before you mer
