@@ -1,11 +1,15 @@
 'use client';
 
 import React from 'react';
-import { useSeasonsStore } from '../stores/seasonsStore';
+import { useAssessmentStore } from '../stores/assessmentStore';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from './ui/card';
+import seasonsData from '../data/seasons.json';
+import type { Season } from '../types/seasons';
+
+const seasons: Season[] = seasonsData as Season[];
 
 export default function SeasonHealthCard() {
-  const { currentSeasonId, seasons } = useSeasonsStore();
+  const { currentSeasonId } = useAssessmentStore();
 
   const currentSeason = seasons.find((s) => s.id === currentSeasonId);
 
