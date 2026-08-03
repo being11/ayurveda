@@ -1,7 +1,6 @@
 diff a/swadharma/apps/web/src/components/quiz/QuizProgress.tsx b/swadharma/apps/web/src/components/quiz/QuizProgress.tsx	(rejected hunks)
-@@ -1,5 +1,4 @@
- import React from 'react';
--import { cn } from '@workspace/ui/lib/utils';
- 
- interface QuizProgressProps {
-   currentStep: number;
+@@ -86,3 +86,4 @@ export function QuizProgress({
+     </div>
+   );
+ }
++// force git diff for feature branch

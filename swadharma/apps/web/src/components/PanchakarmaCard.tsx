@@ -29,7 +29,7 @@ export function PanchakarmaCard({ therapy }: PanchakarmaCardProps) {
             Benefits
           </h4>
           <ul className="list-disc pl-5 space-y-1 text-sm text-stone-600">
-            {therapy.benefits.map((benefit, i) => (
+            {therapy.benefits.map((benefit: string, i: number) => (
               <li key={i}>{benefit}</li>
             ))}
           </ul>
@@ -41,7 +41,7 @@ export function PanchakarmaCard({ therapy }: PanchakarmaCardProps) {
               Contraindications
             </h4>
             <ul className="list-disc pl-5 space-y-1 text-sm text-red-700">
-              {therapy.contraindications.map((contra, i) => (
+              {therapy.contraindications.map((contra: string, i: number) => (
                 <li key={i}>{contra}</li>
               ))}
             </ul>

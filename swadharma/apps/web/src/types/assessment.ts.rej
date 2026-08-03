@@ -1,45 +1,122 @@
 diff a/swadharma/apps/web/src/types/assessment.ts b/swadharma/apps/web/src/types/assessment.ts	(rejected hunks)
-@@ -100,12 +100,20 @@ export interface AssessmentState {
-   isComplete: boolean;
- 
-   activeNadiPoint: DoshaType | null;
-+  
-+  herbSearchQuery: string;
-+  herbDoshaFilter: string;
-+  herbOrganFilter: string;
- 
-   setAnswer: (questionId: string, value: string | string[]) => void;
-   nextQuestion: () => void;
-   prevQuestion: () => void;
-   reset: () => void;
-   setActiveNadiPoint: (point: DoshaType | null) => void;
-+  
-+  setHerbSearchQuery: (query: string) => void;
-+  setHerbDoshaFilter: (filter: string) => void;
-+  setHerbOrganFilter: (filter: string) => void;
+@@ -97,59 +97,12 @@ export interface DoshaMatrix {
+   kapha: string;
  }
+ 
+-export interface Herb {
+-  id: string;
+-  sanskritName: string;
+-  commonName: string;
+-  botanicalName: string;
+-  rasa: string[];
+-  virya: string;
+-  vipaka: string;
+-  prabhava?: string;
+-  doshaMatrix: DoshaMatrix;
+-  organSystems: string[];
+-  useCases: string[];
+-  description: string;
+-}
+-
+-export interface AssessmentState {
+-  herbSearchQuery: string;
+-  herbDoshaFilter: string;
+-  herbOrganFilter: string;
+-  setHerbSearchQuery: (query: string) => void;
+-  setHerbDoshaFilter: (dosha: string) => void;
+-  setHerbOrganFilter: (organ: string) => void;
+-
+-  answers: Record<string, string | string[]>;
+-  observations: Record<string, number>;
+-  currentCategoryIndex: number;
+-  currentQuestionId: string | null;
+-  history: string[];
+-  isComplete: boolean;
+-
+-  activeNadiPoint: DoshaType | null;
+ 
+-  herbSearchQuery: string;
+-  herbDoshaFilter: string | null;
+-  herbOrganFilter: string | null;
+-
+-  selectedSrotas: string | null;
+ 
+-  setAnswer: (questionId: string, value: string | string[]) => void;
+-  nextQuestion: () => void;
+-  prevQuestion: () => void;
+-  reset: () => void;
+-  setActiveNadiPoint: (point: DoshaType | null) => void;
+ 
+-  setHerbSearchQuery: (query: string) => void;
+-  setHerbDoshaFilter: (dosha: string | null) => void;
+-  setHerbOrganFilter: (organ: string | null) => void;
+ 
+-  setSelectedSrotas: (srotasId: string | null) => void;
+-}
  
  // Nadi Pariksha Educational Guide Types
-@@ -137,3 +145,22 @@ export interface NadiData {
-   description: string;
-   pulses: DoshaPulseInfo[];
+-
+ export type FingerPosition = 'index' | 'middle' | 'ring';
+ export type DoshaType = 'vata' | 'pitta' | 'kapha';
+ 
+@@ -186,7 +139,7 @@ export interface Herb {
+   rasa: string[];
+   virya: string;
+   vipaka: string;
+-  prabhava: string;
++  prabhava?: string;
+   doshaMatrix: Record<string, string>;
+   organSystems: string[];
+   useCases?: string[];
+@@ -194,3 +147,51 @@ export interface Herb {
+   traditionalUses?: string[];
+   cautions?: string[];
  }
 +
-+export interface Herb {
-+    id: string;
-+    sanskritName: string;
-+    botanicalName: string;
-+    commonName: string;
-+    description: string;
-+    rasa: string[];
-+    virya: string;
-+    vipaka: string;
-+    prabhava?: string;
-+    doshaMatrix: {
-+        vata: string;
-+        pitta: string;
-+        kapha: string;
-+    };
-+    organSystems: string[];
-+    useCases: string[];
++export interface PanchakarmaTherapy {
++  id: string;
++  name: string;
++  dosha: string;
++  benefits: string[];
++  contraindications: string[];
++  duration: string;
++  description: string;
++  indicatedDoshas: string[];
++}
++
++export interface PurvakarmaStep {
++  id: string;
++  task: string;
++  step: string;
++  description: string;
++}
++
++export interface AssessmentState {
++  answers: Record<string, string | string[]>;
++  observations: Record<string, number>;
++  currentCategoryIndex: number;
++  currentQuestionId: string | null;
++  history: string[];
++  isComplete: boolean;
++
++  activeNadiPoint: DoshaType | null;
++
++  herbSearchQuery: string;
++  herbDoshaFilter: string | null;
++  herbOrganFilter: string | null;
++
++  selectedSrotas: string | null;
++
++  setAnswer: (questionId: string, value: string | string[]) => void;
++  nextQuestion: () => void;
++  prevQuestion: () => void;
++  reset: () => void;
++  setActiveNadiPoint: (point: DoshaType | null) => void;
++
++  setHerbSearchQuery: (query: string) => void;
++  setHerbDoshaFilter: (dosha: string | null) => void;
++  setHerbOrganFilter: (organ: string | null) => void;
++
++  setSelectedSrotas: (srotasId: string | null) => void;
++  getRecommendedPanchakarma: () => PanchakarmaTherapy[];
 +}

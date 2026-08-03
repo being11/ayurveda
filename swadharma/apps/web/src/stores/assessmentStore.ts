@@ -118,8 +118,8 @@ const useAssessmentStore = create<AssessmentState>()(
         const state = get();
         const profile = computeProfile(state.observations, state.answers);
         const dominantDosha = getDominantDosha(profile.prakrtiDosha).toLowerCase();
-        return (panchakarmaData as PanchakarmaTherapy[]).filter((therapy) =>
-          therapy.indicatedDoshas.includes(dominantDosha)
+        return (panchakarmaData.therapies as unknown as PanchakarmaTherapy[]).filter((therapy) =>
+          therapy.indicatedDoshas?.includes(dominantDosha) || therapy.dosha === dominantDosha
         );
       },
       reset: () => {
