@@ -1,0 +1,170 @@
+diff a/swadharma/apps/web/src/app/herbs/page.tsx b/swadharma/apps/web/src/app/herbs/page.tsx	(rejected hunks)
+@@ -1,111 +1,84 @@
+-'use client'
++'use client';
+ 
+-import React, { useMemo, useState, useEffect } from 'react';
++import React, { useState, useEffect } from 'react';
+ import { HerbSearchBar } from '../../components/herbs/HerbSearchBar';
+ import { HerbCard } from '../../components/herbs/HerbCard';
+-import useAssessmentStore from '../../stores/assessmentStore';
++import { useAssessmentStore } from '../../stores/assessmentStore';
+ import herbsData from '../../data/herbs.json';
+-import { Herb } from '../../types/assessment';
++import type { Herb } from '../../types/assessment';
+ 
+ export default function HerbsPage() {
+   const [mounted, setMounted] = useState(false);
+-
++  const { herbSearchQuery, herbDoshaFilter, herbOrganFilter } = useAssessmentStore();
++  
++  // Ensure we only render content after mounting to avoid hydration mismatch
++  // since Zustand store uses localStorage/persist.
+   useEffect(() => {
+     setMounted(true);
+   }, []);
+ 
+-  const { herbSearchQuery, herbDoshaFilter, herbOrganFilter } = useAssessmentStore();
+-  const herbs: Herb[] = herbsData as Herb[];
+-
+-  const filteredHerbs = useMemo(() => {
+-    return herbs.filter(herb => {
+-      // Search filter
+-      const matchesSearch = 
+-        !herbSearchQuery || 
+-        herb.sanskritName.toLowerCase().includes(herbSearchQuery.toLowerCase()) ||
+-        herb.commonName.toLowerCase().includes(herbSearchQuery.toLowerCase());
+-
+-      // Dosha filter
+-      const matchesDosha = 
+-        !herbDoshaFilter || 
+-        (herb.doshaMatrix as any)[herbDoshaFilter] === '-'; // Matches herbs that balance (-) the selected dosha
+-
+-      // Organ System filter
+-      const matchesOrgan = 
+-        !herbOrganFilter || 
+-        herb.organSystems.includes(herbOrganFilter);
+-
+-      return matchesSearch && matchesDosha && matchesOrgan;
+-    });
+-  }, [herbs, herbSearchQuery, herbDoshaFilter, herbOrganFilter]);
+-
+   if (!mounted) {
+     return (
+-      <div className="min-h-screen bg-[#FBF8F2] pt-24 pb-12">
+-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+-          <div className="mb-8">
+-            <h1 className="text-3xl font-bold text-[#4A7C59] mb-2 font-serif">
+-              Dravyaguna Vijnana
+-            </h1>
+-            <p className="text-stone-600 text-lg">
+-              Ayurvedic Herb & Remedy Database
+-            </p>
+-          </div>
++      <div className="min-h-screen bg-[#FBF8F2] pt-8">
++        <div className="max-w-6xl mx-auto px-4 animate-pulse">
++           <div className="h-10 bg-stone-200 w-1/3 mb-6 rounded"></div>
++           <div className="h-32 bg-stone-200 mb-8 rounded"></div>
++           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
++              {[...Array(6)].map((_, i) => (
++                <div key={i} className="h-64 bg-stone-200 rounded"></div>
++              ))}
++           </div>
+         </div>
+       </div>
+     );
+   }
+ 
++  const allHerbs: Herb[] = herbsData as unknown as Herb[];
++
++  const filteredHerbs = allHerbs.filter(herb => {
++    const matchesSearch = 
++      herb.sanskritName.toLowerCase().includes(herbSearchQuery.toLowerCase()) ||
++      herb.commonName.toLowerCase().includes(herbSearchQuery.toLowerCase()) ||
++      herb.botanicalName.toLowerCase().includes(herbSearchQuery.toLowerCase());
++
++    const matchesDosha = 
++      herbDoshaFilter === null || 
++      herb.doshaMatrix[herbDoshaFilter] === '-'; // "-" implies balancing/reducing
++
++    const matchesOrgan = 
++      herbOrganFilter === null ||
++      herb.organSystems.includes(herbOrganFilter);
++
++    return matchesSearch && matchesDosha && matchesOrgan;
++  });
++
+   return (
+-    <div className="min-h-screen bg-[#FBF8F2] pt-24 pb-12">
+-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+-        
+-        {/* Header section */}
+-        <div className="mb-8">
+-          <h1 className="text-3xl font-bold text-[#4A7C59] mb-2 font-serif">
+-            Dravyaguna Vijnana
++    <div className="min-h-screen bg-[#FBF8F2] pt-8 pb-12 font-sans">
++      <div className="max-w-6xl mx-auto px-4">
++        <header className="mb-8">
++          <h1 className="text-3xl font-semibold text-stone-800 mb-2 font-serif">
++            Ayurvedic Herb Database
+           </h1>
+-          <p className="text-stone-600 text-lg">
+-            Ayurvedic Herb & Remedy Database
++          <p className="text-stone-600">
++            Explore 108 primary Ayurvedic herbs and remedies. Search by name, dosha, or organ system.
+           </p>
+-        </div>
++        </header>
+ 
+-        {/* Search & Filter section */}
+-        <div className="bg-white/80 p-6 rounded-xl shadow-sm border border-[#4A7C59]/10 mb-8 backdrop-blur-sm">
+-          <HerbSearchBar />
+-        </div>
++        <HerbSearchBar />
+ 
+-        {/* Results section */}
+-        <div className="space-y-6">
+-          <div className="flex justify-between items-center">
+-            <h2 className="text-xl font-semibold text-stone-800">
+-              Found {filteredHerbs.length} {filteredHerbs.length === 1 ? 'Herb' : 'Herbs'}
+-            </h2>
++        {filteredHerbs.length === 0 ? (
++          <div className="text-center py-12 text-stone-500 bg-white rounded-lg border border-stone-200 shadow-sm">
++            <p className="text-lg">No herbs found matching your search criteria.</p>
++            <p className="text-sm mt-2">Try adjusting your filters or search query.</p>
+           </div>
+-
+-          {filteredHerbs.length > 0 ? (
+-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+-              {filteredHerbs.map(herb => (
+-                <HerbCard key={herb.id} herb={herb} />
+-              ))}
+-            </div>
+-          ) : (
+-            <div className="text-center py-20 bg-white/50 rounded-xl border border-stone-200 border-dashed">
+-              <p className="text-stone-500 text-lg">No herbs found matching your criteria.</p>
+-              <button 
+-                onClick={() => useAssessmentStore.getState().reset()}
+-                className="mt-4 text-[#4A7C59] hover:underline"
+-              >
+-                Clear all filters
+-              </button>
+-            </div>
+-          )}
+-        </div>
+-
++        ) : (
++          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
++            {filteredHerbs.map(herb => (
++              <HerbCard key={herb.id} herb={herb} />
++            ))}
++          </div>
++        )}
+       </div>
+     </div>
+   );
+ }
+-// End of HerbsPage
+-
+-// trigger change
+\ No newline at end of file

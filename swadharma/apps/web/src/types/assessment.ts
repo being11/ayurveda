@@ -77,18 +77,9 @@ export interface PanchakarmaTherapy {
 }
 
 export interface PurvakarmaStep {
-  step?: string;
   id: string;
   task: string;
   description: string;
-  step?: string;
-}
-
-
-export interface DoshaMatrix {
-  vata: string;
-  pitta: string;
-  kapha: string;
 }
 
 
@@ -113,6 +104,21 @@ export interface SeasonAdjustment {
   adjustment: string;
 }
 
+export interface Herb {
+  id: string;
+  sanskritName: string;
+  commonName: string;
+  botanicalName: string;
+  rasa: string[];
+  virya: string;
+  vipaka: string;
+  prabhava: string;
+  doshaMatrix: Record<string, string>;
+  organSystems: string[];
+  useCases: string[];
+  description: string;
+}
+
 export interface RoutineData {
   routines: Record<string, DoshaRoutine>;
   seasons: Record<string, SeasonAdjustment>;
@@ -127,13 +133,13 @@ export interface DoshaMatrix {
 
 
 export interface AssessmentState {
-  getRecommendedPanchakarma: () => PanchakarmaTherapy[];
   herbSearchQuery: string;
   herbDoshaFilter: string | null;
   herbOrganFilter: string | null;
   setHerbSearchQuery: (query: string) => void;
   setHerbDoshaFilter: (dosha: string | null) => void;
   setHerbOrganFilter: (organ: string | null) => void;
+  
   answers: Record<string, string | string[]>;
   observations: Record<string, number>;
   currentCategoryIndex: number;
@@ -143,22 +149,7 @@ export interface AssessmentState {
 
   activeNadiPoint: DoshaType | null;
 
-  herbSearchQuery: string;
-  herbDoshaFilter: string | null;
-  herbOrganFilter: string | null;
-
-  setHerbSearchQuery: (query: string) => void;
-  setHerbDoshaFilter: (dosha: string | null) => void;
-  setHerbOrganFilter: (organ: string | null) => void;
-
-
   selectedSrotas: string | null;
-  herbSearchQuery: string;
-  herbDoshaFilter: string | null;
-  herbOrganFilter: string | null;
-  setHerbSearchQuery: (query: string) => void;
-  setHerbDoshaFilter: (dosha: string | null) => void;
-  setHerbOrganFilter: (organ: string | null) => void;
 
   currentSeasonId: string | null;
   setCurrentSeasonId: (seasonId: string | null) => void;
@@ -171,9 +162,7 @@ export interface AssessmentState {
   setActiveNadiPoint: (point: DoshaType | null) => void;
   getRecommendedPanchakarma: () => PanchakarmaTherapy[];
 
-
   setSelectedSrotas: (srotasId: string | null) => void;
-  getRecommendedPanchakarma: () => PanchakarmaTherapy[];
 }
 
 // Nadi Pariksha Educational Guide Types
@@ -208,3 +197,19 @@ export interface NadiData {
 
 
 
+
+export interface Herb {
+  id: string;
+  sanskritName: string;
+  commonName: string;
+  botanicalName: string;
+  rasa: string[];
+  virya: string;
+  vipaka: string;
+  prabhava?: string;
+  doshaMatrix: DoshaMatrix | Record<string, string>;
+  organSystems: string[];
+  useCases?: string[];
+  traditionalUses?: string[];
+  description?: string;
+}
