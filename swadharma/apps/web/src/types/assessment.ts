@@ -77,7 +77,6 @@ export interface PanchakarmaTherapy {
 }
 
 export interface PurvakarmaStep {
-  step?: string;
   id: string;
   task: string;
   description: string;
@@ -143,13 +142,6 @@ export interface AssessmentState {
 
   activeNadiPoint: DoshaType | null;
 
-  herbSearchQuery: string;
-  herbDoshaFilter: string | null;
-  herbOrganFilter: string | null;
-
-  setHerbSearchQuery: (query: string) => void;
-  setHerbDoshaFilter: (dosha: string | null) => void;
-  setHerbOrganFilter: (organ: string | null) => void;
 
 
   selectedSrotas: string | null;
@@ -208,3 +200,23 @@ export interface NadiData {
 
 
 
+
+
+export interface Herb {
+  id: string;
+  sanskritName: string;
+  commonName: string;
+  botanicalName: string;
+  category?: string[];
+  rasa: string[];
+  virya: string;
+  vipaka: string;
+  prabhava: string;
+  doshaMatrix: DoshaMatrix;
+  organSystems: string[];
+  benefits?: string[];
+  contraindications?: string[];
+  dosage?: string;
+  useCases?: string[];
+  description?: string;
+}

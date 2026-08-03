@@ -5,7 +5,7 @@ import { HerbSearchBar } from '../../components/herbs/HerbSearchBar';
 import { HerbCard } from '../../components/herbs/HerbCard';
 import useAssessmentStore from '../../stores/assessmentStore';
 import herbsData from '../../data/herbs.json';
-import { Herb } from '../../types/assessment';
+import type { Herb } from '../../types/assessment';
 
 export default function HerbsPage() {
   const [mounted, setMounted] = useState(false);

@@ -1,7 +1,9 @@
+
 // swadharma/apps/web/src/app/routine/page.tsx
 'use client';
 
 import React, { useEffect, useState } from 'react';
+import { useSeasonsStore } from '../../stores/seasonsStore';
 import { useAssessmentStore } from '../../stores/assessmentStore';
 import { computeProfile, getDominantDosha } from '../../engines/report';
 import { getRoutineForProfile } from '../../engines/routine';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Herb } from '../../types/assessment';
+import type { Herb } from '../../types/assessment';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '../ui/card';
 import { Badge } from '../ui/badge';
 import { cn } from '@workspace/ui/lib/utils';
