@@ -5,6 +5,14 @@ import { NadiData } from '../../types/assessment';
 
 const data = nadiData as unknown as NadiData;
 
+/**
+ * PulseQualityTable Component
+ * 
+ * Displays a comparative table of dosha pulse qualities (Vata, Pitta, Kapha)
+ * and detailed sections for sub-dosha pulses. Data is fetched from `nadi.json`.
+ *
+ * @returns {JSX.Element} The table displaying pulse characteristics.
+ */
 export function PulseQualityTable() {
   return (
     <Card className="border-[#E8973A]/20 shadow-md bg-white">

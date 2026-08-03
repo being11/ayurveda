@@ -8,6 +8,14 @@ export const metadata = {
   description: 'Learn the ancient Ayurvedic technique of pulse diagnosis.',
 };
 
+/**
+ * NadiParikshaPage Component
+ * 
+ * Renders the educational guide for Nadi Pariksha (Pulse Diagnosis).
+ * Displays the interactive Nadi Diagram Card and the Pulse Quality Table.
+ *
+ * @returns {JSX.Element} The Nadi Pariksha educational page.
+ */
 export default function NadiParikshaPage() {
   return (
     <div className="min-h-screen bg-[#FBF8F2] py-12 px-4 sm:px-6 lg:px-8">
