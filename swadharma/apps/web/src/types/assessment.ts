@@ -200,7 +200,10 @@ export interface NadiData {
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/feature/i14-idea--automated-implement-1904452101678226611
 export interface Herb {
   id: string;
   sanskritName: string;

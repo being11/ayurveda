@@ -9,7 +9,7 @@ import { useEffect, useState, useRef, useCallback } from 'react';
 import { QuizProgress } from './QuizProgress';
 import { QuestionCard } from './QuestionCard';
 import { QuizComplete } from './QuizComplete';
-import { calculateDoshaScores, getDoshaType } from '@/src/engines/scoring';
+import { calculateDoshaScores } from '@/src/engines/scoring';
 import { useQuizNavigation } from '@/src/hooks/useQuizNavigation';
 
 export function QuizEngine() {
@@ -87,19 +87,14 @@ export function QuizEngine() {
   });
 
   if (!mounted) {
-    return <div className="flex flex-col min-h-screen bg-[oklch(0.97_0.02_80)]" />;
+    return <div className="min-h-screen bg-[#FBF8F2]" />;
   }
 
   if (isComplete) {
-    const scores = calculateDoshaScores(categories, answers);
-    console.log("Calculated Scores: ", scores);
-    console.log("Prakriti type: ", getDoshaType(scores.prakriti));
-    console.log("Vikriti type: ", getDoshaType(scores.vikriti));
-    
     return <QuizComplete onReview={handlePrev} />
   }
 
-  if (!currentQuestion || !currentCategory) return <div className="min-h-screen bg-[oklch(0.97_0.02_80)]" />;
+  if (!currentQuestion || !currentCategory) return <div className="min-h-screen bg-[#FBF8F2]" />;
 
   const currentIndexInCategory = currentCategory.questions.findIndex(q => q.id === currentQuestionId);
   const remainingInCurrentCategory = Math.max(0, currentCategory.questions.length - currentIndexInCategory - 1);
@@ -112,18 +107,31 @@ export function QuizEngine() {
   }
   const estimatedTimeMins = Math.ceil((totalRemaining * 8) / 60);
   const progressPercentage = ((currentCategoryIndex) / categories.length) * 100;
+  
+  // Calculate live scores for progress bar
+  const liveScores = calculateDoshaScores(categories, answers);
+  const combinedLiveScores = {
+    vata: (liveScores.prakriti.vata + liveScores.vikriti.vata) / 2 || 0,
+    pitta: (liveScores.prakriti.pitta + liveScores.vikriti.pitta) / 2 || 0,
+    kapha: (liveScores.prakriti.kapha + liveScores.vikriti.kapha) / 2 || 0,
+  };
 
   return (
-    <div className="flex flex-col min-h-screen bg-[oklch(0.97_0.02_80)] text-[oklch(0.15_0.01_60)]">
-      <QuizProgress
-        progressPercentage={progressPercentage}
-        categoryTitle={currentCategory.title}
-        currentCategoryIndex={currentCategoryIndex}
-        totalCategories={categories.length}
-        estimatedTimeMins={estimatedTimeMins}
-        onBack={handlePrev}
-        canGoBack={history.length > 0}
-      />
+    <div className="flex flex-col min-h-screen bg-white">
+      <header className="w-full px-4 py-6 md:px-8 max-w-4xl mx-auto flex flex-col gap-4 z-10 sticky top-0 bg-white/80 backdrop-blur-md">
+         <QuizProgress
+            progressPercentage={progressPercentage}
+            categoryTitle={currentCategory.title}
+            currentCategoryIndex={currentCategoryIndex}
+            totalCategories={categories.length}
+            estimatedTimeMins={estimatedTimeMins}
+            onBack={handlePrev}
+            canGoBack={history.length > 0}
+            vataScore={combinedLiveScores.vata}
+            pittaScore={combinedLiveScores.pitta}
+            kaphaScore={combinedLiveScores.kapha}
+         />
+      </header>
 
       <main className="flex-1 flex flex-col justify-center max-w-3xl mx-auto w-full px-4 pb-32">
         <AnimatePresence mode="wait">
@@ -136,11 +144,11 @@ export function QuizEngine() {
               transition={{ duration: 0.5, ease: "easeInOut" }}
               className="text-center space-y-6"
             >
-              <h2 className="text-3xl md:text-5xl font-serif text-primary">
+              <h2 className="text-3xl md:text-5xl font-serif text-[#4A7C59]">
                 {currentCategory.title}
               </h2>
               {currentCategory.description && (
-                <p className="text-lg md:text-xl opacity-80 max-w-xl mx-auto">
+                <p className="text-lg md:text-xl opacity-80 max-w-xl mx-auto text-gray-600">
                   {currentCategory.description}
                 </p>
               )}
@@ -159,13 +167,13 @@ export function QuizEngine() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="fixed bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-[oklch(0.97_0.02_80)] via-[oklch(0.97_0.02_80)] to-transparent flex justify-center z-20 pointer-events-none"
+          className="fixed bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-white via-white to-transparent flex justify-center z-20 pointer-events-none"
         >
           <div className="max-w-3xl w-full flex justify-end pointer-events-auto">
             <Button
               onClick={handleNext}
               size="lg"
-              className="px-8 shadow-lg"
+              className="px-8 shadow-lg bg-[#4A7C59] hover:bg-[#4A7C59]/90 text-white"
               disabled={!currentAnswer || (Array.isArray(currentAnswer) && currentAnswer.length === 0)}
             >
               Continue <ArrowRight className="w-4 h-4 ml-2" />
