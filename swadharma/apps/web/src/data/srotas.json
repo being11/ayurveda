@@ -1,0 +1,145 @@
+[
+  {
+    "id": "pranavaha",
+    "name": "Pranavaha Srotas",
+    "translation": "Respiratory Channel",
+    "description": "The channel carrying Prana (life force), breath, and oxygen throughout the body.",
+    "root": "Heart and Alimentary tract",
+    "pathway": "Respiratory tract",
+    "opening": "Nose",
+    "imbalanceSigns": ["Shortness of breath", "Asthma", "Shallow breathing", "Fatigue"],
+    "therapies": ["Pranayama", "Nasya (nasal drops)", "Steam inhalation", "Tulsi tea"]
+  },
+  {
+    "id": "annavaha",
+    "name": "Annavaha Srotas",
+    "translation": "Digestive Channel",
+    "description": "The channel responsible for the transportation and digestion of food.",
+    "root": "Stomach and left side of the body",
+    "pathway": "Gastrointestinal tract",
+    "opening": "Mouth",
+    "imbalanceSigns": ["Indigestion", "Bloating", "Loss of appetite", "Constipation"],
+    "therapies": ["Fasting (Langhana)", "Ginger tea", "Warm cooked meals", "Triphala"]
+  },
+  {
+    "id": "udakavaha",
+    "name": "Udakavaha Srotas",
+    "translation": "Water Channel",
+    "description": "The channel regulating water and fluid balance in the body.",
+    "root": "Palate and Pancreas",
+    "pathway": "Lymphatic and fluid systems",
+    "opening": "Kidneys and sweat glands",
+    "imbalanceSigns": ["Excessive thirst", "Dehydration", "Edema (swelling)", "Dry mouth"],
+    "therapies": ["Coconut water", "Coriander seed water", "Electrolyte balance", "Aloe vera juice"]
+  },
+  {
+    "id": "rasavaha",
+    "name": "Rasavaha Srotas",
+    "translation": "Plasma/Lymph Channel",
+    "description": "The channel carrying plasma, lymph, and primary nutrients (Rasa Dhatu).",
+    "root": "Heart and blood vessels",
+    "pathway": "Lymphatic system and veins",
+    "opening": "Skin and mucous membranes",
+    "imbalanceSigns": ["Lethargy", "Pale skin", "Weak immunity", "Nausea"],
+    "therapies": ["Ashwagandha", "Warm milk", "Abhyanga (oil massage)", "Rest"]
+  },
+  {
+    "id": "raktavaha",
+    "name": "Raktavaha Srotas",
+    "translation": "Blood Channel",
+    "description": "The channel carrying blood and oxygenating tissues (Rakta Dhatu).",
+    "root": "Liver and Spleen",
+    "pathway": "Arterial system",
+    "opening": "Blood vessels",
+    "imbalanceSigns": ["Skin conditions (acne, eczema)", "Anger", "Inflammation", "Bleeding disorders"],
+    "therapies": ["Blood-purifying herbs (Manjistha, Neem)", "Cooling foods", "Aloe vera", "Donating blood"]
+  },
+  {
+    "id": "mamsavaha",
+    "name": "Mamsavaha Srotas",
+    "translation": "Muscle Channel",
+    "description": "The channel carrying nutrients to the muscle tissues (Mamsa Dhatu).",
+    "root": "Ligaments and Skin",
+    "pathway": "Muscular system",
+    "opening": "Pores of the skin",
+    "imbalanceSigns": ["Muscle cramps", "Tumors", "Weakness", "Heaviness in body"],
+    "therapies": ["Massage (Udvartana)", "Exercise", "Guggulu", "Warm baths"]
+  },
+  {
+    "id": "medovaha",
+    "name": "Medovaha Srotas",
+    "translation": "Fat Channel",
+    "description": "The channel supplying adipose tissue and managing body fat (Meda Dhatu).",
+    "root": "Kidneys and Omentum",
+    "pathway": "Adipose tissues",
+    "opening": "Sweat glands",
+    "imbalanceSigns": ["Obesity", "Diabetes", "Excessive sweating", "Lethargy"],
+    "therapies": ["Exercise", "Dry ginger", "Triphala", "Scraping massage (Garshana)"]
+  },
+  {
+    "id": "asthivaha",
+    "name": "Asthivaha Srotas",
+    "translation": "Bone Channel",
+    "description": "The channel nourishing the skeletal system and bones (Asthi Dhatu).",
+    "root": "Adipose tissue and Pelvis",
+    "pathway": "Skeletal system",
+    "opening": "Nails and Hair",
+    "imbalanceSigns": ["Joint pain", "Hair loss", "Brittle nails", "Osteoporosis"],
+    "therapies": ["Calcium-rich foods", "Sesame seeds", "Basti (enema)", "Guggulu"]
+  },
+  {
+    "id": "majjavaha",
+    "name": "Majjavaha Srotas",
+    "translation": "Nervous System & Marrow Channel",
+    "description": "The channel delivering nutrients to the bone marrow and nervous system (Majja Dhatu).",
+    "root": "Bones and Joints",
+    "pathway": "Nervous system and bone cavities",
+    "opening": "Eyes and Synaptic clefts",
+    "imbalanceSigns": ["Anxiety", "Insomnia", "Neurological disorders", "Joint cracking"],
+    "therapies": ["Brahmi", "Ghee", "Shirodhara", "Meditation"]
+  },
+  {
+    "id": "shukravaha",
+    "name": "Shukravaha Srotas",
+    "translation": "Reproductive Channel",
+    "description": "The channel nourishing reproductive tissues and vitality (Shukra Dhatu).",
+    "root": "Testicles and Ovaries",
+    "pathway": "Reproductive organs",
+    "opening": "Urethra and Vagina",
+    "imbalanceSigns": ["Infertility", "Low libido", "Fatigue", "Hormonal imbalances"],
+    "therapies": ["Shatavari", "Ashwagandha", "Almonds", "Vajikarana therapies"]
+  },
+  {
+    "id": "mutravaha",
+    "name": "Mutravaha Srotas",
+    "translation": "Urinary Channel",
+    "description": "The channel carrying and eliminating urine.",
+    "root": "Kidneys and Bladder",
+    "pathway": "Urinary tract",
+    "opening": "Urethra",
+    "imbalanceSigns": ["Frequent urination", "UTIs", "Kidney stones", "Painful urination"],
+    "therapies": ["Coriander tea", "Punarnava", "Gokshura", "Adequate hydration"]
+  },
+  {
+    "id": "purishavaha",
+    "name": "Purishavaha Srotas",
+    "translation": "Excretory Channel (Feces)",
+    "description": "The channel responsible for the formation and elimination of feces.",
+    "root": "Colon and Rectum",
+    "pathway": "Large intestine",
+    "opening": "Anus",
+    "imbalanceSigns": ["Constipation", "Diarrhea", "Irritable Bowel", "Gas"],
+    "therapies": ["Triphala", "Psyllium husk", "Warm water", "Castor oil (Virechana)"]
+  },
+  {
+    "id": "svedavaha",
+    "name": "Svedavaha Srotas",
+    "translation": "Sweat Channel",
+    "description": "The channel carrying and eliminating sweat to regulate body temperature.",
+    "root": "Adipose tissue and Hair follicles",
+    "pathway": "Skin and Sweat glands",
+    "opening": "Skin pores",
+    "imbalanceSigns": ["Excessive or no sweating", "Body odor", "Skin diseases", "Fever"],
+    "therapies": ["Sauna (Svedana)", "Sandalwood paste", "Neem", "Hydration"]
+  }
+]
