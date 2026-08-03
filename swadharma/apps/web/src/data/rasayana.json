@@ -1,0 +1,64 @@
+{
+  "low": {
+    "protocol": {
+      "primaryFocus": "Ojas Building & Deep Tissue Rejuvenation",
+      "recommendedHerbs": ["Ashwagandha", "Shatavari", "Amalaki", "Bala"],
+      "lifestylePractices": [
+        "Prioritize deep, uninterrupted sleep",
+        "Abhyanga with warm sesame or almond oil daily",
+        "Gentle restorative yoga, avoid strenuous exertion"
+      ],
+      "dietaryAdvice": "Focus on warm, unctuous, sweet, and nourishing foods like warm spiced milk, ghee, almonds, dates, and root vegetables."
+    }
+  },
+  "moderate": {
+    "vata": {
+      "protocol": {
+        "primaryFocus": "Vata Pacification & Grounding",
+        "recommendedHerbs": ["Ashwagandha", "Bala", "Vidari Kanda"],
+        "lifestylePractices": [
+          "Maintain a strict daily routine (Dinacharya)",
+          "Warm oil massage (Abhyanga)",
+          "Meditation and calming Pranayama (Nadi Shodhana)"
+        ],
+        "dietaryAdvice": "Favor warm, heavy, oily, and sweet foods. Avoid dry, cold, and rough foods."
+      }
+    },
+    "pitta": {
+      "protocol": {
+        "primaryFocus": "Pitta Pacification & Cooling Rejuvenation",
+        "recommendedHerbs": ["Shatavari", "Amalaki", "Brahmi"],
+        "lifestylePractices": [
+          "Moonbathing or walking in nature",
+          "Cooling Pranayama (Sheetali)",
+          "Avoid excessive heat and intense competition"
+        ],
+        "dietaryAdvice": "Favor cool, sweet, bitter, and astringent foods. Avoid spicy, sour, and excessively salty foods."
+      }
+    },
+    "kapha": {
+      "protocol": {
+        "primaryFocus": "Kapha Pacification & Stimulating Rejuvenation",
+        "recommendedHerbs": ["Punarnava", "Pippali", "Guggulu"],
+        "lifestylePractices": [
+          "Vigorous exercise",
+          "Dry brushing (Garshana)",
+          "Stimulating Pranayama (Kapalabhati)"
+        ],
+        "dietaryAdvice": "Favor warm, light, dry, and spicy foods. Avoid heavy, oily, cold, and sweet foods."
+      }
+    }
+  },
+  "high": {
+    "protocol": {
+      "primaryFocus": "Maintenance & Spiritual Enhancement",
+      "recommendedHerbs": ["Brahmi", "Shankhapushpi", "Tulsi"],
+      "lifestylePractices": [
+        "Advanced meditation practices",
+        "Sattvic lifestyle",
+        "Community service and sharing knowledge"
+      ],
+      "dietaryAdvice": "Maintain a Sattvic diet to support mental clarity and spiritual growth."
+    }
+  }
+}
