@@ -153,6 +153,12 @@ export interface AssessmentState {
 
 
   selectedSrotas: string | null;
+  herbSearchQuery: string;
+  herbDoshaFilter: string | null;
+  herbOrganFilter: string | null;
+  setHerbSearchQuery: (query: string) => void;
+  setHerbDoshaFilter: (dosha: string | null) => void;
+  setHerbOrganFilter: (organ: string | null) => void;
 
   currentSeasonId: string | null;
   setCurrentSeasonId: (seasonId: string | null) => void;
