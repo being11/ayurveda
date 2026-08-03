@@ -1,0 +1,329 @@
+{
+  "routines": {
+    "Vata": {
+      "morning": [
+        {
+          "id": "v_m1",
+          "timeRange": "6:00 AM - 7:00 AM",
+          "activity": "Wake Up & Hydrate",
+          "description": "Wake up with the sun. Drink a glass of warm water with a pinch of rock salt and a squeeze of lemon to stimulate sluggish digestion."
+        },
+        {
+          "id": "v_m2",
+          "timeRange": "7:00 AM - 8:00 AM",
+          "activity": "Grounding Practice",
+          "description": "Gentle, warming yoga and Nadi Shodhana (Alternate Nostril Breathing). Followed by Abhyanga (warm oil massage) with sesame oil."
+        },
+        {
+          "id": "v_m3",
+          "timeRange": "8:00 AM - 9:00 AM",
+          "activity": "Nourishing Breakfast",
+          "description": "Warm, cooked breakfast like oatmeal or stewed apples. Avoid cold, dry, or raw foods."
+        }
+      ],
+      "afternoon": [
+        {
+          "id": "v_a1",
+          "timeRange": "12:00 PM - 1:00 PM",
+          "activity": "Lunch",
+          "description": "Main meal of the day. Warm, moist, and grounding foods with healthy fats."
+        },
+        {
+          "id": "v_a2",
+          "timeRange": "2:00 PM - 4:00 PM",
+          "activity": "Focused Work & Hydration",
+          "description": "Engage in creative or focused work. Sip warm herbal teas (ginger, cumin, fennel) to stay hydrated."
+        }
+      ],
+      "evening": [
+        {
+          "id": "v_e1",
+          "timeRange": "5:30 PM - 6:30 PM",
+          "activity": "Wind Down",
+          "description": "Gentle walk or restorative stretching to transition from work to rest."
+        },
+        {
+          "id": "v_e2",
+          "timeRange": "6:30 PM - 7:30 PM",
+          "activity": "Light Dinner",
+          "description": "Warm, easy-to-digest meal like kitchari or soups. Keep portions moderate."
+        }
+      ],
+      "night": [
+        {
+          "id": "v_n1",
+          "timeRange": "8:30 PM - 9:30 PM",
+          "activity": "Evening Routine",
+          "description": "Digital sunset. Warm milk with nutmeg and ashwagandha. Massage feet with warm oil."
+        },
+        {
+          "id": "v_n2",
+          "timeRange": "10:00 PM",
+          "activity": "Sleep",
+          "description": "Aim to be in bed by 10 PM for deep, restorative sleep."
+        }
+      ]
+    },
+    "Pitta": {
+      "morning": [
+        {
+          "id": "p_m1",
+          "timeRange": "5:30 AM - 6:30 AM",
+          "activity": "Wake Up & Hydrate",
+          "description": "Wake up slightly before sunrise. Drink room temperature water with mint or lime."
+        },
+        {
+          "id": "p_m2",
+          "timeRange": "6:30 AM - 7:30 AM",
+          "activity": "Cooling Practice",
+          "description": "Moderate exercise, cooling yoga, and Sheetali Pranayama. Occasional coconut oil massage."
+        },
+        {
+          "id": "p_m3",
+          "timeRange": "7:30 AM - 8:30 AM",
+          "activity": "Breakfast",
+          "description": "Substantial but cooling breakfast, like porridge or sweet, ripe fruits."
+        }
+      ],
+      "afternoon": [
+        {
+          "id": "p_a1",
+          "timeRange": "12:00 PM - 1:00 PM",
+          "activity": "Lunch",
+          "description": "The largest and most important meal. Include sweet, bitter, and astringent tastes to balance heat."
+        },
+        {
+          "id": "p_a2",
+          "timeRange": "2:00 PM - 5:00 PM",
+          "activity": "Productive Work",
+          "description": "High-focus work. Take breaks to cool down and avoid overworking."
+        }
+      ],
+      "evening": [
+        {
+          "id": "p_e1",
+          "timeRange": "5:30 PM - 6:30 PM",
+          "activity": "Relaxation",
+          "description": "Nature walk or time near water to dissipate the day's accumulated heat."
+        },
+        {
+          "id": "p_e2",
+          "timeRange": "6:30 PM - 7:30 PM",
+          "activity": "Dinner",
+          "description": "Moderate dinner. Avoid excessively spicy, sour, or salty foods."
+        }
+      ],
+      "night": [
+        {
+          "id": "p_n1",
+          "timeRange": "8:30 PM - 9:30 PM",
+          "activity": "Unwind",
+          "description": "Read, meditate, or engage in calming activities. Avoid heated discussions or screens."
+        },
+        {
+          "id": "p_n2",
+          "timeRange": "10:00 PM - 10:30 PM",
+          "activity": "Sleep",
+          "description": "Lights out by 10:30 PM. Keep the bedroom cool and well-ventilated."
+        }
+      ]
+    },
+    "Kapha": {
+      "morning": [
+        {
+          "id": "k_m1",
+          "timeRange": "5:00 AM - 6:00 AM",
+          "activity": "Wake Up",
+          "description": "Wake up early before sunrise to avoid heaviness. Drink warm water with raw honey and ginger."
+        },
+        {
+          "id": "k_m2",
+          "timeRange": "6:00 AM - 7:00 AM",
+          "activity": "Invigorating Practice",
+          "description": "Vigorous exercise, heating yoga (Sun Salutations), and Kapalabhati Pranayama. Dry brushing (Garshana)."
+        },
+        {
+          "id": "k_m3",
+          "timeRange": "7:30 AM - 8:30 AM",
+          "activity": "Light Breakfast",
+          "description": "Very light breakfast, or skip it entirely if not hungry. Fresh fruit or warm spiced tea is ideal."
+        }
+      ],
+      "afternoon": [
+        {
+          "id": "k_a1",
+          "timeRange": "12:00 PM - 1:00 PM",
+          "activity": "Lunch",
+          "description": "Main meal of the day. Focus on warm, light, and spiced foods. Favor bitter, astringent, and pungent tastes."
+        },
+        {
+          "id": "k_a2",
+          "timeRange": "2:00 PM - 5:00 PM",
+          "activity": "Active Work",
+          "description": "Stay active and engaged. Avoid afternoon naps which increase Kapha."
+        }
+      ],
+      "evening": [
+        {
+          "id": "k_e1",
+          "timeRange": "5:30 PM - 6:30 PM",
+          "activity": "Movement",
+          "description": "A brisk walk or light workout to maintain circulation and energy."
+        },
+        {
+          "id": "k_e2",
+          "timeRange": "6:30 PM - 7:30 PM",
+          "activity": "Light Dinner",
+          "description": "The lightest meal of the day. Soups or steamed vegetables with warming spices."
+        }
+      ],
+      "night": [
+        {
+          "id": "k_n1",
+          "timeRange": "8:30 PM - 9:30 PM",
+          "activity": "Stimulating Unwind",
+          "description": "Engage in stimulating reading or hobbies. Sip herbal tea like ginger or cinnamon."
+        },
+        {
+          "id": "k_n2",
+          "timeRange": "10:30 PM - 11:00 PM",
+          "activity": "Sleep",
+          "description": "Retire to bed by 10:30 - 11:00 PM. Requires less sleep than other doshas (about 6-7 hours)."
+        }
+      ]
+    },
+    "Balanced": {
+      "morning": [
+        {
+          "id": "b_m1",
+          "timeRange": "5:30 AM - 6:30 AM",
+          "activity": "Wake Up",
+          "description": "Wake near sunrise. Drink warm water to stimulate digestion."
+        },
+        {
+          "id": "b_m2",
+          "timeRange": "6:30 AM - 7:30 AM",
+          "activity": "Morning Practice",
+          "description": "Moderate yoga and balanced pranayama. Oil pulling and light self-massage."
+        },
+        {
+          "id": "b_m3",
+          "timeRange": "8:00 AM",
+          "activity": "Breakfast",
+          "description": "A balanced, nourishing breakfast suitable for the current season."
+        }
+      ],
+      "afternoon": [
+        {
+          "id": "b_a1",
+          "timeRange": "12:00 PM - 1:00 PM",
+          "activity": "Lunch",
+          "description": "The largest meal. A balanced plate with all six tastes."
+        },
+        {
+          "id": "b_a2",
+          "timeRange": "2:00 PM - 5:00 PM",
+          "activity": "Work & Activity",
+          "description": "Engage in daily duties with focus and balanced energy."
+        }
+      ],
+      "evening": [
+        {
+          "id": "b_e1",
+          "timeRange": "6:00 PM",
+          "activity": "Dinner",
+          "description": "A moderate, early dinner, lighter than lunch."
+        }
+      ],
+      "night": [
+        {
+          "id": "b_n1",
+          "timeRange": "8:00 PM - 10:00 PM",
+          "activity": "Wind Down & Sleep",
+          "description": "Relaxing activities, moving away from screens. Asleep by 10:00 PM."
+        }
+      ]
+    }
+  },
+  "yoga": {
+    "Vata": [
+      "Vrikshasana (Tree Pose) - for grounding and stability.",
+      "Balasana (Child's Pose) - to calm the nervous system.",
+      "Paschimottanasana (Seated Forward Bend) - for deep relaxation."
+    ],
+    "Pitta": [
+      "Bhujangasana (Cobra Pose) - gentle opening, avoiding overheating.",
+      "Chandra Namaskar (Moon Salutations) - cooling and calming.",
+      "Ardha Matsyendrasana (Half Lord of the Fishes) - aids liver and digestion."
+    ],
+    "Kapha": [
+      "Surya Namaskar (Sun Salutations) - vigorous and heating.",
+      "Virabhadrasana (Warrior Poses) - for strength and stamina.",
+      "Ustrasana (Camel Pose) - opens the chest and invigorates."
+    ],
+    "Balanced": [
+      "Surya Namaskar (Sun Salutations) - moderate pace.",
+      "Trikonasana (Triangle Pose) - overall balance.",
+      "Shavasana (Corpse Pose) - for integration."
+    ]
+  },
+  "pranayama": {
+    "Vata": [
+      "Nadi Shodhana (Alternate Nostril Breathing) - balances left and right brain, calms anxiety.",
+      "Ujjayi (Victorious Breath) - warming and deeply grounding."
+    ],
+    "Pitta": [
+      "Sheetali (Cooling Breath) - cools the body and mind.",
+      "Bhramari (Bee Breath) - soothes frustration and anger."
+    ],
+    "Kapha": [
+      "Kapalabhati (Skull Shining Breath) - energizing, heating, and clears stagnation.",
+      "Bhastrika (Bellows Breath) - highly invigorating."
+    ],
+    "Balanced": [
+      "Nadi Shodhana (Alternate Nostril Breathing) - excellent for overall harmony."
+    ]
+  },
+  "seasons": {
+    "Spring": {
+      "name": "Vasanta (Spring)",
+      "dosha": "Kapha",
+      "guidelines": [
+        "Favor lighter, easily digestible foods.",
+        "Increase vigorous exercise to counteract spring lethargy.",
+        "Favor pungent, bitter, and astringent tastes.",
+        "Avoid heavy, sweet, sour, and excessively oily foods."
+      ]
+    },
+    "Summer": {
+      "name": "Grishma (Summer)",
+      "dosha": "Pitta",
+      "guidelines": [
+        "Favor cooling, hydrating foods and drinks.",
+        "Avoid excessive spicy, sour, or salty foods.",
+        "Exercise during the cooler parts of the day (early morning).",
+        "Protect yourself from the midday sun."
+      ]
+    },
+    "Autumn": {
+      "name": "Sharad (Autumn)",
+      "dosha": "Vata (and Pitta pacification early on)",
+      "guidelines": [
+        "Transition to warmer, grounding, and nourishing foods.",
+        "Establish a very consistent daily routine.",
+        "Favor sweet, slightly salty, and sour tastes.",
+        "Protect against cold winds and dryness."
+      ]
+    },
+    "Winter": {
+      "name": "Hemanta & Shishira (Winter)",
+      "dosha": "Vata/Kapha",
+      "guidelines": [
+        "Eat warm, heavy, and nourishing meals.",
+        "Use warming spices like ginger, cinnamon, and cloves.",
+        "Maintain regular exercise to keep circulation strong.",
+        "Get plenty of rest, as nights are longer."
+      ]
+    }
+  }
+}

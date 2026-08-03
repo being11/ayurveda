@@ -1,0 +1,7 @@
+diff a/swadharma/apps/web/start.log b/swadharma/apps/web/start.log	(rejected hunks)
+@@ -5,4 +5,4 @@
+ ▲ Next.js 16.2.6
+ - Local:         http://localhost:3000
+ - Network:       http://192.168.0.2:3000
+-✓ Ready in 190ms
++✓ Ready in 187ms

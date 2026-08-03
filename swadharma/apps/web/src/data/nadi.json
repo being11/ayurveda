@@ -1,0 +1,54 @@
+{
+  "title": "Nadi Pariksha: The Ayurvedic Pulse Diagnosis",
+  "description": "Nadi Pariksha is the ancient Ayurvedic technique of diagnosis through the pulse. It can accurately diagnose physical, mental, and emotional imbalances as well as diseases.",
+  "doshas": [
+    {
+      "id": "vata",
+      "name": "Vata",
+      "finger": "Index Finger",
+      "position": "Root of the thumb",
+      "animal": "Snake (Sarpa)",
+      "movement": "Fast, irregular, slithering, feeble, cold",
+      "rate": "80-90 bpm",
+      "subDoshas": [
+        { "name": "Prana", "description": "Respiration, sensory perception, mind" },
+        { "name": "Udana", "description": "Speech, upward movement, memory" },
+        { "name": "Samana", "description": "Digestion, assimilation, balance" },
+        { "name": "Vyana", "description": "Circulation, heart rhythm, joint movement" },
+        { "name": "Apana", "description": "Elimination, downward movement, reproduction" }
+      ]
+    },
+    {
+      "id": "pitta",
+      "name": "Pitta",
+      "finger": "Middle Finger",
+      "position": "Next to Vata",
+      "animal": "Frog (Manduka)",
+      "movement": "Jumping, prominent, regular, strong, warm",
+      "rate": "70-80 bpm",
+      "subDoshas": [
+        { "name": "Pachaka", "description": "Digestion, body temperature" },
+        { "name": "Ranjaka", "description": "Blood formation, liver function" },
+        { "name": "Sadhaka", "description": "Intellect, emotions, heart" },
+        { "name": "Alochaka", "description": "Vision, visual perception" },
+        { "name": "Bhrajaka", "description": "Skin color, temperature, luster" }
+      ]
+    },
+    {
+      "id": "kapha",
+      "name": "Kapha",
+      "finger": "Ring Finger",
+      "position": "Next to Pitta",
+      "animal": "Swan (Hamsa)",
+      "movement": "Slow, steady, floating, broad, cool",
+      "rate": "60-70 bpm",
+      "subDoshas": [
+        { "name": "Kledaka", "description": "Stomach moisture, initial digestion" },
+        { "name": "Avalambaka", "description": "Chest, heart, lungs support" },
+        { "name": "Bodhaka", "description": "Taste, salivary glands" },
+        { "name": "Tarpaka", "description": "Nourishing senses, brain, spinal cord" },
+        { "name": "Shleshaka", "description": "Joint lubrication" }
+      ]
+    }
+  ]
+}
