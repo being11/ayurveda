@@ -10,6 +10,12 @@ interface QuestionCardProps {
   onOptionClick?: (optionId: string) => void;
 }
 
+/**
+ * QuestionCard renders individual assessment questions using an animated interface.
+ * It supports both single and multiple-choice layouts, automatically formatting
+ * options as either a Likert scale or a standard list based on their structure.
+ * Integrates with Framer Motion for smooth entry and exit transitions.
+ */
 export function QuestionCard({ question, currentAnswer = '', onAnswer, onOptionClick }: QuestionCardProps) {
   const handleOptionClick = (optionId: string) => {
     if (onOptionClick) onOptionClick(optionId);

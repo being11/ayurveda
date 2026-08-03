@@ -12,6 +12,12 @@ import { QuizComplete } from './QuizComplete';
 import { calculateDoshaScores } from '@/src/engines/scoring';
 import { useQuizNavigation } from '@/src/hooks/useQuizNavigation';
 
+/**
+ * QuizEngine handles the interactive multi-step dosha assessment.
+ * It manages the state for navigating through the assessment, computes 
+ * progress, calculates live dosha scores for the progress bar, and 
+ * orchestrates smooth Framer Motion transitions between question categories.
+ */
 export function QuizEngine() {
   const [mounted, setMounted] = useState(false);
   const [showTransition, setShowTransition] = useState(false);
@@ -55,7 +61,7 @@ export function QuizEngine() {
     if (currentQuestion?.type === 'multiple') {
       nextQuestion();
     }
-  }, [currentQuestion?.type, nextQuestion]);
+  }, [currentQuestion, nextQuestion]);
 
   const handlePrev = useCallback(() => {
     prevQuestion();

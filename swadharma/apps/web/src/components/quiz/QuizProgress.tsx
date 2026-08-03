@@ -16,6 +16,11 @@ interface QuizProgressProps {
   kaphaScore?: number;
 }
 
+/**
+ * QuizProgress displays the current progress in the assessment.
+ * It shows a unified progress bar, estimated time remaining, and optionally
+ * a mini dosha distribution bar that reflects real-time scores across Vata, Pitta, and Kapha.
+ */
 export function QuizProgress({ 
     currentStep, 
     totalSteps, 
