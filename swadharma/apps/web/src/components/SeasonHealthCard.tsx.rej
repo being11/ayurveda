@@ -1,0 +1,19 @@
+diff a/swadharma/apps/web/src/components/SeasonHealthCard.tsx b/swadharma/apps/web/src/components/SeasonHealthCard.tsx	(rejected hunks)
+@@ -1,7 +1,7 @@
+ 'use client';
+ 
+ import React from 'react';
+-import { useAssessmentStore } from '../stores/assessmentStore';
++import { useSeasonsStore } from '../stores/seasonsStore';
+ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from './ui/card';
+ import seasonsData from '../data/seasons.json';
+ import type { Season } from '../types/seasons';
+@@ -9,7 +9,7 @@ import type { Season } from '../types/seasons';
+ const seasons: Season[] = seasonsData as Season[];
+ 
+ export default function SeasonHealthCard() {
+-  const { currentSeasonId } = useAssessmentStore();
++  const { currentSeasonId } = useSeasonsStore();
+ 
+   const currentSeason = seasons.find((s) => s.id === currentSeasonId);
+ 

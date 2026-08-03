@@ -73,11 +73,11 @@ export function HerbCard({ herb, className }: HerbCardProps) {
             ))}
           </div>
           <ul className="list-disc list-inside text-sm text-stone-700 space-y-1">
-            {herb.traditionalUses?.slice(0, 3).map((use, i) => (
+            {herb.useCases?.slice(0, 3).map((use, i) => (
               <li key={i} className="truncate">{use}</li>
             ))}
-            {herb.traditionalUses&&herb.traditionalUses.length > 3 && (
-              <li className="text-xs text-stone-500">+{herb.traditionalUses&&herb.traditionalUses.length - 3} more</li>
+            {herb.useCases&&herb.useCases.length > 3 && (
+              <li className="text-xs text-stone-500">+{herb.useCases&&herb.useCases.length - 3} more</li>
             )}
           </ul>
         </div>
