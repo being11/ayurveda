@@ -1,0 +1,6 @@
+diff a/swadharma/apps/web/src/components/herbs/HerbCard.tsx b/swadharma/apps/web/src/components/herbs/HerbCard.tsx	(rejected hunks)
+@@ -80,3 +80,4 @@ export function HerbCard({ herb, className }: HerbCardProps) {
+     </Card>
+   );
+ }
++// Minor fix to include in diff
