@@ -1,0 +1,35 @@
+diff a/swadharma/apps/web/src/types/assessment.ts b/swadharma/apps/web/src/types/assessment.ts	(rejected hunks)
+@@ -72,9 +72,33 @@ export interface AssessmentState {
+   currentQuestionId: string | null;
+   history: string[];
+   isComplete: boolean;
++  herbSearchQuery: string;
++  herbDoshaFilter: string | null;
+ 
+   setAnswer: (questionId: string, value: string | string[]) => void;
+   nextQuestion: () => void;
+   prevQuestion: () => void;
+   reset: () => void;
++
++  setHerbSearchQuery: (query: string) => void;
++  setHerbDoshaFilter: (dosha: string | null) => void;
++}
++
++export interface HerbDoshaEffect {
++  vata: string;
++  pitta: string;
++  kapha: string;
++}
++
++export interface Herb {
++  id: string;
++  sanskritName: string;
++  botanicalName: string;
++  rasa: string[];
++  virya: string;
++  vipaka: string;
++  prabhava: string;
++  doshas: HerbDoshaEffect;
++  organSystems: string[];
++  useCases: string[];
+ }
