@@ -65,7 +65,32 @@ export interface AyurvedaProfile {
   age?: number;
 }
 
+
+export interface PanchakarmaTherapy {
+  id: string;
+  name: string;
+  dosha: string;
+  indicatedDoshas: string[];
+  benefits: string[];
+  contraindications: string[];
+  duration: string;
+}
+
+export interface PurvakarmaStep {
+  id: string;
+  task: string;
+  description: string;
+}
+
+
+export interface DoshaMatrix {
+  vata: string;
+  pitta: string;
+  kapha: string;
+}
+
 export interface Herb {
+
   id: string;
   sanskritName: string;
   commonName: string;
@@ -73,15 +98,13 @@ export interface Herb {
   rasa: string[];
   virya: string;
   vipaka: string;
-  prabhava: string;
-  doshaMatrix: {
-    vata: string;
-    pitta: string;
-    kapha: string;
-  };
+  prabhava?: string;
+  doshaMatrix: DoshaMatrix | Record<string, string>;
   organSystems: string[];
-  useCases: string[];
-  description: string;
+  useCases?: string[];
+  description?: string;
+  traditionalUses?: string[];
+  cautions?: string[];
 }
 
 export interface RoutineActivity {
@@ -128,11 +151,12 @@ export interface AssessmentState {
 
   activeNadiPoint: DoshaType | null;
 
-  herbSearchQuery: string;
-  herbDoshaFilter: string | null;
-  herbOrganFilter: string | null;
 
   selectedSrotas: string | null;
+
+  currentSeasonId: string | null;
+  setCurrentSeasonId: (seasonId: string | null) => void;
+  autoDetectSeason: () => void;
 
   setAnswer: (questionId: string, value: string | string[]) => void;
   nextQuestion: () => void;
@@ -140,9 +164,6 @@ export interface AssessmentState {
   reset: () => void;
   setActiveNadiPoint: (point: DoshaType | null) => void;
 
-  setHerbSearchQuery: (query: string) => void;
-  setHerbDoshaFilter: (dosha: string | null) => void;
-  setHerbOrganFilter: (organ: string | null) => void;
 
   setSelectedSrotas: (srotasId: string | null) => void;
 }

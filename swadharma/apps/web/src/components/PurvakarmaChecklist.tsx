@@ -62,7 +62,7 @@ export function PurvakarmaChecklist({ steps }: PurvakarmaChecklistProps) {
                     "font-medium transition-colors",
                     isCompleted ? "text-[#4A7C59]" : "text-[#3D2B1F]"
                   )}>
-                    {step.step}
+                    {step.task}
                   </h4>
                   <p className={cn(
                     "text-sm mt-1 transition-colors",

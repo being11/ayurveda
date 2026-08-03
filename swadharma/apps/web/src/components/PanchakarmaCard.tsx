@@ -21,7 +21,7 @@ export function PanchakarmaCard({ therapy }: PanchakarmaCardProps) {
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="text-stone-700">
-          <p>{therapy.description}</p>
+          <p>{therapy.benefits[0]}</p>
         </div>
 
         <div>
