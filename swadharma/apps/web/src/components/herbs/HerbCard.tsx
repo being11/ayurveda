@@ -80,3 +80,4 @@ export function HerbCard({ herb, className }: HerbCardProps) {
     </Card>
   );
 }
+// End of HerbCard

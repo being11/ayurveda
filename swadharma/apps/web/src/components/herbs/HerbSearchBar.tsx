@@ -87,3 +87,4 @@ export function HerbSearchBar() {
     </div>
   );
 }
+// End of HerbSearchBar
