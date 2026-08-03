@@ -1,0 +1,52 @@
+[
+  {
+    "id": "vamana",
+    "name": "Vamana",
+    "description": "Therapeutic emesis (vomiting) to eliminate excess Kapha dosha from the upper respiratory tract and stomach.",
+    "benefits": ["Clears congestion", "Improves digestion", "Relieves asthma and allergies"],
+    "contraindications": ["Pregnancy", "Heart conditions", "Extreme weakness"],
+    "duration": "7-10 days",
+    "targetDosha": "Kapha",
+    "triggerObservations": ["Kapha accumulation", "Manda Agni", "Excess Mucus"]
+  },
+  {
+    "id": "virechana",
+    "name": "Virechana",
+    "description": "Therapeutic purgation to clear excess Pitta dosha from the small intestine, liver, and gallbladder.",
+    "benefits": ["Detoxifies blood", "Improves skin conditions", "Reduces hyperacidity"],
+    "contraindications": ["Weak digestion", "Fever", "Diarrhea"],
+    "duration": "8-12 days",
+    "targetDosha": "Pitta",
+    "triggerObservations": ["Pitta accumulation", "Tikshna Agni", "Skin Inflammation"]
+  },
+  {
+    "id": "basti",
+    "name": "Basti",
+    "description": "Herbal enema therapy (decoction or oil) to balance Vata dosha in the colon.",
+    "benefits": ["Relieves constipation", "Reduces joint pain", "Nourishes nervous system"],
+    "contraindications": ["Intestinal obstruction", "Severe hemorrhoids"],
+    "duration": "8-30 days",
+    "targetDosha": "Vata",
+    "triggerObservations": ["Vata accumulation", "Vishama Agni", "Constipation"]
+  },
+  {
+    "id": "nasya",
+    "name": "Nasya",
+    "description": "Administration of herbal oils or powders through the nasal passages to clear the head and neck region.",
+    "benefits": ["Relieves sinus issues", "Improves mental clarity", "Reduces headaches"],
+    "contraindications": ["Immediate post-meal", "Fever", "Pregnancy (certain oils)"],
+    "duration": "7-14 days",
+    "targetDosha": "Vata, Kapha",
+    "triggerObservations": ["Prana Vata imbalance", "Sinus Congestion", "Headaches"]
+  },
+  {
+    "id": "raktamokshana",
+    "name": "Raktamokshana",
+    "description": "Therapeutic bloodletting to cleanse the blood (rakta dhatu) and address severe Pitta disorders.",
+    "benefits": ["Treats stubborn skin diseases", "Relieves localized inflammation"],
+    "contraindications": ["Anemia", "Bleeding disorders", "Weakness"],
+    "duration": "1-3 sessions",
+    "targetDosha": "Pitta",
+    "triggerObservations": ["Rakta dhatu dushti", "Severe Pitta conditions"]
+  }
+]

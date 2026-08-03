@@ -1,0 +1,11 @@
+diff a/swadharma/apps/web/src/components/Navigation.tsx b/swadharma/apps/web/src/components/Navigation.tsx	(rejected hunks)
+@@ -41,6 +41,9 @@ export default function Navigation() {
+             <Link href="/recommendations" className="hover:text-foreground transition-colors">
+               Guidance
+             </Link>
++            <Link href="/panchakarma" className="hover:text-foreground transition-colors">
++              Panchakarma
++            </Link>
+             <Link href="/knowledge-graph" className="hover:text-foreground transition-colors">
+               Sources
+             </Link>
