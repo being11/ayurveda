@@ -1,6 +1,0 @@
-diff a/swadharma/apps/web/src/components/herbs/HerbSearchBar.tsx b/swadharma/apps/web/src/components/herbs/HerbSearchBar.tsx	(rejected hunks)
-@@ -87,3 +87,4 @@ export function HerbSearchBar() {
-     </div>
-   );
- }
-+// Minor fix to include in diff

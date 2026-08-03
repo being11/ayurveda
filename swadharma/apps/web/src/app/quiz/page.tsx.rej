@@ -1,6 +1,0 @@
-diff a/swadharma/apps/web/src/app/quiz/page.tsx b/swadharma/apps/web/src/app/quiz/page.tsx	(rejected hunks)
-@@ -132,3 +132,4 @@ export default function QuizPage() {
-     </div>
-   );
- }
-+// force git diff for feature branch

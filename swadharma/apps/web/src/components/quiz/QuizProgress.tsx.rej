@@ -1,6 +1,0 @@
-diff a/swadharma/apps/web/src/components/quiz/QuizProgress.tsx b/swadharma/apps/web/src/components/quiz/QuizProgress.tsx	(rejected hunks)
-@@ -86,3 +86,4 @@ export function QuizProgress({
-     </div>
-   );
- }
-+// force git diff for feature branch

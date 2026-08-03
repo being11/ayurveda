@@ -1,6 +1,0 @@
-diff a/swadharma/apps/web/src/app/herbs/page.tsx b/swadharma/apps/web/src/app/herbs/page.tsx	(rejected hunks)
-@@ -83,3 +83,4 @@ export default function HerbsPage() {
-     </div>
-   );
- }
-+// Minor fix to include in diff
