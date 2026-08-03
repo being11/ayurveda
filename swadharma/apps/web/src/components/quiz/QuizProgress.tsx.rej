@@ -1,0 +1,6 @@
+diff a/swadharma/apps/web/src/components/quiz/QuizProgress.tsx b/swadharma/apps/web/src/components/quiz/QuizProgress.tsx	(rejected hunks)
+@@ -85,4 +85,3 @@ export function QuizProgress({
+     </div>
+   );
+ }
+-// trigger change

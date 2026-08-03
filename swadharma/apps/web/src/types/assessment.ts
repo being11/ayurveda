@@ -90,23 +90,6 @@ export interface DoshaMatrix {
   kapha: string;
 }
 
-export interface Herb {
-
-  id: string;
-  sanskritName: string;
-  commonName: string;
-  botanicalName: string;
-  rasa: string[];
-  virya: string;
-  vipaka: string;
-  prabhava?: string;
-  doshaMatrix: DoshaMatrix | Record<string, string>;
-  organSystems: string[];
-  useCases?: string[];
-  description?: string;
-  traditionalUses?: string[];
-  cautions?: string[];
-}
 
 export interface RoutineActivity {
   time: string;
@@ -157,6 +140,14 @@ export interface AssessmentState {
   isComplete: boolean;
 
   activeNadiPoint: DoshaType | null;
+
+  herbSearchQuery: string;
+  herbDoshaFilter: string | null;
+  herbOrganFilter: string | null;
+
+  setHerbSearchQuery: (query: string) => void;
+  setHerbDoshaFilter: (dosha: string | null) => void;
+  setHerbOrganFilter: (organ: string | null) => void;
 
 
   selectedSrotas: string | null;

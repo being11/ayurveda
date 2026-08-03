@@ -120,6 +120,8 @@ export function QuizEngine() {
     <div className="flex flex-col min-h-screen bg-white">
       <header className="w-full px-4 py-6 md:px-8 max-w-4xl mx-auto flex flex-col gap-4 z-10 sticky top-0 bg-white/80 backdrop-blur-md">
          <QuizProgress
+            currentStep={currentCategoryIndex + 1}
+            totalSteps={categories.length}
             progressPercentage={progressPercentage}
             categoryTitle={currentCategory.title}
             currentCategoryIndex={currentCategoryIndex}
