@@ -7,11 +7,6 @@ const PRAKRITI_CATEGORIES = ['introduction', 'body', 'childhood', 'aging'];
  * Dosha Scoring Engine
  * Calculates weighted scoring for Vata, Pitta, Kapha across all question categories.
  * Separates Prakriti (birth constitution) from Vikriti (current imbalance).
- */
-/**
- * Dosha Scoring Engine
- * Calculates weighted scoring for Vata, Pitta, Kapha across all question categories.
- * Separates Prakriti (birth constitution) from Vikriti (current imbalance).
  * 
  * Uses category matching to separate questions into innate baseline indicators vs
  * dynamic, lifestyle-driven indicators in order to provide a nuanced two-part profile.
@@ -70,21 +65,18 @@ export function calculateQuizScores(answers: Record<string, string | string[]>):
     }
   }
 
-  // If no specific prakriti scores were found (maybe no prakriti questions were answered),
-  // fallback to making prakriti and vikriti the same based on whatever we have.
   const totalPrakriti = prakritiScores.vata + prakritiScores.pitta + prakritiScores.kapha;
   const totalVikriti = vikritiScores.vata + vikritiScores.pitta + vikritiScores.kapha;
   
-  if (totalPrakriti === 0 && totalVikriti > 0) {
-      return {
-          prakriti: normalizeScores(vikritiScores),
-          vikriti: normalizeScores(vikritiScores)
-      };
-  }
+  const allScores = {
+    vata: prakritiScores.vata + vikritiScores.vata,
+    pitta: prakritiScores.pitta + vikritiScores.pitta,
+    kapha: prakritiScores.kapha + vikritiScores.kapha
+  };
 
   return {
-    prakriti: normalizeScores(prakritiScores),
-    vikriti: normalizeScores(vikritiScores)
+    prakriti: totalPrakriti === 0 ? normalizeScores(allScores) : normalizeScores(prakritiScores),
+    vikriti: totalVikriti === 0 ? normalizeScores(allScores) : normalizeScores(vikritiScores)
   };
 }
 
@@ -115,7 +107,6 @@ export function detectDoshaDominance(profile: DoshaProfile): string {
     const second = scores[1];
     const third = scores[2];
     
-    // Safety check for undefined (should not happen with 3 items but TS likes it)
     if (!first || !second || !third) return 'Balanced';
 
     if (first.value - second.value < 10 && second.value - third.value < 10) {
@@ -131,4 +122,3 @@ export function detectDoshaDominance(profile: DoshaProfile): string {
 
 export const calculateDoshaScores = (_categories: QuestionCategory[], answers: Record<string, string | string[]>) => calculateQuizScores(answers);
 export const getDoshaType = detectDoshaDominance;
-
