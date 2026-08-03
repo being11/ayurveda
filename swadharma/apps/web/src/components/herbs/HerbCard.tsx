@@ -11,9 +11,9 @@ interface HerbCardProps {
 
 export function HerbCard({ herb, className }: HerbCardProps) {
   const doshas = [
-    { name: 'Vata', val: herb.doshaMatrix.vata, color: 'text-blue-500' },
-    { name: 'Pitta', val: herb.doshaMatrix.pitta, color: 'text-red-500' },
-    { name: 'Kapha', val: herb.doshaMatrix.kapha, color: 'text-green-500' },
+    { name: 'Vata', val: herb.doshaMatrix.vata, color: 'text-[#3D2B1F]' },
+    { name: 'Pitta', val: herb.doshaMatrix.pitta, color: 'text-[#E8973A]' },
+    { name: 'Kapha', val: herb.doshaMatrix.kapha, color: 'text-[#4A7C59]' },
   ];
 
   return (
@@ -25,7 +25,9 @@ export function HerbCard({ herb, className }: HerbCardProps) {
             <CardDescription className="text-[#E8973A]">{herb.commonName}</CardDescription>
           </div>
           <Badge variant={herb.virya.toLowerCase() === 'heating' ? 'destructive' : 'default'} className={cn(
-            herb.virya.toLowerCase() === 'heating' ? 'bg-red-500 hover:bg-red-600' : 'bg-blue-400 hover:bg-blue-500'
+            herb.virya.toLowerCase() === 'heating' 
+              ? 'bg-[#E8973A] hover:bg-[#E8973A]/90 text-white' 
+              : 'bg-[#4A7C59] hover:bg-[#4A7C59]/90 text-white'
           )}>
             {herb.virya}
           </Badge>
@@ -54,6 +56,9 @@ export function HerbCard({ herb, className }: HerbCardProps) {
             <div className="text-sm space-y-1">
               <div><span className="font-medium">Rasa:</span> {herb.rasa.join(', ')}</div>
               <div><span className="font-medium">Vipaka:</span> {herb.vipaka}</div>
+              {herb.prabhava && (
+                <div><span className="font-medium">Prabhava:</span> {herb.prabhava}</div>
+              )}
             </div>
           </div>
         </div>
