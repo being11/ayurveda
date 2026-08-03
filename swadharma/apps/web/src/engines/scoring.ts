@@ -106,3 +106,4 @@ export function detectDoshaDominance(profile: DoshaProfile): string {
 
 export const calculateDoshaScores = (_categories: any, answers: Record<string, string | string[]>) => calculateQuizScores(answers);
 export const getDoshaType = detectDoshaDominance;
+// trigger change
