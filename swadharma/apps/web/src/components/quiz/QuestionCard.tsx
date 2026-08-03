@@ -16,6 +16,10 @@ export function QuestionCard({ question, currentAnswer = '', onAnswer, onOptionC
     if (onAnswer) onAnswer(optionId);
   };
 
+
+  const isLikertScale = question.options.length === 5 && 
+    question.options.every(o => o.label.length < 30);
+
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -37,6 +41,40 @@ export function QuestionCard({ question, currentAnswer = '', onAnswer, onOptionC
           )}
         </div>
 
+        {isLikertScale ? (
+          <div className="pt-8 pb-4">
+            <div className="flex justify-between w-full max-w-2xl mx-auto mb-2 text-sm text-gray-500">
+              <span>{question.options[0]?.label}</span>
+              <span>{question.options[question.options.length - 1]?.label}</span>
+            </div>
+            <div className="flex justify-between items-center gap-2 w-full max-w-2xl mx-auto">
+              {question.options.map((option, index) => {
+                const isSelected = Array.isArray(currentAnswer)
+                  ? currentAnswer.includes(option.id)
+                  : currentAnswer === option.id;
+
+                return (
+                  <motion.button
+                    key={option.id}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                    onClick={() => handleOptionClick(option.id)}
+                    className={cn(
+                      "w-12 h-12 md:w-16 md:h-16 rounded-full border-2 transition-all duration-200 flex items-center justify-center text-lg font-medium",
+                      isSelected
+                        ? "border-[#4A7C59] bg-[#4A7C59] text-white shadow-md scale-110"
+                        : "border-[#4A7C59]/30 hover:border-[#4A7C59]/60 hover:bg-[#4A7C59]/10 text-gray-700 bg-white"
+                    )}
+                    aria-label={option.label}
+                    title={option.label}
+                  >
+                    {index + 1}
+                  </motion.button>
+                );
+              })}
+            </div>
+          </div>
+        ) : (
         <div className="grid gap-3 pt-4">
           {question.options.map((option, index) => {
             const isSelected = Array.isArray(currentAnswer)
@@ -75,6 +113,7 @@ export function QuestionCard({ question, currentAnswer = '', onAnswer, onOptionC
             );
           })}
         </div>
+        )}
         
         {question.type === 'multiple' && (
              <div className="text-sm text-stone-500 mt-4 text-center md:text-left">
@@ -84,5 +123,6 @@ export function QuestionCard({ question, currentAnswer = '', onAnswer, onOptionC
       </motion.div>
     </AnimatePresence>
   );
+
 }
 // trigger change

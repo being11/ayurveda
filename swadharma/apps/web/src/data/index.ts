@@ -22,7 +22,7 @@ function makeCategory(
   questions: unknown[],
   description?: string
 ): QuestionCategory {
-  return { id, title, description, questions: questions as Question[] };
+  return { id, title, ...(description && { description }), questions: questions as Question[] };
 }
 
 export const categories: QuestionCategory[] = [

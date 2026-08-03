@@ -1,10 +1,73 @@
 diff a/swadharma/apps/web/src/stores/assessmentStore.ts b/swadharma/apps/web/src/stores/assessmentStore.ts	(rejected hunks)
-@@ -118,7 +121,7 @@ const useAssessmentStore = create<AssessmentState>()(
+@@ -12,12 +12,50 @@ import {
+   countRemainingQuestions,
+ } from '../engines/logic';
+ import type { AssessmentState, PanchakarmaTherapy } from '../types/assessment';
++import type { Season } from '../types/seasons';
+ import { computeProfile, getDominantDosha } from '../engines/report';
+ import panchakarmaData from '../data/panchakarma.json';
++import seasonsData from '../data/seasons.json';
+ 
+ const firstCategory = categories[0];
+ const firstQuestion = firstCategory?.questions[0] ?? null;
+ 
++const seasons: Season[] = seasonsData as Season[];
++
++function getCurrentSeasonId(): string {
++  const now = new Date();
++  const currentMonth = now.getMonth() + 1; // 1-12
++  const currentDay = now.getDate();
++
++  for (const season of seasons) {
++    const [startMonth, startDay] = season.startDate.split('-').map(Number);
++    const [endMonth, endDay] = season.endDate.split('-').map(Number);
++
++    if (startMonth === undefined || startDay === undefined || endMonth === undefined || endDay === undefined) {
++      continue;
++    }
++
++    if (startMonth <= endMonth) {
++      if (
++        (currentMonth > startMonth || (currentMonth === startMonth && currentDay >= startDay)) &&
++        (currentMonth < endMonth || (currentMonth === endMonth && currentDay <= endDay))
++      ) {
++        return season.id;
++      }
++    } else {
++      // Wraps around the year (e.g. Hemanta: 11-15 to 01-14)
++      if (
++        (currentMonth > startMonth || (currentMonth === startMonth && currentDay >= startDay)) ||
++        (currentMonth < endMonth || (currentMonth === endMonth && currentDay <= endDay))
++      ) {
++        return season.id;
++      }
++    }
++  }
++
++  return seasons[0]?.id || 'hemanta'; // Fallback
++}
++
+ const useAssessmentStore = create<AssessmentState>()(
+   persist(
+     (set, get) => ({
+@@ -35,6 +73,10 @@ const useAssessmentStore = create<AssessmentState>()(
+ 
+       selectedSrotas: null,
+ 
++      currentSeasonId: null,
++      autoDetectSeason: () => set({ currentSeasonId: getCurrentSeasonId() }),
++      setCurrentSeasonId: (id: string) => set({ currentSeasonId: id }),
++
+       setAnswer: (questionId, value) => {
+         const state = get();
+         const allQuestions = categories.flatMap(cat => cat.questions);
+@@ -118,7 +160,8 @@ const useAssessmentStore = create<AssessmentState>()(
          const state = get();
          const profile = computeProfile(state.observations, state.answers);
          const dominantDosha = getDominantDosha(profile.prakrtiDosha).toLowerCase();
 -        return (panchakarmaData as PanchakarmaTherapy[]).filter((therapy) =>
-+        return (panchakarmaData.therapies as PanchakarmaTherapy[]).filter((therapy) =>
++        const panchakarmaTherapies = (panchakarmaData as unknown as { therapies: PanchakarmaTherapy[] }).therapies;
++        return panchakarmaTherapies.filter((therapy) =>
            therapy.indicatedDoshas.includes(dominantDosha)
          );
        },
