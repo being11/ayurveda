@@ -36,6 +36,7 @@ const useAssessmentStore = create<AssessmentState>()(
       herbOrganFilter: null,
 
       selectedSrotas: null,
+      selectedSubdosha: null,
 
       currentSeasonId: null,
 
@@ -139,6 +140,7 @@ const useAssessmentStore = create<AssessmentState>()(
           herbDoshaFilter: null,
           herbOrganFilter: null,
           selectedSrotas: null,
+          selectedSubdosha: null,
           currentSeasonId: null,
 
         });
@@ -173,6 +175,7 @@ const useAssessmentStore = create<AssessmentState>()(
       setHerbDoshaFilter: (dosha) => set({ herbDoshaFilter: dosha }),
       setHerbOrganFilter: (organ) => set({ herbOrganFilter: organ }),
       setSelectedSrotas: (srotasId) => set({ selectedSrotas: srotasId }),
+      setSelectedSubdosha: (id) => set({ selectedSubdosha: id }),
 
       setCurrentSeasonId: (seasonId) => set({ currentSeasonId: seasonId }),
       autoDetectSeason: () => {

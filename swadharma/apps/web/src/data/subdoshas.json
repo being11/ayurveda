@@ -1,0 +1,137 @@
+[
+  {
+    "id": "vata_prana",
+    "name": "Prana Vata",
+    "dosha": "vata",
+    "location": "Head, brain, chest, respiratory tract",
+    "functions": ["Inhalation", "Swallowing", "Sneezing", "Spitting", "Sensory perception", "Mind, heart, and consciousness control"],
+    "symptoms": ["Anxiety", "Insomnia", "Asthma", "Hiccups", "Neurological disorders", "Loss of sensory acuity"],
+    "balancingHerbs": ["Ashwagandha", "Brahmi", "Shankhapushpi", "Jatamansi"]
+  },
+  {
+    "id": "vata_udana",
+    "name": "Udana Vata",
+    "dosha": "vata",
+    "location": "Chest, throat, umbilical region",
+    "functions": ["Speech", "Exhalation", "Enthusiasm", "Memory", "Strength", "Complexion"],
+    "symptoms": ["Stuttering", "Dry cough", "Hoarseness", "Loss of memory", "Lack of enthusiasm", "Fatigue"],
+    "balancingHerbs": ["Licorice", "Tulsi", "Calamus (Vacha)", "Pippali"]
+  },
+  {
+    "id": "vata_samana",
+    "name": "Samana Vata",
+    "dosha": "vata",
+    "location": "Stomach and small intestine",
+    "functions": ["Digestion", "Absorption of nutrients", "Separation of waste", "Movement of food in GI tract"],
+    "symptoms": ["Indigestion", "Gas and bloating", "Malabsorption", "Diarrhea", "Slow digestion"],
+    "balancingHerbs": ["Cumin", "Coriander", "Fennel", "Ginger", "Cardamom"]
+  },
+  {
+    "id": "vata_vyana",
+    "name": "Vyana Vata",
+    "dosha": "vata",
+    "location": "Heart, circulating throughout the body",
+    "functions": ["Blood circulation", "Heart rhythm", "Sweating", "Movement of joints and muscles", "Blinking"],
+    "symptoms": ["Palpitations", "Poor circulation (cold hands/feet)", "High blood pressure", "Stress-related heart issues", "Joint stiffness"],
+    "balancingHerbs": ["Arjuna", "Guggulu", "Garlic", "Ashwagandha"]
+  },
+  {
+    "id": "vata_apana",
+    "name": "Apana Vata",
+    "dosha": "vata",
+    "location": "Colon, pelvic region, reproductive organs",
+    "functions": ["Elimination of feces and urine", "Menstruation", "Ejaculation", "Childbirth"],
+    "symptoms": ["Constipation", "Menstrual disorders", "Sexual dysfunction", "Lower back pain", "Urinary issues"],
+    "balancingHerbs": ["Haritaki", "Triphala", "Dashamoola", "Shatavari"]
+  },
+  {
+    "id": "pitta_pachaka",
+    "name": "Pachaka Pitta",
+    "dosha": "pitta",
+    "location": "Stomach and small intestine",
+    "functions": ["Primary digestion", "Regulates body temperature", "Supports other Pitta subdoshas"],
+    "symptoms": ["Heartburn", "Acid reflux", "Ulcers", "Excessive hunger or thirst", "Irritability"],
+    "balancingHerbs": ["Amalaki", "Coriander", "Shatavari", "Aloe Vera"]
+  },
+  {
+    "id": "pitta_ranjaka",
+    "name": "Ranjaka Pitta",
+    "dosha": "pitta",
+    "location": "Liver, spleen, stomach",
+    "functions": ["Production of red blood cells (Rakta dhatu)", "Colors the blood"],
+    "symptoms": ["Anemia", "Jaundice", "Liver disorders", "Anger issues", "Skin discoloration"],
+    "balancingHerbs": ["Bhringaraj", "Kutki", "Manjistha", "Guduchi"]
+  },
+  {
+    "id": "pitta_sadhaka",
+    "name": "Sadhaka Pitta",
+    "dosha": "pitta",
+    "location": "Heart (and mind)",
+    "functions": ["Intelligence", "Memory", "Courage", "Achievement of goals", "Emotional digestion"],
+    "symptoms": ["Heart disease (emotional)", "Depression", "Lack of motivation", "Memory loss", "Emotional instability"],
+    "balancingHerbs": ["Brahmi", "Arjuna", "Rose", "Saffron"]
+  },
+  {
+    "id": "pitta_alochaka",
+    "name": "Alochaka Pitta",
+    "dosha": "pitta",
+    "location": "Eyes",
+    "functions": ["Vision", "Visual perception", "Color recognition"],
+    "symptoms": ["Poor vision", "Bloodshot eyes", "Eye infections (conjunctivitis)", "Light sensitivity"],
+    "balancingHerbs": ["Triphala", "Amalaki", "Rose water (external)", "Ghee (external)"]
+  },
+  {
+    "id": "pitta_bhrajaka",
+    "name": "Bhrajaka Pitta",
+    "dosha": "pitta",
+    "location": "Skin",
+    "functions": ["Skin complexion and luster", "Temperature regulation through skin", "Absorption of topical substances"],
+    "symptoms": ["Acne", "Rashes", "Eczema", "Psoriasis", "Skin inflammation", "Excessive sweating"],
+    "balancingHerbs": ["Neem", "Manjistha", "Turmeric", "Sandalwood", "Aloe Vera"]
+  },
+  {
+    "id": "kapha_kledaka",
+    "name": "Kledaka Kapha",
+    "dosha": "kapha",
+    "location": "Stomach",
+    "functions": ["Moistens and liquefies food for digestion", "Protects stomach lining from Pitta"],
+    "symptoms": ["Sluggish digestion", "Nausea", "Excessive mucus in stomach", "Loss of appetite", "Lethargy after eating"],
+    "balancingHerbs": ["Ginger", "Black Pepper", "Pippali", "Trikatu"]
+  },
+  {
+    "id": "kapha_avalambaka",
+    "name": "Avalambaka Kapha",
+    "dosha": "kapha",
+    "location": "Chest, lungs, heart",
+    "functions": ["Lubricates heart and lungs", "Provides strength to the back and chest", "Supports other Kapha subdoshas"],
+    "symptoms": ["Congestion", "Asthma (Kapha type)", "Lethargy", "Heaviness in chest", "Lower back weakness"],
+    "balancingHerbs": ["Tulsi", "Pippali", "Vasaka", "Pushkarmool"]
+  },
+  {
+    "id": "kapha_tarpaka",
+    "name": "Tarpaka Kapha",
+    "dosha": "kapha",
+    "location": "Head (brain and sinuses)",
+    "functions": ["Nourishes nervous system", "Lubricates sinuses", "Provides calm and stability to mind"],
+    "symptoms": ["Sinus congestion", "Dull headaches", "Lethargy", "Depression (Kapha type)", "Loss of smell"],
+    "balancingHerbs": ["Calamus (Vacha)", "Brahmi", "Eucalyptus (external/steam)", "Tulsi"]
+  },
+  {
+    "id": "kapha_bodhaka",
+    "name": "Bodhaka Kapha",
+    "dosha": "kapha",
+    "location": "Mouth and tongue",
+    "functions": ["Taste perception", "Saliva production", "Swallowing", "Speech formulation"],
+    "symptoms": ["Loss of taste", "Excessive salivation", "Coated tongue", "Tonsillitis", "Difficulty swallowing"],
+    "balancingHerbs": ["Licorice", "Clove", "Cardamom", "Ginger"]
+  },
+  {
+    "id": "kapha_shleshaka",
+    "name": "Shleshaka Kapha",
+    "dosha": "kapha",
+    "location": "Joints",
+    "functions": ["Lubricates joints (synovial fluid)", "Allows smooth movement"],
+    "symptoms": ["Swollen joints", "Water retention in joints", "Stiffness", "Arthritis (Kapha type - swelling and cold)"],
+    "balancingHerbs": ["Guggulu", "Turmeric", "Boswellia (Shallaki)", "Ginger"]
+  }
+]

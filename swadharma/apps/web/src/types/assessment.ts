@@ -104,21 +104,6 @@ export interface SeasonAdjustment {
   adjustment: string;
 }
 
-export interface Herb {
-  id: string;
-  sanskritName: string;
-  commonName: string;
-  botanicalName: string;
-  rasa: string[];
-  virya: string;
-  vipaka: string;
-  prabhava: string;
-  doshaMatrix: Record<string, string>;
-  organSystems: string[];
-  useCases: string[];
-  description: string;
-}
-
 export interface RoutineData {
   routines: Record<string, DoshaRoutine>;
   seasons: Record<string, SeasonAdjustment>;
@@ -139,6 +124,9 @@ export interface AssessmentState {
   setHerbSearchQuery: (query: string) => void;
   setHerbDoshaFilter: (dosha: string | null) => void;
   setHerbOrganFilter: (organ: string | null) => void;
+
+  selectedSubdosha: string | null;
+  setSelectedSubdosha: (id: string | null) => void;
   
   answers: Record<string, string | string[]>;
   observations: Record<string, number>;
@@ -176,6 +164,16 @@ export interface SubDosha {
   location: string;
 }
 
+export interface SubdoshaDetail {
+  id: string;
+  name: string;
+  dosha: DoshaType;
+  location: string;
+  functions: string[];
+  symptoms: string[];
+  balancingHerbs: string[];
+}
+
 export interface PulseQuality {
   animal: string;
   movement: string;
@@ -195,9 +193,6 @@ export interface NadiData {
   pulses: DoshaPulseInfo[];
 }
 
-
-
-
 export interface Herb {
   id: string;
   sanskritName: string;
@@ -206,10 +201,13 @@ export interface Herb {
   rasa: string[];
   virya: string;
   vipaka: string;
-  prabhava?: string;
-  doshaMatrix: DoshaMatrix | Record<string, string>;
+  prabhava: string;
+  doshaMatrix: Record<string, string>;
   organSystems: string[];
-  useCases?: string[];
-  traditionalUses?: string[];
-  description?: string;
+  useCases: string[];
+  description: string;
 }
+
+
+
+
