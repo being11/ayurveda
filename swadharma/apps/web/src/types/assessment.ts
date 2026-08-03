@@ -211,3 +211,19 @@ export interface Herb {
 
 
 
+
+export interface Herb {
+  id: string;
+  sanskritName: string;
+  commonName: string;
+  botanicalName: string;
+  rasa: string[];
+  virya: string;
+  vipaka: string;
+  prabhava: string;
+  doshaMatrix: DoshaMatrix;
+  organSystems: string[];
+  useCases?: string[];
+  traditionalUses?: string[];
+  description?: string;
+}

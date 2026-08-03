@@ -2,14 +2,13 @@
 
 import React from 'react';
 import { useAssessmentStore } from '../stores/assessmentStore';
-import { useSeasonsStore } from '../stores/seasonsStore';
 import type { Season } from '../types/seasons';
 import seasonsData from '../data/seasons.json';
 
 const seasons: Season[] = seasonsData as Season[];
 
 export default function SeasonalCalendarWheel() {
-  const { currentSeasonId, setCurrentSeasonId } = useSeasonsStore();
+  const { currentSeasonId, setCurrentSeasonId } = useAssessmentStore();
 
   const handleSeasonClick = (id: string) => {
     setCurrentSeasonId(id);
