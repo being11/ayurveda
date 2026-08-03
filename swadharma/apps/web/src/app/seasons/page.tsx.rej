@@ -1,0 +1,17 @@
+diff a/swadharma/apps/web/src/app/seasons/page.tsx b/swadharma/apps/web/src/app/seasons/page.tsx	(rejected hunks)
+@@ -3,12 +3,12 @@
+ import React, { useEffect, useState } from 'react';
+ import SeasonalCalendarWheel from '../../components/SeasonalCalendarWheel';
+ import SeasonHealthCard from '../../components/SeasonHealthCard';
+-import { useAssessmentStore } from '../../stores/assessmentStore';
++import { useSeasonsStore } from '../../stores/seasonsStore';
+ 
+ export default function SeasonsPage() {
+   const [mounted, setMounted] = useState(false);
+-  const autoDetectSeason = useAssessmentStore((state) => state.autoDetectSeason);
+-  const currentSeasonId = useAssessmentStore((state) => state.currentSeasonId);
++  const autoDetectSeason = useSeasonsStore((state: any) => state.autoDetectSeason);
++  const currentSeasonId = useSeasonsStore((state: any) => state.currentSeasonId);
+ 
+   useEffect(() => {
+     setMounted(true);
