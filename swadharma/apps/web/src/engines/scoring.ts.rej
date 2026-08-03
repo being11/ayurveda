@@ -51,15 +51,7 @@ diff a/swadharma/apps/web/src/engines/scoring.ts b/swadharma/apps/web/src/engine
    };
  }
  
-@@ -97,6 +93,7 @@ function normalizeScores(scores: { vata: number; pitta: number; kapha: number })
- 
- /**
-  * Evaluates dual-dosha and tri-dosha detection logic based on score differentials.
-+ * Used for constitution determination (e.g., Vata-Pitta vs Tridoshic).
-  */
- export function detectDoshaDominance(profile: DoshaProfile): string {
-     const { vata, pitta, kapha } = profile;
-@@ -110,7 +107,6 @@ export function detectDoshaDominance(profile: DoshaProfile): string {
+@@ -111,7 +107,6 @@ export function detectDoshaDominance(profile: DoshaProfile): string {
      const second = scores[1];
      const third = scores[2];
      
@@ -67,8 +59,9 @@ diff a/swadharma/apps/web/src/engines/scoring.ts b/swadharma/apps/web/src/engine
      if (!first || !second || !third) return 'Balanced';
  
      if (first.value - second.value < 10 && second.value - third.value < 10) {
-@@ -126,4 +122,3 @@ export function detectDoshaDominance(profile: DoshaProfile): string {
- 
+@@ -128,3 +123,5 @@ export function detectDoshaDominance(profile: DoshaProfile): string {
  export const calculateDoshaScores = (_categories: QuestionCategory[], answers: Record<string, string | string[]>) => calculateQuizScores(answers);
  export const getDoshaType = detectDoshaDominance;
--
+ 
++/** Evaluates Dosha Scoring Engine with weighted scoring */
++

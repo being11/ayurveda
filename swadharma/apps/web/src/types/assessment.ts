@@ -79,14 +79,14 @@ export interface PanchakarmaTherapy {
 export interface PurvakarmaStep {
   id: string;
   task: string;
-  description: string;
+  description?: string;
 }
 
 
 export interface RoutineActivity {
   time: string;
   activity: string;
-  description: string;
+  description?: string;
 }
 
 export interface DoshaRoutine {
