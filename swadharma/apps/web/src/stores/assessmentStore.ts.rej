@@ -1,73 +1,31 @@
 diff a/swadharma/apps/web/src/stores/assessmentStore.ts b/swadharma/apps/web/src/stores/assessmentStore.ts	(rejected hunks)
-@@ -12,9 +12,46 @@ import {
-   countRemainingQuestions,
- } from '../engines/logic';
- import type { AssessmentState } from '../types/assessment';
-+import type { Season } from '../types/seasons';
-+import seasonsData from '../data/seasons.json';
- 
- const firstCategory = categories[0];
- const firstQuestion = firstCategory?.questions[0] ?? null;
-+const seasons: Season[] = seasonsData as Season[];
-+
-+function getCurrentSeasonId(): string {
-+  const now = new Date();
-+  const currentMonth = now.getMonth() + 1; // 1-12
-+  const currentDay = now.getDate();
-+
-+  for (const season of seasons) {
-+    const [startMonth, startDay] = season.startDate.split('-').map(Number);
-+    const [endMonth, endDay] = season.endDate.split('-').map(Number);
-+
-+    if (startMonth === undefined || startDay === undefined || endMonth === undefined || endDay === undefined) {
-+      continue;
-+    }
-+
-+    if (startMonth <= endMonth) {
-+      if (
-+        (currentMonth > startMonth || (currentMonth === startMonth && currentDay >= startDay)) &&
-+        (currentMonth < endMonth || (currentMonth === endMonth && currentDay <= endDay))
-+      ) {
-+        return season.id;
-+      }
-+    } else {
-+      // Wraps around the year (e.g. Hemanta: 11-15 to 01-14)
-+      if (
-+        (currentMonth > startMonth || (currentMonth === startMonth && currentDay >= startDay)) ||
-+        (currentMonth < endMonth || (currentMonth === endMonth && currentDay <= endDay))
-+      ) {
-+        return season.id;
-+      }
-+    }
-+  }
-+
-+  return seasons[0]?.id || 'hemanta'; // Fallback
-+}
- 
- const useAssessmentStore = create<AssessmentState>()(
-   persist(
-@@ -26,6 +63,10 @@ const useAssessmentStore = create<AssessmentState>()(
+@@ -26,6 +26,9 @@ const useAssessmentStore = create<AssessmentState>()(
        history: firstQuestion ? [firstQuestion.id] : [],
        isComplete: false,
        activeNadiPoint: null,
-+      herbSearchQuery: '',
++      herbSearchQuery: "",
 +      herbDoshaFilter: null,
 +      herbOrganFilter: null,
-+      currentSeasonId: null,
  
        setAnswer: (questionId, value) => {
          const state = get();
-@@ -122,6 +163,13 @@ const useAssessmentStore = create<AssessmentState>()(
+@@ -115,6 +118,9 @@ const useAssessmentStore = create<AssessmentState>()(
+           history: firstQuestion ? [firstQuestion.id] : [],
+           isComplete: false,
+           activeNadiPoint: null,
++          herbSearchQuery: "",
++          herbDoshaFilter: null,
++          herbOrganFilter: null,
+         });
+         try {
+           useAssessmentStore.persist.clearStorage();
+@@ -122,6 +128,9 @@ const useAssessmentStore = create<AssessmentState>()(
        },
        
        setActiveNadiPoint: (point) => set({ activeNadiPoint: point }),
-+
 +      setHerbSearchQuery: (query) => set({ herbSearchQuery: query }),
-+      setHerbDoshaFilter: (filter) => set({ herbDoshaFilter: filter }),
-+      setHerbOrganFilter: (filter) => set({ herbOrganFilter: filter }),
-+
-+      setCurrentSeasonId: (id) => set({ currentSeasonId: id }),
-+      autoDetectSeason: () => set({ currentSeasonId: getCurrentSeasonId() }),
++      setHerbDoshaFilter: (dosha) => set({ herbDoshaFilter: dosha }),
++      setHerbOrganFilter: (organ) => set({ herbOrganFilter: organ }),
      }),
      {
        name: 'swadharma-assessment',
