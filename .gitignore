@@ -1,2 +1,12 @@
 .pnpm-store
+<<<<<<< Updated upstream
 working
+=======
+working/*.log
+working/*.json
+working/dashboard/tickets.json
+working/dashboard/screenshots/*
+working/ideas/*.md
+.DS_Store
+node_modules/
+>>>>>>> Stashed changes
