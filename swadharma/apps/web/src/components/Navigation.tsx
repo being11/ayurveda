@@ -44,6 +44,9 @@ export default function Navigation() {
             <Link href="/diet" className="hover:text-foreground transition-colors">
               Diet Plan
             </Link>
+            <Link href="/herbs" className="hover:text-foreground transition-colors">
+              Herbs
+            </Link>
             <Link href="/knowledge-graph" className="hover:text-foreground transition-colors">
               Sources
             </Link>
