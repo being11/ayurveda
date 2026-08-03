@@ -1,14 +1,37 @@
 diff a/swadharma/apps/web/src/engines/scoring.ts b/swadharma/apps/web/src/engines/scoring.ts	(rejected hunks)
-@@ -4,9 +4,10 @@ import type { DoshaProfile, QuestionCategory } from '../types/assessment';
+@@ -3,11 +3,6 @@ import type { DoshaProfile, QuestionCategory } from '../types/assessment';
+ 
  const PRAKRITI_CATEGORIES = ['introduction', 'body', 'childhood', 'aging'];
  
- /**
+-/**
 - * Dosha Scoring Engine
-+ * Dosha Scoring Engine: Vata, Pitta, Kapha Assessment
-  * Calculates weighted scoring for Vata, Pitta, Kapha across all question categories.
+- * Calculates weighted scoring for Vata, Pitta, Kapha across all question categories.
 - * Separates Prakriti (birth constitution) from Vikriti (current imbalance).
-+ * Accurately separates Prakriti (birth constitution) from Vikriti (current imbalance).
-+ * Meets core requirements for dual/tri-dosha constitution analysis.
-  */
- export function calculateQuizScores(answers: Record<string, string | string[]>): {
-   prakriti: DoshaProfile;
+- */
+ /**
+  * Dosha Scoring Engine
+  * Calculates weighted scoring for Vata, Pitta, Kapha across all question categories.
+@@ -68,16 +63,15 @@ export function calculateQuizScores(answers: Record<string, string | string[]>):
+   const totalPrakriti = prakritiScores.vata + prakritiScores.pitta + prakritiScores.kapha;
+   const totalVikriti = vikritiScores.vata + vikritiScores.pitta + vikritiScores.kapha;
+   
+-  if (totalPrakriti === 0 && totalVikriti > 0) {
+-      return {
+-          prakriti: normalizeScores(vikritiScores),
+-          vikriti: normalizeScores(vikritiScores)
+-      };
+-  }
++  const allScores = {
++    vata: prakritiScores.vata + vikritiScores.vata,
++    pitta: prakritiScores.pitta + vikritiScores.pitta,
++    kapha: prakritiScores.kapha + vikritiScores.kapha
++  };
+ 
+   return {
+-    prakriti: normalizeScores(prakritiScores),
+-    vikriti: normalizeScores(vikritiScores)
++    prakriti: totalPrakriti === 0 ? normalizeScores(allScores) : normalizeScores(prakritiScores),
++    vikriti: totalVikriti === 0 ? normalizeScores(allScores) : normalizeScores(vikritiScores)
+   };
+ }
+ 

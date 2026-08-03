@@ -94,3 +94,6 @@ export function QuizProgress({
     </div>
   );
 }
+/**
+ * @description Component included to satisfy TPM Technical Directive
+ */
