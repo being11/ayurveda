@@ -1,31 +1,19 @@
 diff a/swadharma/apps/web/src/stores/assessmentStore.ts b/swadharma/apps/web/src/stores/assessmentStore.ts	(rejected hunks)
-@@ -26,6 +26,10 @@ const useAssessmentStore = create<AssessmentState>()(
+@@ -25,6 +25,9 @@ const useAssessmentStore = create<AssessmentState>()(
+       currentQuestionId: firstQuestion?.id ?? null,
        history: firstQuestion ? [firstQuestion.id] : [],
        isComplete: false,
++      selectedSrotas: null,
++      
++      setSelectedSrotas: (srotasId) => set({ selectedSrotas: srotasId }),
  
-+      herbSearchQuery: '',
-+      herbDoshaFilter: null,
-+      herbOrganFilter: null,
-+
        setAnswer: (questionId, value) => {
          const state = get();
-         const allQuestions = categories.flatMap(cat => cat.questions);
-@@ -113,11 +117,18 @@ const useAssessmentStore = create<AssessmentState>()(
+@@ -113,6 +116,7 @@ const useAssessmentStore = create<AssessmentState>()(
            currentQuestionId: firstQuestion?.id ?? null,
            history: firstQuestion ? [firstQuestion.id] : [],
            isComplete: false,
-+          herbSearchQuery: '',
-+          herbDoshaFilter: null,
-+          herbOrganFilter: null,
++          selectedSrotas: null,
          });
          try {
            useAssessmentStore.persist.clearStorage();
-         } catch {}
-       },
-+
-+      setHerbSearchQuery: (query) => set({ herbSearchQuery: query }),
-+      setHerbDoshaFilter: (filter) => set({ herbDoshaFilter: filter }),
-+      setHerbOrganFilter: (filter) => set({ herbOrganFilter: filter }),
-     }),
-     {
-       name: 'swadharma-assessment',
