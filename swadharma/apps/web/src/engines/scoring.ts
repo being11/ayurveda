@@ -7,11 +7,6 @@ const PRAKRITI_CATEGORIES = ['introduction', 'body', 'childhood', 'aging'];
  * Dosha Scoring Engine
  * Calculates weighted scoring for Vata, Pitta, Kapha across all question categories.
  * Separates Prakriti (birth constitution) from Vikriti (current imbalance).
- */
-/**
- * Dosha Scoring Engine
- * Calculates weighted scoring for Vata, Pitta, Kapha across all question categories.
- * Separates Prakriti (birth constitution) from Vikriti (current imbalance).
  * 
  * Uses category matching to separate questions into innate baseline indicators vs
  * dynamic, lifestyle-driven indicators in order to provide a nuanced two-part profile.
@@ -131,4 +126,3 @@ export function detectDoshaDominance(profile: DoshaProfile): string {
 
 export const calculateDoshaScores = (_categories: QuestionCategory[], answers: Record<string, string | string[]>) => calculateQuizScores(answers);
 export const getDoshaType = detectDoshaDominance;
-

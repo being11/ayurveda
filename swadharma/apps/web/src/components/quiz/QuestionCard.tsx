@@ -1,3 +1,6 @@
+/** 
+ * QuestionCard renders individual quiz questions.
+ */
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@workspace/ui/lib/utils';
