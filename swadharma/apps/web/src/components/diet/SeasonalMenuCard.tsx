@@ -1,16 +1,29 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/src/components/ui/card';
 import { Sun, Calendar, Utensils } from 'lucide-react';
 import dietData from '@/src/data/diet.json';
+import { useSeasonsStore } from '@/src/stores/seasonsStore';
 
 interface SeasonalMenuCardProps {
   dosha: 'Vata' | 'Pitta' | 'Kapha' | 'Balanced';
 }
 
 export function SeasonalMenuCard({ dosha }: SeasonalMenuCardProps) {
-  const seasonData = dietData.seasons[dosha];
+  const { currentSeasonId, autoDetectSeason } = useSeasonsStore();
+
+  useEffect(() => {
+    if (!currentSeasonId) {
+      autoDetectSeason();
+    }
+  }, [currentSeasonId, autoDetectSeason]);
+
+  const seasonId = currentSeasonId || 'hemanta';
+  
+  // Type casting since we added seasonalMenus in JSON
+  const seasonalMenus = (dietData as any).seasonalMenus;
+  const seasonData = seasonalMenus[seasonId]?.[dosha] || seasonalMenus['hemanta'][dosha];
   const timingData = dietData.timing[dosha];
 
   // Helper for color coding based on dosha
@@ -47,7 +60,7 @@ export function SeasonalMenuCard({ dosha }: SeasonalMenuCardProps) {
               <Sun className="w-4 h-4 text-orange-400" /> Suggested Daily Menu
             </h4>
             <ul className="space-y-2 text-stone-600">
-              {seasonData.menu.map((item, index) => {
+              {seasonData.menu.map((item: string, index: number) => {
                 const [meal, ...descParts] = item.split(': ');
                 const desc = descParts.join(': ');
                 return (
