@@ -1,10 +1,16 @@
 diff a/swadharma/apps/web/src/components/herbs/HerbCard.tsx b/swadharma/apps/web/src/components/herbs/HerbCard.tsx	(rejected hunks)
-@@ -74,7 +74,7 @@ export function HerbCard({ herb }: HerbCardProps) {
-         <div>
-            <span className="font-semibold text-stone-800 block mb-1">Key Actions:</span>
-            <ul className="list-disc list-inside space-y-1 text-stone-600">
--             {herb.useCases.slice(0, 3).map((useCase, idx) => (
-+             {herb.useCases?.slice(0, 3).map((useCase, idx) => (
-                <li key={idx}>{useCase}</li>
-              ))}
-            </ul>
+@@ -73,11 +73,11 @@ export function HerbCard({ herb, className }: HerbCardProps) {
+             ))}
+           </div>
+           <ul className="list-disc list-inside text-sm text-stone-700 space-y-1">
+-            {herb.traditionalUses?.slice(0, 3).map((use, i) => (
++            {herb.useCases?.slice(0, 3).map((use, i) => (
+               <li key={i} className="truncate">{use}</li>
+             ))}
+-            {herb.traditionalUses&&herb.traditionalUses.length > 3 && (
+-              <li className="text-xs text-stone-500">+{herb.traditionalUses&&herb.traditionalUses.length - 3} more</li>
++            {herb.useCases&&herb.useCases.length > 3 && (
++              <li className="text-xs text-stone-500">+{herb.useCases&&herb.useCases.length - 3} more</li>
+             )}
+           </ul>
+         </div>

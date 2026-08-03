@@ -1,5 +1,3 @@
-// apps/web/src/types/assessment.ts
-
 export interface ObservationMapping {
   observation: string;
   weight: number;
