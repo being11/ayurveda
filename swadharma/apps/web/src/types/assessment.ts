@@ -65,24 +65,7 @@ export interface AyurvedaProfile {
   age?: number;
 }
 
-export interface Herb {
-  id: string;
-  sanskritName: string;
-  commonName: string;
-  botanicalName: string;
-  rasa: string[];
-  virya: string;
-  vipaka: string;
-  prabhava: string;
-  doshaMatrix: {
-    vata: string;
-    pitta: string;
-    kapha: string;
-  };
-  organSystems: string[];
-  useCases: string[];
-  description: string;
-}
+
 
 export interface RoutineActivity {
   time: string;
@@ -127,6 +110,10 @@ export interface AssessmentState {
   isComplete: boolean;
 
   activeNadiPoint: DoshaType | null;
+
+  currentSeasonId: string | null;
+  autoDetectSeason: () => void;
+  setCurrentSeasonId: (seasonId: string | null) => void;
 
   herbSearchQuery: string;
   herbDoshaFilter: string | null;
