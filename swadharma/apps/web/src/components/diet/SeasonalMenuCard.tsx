@@ -8,18 +8,19 @@ import { useAssessmentStore } from '@/src/stores/assessmentStore';
 
 interface SeasonalMenuCardProps {
   dosha: 'Vata' | 'Pitta' | 'Kapha' | 'Balanced';
+  seasonId?: string;
 }
 
-export function SeasonalMenuCard({ dosha }: SeasonalMenuCardProps) {
+export function SeasonalMenuCard({ dosha, seasonId: propSeasonId }: SeasonalMenuCardProps) {
   const { currentSeasonId, autoDetectSeason } = useAssessmentStore();
 
   useEffect(() => {
-    if (!currentSeasonId) {
+    if (!currentSeasonId && !propSeasonId) {
       autoDetectSeason();
     }
-  }, [currentSeasonId, autoDetectSeason]);
+  }, [currentSeasonId, autoDetectSeason, propSeasonId]);
 
-  const seasonId = currentSeasonId || 'hemanta';
+  const seasonId = propSeasonId || currentSeasonId || 'hemanta';
   
   // Type casting since we added seasonalMenus in JSON
   const seasonalMenus = (dietData as any).seasonalMenus;
