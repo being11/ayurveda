@@ -4,14 +4,14 @@ import React, { useEffect } from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/src/components/ui/card';
 import { Sun, Calendar, Utensils } from 'lucide-react';
 import dietData from '@/src/data/diet.json';
-import { useSeasonsStore } from '@/src/stores/seasonsStore';
+import { useAssessmentStore } from '@/src/stores/assessmentStore';
 
 interface SeasonalMenuCardProps {
   dosha: 'Vata' | 'Pitta' | 'Kapha' | 'Balanced';
 }
 
 export function SeasonalMenuCard({ dosha }: SeasonalMenuCardProps) {
-  const { currentSeasonId, autoDetectSeason } = useSeasonsStore();
+  const { currentSeasonId, autoDetectSeason } = useAssessmentStore();
 
   useEffect(() => {
     if (!currentSeasonId) {
