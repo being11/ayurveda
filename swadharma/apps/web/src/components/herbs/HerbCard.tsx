@@ -74,7 +74,7 @@ export function HerbCard({ herb }: HerbCardProps) {
         <div>
            <span className="font-semibold text-stone-800 block mb-1">Key Actions:</span>
            <ul className="list-disc list-inside space-y-1 text-stone-600">
-             {herb.useCases.slice(0, 3).map((useCase, idx) => (
+             {(herb.useCases || []).slice(0, 3).map((useCase, idx) => (
                <li key={idx}>{useCase}</li>
              ))}
            </ul>
