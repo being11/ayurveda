@@ -1,5 +1,5 @@
 diff a/swadharma/apps/web/src/app/quiz/page.tsx b/swadharma/apps/web/src/app/quiz/page.tsx	(rejected hunks)
-@@ -132,4 +132,3 @@ export default function QuizPage() {
+@@ -132,4 +136,3 @@ export default function QuizPage() {
      </div>
    );
  }
