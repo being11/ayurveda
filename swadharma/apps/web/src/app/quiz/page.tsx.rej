@@ -1,7 +1,7 @@
 diff a/swadharma/apps/web/src/app/quiz/page.tsx b/swadharma/apps/web/src/app/quiz/page.tsx	(rejected hunks)
-@@ -1,133 +1,5 @@
--'use client'
--
+@@ -1,133 +1,8 @@
+ 'use client'
+ 
 -import React, { useEffect, useState } from 'react';
 -import { useAssessmentStore } from '../../stores/assessmentStore';
 -import { categories } from '../../data/index';
@@ -13,7 +13,8 @@ diff a/swadharma/apps/web/src/app/quiz/page.tsx b/swadharma/apps/web/src/app/qui
 -import { ArrowLeft, ArrowRight } from 'lucide-react';
 -import { cn } from '@workspace/ui/lib/utils';
 -import { motion } from 'framer-motion';
-+import { QuizEngine } from '@/src/components/quiz/QuizEngine';
++import React from 'react';
++import { QuizEngine } from '../../components/quiz/QuizEngine';
  
  export default function QuizPage() {
 -  const [mounted, setMounted] = useState(false);

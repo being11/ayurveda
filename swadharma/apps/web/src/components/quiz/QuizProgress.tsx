@@ -79,7 +79,7 @@ export function QuizProgress({
           <div className="flex h-1.5 w-full overflow-hidden rounded-full opacity-80 mt-1">
             <div style={{ width: `${vataScore}%`, backgroundColor: '#4A7C59' }} className="transition-all duration-500" title={`Vata: ${vataScore}%`} />
             <div style={{ width: `${pittaScore}%`, backgroundColor: '#E8973A' }} className="transition-all duration-500" title={`Pitta: ${pittaScore}%`} />
-            <div style={{ width: `${kaphaScore}%`, backgroundColor: '#8DB596' }} className="transition-all duration-500" title={`Kapha: ${kaphaScore}%`} />
+            <div style={{ width: `${kaphaScore}%`, backgroundColor: '#3D2B1F' }} className="transition-all duration-500" title={`Kapha: ${kaphaScore}%`} />
           </div>
         )}
       </div>

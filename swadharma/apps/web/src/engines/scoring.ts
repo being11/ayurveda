@@ -1,5 +1,5 @@
 import { categories } from '../data/index';
-import type { DoshaProfile } from '../types/assessment';
+import type { DoshaProfile, QuestionCategory } from '../types/assessment';
 
 const PRAKRITI_CATEGORIES = ['introduction', 'body', 'childhood', 'aging'];
 
@@ -104,5 +104,5 @@ export function detectDoshaDominance(profile: DoshaProfile): string {
     return `Single Dosha (${first.name})`;
 }
 
-export const calculateDoshaScores = (_categories: any, answers: Record<string, string | string[]>) => calculateQuizScores(answers);
+export const calculateDoshaScores = (_categories: QuestionCategory[], answers: Record<string, string | string[]>) => calculateQuizScores(answers);
 export const getDoshaType = detectDoshaDominance;

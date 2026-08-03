@@ -116,29 +116,9 @@ export interface DoshaMatrix {
   kapha: string;
 }
 
-export interface Herb {
-  id: string;
-  sanskritName: string;
-  commonName: string;
-  botanicalName: string;
-  rasa: string[];
-  virya: string;
-  vipaka: string;
-  prabhava?: string;
-  doshaMatrix: DoshaMatrix;
-  organSystems: string[];
-  useCases: string[];
-  description: string;
-}
+
 
 export interface AssessmentState {
-  herbSearchQuery: string;
-  herbDoshaFilter: string;
-  herbOrganFilter: string;
-  setHerbSearchQuery: (query: string) => void;
-  setHerbDoshaFilter: (dosha: string) => void;
-  setHerbOrganFilter: (organ: string) => void;
-
   answers: Record<string, string | string[]>;
   observations: Record<string, number>;
   currentCategoryIndex: number;
@@ -197,6 +177,8 @@ export interface NadiData {
   pulses: DoshaPulseInfo[];
 }
 
+
+
 export interface Herb {
   id: string;
   sanskritName: string;
@@ -205,7 +187,7 @@ export interface Herb {
   rasa: string[];
   virya: string;
   vipaka: string;
-  prabhava: string;
+  prabhava?: string;
   doshaMatrix: Record<string, string>;
   organSystems: string[];
   useCases?: string[];
