@@ -40,6 +40,24 @@ function computeDoshaProfile(observations: Record<string, number>): DoshaProfile
   };
 }
 
+// Split observations into Prakriti (childhood/baseline) and Vikriti (current)
+function splitObservations(observations: Record<string, number>): { prakrti: Record<string, number>, vikrti: Record<string, number> } {
+  const prakrti: Record<string, number> = {};
+  const vikrti: Record<string, number> = {};
+
+  Object.entries(observations).forEach(([obsKey, weight]) => {
+    const lower = obsKey.toLowerCase();
+    // Keywords identifying Prakriti
+    if (lower.includes('prakrti') || lower.includes('childhood') || lower.includes('baseline')) {
+      prakrti[obsKey] = weight;
+    } else {
+      vikrti[obsKey] = weight;
+    }
+  });
+
+  return { prakrti, vikrti };
+}
+
 // Determine dominant Agni type
 function computeAgni(observations: Record<string, number>): AyurvedaProfile['agni'] {
   const agniScores: Record<string, number> = { vishama: 0, tikshna: 0, manda: 0, sama: 0 };
@@ -91,7 +109,17 @@ export function computeProfile(
   observations: Record<string, number>,
   answers: Record<string, string | string[]>
 ): AyurvedaProfile {
-  const doshaProfile = computeDoshaProfile(observations);
+  const { prakrti, vikrti } = splitObservations(observations);
+  
+  const prakrtiDosha = computeDoshaProfile(prakrti);
+  const vikrtiDosha = computeDoshaProfile(vikrti);
+  
+  // If no specific prakrti observations exist, fallback to all observations
+  const finalPrakrtiDosha = Object.keys(prakrti).length > 0 ? prakrtiDosha : computeDoshaProfile(observations);
+  
+  // If no specific vikrti observations exist, fallback to all observations
+  const finalVikrtiDosha = Object.keys(vikrti).length > 0 ? vikrtiDosha : computeDoshaProfile(observations);
+
   const agni = computeAgni(observations);
   const ojas = computeOjas(observations);
   const manas = computeManas(observations);
@@ -102,8 +130,8 @@ export function computeProfile(
     .map(([key, weight]) => ({ key, weight, dimensions: [] }));
 
   return {
-    prakrtiDosha: doshaProfile,
-    vikrtiDosha: doshaProfile, // Will differentiate in future version
+    prakrtiDosha: finalPrakrtiDosha,
+    vikrtiDosha: finalVikrtiDosha,
     agni,
     dominantGunas: [],
     ojas,
