@@ -77,6 +77,7 @@ export interface PanchakarmaTherapy {
 }
 
 export interface PurvakarmaStep {
+  step?: string;
   id: string;
   task: string;
   description: string;
@@ -126,6 +127,7 @@ export interface DoshaMatrix {
 
 
 export interface AssessmentState {
+  getRecommendedPanchakarma: () => PanchakarmaTherapy[];
   herbSearchQuery: string;
   herbDoshaFilter: string | null;
   herbOrganFilter: string | null;

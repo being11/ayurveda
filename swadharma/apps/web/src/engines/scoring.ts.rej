@@ -1,6 +1,22 @@
 diff a/swadharma/apps/web/src/engines/scoring.ts b/swadharma/apps/web/src/engines/scoring.ts	(rejected hunks)
-@@ -106,4 +106,3 @@ export function detectDoshaDominance(profile: DoshaProfile): string {
+@@ -58,9 +58,18 @@ export function calculateQuizScores(answers: Record<string, string | string[]>):
+     }
+   }
  
- export const calculateDoshaScores = (_categories: QuestionCategory[], answers: Record<string, string | string[]>) => calculateQuizScores(answers);
- export const getDoshaType = detectDoshaDominance;
--// trigger change
++  const totalPrakriti = prakritiScores.vata + prakritiScores.pitta + prakritiScores.kapha;
++  const totalVikriti = vikritiScores.vata + vikritiScores.pitta + vikritiScores.kapha;
++  
++  const allScores = {
++    vata: prakritiScores.vata + vikritiScores.vata,
++    pitta: prakritiScores.pitta + vikritiScores.pitta,
++    kapha: prakritiScores.kapha + vikritiScores.kapha
++  };
++
+   return {
+-    prakriti: normalizeScores(prakritiScores),
+-    vikriti: normalizeScores(vikritiScores)
++    prakriti: totalPrakriti === 0 ? normalizeScores(allScores) : normalizeScores(prakritiScores),
++    vikriti: totalVikriti === 0 ? normalizeScores(allScores) : normalizeScores(vikritiScores)
+   };
+ }
+ 

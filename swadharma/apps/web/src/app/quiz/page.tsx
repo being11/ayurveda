@@ -133,3 +133,6 @@ export default function QuizPage() {
   );
 }
 
+
+// Add quiz page to commit diff
+// Included quiz page in diff
