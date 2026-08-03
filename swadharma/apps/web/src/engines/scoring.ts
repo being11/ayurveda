@@ -97,6 +97,7 @@ function normalizeScores(scores: { vata: number; pitta: number; kapha: number })
 
 /**
  * Evaluates dual-dosha and tri-dosha detection logic based on score differentials.
+ * Used for constitution determination (e.g., Vata-Pitta vs Tridoshic).
  */
 export function detectDoshaDominance(profile: DoshaProfile): string {
     const { vata, pitta, kapha } = profile;

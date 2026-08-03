@@ -1,0 +1,60 @@
+diff a/swadharma/apps/web/src/components/quiz/QuizEngine.tsx b/swadharma/apps/web/src/components/quiz/QuizEngine.tsx	(rejected hunks)
+@@ -118,41 +101,27 @@ export function QuizEngine() {
+ 
+   return (
+     <div className="flex flex-col min-h-screen bg-white">
+-      <header className="w-full px-4 py-6 md:px-8 max-w-4xl mx-auto flex flex-col gap-4 z-10 sticky top-0 bg-white/80 backdrop-blur-md">
+-         <QuizProgress
+-            progressPercentage={progressPercentage}
+-            categoryTitle={currentCategory.title}
+-            currentCategoryIndex={currentCategoryIndex}
+-            totalCategories={categories.length}
+-            estimatedTimeMins={estimatedTimeMins}
+-            onBack={handlePrev}
+-            canGoBack={history.length > 0}
+-            vataScore={combinedLiveScores.vata}
+-            pittaScore={combinedLiveScores.pitta}
+-            kaphaScore={combinedLiveScores.kapha}
+-         />
+-      </header>
++      <QuizHeader
++        progressPercentage={progressPercentage}
++        categoryTitle={currentCategory.title}
++        currentCategoryIndex={currentCategoryIndex}
++        totalCategories={categories.length}
++        estimatedTimeMins={estimatedTimeMins}
++        onBack={handlePrev}
++        canGoBack={history.length > 0}
++        vataScore={combinedLiveScores.vata}
++        pittaScore={combinedLiveScores.pitta}
++        kaphaScore={combinedLiveScores.kapha}
++      />
+ 
+       <main className="flex-1 flex flex-col justify-center max-w-3xl mx-auto w-full px-4 pb-32">
+         <AnimatePresence mode="wait">
+           {showTransition ? (
+-            <motion.div
+-              key={`transition-${currentCategory.id}`}
+-              initial={{ opacity: 0, scale: 0.95 }}
+-              animate={{ opacity: 1, scale: 1 }}
+-              exit={{ opacity: 0, scale: 1.05 }}
+-              transition={{ duration: 0.5, ease: "easeInOut" }}
+-              className="text-center space-y-6"
+-            >
+-              <h2 className="text-3xl md:text-5xl font-serif text-[#4A7C59]">
+-                {currentCategory.title}
+-              </h2>
+-              {currentCategory.description && (
+-                <p className="text-lg md:text-xl opacity-80 max-w-xl mx-auto text-gray-600">
+-                  {currentCategory.description}
+-                </p>
+-              )}
+-            </motion.div>
++            <QuizTransition 
++              categoryId={currentCategory.id}
++              title={currentCategory.title}
++              description={currentCategory.description}
++            />
+           ) : (
+             <QuestionCard
+               question={currentQuestion}

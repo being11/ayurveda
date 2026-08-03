@@ -1,6 +1,12 @@
 diff a/swadharma/apps/web/src/components/quiz/QuizProgress.tsx b/swadharma/apps/web/src/components/quiz/QuizProgress.tsx	(rejected hunks)
-@@ -86,4 +86,3 @@ export function QuizProgress({
-     </div>
-   );
+@@ -16,6 +16,10 @@ interface QuizProgressProps {
+   kaphaScore?: number;
  }
--// trigger change
+ 
++/**
++ * Renders the Quiz Progress Bar with Dosha-colored indicators.
++ * Provides visual feedback on category advancement and estimated time.
++ */
+ export function QuizProgress({ 
+     currentStep, 
+     totalSteps, 

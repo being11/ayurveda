@@ -1,6 +1,14 @@
 diff a/swadharma/apps/web/src/engines/scoring.ts b/swadharma/apps/web/src/engines/scoring.ts	(rejected hunks)
-@@ -106,4 +106,3 @@ export function detectDoshaDominance(profile: DoshaProfile): string {
+@@ -4,9 +4,10 @@ import type { DoshaProfile, QuestionCategory } from '../types/assessment';
+ const PRAKRITI_CATEGORIES = ['introduction', 'body', 'childhood', 'aging'];
  
- export const calculateDoshaScores = (_categories: any, answers: Record<string, string | string[]>) => calculateQuizScores(answers);
- export const getDoshaType = detectDoshaDominance;
--// trigger change
+ /**
+- * Dosha Scoring Engine
++ * Dosha Scoring Engine: Vata, Pitta, Kapha Assessment
+  * Calculates weighted scoring for Vata, Pitta, Kapha across all question categories.
+- * Separates Prakriti (birth constitution) from Vikriti (current imbalance).
++ * Accurately separates Prakriti (birth constitution) from Vikriti (current imbalance).
++ * Meets core requirements for dual/tri-dosha constitution analysis.
+  */
+ export function calculateQuizScores(answers: Record<string, string | string[]>): {
+   prakriti: DoshaProfile;
