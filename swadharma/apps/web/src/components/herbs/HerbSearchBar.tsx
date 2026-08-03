@@ -28,7 +28,7 @@ export function HerbSearchBar() {
           type="text"
           placeholder="Search herbs by English or Sanskrit name..."
           className="pl-10 h-12 bg-white/50 border-[#4A7C59]/20 focus-visible:ring-[#4A7C59]/30"
-          value={herbSearchQuery}
+          value={herbSearchQuery || ""}
           onChange={(e) => setHerbSearchQuery(e.target.value)}
         />
         {herbSearchQuery && (
@@ -55,7 +55,7 @@ export function HerbSearchBar() {
                     ? "bg-[#4A7C59] hover:bg-[#4A7C59]/90 text-white" 
                     : "border-[#4A7C59]/30 text-[#4A7C59] hover:bg-[#4A7C59]/10"
                 )}
-                onClick={() => setHerbDoshaFilter(herbDoshaFilter === dosha ? null : dosha)}
+                onClick={() => setHerbDoshaFilter(herbDoshaFilter === dosha ? "" : dosha)}
               >
                 {dosha}
               </Badge>
@@ -76,7 +76,7 @@ export function HerbSearchBar() {
                     ? "bg-[#E8973A] hover:bg-[#E8973A]/90 text-white" 
                     : "border-[#E8973A]/30 text-[#E8973A] hover:bg-[#E8973A]/10"
                 )}
-                onClick={() => setHerbOrganFilter(herbOrganFilter === sys ? null : sys)}
+                onClick={() => setHerbOrganFilter(herbOrganFilter === sys ? "" : sys)}
               >
                 {sys}
               </Badge>

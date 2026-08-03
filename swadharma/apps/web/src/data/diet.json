@@ -1,42 +1,130 @@
 {
   "tastes": {
     "Vata": {
-      "favor": ["Sweet", "Sour", "Salty"],
-      "reduce": ["Bitter", "Pungent", "Astringent"]
+      "favor": [
+        "Sweet",
+        "Sour",
+        "Salty"
+      ],
+      "reduce": [
+        "Bitter",
+        "Pungent",
+        "Astringent"
+      ]
     },
     "Pitta": {
-      "favor": ["Sweet", "Bitter", "Astringent"],
-      "reduce": ["Pungent", "Sour", "Salty"]
+      "favor": [
+        "Sweet",
+        "Bitter",
+        "Astringent"
+      ],
+      "reduce": [
+        "Pungent",
+        "Sour",
+        "Salty"
+      ]
     },
     "Kapha": {
-      "favor": ["Pungent", "Bitter", "Astringent"],
-      "reduce": ["Sweet", "Sour", "Salty"]
+      "favor": [
+        "Pungent",
+        "Bitter",
+        "Astringent"
+      ],
+      "reduce": [
+        "Sweet",
+        "Sour",
+        "Salty"
+      ]
     },
     "Balanced": {
-      "favor": ["All 6 tastes in moderation"],
-      "reduce": ["Extremes of any one taste"]
+      "favor": [
+        "All 6 tastes in moderation"
+      ],
+      "reduce": [
+        "Extremes of any one taste"
+      ]
     }
   },
   "foods": {
     "Vata": {
-      "favor": ["Cooked root vegetables", "Ghee", "Warm milk", "Almonds", "Oats", "Sweet fruits"],
-      "reduce": ["Raw vegetables", "Cold drinks", "Dry crackers", "Beans", "Cabbage"],
-      "avoid": ["Excessive caffeine", "Processed snacks", "Ice cream"]
+      "favor": [
+        "Cooked root vegetables",
+        "Ghee",
+        "Warm milk",
+        "Almonds",
+        "Oats",
+        "Sweet fruits"
+      ],
+      "reduce": [
+        "Raw vegetables",
+        "Cold drinks",
+        "Dry crackers",
+        "Beans",
+        "Cabbage"
+      ],
+      "avoid": [
+        "Excessive caffeine",
+        "Processed snacks",
+        "Ice cream"
+      ]
     },
     "Pitta": {
-      "favor": ["Cooling vegetables (cucumber, zucchini)", "Coconut water", "Basmati rice", "Sweet fruits", "Mint"],
-      "reduce": ["Spicy foods", "Tomatoes", "Garlic", "Sour fruits", "Fried foods"],
-      "avoid": ["Alcohol", "Excessive coffee", "Fermented foods"]
+      "favor": [
+        "Cooling vegetables (cucumber, zucchini)",
+        "Coconut water",
+        "Basmati rice",
+        "Sweet fruits",
+        "Mint"
+      ],
+      "reduce": [
+        "Spicy foods",
+        "Tomatoes",
+        "Garlic",
+        "Sour fruits",
+        "Fried foods"
+      ],
+      "avoid": [
+        "Alcohol",
+        "Excessive coffee",
+        "Fermented foods"
+      ]
     },
     "Kapha": {
-      "favor": ["Leafy greens", "Legumes", "Quinoa", "Apples", "Ginger", "Black pepper"],
-      "reduce": ["Dairy", "Wheat", "Heavy meats", "Sweets", "Nuts"],
-      "avoid": ["Deep fried foods", "Cold dairy", "Heavy desserts"]
+      "favor": [
+        "Leafy greens",
+        "Legumes",
+        "Quinoa",
+        "Apples",
+        "Ginger",
+        "Black pepper"
+      ],
+      "reduce": [
+        "Dairy",
+        "Wheat",
+        "Heavy meats",
+        "Sweets",
+        "Nuts"
+      ],
+      "avoid": [
+        "Deep fried foods",
+        "Cold dairy",
+        "Heavy desserts"
+      ]
     },
     "Balanced": {
-      "favor": ["Seasonal vegetables", "Whole grains", "Fresh fruits", "Moderate proteins"],
-      "reduce": ["Processed foods", "Excessive sugar"],
-      "avoid": ["Stale foods"]
+      "favor": [
+        "Seasonal vegetables",
+        "Whole grains",
+        "Fresh fruits",
+        "Moderate proteins"
+      ],
+      "reduce": [
+        "Processed foods",
+        "Excessive sugar"
+      ],
+      "avoid": [
+        "Stale foods"
+      ]
     }
   },
   "seasons": {
@@ -82,5 +170,235 @@
     "Pitta": "Eat substantial meals at regular times. Strongest digestion is at noon. Best times: 7 AM, 12 PM, 6 PM.",
     "Kapha": "Light breakfast or skip it. Main meal at lunch. Light early dinner. Best times: 10 AM, 2 PM, 6 PM.",
     "Balanced": "Eat when naturally hungry, typically 3 meals a day. Best times: 8 AM, 1 PM, 7 PM."
+  },
+  "seasonalMenus": {
+    "shishira": {
+      "Vata": {
+        "season": "Late Winter (Shishira)",
+        "recommendation": "Focus on warm, grounding, and nourishing foods to balance Vata and support the accumulating Kapha.",
+        "menu": [
+          "Breakfast: Warm oatmeal with ghee, cinnamon, and cooked apples.",
+          "Lunch: Hearty root vegetable stew with a side of warm grains.",
+          "Dinner: Sweet potato and lentil soup."
+        ]
+      },
+      "Pitta": {
+        "season": "Late Winter (Shishira)",
+        "recommendation": "Favor nourishing and slightly cooling foods to prevent Pitta from aggravating while staying warm.",
+        "menu": [
+          "Breakfast: Stewed apples with cardamom and warm milk.",
+          "Lunch: Basmati rice with mung dal and steamed green vegetables.",
+          "Dinner: Light zucchini and asparagus soup."
+        ]
+      },
+      "Kapha": {
+        "season": "Late Winter (Shishira)",
+        "recommendation": "Focus on light, dry, and warming foods. Incorporate spices to clear accumulating Kapha.",
+        "menu": [
+          "Breakfast: Stewed pears with ginger tea.",
+          "Lunch: Quinoa with steamed leafy greens and black pepper.",
+          "Dinner: Light vegetable broth or clear lentil soup."
+        ]
+      },
+      "Balanced": {
+        "season": "Late Winter (Shishira)",
+        "recommendation": "Maintain a nourishing diet with warm, cooked foods and digestive spices.",
+        "menu": [
+          "Breakfast: Warm porridge with cooked fruits.",
+          "Lunch: Balanced plate with cooked vegetables, grains, and protein.",
+          "Dinner: Lighter meal, mostly warm vegetables and soup."
+        ]
+      }
+    },
+    "vasanta": {
+      "Vata": {
+        "season": "Spring (Vasanta)",
+        "recommendation": "Focus on easily digestible, warm foods. Avoid excess dryness which can aggravate Vata.",
+        "menu": [
+          "Breakfast: Creamy rice porridge with cardamom.",
+          "Lunch: Kitchari made with basmati rice and split mung dal.",
+          "Dinner: Blended vegetable soup."
+        ]
+      },
+      "Pitta": {
+        "season": "Spring (Vasanta)",
+        "recommendation": "Favor cooling and light foods. Include bitter greens to naturally detoxify Pitta.",
+        "menu": [
+          "Breakfast: Fresh sweet fruits like melons or berries.",
+          "Lunch: Cooling cucumber and mint salad with quinoa.",
+          "Dinner: Steamed asparagus and green beans with cilantro."
+        ]
+      },
+      "Kapha": {
+        "season": "Spring (Vasanta)",
+        "recommendation": "Focus on light, dry, and warming foods. Incorporate spices to clear liquefying Kapha.",
+        "menu": [
+          "Breakfast: Light ginger tea and a small portion of stewed apples.",
+          "Lunch: Sautéed bitter greens with mustard seeds and millet.",
+          "Dinner: Spicy clear broth with cabbage."
+        ]
+      },
+      "Balanced": {
+        "season": "Spring (Vasanta)",
+        "recommendation": "Include fresh greens and lighter meals to support natural spring detoxification.",
+        "menu": [
+          "Breakfast: Fresh fruit or light porridge.",
+          "Lunch: Moderate portion of grains with lots of greens.",
+          "Dinner: Light soup and steamed vegetables."
+        ]
+      }
+    },
+    "grishma": {
+      "Vata": {
+        "season": "Summer (Grishma)",
+        "recommendation": "Focus on hydrating, nourishing foods. Ensure meals are slightly oily to counteract dryness.",
+        "menu": [
+          "Breakfast: Coconut milk smoothie with ripe bananas.",
+          "Lunch: Basmati rice with mild, creamy coconut curry.",
+          "Dinner: Steamed root vegetables with a dollop of ghee."
+        ]
+      },
+      "Pitta": {
+        "season": "Summer (Grishma)",
+        "recommendation": "Focus on cooling, hydrating, and sweet foods. Avoid hot spices to keep Pitta pacified.",
+        "menu": [
+          "Breakfast: Coconut water and fresh sweet fruits like melons.",
+          "Lunch: Cooling cucumber salad and basmati rice.",
+          "Dinner: Light zucchini soup with mint and coriander."
+        ]
+      },
+      "Kapha": {
+        "season": "Summer (Grishma)",
+        "recommendation": "Favor light, cooling, and dry foods. Avoid heavy, oily, and sweet foods.",
+        "menu": [
+          "Breakfast: Fresh berries and astringent fruits.",
+          "Lunch: Large mixed green salad with a light, oil-free dressing.",
+          "Dinner: Steamed broccoli and quinoa."
+        ]
+      },
+      "Balanced": {
+        "season": "Summer (Grishma)",
+        "recommendation": "Stay hydrated and favor fresh, cooling produce.",
+        "menu": [
+          "Breakfast: Fresh seasonal fruits.",
+          "Lunch: Balanced plate with cooling vegetables and grains.",
+          "Dinner: Lighter meal, mostly vegetables."
+        ]
+      }
+    },
+    "varsha": {
+      "Vata": {
+        "season": "Monsoon (Varsha)",
+        "recommendation": "Focus on warm, grounding, and freshly cooked foods to pacify highly aggravated Vata.",
+        "menu": [
+          "Breakfast: Warm oatmeal with ginger and ghee.",
+          "Lunch: Hearty lentil stew with root vegetables.",
+          "Dinner: Warm, spiced vegetable broth."
+        ]
+      },
+      "Pitta": {
+        "season": "Monsoon (Varsha)",
+        "recommendation": "Favor moderate, easily digestible foods. Avoid excessive sour and salty tastes.",
+        "menu": [
+          "Breakfast: Stewed apples with a pinch of cinnamon.",
+          "Lunch: Basmati rice with mild, non-spicy dal.",
+          "Dinner: Steamed green vegetables."
+        ]
+      },
+      "Kapha": {
+        "season": "Monsoon (Varsha)",
+        "recommendation": "Focus on light, warm, and spicy foods to counteract the dampness of the season.",
+        "menu": [
+          "Breakfast: Herbal tea with ginger and black pepper.",
+          "Lunch: Spicy mung bean soup with a side of steamed greens.",
+          "Dinner: Light vegetable stir-fry with warming spices."
+        ]
+      },
+      "Balanced": {
+        "season": "Monsoon (Varsha)",
+        "recommendation": "Eat freshly cooked, warm meals to support a weakened digestive fire (Agni).",
+        "menu": [
+          "Breakfast: Warm porridge.",
+          "Lunch: Well-cooked grains and legumes.",
+          "Dinner: Warm soup."
+        ]
+      }
+    },
+    "sharad": {
+      "Vata": {
+        "season": "Autumn (Sharad)",
+        "recommendation": "Focus on warm, grounding, and oily foods. Soups, stews, and root vegetables are ideal.",
+        "menu": [
+          "Breakfast: Warm oatmeal with ghee and cooked apples.",
+          "Lunch: Kitchari or hearty root vegetable stew.",
+          "Dinner: Sweet potato soup with a side of warm grains."
+        ]
+      },
+      "Pitta": {
+        "season": "Autumn (Sharad)",
+        "recommendation": "Focus on cooling and slightly sweet foods to pacify the Pitta accumulated during monsoon.",
+        "menu": [
+          "Breakfast: Sweet, ripe fruits and room temperature milk.",
+          "Lunch: Basmati rice with steamed asparagus and ghee.",
+          "Dinner: Mild, cooling vegetable soup."
+        ]
+      },
+      "Kapha": {
+        "season": "Autumn (Sharad)",
+        "recommendation": "Favor light, warm, and slightly astringent foods to balance the transition.",
+        "menu": [
+          "Breakfast: Stewed pears with cinnamon.",
+          "Lunch: Quinoa with roasted vegetables.",
+          "Dinner: Light lentil soup."
+        ]
+      },
+      "Balanced": {
+        "season": "Autumn (Sharad)",
+        "recommendation": "Adjust your diet slightly based on the current season, maintaining a balance of all six tastes.",
+        "menu": [
+          "Breakfast: Seasonal fruits and light grains.",
+          "Lunch: Balanced plate with cooked vegetables, grains, and protein.",
+          "Dinner: Lighter meal, mostly vegetables and soup."
+        ]
+      }
+    },
+    "hemanta": {
+      "Vata": {
+        "season": "Early Winter (Hemanta)",
+        "recommendation": "Focus on rich, nourishing, and heavy foods to satisfy the strong Agni and pacify Vata.",
+        "menu": [
+          "Breakfast: Creamy wheat porridge with warm milk, almonds, and ghee.",
+          "Lunch: Rich root vegetable and meat (or hearty lentil) stew.",
+          "Dinner: Warm, thick soups with bread."
+        ]
+      },
+      "Pitta": {
+        "season": "Early Winter (Hemanta)",
+        "recommendation": "Favor nourishing foods that satisfy the strong appetite without overheating the body.",
+        "menu": [
+          "Breakfast: Warm milk with dates and almonds.",
+          "Lunch: Rice with black beans and steamed greens.",
+          "Dinner: Creamy vegetable soup."
+        ]
+      },
+      "Kapha": {
+        "season": "Early Winter (Hemanta)",
+        "recommendation": "Focus on warm, lighter, and spicy foods to prevent Kapha accumulation.",
+        "menu": [
+          "Breakfast: Warm water with honey, followed by stewed apples.",
+          "Lunch: Spicy lentil soup with a large portion of leafy greens.",
+          "Dinner: Light, spicy clear broth."
+        ]
+      },
+      "Balanced": {
+        "season": "Early Winter (Hemanta)",
+        "recommendation": "Consume warm, hearty meals to support the body's natural strength in winter.",
+        "menu": [
+          "Breakfast: Warm, nourishing porridge.",
+          "Lunch: Hearty, balanced meal with adequate healthy fats.",
+          "Dinner: Warm soup or stew."
+        ]
+      }
+    }
   }
 }
