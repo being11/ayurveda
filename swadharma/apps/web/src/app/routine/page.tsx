@@ -3,7 +3,6 @@
 
 import React, { useEffect, useState } from 'react';
 import { useAssessmentStore } from '../../stores/assessmentStore';
-import { useSeasonsStore } from '../../stores/seasonsStore';
 import { computeProfile, getDominantDosha } from '../../engines/report';
 import { getRoutineForProfile } from '../../engines/routine';
 import { RoutineTimeline } from '../../components/routine/RoutineTimeline';

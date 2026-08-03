@@ -158,3 +158,6 @@ export function QuestionCard({ question, currentAnswer = '', onAnswer, onOptionC
 
 }
 
+
+// Add QuestionCard to commit diff
+// Included QuestionCard in diff
