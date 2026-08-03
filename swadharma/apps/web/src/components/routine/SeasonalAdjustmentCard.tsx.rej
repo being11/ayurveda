@@ -1,0 +1,42 @@
+diff a/swadharma/apps/web/src/components/routine/SeasonalAdjustmentCard.tsx b/swadharma/apps/web/src/components/routine/SeasonalAdjustmentCard.tsx	(rejected hunks)
+@@ -1,11 +1,11 @@
+ // swadharma/apps/web/src/components/routine/SeasonalAdjustmentCard.tsx
+ import React from 'react';
+-import type { SeasonAdjustment } from '../../types/assessment';
++import type { Season } from '../../types/seasons';
+ import { Card, CardHeader, CardTitle, CardContent } from '../ui/card';
+ import { Leaf } from 'lucide-react';
+ 
+ interface SeasonalAdjustmentCardProps {
+-  season: SeasonAdjustment;
++  season: Season;
+ }
+ 
+ export function SeasonalAdjustmentCard({ season }: SeasonalAdjustmentCardProps) {
+@@ -20,17 +20,22 @@ export function SeasonalAdjustmentCard({ season }: SeasonalAdjustmentCardProps)
+       <CardContent className="space-y-3">
+         <div className="flex justify-between items-baseline border-b border-[#4A7C59]/20 pb-2">
+           <span className="font-semibold text-stone-700">Current Season</span>
+-          <span className="text-[#4A7C59] font-medium">{season.name}</span>
++          <span className="text-[#4A7C59] font-medium">{season.sanskritName} ({season.name})</span>
+         </div>
+         <div className="flex justify-between items-baseline border-b border-[#4A7C59]/20 pb-2">
+           <span className="font-semibold text-stone-700">Dosha to Watch</span>
+-          <span className="text-[#E8973A] font-medium">{season.doshaFocus}</span>
++          <span className="text-[#E8973A] font-medium">{season.dominantDosha}</span>
+         </div>
+         <div className="pt-2">
+           <span className="font-semibold text-stone-700 block mb-1">Seasonal Adjustment</span>
+-          <p className="text-sm text-stone-600 leading-relaxed">
+-            {season.adjustment}
++          <p className="text-sm text-stone-600 leading-relaxed mb-3">
++            {season.description}
+           </p>
++          <ul className="list-disc pl-5 text-sm text-stone-600 leading-relaxed space-y-1">
++            {season.lifestyle.map((tip, idx) => (
++              <li key={idx}>{tip}</li>
++            ))}
++          </ul>
+         </div>
+       </CardContent>
+     </Card>
