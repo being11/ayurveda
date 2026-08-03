@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { useAssessmentStore } from '../stores/assessmentStore';
+import { useSeasonsStore } from '../stores/seasonsStore';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from './ui/card';
 import seasonsData from '../data/seasons.json';
 import type { Season } from '../types/seasons';
@@ -9,7 +10,7 @@ import type { Season } from '../types/seasons';
 const seasons: Season[] = seasonsData as Season[];
 
 export default function SeasonHealthCard() {
-  const { currentSeasonId } = useAssessmentStore();
+  const { currentSeasonId } = useSeasonsStore();
 
   const currentSeason = seasons.find((s) => s.id === currentSeasonId);
 

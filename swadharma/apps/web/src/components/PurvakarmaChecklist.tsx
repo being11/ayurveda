@@ -2,11 +2,11 @@
 
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
-import type { PurvakarmaStep } from '../types/assessment';
+import type { PurvakarmaTask } from '../engines/panchakarma';
 import { cn } from '@workspace/ui/lib/utils';
 
 interface PurvakarmaChecklistProps {
-  steps: PurvakarmaStep[];
+  steps: PurvakarmaTask[];
 }
 
 export function PurvakarmaChecklist({ steps }: PurvakarmaChecklistProps) {

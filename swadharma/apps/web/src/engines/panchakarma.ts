@@ -8,6 +8,7 @@ export interface PanchakarmaTherapy {
   benefits: string[];
   contraindications: string[];
   duration: string;
+  description?: string;
 }
 
 export interface PurvakarmaTask {
