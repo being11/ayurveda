@@ -1,5 +1,31 @@
 diff a/swadharma/apps/web/src/types/assessment.ts b/swadharma/apps/web/src/types/assessment.ts	(rejected hunks)
-@@ -73,15 +73,17 @@ export interface Herb {
+@@ -65,6 +65,25 @@ export interface AyurvedaProfile {
+   age?: number;
+ }
+ 
++
++
++export interface PanchakarmaTherapy {
++  id: string;
++  name: string;
++  dosha: string;
++  indicatedDoshas: string[];
++  benefits: string[];
++  contraindications: string[];
++  duration: string;
++  description: string;
++}
++
++export interface PurvakarmaStep {
++  id: string;
++  step: string;
++  description: string;
++}
++
+ export interface Herb {
+   id: string;
+   sanskritName: string;
+@@ -73,15 +92,17 @@ export interface Herb {
    rasa: string[];
    virya: string;
    vipaka: string;
@@ -9,7 +35,8 @@ diff a/swadharma/apps/web/src/types/assessment.ts b/swadharma/apps/web/src/types
      vata: string;
      pitta: string;
      kapha: string;
-   };
+-  };
++  } | Record<string, string>;
    organSystems: string[];
 -  useCases: string[];
 -  description: string;
@@ -20,28 +47,14 @@ diff a/swadharma/apps/web/src/types/assessment.ts b/swadharma/apps/web/src/types
  }
  
  export interface RoutineActivity {
-@@ -134,6 +136,8 @@ export interface AssessmentState {
- 
-   selectedSrotas: string | null;
- 
-+  currentSeasonId: string | null;
-+
-   setAnswer: (questionId: string, value: string | string[]) => void;
-   nextQuestion: () => void;
-   prevQuestion: () => void;
-@@ -145,6 +149,8 @@ export interface AssessmentState {
-   setHerbOrganFilter: (organ: string | null) => void;
- 
-   setSelectedSrotas: (srotasId: string | null) => void;
-+  autoDetectSeason: () => void;
-+  setCurrentSeasonId: (seasonId: string) => void;
+@@ -176,40 +197,3 @@ export interface NadiData {
+   description: string;
+   pulses: DoshaPulseInfo[];
  }
- 
- // Nadi Pariksha Educational Guide Types
-@@ -180,22 +186,7 @@ export interface NadiData {
- 
- 
- 
+-
+-
+-
+-
 -export interface Herb {
 -  id: string;
 -  sanskritName: string;
@@ -58,7 +71,20 @@ diff a/swadharma/apps/web/src/types/assessment.ts b/swadharma/apps/web/src/types
 -  traditionalUses?: string[];
 -  cautions?: string[];
 -}
-+
- 
- export interface PanchakarmaTherapy {
-   id: string;
+-
+-export interface PanchakarmaTherapy {
+-  id: string;
+-  name: string;
+-  dosha: string;
+-  indicatedDoshas: string[];
+-  benefits: string[];
+-  contraindications: string[];
+-  duration: string;
+-  description: string;
+-}
+-
+-export interface PurvakarmaStep {
+-  id: string;
+-  step: string;
+-  description: string;
+-}
