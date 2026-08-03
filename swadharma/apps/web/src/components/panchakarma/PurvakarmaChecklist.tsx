@@ -38,7 +38,7 @@ export function PurvakarmaChecklist({ tasks }: PurvakarmaChecklistProps) {
             />
             <label htmlFor={task.id} className="cursor-pointer flex-1">
               <span className={`block font-medium ${completed[task.id] ? 'text-stone-400 line-through' : 'text-stone-800'}`}>
-                {task.step}
+                {task.task}
               </span>
               <span className={`block text-sm mt-1 ${completed[task.id] ? 'text-stone-300' : 'text-stone-600'}`}>
                 {task.description}

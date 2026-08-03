@@ -167,6 +167,7 @@ export interface AssessmentState {
 
 
   setSelectedSrotas: (srotasId: string | null) => void;
+  getRecommendedPanchakarma: () => PanchakarmaTherapy[];
 }
 
 // Nadi Pariksha Educational Guide Types
