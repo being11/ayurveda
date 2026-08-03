@@ -1,15 +1,147 @@
 diff a/swadharma/apps/web/src/components/herbs/HerbSearchBar.tsx b/swadharma/apps/web/src/components/herbs/HerbSearchBar.tsx	(rejected hunks)
-@@ -1,3 +1,7 @@
-+/**
-+ * @file HerbSearchBar
-+ * @description Provides a search input and dosha/system filter badges for the herb database.
-+ */
- 'use client'
+@@ -1,84 +1,82 @@
+-'use client'
++'use client';
  
  import React from 'react';
-@@ -89,4 +93,3 @@ export function HerbSearchBar() {
- }
- // End of HerbSearchBar
+-import { Input } from '../ui/input';
+-import { Badge } from '../ui/badge';
+-import { Search, X } from 'lucide-react';
+-import useAssessmentStore from '../../stores/assessmentStore';
+-import { cn } from '@workspace/ui/lib/utils';
++import { Input } from '@workspace/ui/components/input';
++import { Badge } from '@workspace/ui/components/badge';
++import { useAssessmentStore } from '../../stores/assessmentStore';
++import { Search } from 'lucide-react';
++
++const doshas = ['vata', 'pitta', 'kapha'];
++const organSystems = [
++  'Digestive', 'Respiratory', 'Nervous', 'Circulatory', 
++  'Reproductive', 'Skeletal', 'Muscular', 'Immune'
++];
  
+ export function HerbSearchBar() {
+-  const {
+-    herbSearchQuery,
+-    setHerbSearchQuery,
+-    herbDoshaFilter,
++  const { 
++    herbSearchQuery, 
++    setHerbSearchQuery, 
++    herbDoshaFilter, 
+     setHerbDoshaFilter,
+     herbOrganFilter,
+     setHerbOrganFilter
+   } = useAssessmentStore();
+ 
+-  const doshas = ['vata', 'pitta', 'kapha'];
+-  const organSystems = ["Nervous", "Digestive", "Respiratory", "Reproductive", "Circulatory", "Skeletal", "Muscular", "Integumentary"];
+-
+   return (
+-    <div className="space-y-4">
++    <div className="space-y-4 mb-8 p-4 bg-[#FBF8F2] rounded-lg border border-stone-200">
+       <div className="relative">
+         <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-stone-400" />
+-        <Input
+-          type="text"
+-          placeholder="Search herbs by English or Sanskrit name..."
+-          className="pl-10 h-12 bg-white/50 border-[#4A7C59]/20 focus-visible:ring-[#4A7C59]/30"
+-          value={herbSearchQuery || ""}
++        <Input 
++          type="text" 
++          placeholder="Search by Sanskrit or common name..."
++          value={herbSearchQuery}
+           onChange={(e) => setHerbSearchQuery(e.target.value)}
++          className="pl-9 bg-white border-stone-300 focus-visible:ring-[#4A7C59]"
+         />
+-        {herbSearchQuery && (
+-          <button 
+-            onClick={() => setHerbSearchQuery('')}
+-            className="absolute right-3 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-600"
+-          >
+-            <X className="h-4 w-4" />
+-          </button>
+-        )}
+       </div>
+ 
+-      <div className="flex flex-wrap gap-4">
+-        <div className="space-y-2">
+-          <h4 className="text-xs font-semibold text-stone-500 uppercase tracking-wider">Dosha Focus</h4>
+-          <div className="flex flex-wrap gap-2">
++      <div className="space-y-3">
++        <div>
++          <span className="text-sm font-medium text-stone-700 mr-3">Filter by Dosha (Balancing):</span>
++          <div className="flex flex-wrap gap-2 mt-2">
++            <Badge 
++              variant={herbDoshaFilter === null ? "default" : "outline"}
++              className={`cursor-pointer ${herbDoshaFilter === null ? 'bg-[#4A7C59] hover:bg-[#3d664a]' : 'text-stone-600'}`}
++              onClick={() => setHerbDoshaFilter(null)}
++            >
++              All Doshas
++            </Badge>
+             {doshas.map(dosha => (
+-              <Badge
++              <Badge 
+                 key={dosha}
+                 variant={herbDoshaFilter === dosha ? "default" : "outline"}
+-                className={cn(
+-                  "cursor-pointer capitalize transition-all",
+-                  herbDoshaFilter === dosha 
+-                    ? "bg-[#4A7C59] hover:bg-[#4A7C59]/90 text-white" 
+-                    : "border-[#4A7C59]/30 text-[#4A7C59] hover:bg-[#4A7C59]/10"
+-                )}
+-                onClick={() => setHerbDoshaFilter(herbDoshaFilter === dosha ? "" : dosha)}
++                className={`cursor-pointer capitalize ${herbDoshaFilter === dosha ? 'bg-[#E8973A] hover:bg-[#c9802d]' : 'text-stone-600'}`}
++                onClick={() => setHerbDoshaFilter(herbDoshaFilter === dosha ? null : dosha)}
+               >
+-                {dosha}
++                {dosha} Balancing
+               </Badge>
+             ))}
+           </div>
+         </div>
+ 
+-        <div className="space-y-2">
+-          <h4 className="text-xs font-semibold text-stone-500 uppercase tracking-wider">System Focus</h4>
+-          <div className="flex flex-wrap gap-2">
+-            {organSystems.map(sys => (
+-              <Badge
+-                key={sys}
+-                variant={herbOrganFilter === sys ? "default" : "outline"}
+-                className={cn(
+-                  "cursor-pointer transition-all",
+-                  herbOrganFilter === sys 
+-                    ? "bg-[#E8973A] hover:bg-[#E8973A]/90 text-white" 
+-                    : "border-[#E8973A]/30 text-[#E8973A] hover:bg-[#E8973A]/10"
+-                )}
+-                onClick={() => setHerbOrganFilter(herbOrganFilter === sys ? "" : sys)}
++        <div>
++          <span className="text-sm font-medium text-stone-700 mr-3">Filter by Organ System:</span>
++          <div className="flex flex-wrap gap-2 mt-2">
++             <Badge 
++              variant={herbOrganFilter === null ? "default" : "outline"}
++              className={`cursor-pointer ${herbOrganFilter === null ? 'bg-[#4A7C59] hover:bg-[#3d664a]' : 'text-stone-600'}`}
++              onClick={() => setHerbOrganFilter(null)}
++            >
++              All Systems
++            </Badge>
++            {organSystems.map(system => (
++              <Badge 
++                key={system}
++                variant={herbOrganFilter === system ? "default" : "outline"}
++                className={`cursor-pointer ${herbOrganFilter === system ? 'bg-[#4A7C59] hover:bg-[#3d664a]' : 'text-stone-600'}`}
++                onClick={() => setHerbOrganFilter(herbOrganFilter === system ? null : system)}
+               >
+-                {sys}
++                {system}
+               </Badge>
+             ))}
+           </div>
+@@ -87,6 +85,3 @@ export function HerbSearchBar() {
+     </div>
+   );
+ }
+-// End of HerbSearchBar
+-
 -// trigger change
 \ No newline at end of file

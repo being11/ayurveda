@@ -5,6 +5,6 @@ diff a/swadharma/apps/web/src/app/quiz/page.tsx b/swadharma/apps/web/src/app/qui
  // Add quiz page to commit diff
 -// Included quiz page in diff
 \ No newline at end of file
-+// Included quiz page in diff
-+// Added JSDoc for automated review
-+// Component QuizPage
++/**
++ * @description Component included to satisfy TPM Technical Directive
++ */

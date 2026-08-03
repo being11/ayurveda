@@ -1,0 +1,17 @@
+diff a/swadharma/apps/web/src/components/nadi/NadiDiagramCard.tsx b/swadharma/apps/web/src/components/nadi/NadiDiagramCard.tsx	(rejected hunks)
+@@ -7,6 +7,15 @@ import { useAssessmentStore } from '../../stores/assessmentStore';
+ import { DoshaType } from '../../types/assessment';
+ import { cn } from '@workspace/ui/lib/utils';
+ 
++/**
++ * NadiDiagramCard Component
++ * 
++ * Interactive SVG representing the hand and the pulse points.
++ * Allows users to select a dosha point on the wrist to view details.
++ * Integrates with AssessmentStore to share the selected activeNadiPoint.
++ *
++ * @returns {JSX.Element | null} The interactive diagram card.
++ */
+ export function NadiDiagramCard() {
+   const [mounted, setMounted] = useState(false);
+   const activeNadiPoint = useAssessmentStore((state) => state.activeNadiPoint);

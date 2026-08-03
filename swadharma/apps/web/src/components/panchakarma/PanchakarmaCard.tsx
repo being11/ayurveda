@@ -1,3 +1,6 @@
+/**
+ * Component to display details of a recommended Panchakarma therapy.
+ */
 import { Card, CardHeader, CardTitle, CardContent } from '../ui/card';
 import type { PanchakarmaTherapy } from '../../types/assessment';
 
@@ -20,7 +23,7 @@ export function PanchakarmaCard({ therapy }: PanchakarmaCardProps) {
         <div>
           <h4 className="font-semibold text-stone-800 mb-2">Benefits</h4>
           <ul className="list-disc pl-5 space-y-1 text-sm text-stone-600">
-            {therapy.benefits.map((benefit, idx) => (
+            {therapy.benefits?.map((benefit, idx) => (
               <li key={idx}>{benefit}</li>
             ))}
           </ul>
@@ -29,7 +32,7 @@ export function PanchakarmaCard({ therapy }: PanchakarmaCardProps) {
         <div>
           <h4 className="font-semibold text-stone-800 mb-2">Contraindications</h4>
           <ul className="list-disc pl-5 space-y-1 text-sm text-stone-600">
-            {therapy.contraindications.map((contra, idx) => (
+            {therapy.contraindications?.map((contra, idx) => (
               <li key={idx}>{contra}</li>
             ))}
           </ul>

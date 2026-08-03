@@ -77,7 +77,7 @@ export default function HerbsPage() {
             <div className="text-center py-20 bg-white/50 rounded-xl border border-stone-200 border-dashed">
               <p className="text-stone-500 text-lg">No herbs found matching your criteria.</p>
               <button 
-                onClick={() => useAssessmentStore.getState().reset()}
+                onClick={() => reset()}
                 className="mt-4 text-[#4A7C59] hover:underline"
               >
                 Clear all filters

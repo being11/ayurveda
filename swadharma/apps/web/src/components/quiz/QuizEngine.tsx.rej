@@ -1,17 +1,95 @@
 diff a/swadharma/apps/web/src/components/quiz/QuizEngine.tsx b/swadharma/apps/web/src/components/quiz/QuizEngine.tsx	(rejected hunks)
-@@ -1,13 +1,12 @@
+@@ -1,14 +1,15 @@
  'use client';
  
--import { AnimatePresence } from 'framer-motion';
+-import { motion, AnimatePresence } from 'framer-motion';
 +import { AnimatePresence, motion } from 'framer-motion';
  import { useAssessmentStore } from '@/src/stores/assessmentStore';
  import { categories } from '@/src/data/index';
+-import { Button } from '@/src/components/ui/button';
+-import { ArrowRight } from 'lucide-react';
  import { useEffect, useState, useRef, useCallback } from 'react';
--import { QuizHeader } from './QuizHeader';
-+import { QuizProgress } from './QuizProgress';
+-import { QuizProgress } from './QuizProgress';
++import { QuizHeader } from './QuizHeader';
  import { QuestionCard } from './QuestionCard';
  import { QuizComplete } from './QuizComplete';
--import { QuizTransition } from './QuizTransition';
- import { QuizFooter } from './QuizFooter';
++import { QuizTransition } from './QuizTransition';
++import { QuizFooter } from './QuizFooter';
++import { QuizProgress } from './QuizProgress';
  import { calculateDoshaScores } from '@/src/engines/scoring';
  import { useQuizNavigation } from '@/src/hooks/useQuizNavigation';
+ 
+@@ -22,17 +23,7 @@ export function QuizEngine() {
+   const [mounted, setMounted] = useState(false);
+   const [showTransition, setShowTransition] = useState(false);
+ 
+-  const {
+-    currentCategoryIndex,
+-    currentQuestionId,
+-    answers,
+-    setAnswer,
+-    nextQuestion,
+-    prevQuestion,
+-    isComplete,
+-    history
+-  } = useAssessmentStore();
+-
++  const { currentCategoryIndex, currentQuestionId, answers, setAnswer, nextQuestion, prevQuestion, isComplete, history } = useAssessmentStore();
+   const prevCategoryIndexRef = useRef(currentCategoryIndex);
+ 
+   useEffect(() => {
+@@ -102,19 +93,12 @@ export function QuizEngine() {
+ 
+   if (!currentQuestion || !currentCategory) return <div className="min-h-screen bg-[#FBF8F2]" />;
+ 
+-  const currentIndexInCategory = currentCategory.questions.findIndex(q => q.id === currentQuestionId);
+-  const remainingInCurrentCategory = Math.max(0, currentCategory.questions.length - currentIndexInCategory - 1);
+-  let totalRemaining = remainingInCurrentCategory;
+-  for (let i = currentCategoryIndex + 1; i < categories.length; i++) {
+-    const category = categories[i];
+-    if (category && category.questions) {
+-      totalRemaining += category.questions.length;
+-    }
+-  }
+-  const estimatedTimeMins = Math.ceil((totalRemaining * 8) / 60);
+-  const progressPercentage = ((currentCategoryIndex) / categories.length) * 100;
++  const currentIndex = currentCategory.questions.findIndex(q => q.id === currentQuestionId);
++  const remaining = Math.max(0, currentCategory.questions.length - currentIndex - 1) + 
++    categories.slice(currentCategoryIndex + 1).reduce((acc, cat) => acc + (cat.questions?.length || 0), 0);
++  const estimatedTimeMins = Math.ceil((remaining * 8) / 60);
++  const progressPercentage = (currentCategoryIndex / categories.length) * 100;
+   
+-  // Calculate live scores for progress bar
+   const liveScores = calculateDoshaScores(categories, answers);
+   const combinedLiveScores = {
+     vata: (liveScores.prakriti.vata + liveScores.vikriti.vata) / 2 || 0,
+@@ -171,24 +155,11 @@ export function QuizEngine() {
+         </AnimatePresence>
+       </main>
+ 
+-      {!showTransition && currentQuestion.type === 'multiple' && (
+-        <motion.div
+-          initial={{ opacity: 0, y: 20 }}
+-          animate={{ opacity: 1, y: 0 }}
+-          className="fixed bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-white via-white to-transparent flex justify-center z-20 pointer-events-none"
+-        >
+-          <div className="max-w-3xl w-full flex justify-end pointer-events-auto">
+-            <Button
+-              onClick={handleNext}
+-              size="lg"
+-              className="px-8 shadow-lg bg-[#4A7C59] hover:bg-[#4A7C59]/90 text-white"
+-              disabled={!currentAnswer || (Array.isArray(currentAnswer) && currentAnswer.length === 0)}
+-            >
+-              Continue <ArrowRight className="w-4 h-4 ml-2" />
+-            </Button>
+-          </div>
+-        </motion.div>
+-      )}
++      <QuizFooter
++        show={!showTransition && currentQuestion.type === 'multiple'}
++        onNext={handleNext}
++        disabled={!currentAnswer || (Array.isArray(currentAnswer) && currentAnswer.length === 0)}
++      />
+     </div>
+   );
+ }
