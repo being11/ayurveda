@@ -1,4 +1,6 @@
 import type { AyurvedaProfile, ObservationResult, DoshaProfile } from '../types/assessment';
+import { categories } from '../data/index';
+import { getObservationsForAnswer } from './logic';
 
 // --- Constants ---
 const DOSHA_KEYWORDS: Record<string, string[]> = {
@@ -155,12 +157,23 @@ export function getConstitutionDescription(profile: DoshaProfile): string {
   const sorted = Object.entries(profile).sort(([, a], [, b]) => b - a);
   const first = sorted[0];
   const second = sorted[1];
+  const third = sorted[2];
 
-  if (!first || !second) return 'Tridoshic (balanced Vata, Pitta, Kapha)';
+  if (!first || !second || !third) return 'Tridoshic (balanced Vata, Pitta, Kapha)';
 
   const gap = (first[1] as number) - (second[1] as number);
-  if (gap < 0.1) return `Tridoshic (balanced Vata, Pitta, Kapha)`;
-  if (gap < 0.2) return `${capitalize(first[0] as string)}-${capitalize(second[0] as string)} (dual constitution)`;
+  const gapThird = (first[1] as number) - (third[1] as number);
+  
+  // If all three doshas are within 15% of each other, it's Tridoshic
+  if (gapThird < 0.15) {
+     return `Tridoshic (balanced Vata, Pitta, Kapha)`;
+  }
+  
+  // If the top two doshas are within 15% of each other, it's a Dual Constitution
+  if (gap < 0.15) {
+    return `${capitalize(first[0] as string)}-${capitalize(second[0] as string)} (dual constitution)`;
+  }
+  
   return `${capitalize(first[0] as string)}-predominant`;
 }
 

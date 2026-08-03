@@ -3,29 +3,19 @@ diff a/swadharma/apps/web/src/stores/assessmentStore.ts b/swadharma/apps/web/src
        history: firstQuestion ? [firstQuestion.id] : [],
        isComplete: false,
        activeNadiPoint: null,
-+      herbSearchQuery: "",
-+      herbDoshaFilter: null,
-+      herbOrganFilter: null,
++      herbSearchQuery: '',
++      herbDoshaFilter: 'all',
++      herbOrganFilter: 'all',
  
        setAnswer: (questionId, value) => {
          const state = get();
-@@ -115,6 +118,9 @@ const useAssessmentStore = create<AssessmentState>()(
-           history: firstQuestion ? [firstQuestion.id] : [],
-           isComplete: false,
-           activeNadiPoint: null,
-+          herbSearchQuery: "",
-+          herbDoshaFilter: null,
-+          herbOrganFilter: null,
-         });
-         try {
-           useAssessmentStore.persist.clearStorage();
-@@ -122,6 +128,9 @@ const useAssessmentStore = create<AssessmentState>()(
+@@ -122,6 +125,9 @@ const useAssessmentStore = create<AssessmentState>()(
        },
        
        setActiveNadiPoint: (point) => set({ activeNadiPoint: point }),
-+      setHerbSearchQuery: (query) => set({ herbSearchQuery: query }),
-+      setHerbDoshaFilter: (dosha) => set({ herbDoshaFilter: dosha }),
-+      setHerbOrganFilter: (organ) => set({ herbOrganFilter: organ }),
++      setHerbSearchQuery: (q: string) => set({ herbSearchQuery: q }),
++      setHerbDoshaFilter: (f: string) => set({ herbDoshaFilter: f }),
++      setHerbOrganFilter: (f: string) => set({ herbOrganFilter: f }),
      }),
      {
        name: 'swadharma-assessment',
