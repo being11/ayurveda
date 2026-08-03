@@ -1,11 +1,29 @@
 diff a/swadharma/apps/web/src/stores/assessmentStore.ts b/swadharma/apps/web/src/stores/assessmentStore.ts	(rejected hunks)
-@@ -122,6 +122,12 @@ const useAssessmentStore = create<AssessmentState>()(
+@@ -26,6 +26,10 @@ const useAssessmentStore = create<AssessmentState>()(
+       history: firstQuestion ? [firstQuestion.id] : [],
+       isComplete: false,
+       activeNadiPoint: null,
++      
++      herbSearchQuery: '',
++      herbDoshaFilter: null,
++      herbOrganFilter: null,
+ 
+       setAnswer: (questionId, value) => {
+         const state = get();
+@@ -115,6 +119,9 @@ const useAssessmentStore = create<AssessmentState>()(
+           history: firstQuestion ? [firstQuestion.id] : [],
+           isComplete: false,
+           activeNadiPoint: null,
++          herbSearchQuery: '',
++          herbDoshaFilter: null,
++          herbOrganFilter: null,
+         });
+         try {
+           useAssessmentStore.persist.clearStorage();
+@@ -122,6 +129,9 @@ const useAssessmentStore = create<AssessmentState>()(
        },
        
        setActiveNadiPoint: (point) => set({ activeNadiPoint: point }),
-+      herbSearchQuery: "",
-+      herbDoshaFilter: "",
-+      herbOrganFilter: "",
 +      setHerbSearchQuery: (query) => set({ herbSearchQuery: query }),
 +      setHerbDoshaFilter: (dosha) => set({ herbDoshaFilter: dosha }),
 +      setHerbOrganFilter: (organ) => set({ herbOrganFilter: organ }),

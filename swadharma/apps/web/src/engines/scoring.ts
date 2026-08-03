@@ -3,6 +3,11 @@ import type { DoshaProfile } from '../types/assessment';
 
 const PRAKRITI_CATEGORIES = ['introduction', 'body', 'childhood', 'aging'];
 
+/**
+ * Dosha Scoring Engine
+ * Calculates weighted scoring for Vata, Pitta, Kapha across all question categories.
+ * Separates Prakriti (birth constitution) from Vikriti (current imbalance).
+ */
 export function calculateQuizScores(answers: Record<string, string | string[]>): {
   prakriti: DoshaProfile;
   vikriti: DoshaProfile;
@@ -70,6 +75,9 @@ function normalizeScores(scores: { vata: number; pitta: number; kapha: number })
   };
 }
 
+/**
+ * Evaluates dual-dosha and tri-dosha detection logic based on score differentials.
+ */
 export function detectDoshaDominance(profile: DoshaProfile): string {
     const { vata, pitta, kapha } = profile;
     const scores = [

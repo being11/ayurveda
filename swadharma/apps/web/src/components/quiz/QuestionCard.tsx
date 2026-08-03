@@ -77,7 +77,7 @@ export function QuestionCard({ question, currentAnswer = '', onAnswer, onOptionC
         </div>
         
         {question.type === 'multiple' && (
-             <div className="text-sm text-gray-500 mt-4 text-center md:text-left">
+             <div className="text-sm text-stone-500 mt-4 text-center md:text-left">
                 Select all that apply. Press continue when ready.
              </div>
         )}
