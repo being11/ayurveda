@@ -1,3 +1,7 @@
+/**
+ * @file AssessmentStore
+ * @description Zustand store for managing assessment state, herb filters, and seasonal data.
+ */
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 import { categories } from '../data/index';
@@ -145,6 +149,27 @@ const useAssessmentStore = create<AssessmentState>()(
       
       setActiveNadiPoint: (point) => set({ activeNadiPoint: point }),
       setHerbSearchQuery: (query) => set({ herbSearchQuery: query }),
+      getFilteredHerbs: () => {
+        const state = get();
+        const herbs = require('../data/herbs.json') as any[];
+        
+        return herbs.filter(herb => {
+          const matchesSearch = 
+            !state.herbSearchQuery || 
+            herb.sanskritName.toLowerCase().includes(state.herbSearchQuery.toLowerCase()) ||
+            herb.commonName.toLowerCase().includes(state.herbSearchQuery.toLowerCase());
+
+          const matchesDosha = 
+            !state.herbDoshaFilter || 
+            (herb.doshaMatrix as any)[state.herbDoshaFilter] === '-';
+
+          const matchesOrgan = 
+            !state.herbOrganFilter || 
+            herb.organSystems.includes(state.herbOrganFilter);
+
+          return matchesSearch && matchesDosha && matchesOrgan;
+        });
+      },
       setHerbDoshaFilter: (dosha) => set({ herbDoshaFilter: dosha }),
       setHerbOrganFilter: (organ) => set({ herbOrganFilter: organ }),
       setSelectedSrotas: (srotasId) => set({ selectedSrotas: srotasId }),

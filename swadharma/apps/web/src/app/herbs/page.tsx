@@ -1,10 +1,13 @@
+/**
+ * @file HerbsPage
+ * @description Renders the herb database page allowing users to search and filter Ayurvedic herbs.
+ */
 'use client'
 
 import React, { useMemo, useState, useEffect } from 'react';
 import { HerbSearchBar } from '../../components/herbs/HerbSearchBar';
 import { HerbCard } from '../../components/herbs/HerbCard';
 import useAssessmentStore from '../../stores/assessmentStore';
-import herbsData from '../../data/herbs.json';
 import { Herb } from '../../types/assessment';
 
 export default function HerbsPage() {
@@ -14,30 +17,11 @@ export default function HerbsPage() {
     setMounted(true);
   }, []);
 
-  const { herbSearchQuery, herbDoshaFilter, herbOrganFilter } = useAssessmentStore();
-  const herbs: Herb[] = herbsData as Herb[];
-
-  const filteredHerbs = useMemo(() => {
-    return herbs.filter(herb => {
-      // Search filter
-      const matchesSearch = 
-        !herbSearchQuery || 
-        herb.sanskritName.toLowerCase().includes(herbSearchQuery.toLowerCase()) ||
-        herb.commonName.toLowerCase().includes(herbSearchQuery.toLowerCase());
-
-      // Dosha filter
-      const matchesDosha = 
-        !herbDoshaFilter || 
-        (herb.doshaMatrix as any)[herbDoshaFilter] === '-'; // Matches herbs that balance (-) the selected dosha
-
-      // Organ System filter
-      const matchesOrgan = 
-        !herbOrganFilter || 
-        herb.organSystems.includes(herbOrganFilter);
-
-      return matchesSearch && matchesDosha && matchesOrgan;
-    });
-  }, [herbs, herbSearchQuery, herbDoshaFilter, herbOrganFilter]);
+  const getFilteredHerbs = useAssessmentStore(state => state.getFilteredHerbs);
+  const herbSearchQuery = useAssessmentStore(state => state.herbSearchQuery);
+  const herbDoshaFilter = useAssessmentStore(state => state.herbDoshaFilter);
+  const herbOrganFilter = useAssessmentStore(state => state.herbOrganFilter);
+  const filteredHerbs = useMemo(() => getFilteredHerbs(), [getFilteredHerbs, herbSearchQuery, herbDoshaFilter, herbOrganFilter]);
 
   if (!mounted) {
     return (

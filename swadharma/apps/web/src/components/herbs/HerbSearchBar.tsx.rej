@@ -1,0 +1,15 @@
+diff a/swadharma/apps/web/src/components/herbs/HerbSearchBar.tsx b/swadharma/apps/web/src/components/herbs/HerbSearchBar.tsx	(rejected hunks)
+@@ -1,3 +1,7 @@
++/**
++ * @file HerbSearchBar
++ * @description Provides a search input and dosha/system filter badges for the herb database.
++ */
+ 'use client'
+ 
+ import React from 'react';
+@@ -89,4 +93,3 @@ export function HerbSearchBar() {
+ }
+ // End of HerbSearchBar
+ 
+-// trigger change
+\ No newline at end of file
