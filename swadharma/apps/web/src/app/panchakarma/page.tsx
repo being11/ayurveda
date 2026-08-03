@@ -1,3 +1,6 @@
+/**
+ * Page component for displaying personalized Panchakarma and Purvakarma recommendations.
+ */
 'use client';
 
 import { useEffect, useState } from 'react';

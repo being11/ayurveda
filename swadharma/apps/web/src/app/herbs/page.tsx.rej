@@ -1,7 +1,24 @@
 diff a/swadharma/apps/web/src/app/herbs/page.tsx b/swadharma/apps/web/src/app/herbs/page.tsx	(rejected hunks)
-@@ -108,4 +92,3 @@ export default function HerbsPage() {
- }
- // End of HerbsPage
+@@ -14,8 +14,12 @@ export default function HerbsPage() {
+     setMounted(true);
+   }, []);
  
+-  const { herbSearchQuery, herbDoshaFilter, herbOrganFilter } = useAssessmentStore();
+-  const herbs: Herb[] = herbsData as Herb[];
++  const herbSearchQuery = useAssessmentStore(state => state.herbSearchQuery);
++  const herbDoshaFilter = useAssessmentStore(state => state.herbDoshaFilter);
++  const herbOrganFilter = useAssessmentStore(state => state.herbOrganFilter);
++  const reset = useAssessmentStore(state => state.reset);
++
++  const herbs: Herb[] = herbsData as unknown as Herb[];
+ 
+   const filteredHerbs = useMemo(() => {
+     return herbs.filter(herb => {
+@@ -106,6 +110,3 @@ export default function HerbsPage() {
+     </div>
+   );
+ }
+-// End of HerbsPage
+-
 -// trigger change
 \ No newline at end of file

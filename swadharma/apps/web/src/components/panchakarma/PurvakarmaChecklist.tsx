@@ -1,3 +1,6 @@
+/**
+ * Checklist component for tracking progress of Purvakarma (pre-treatment) tasks.
+ */
 import { Card, CardHeader, CardTitle, CardContent } from '../ui/card';
 import type { PurvakarmaStep } from '../../types/assessment';
 import { useState } from 'react';

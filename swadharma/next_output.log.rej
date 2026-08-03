@@ -1,0 +1,21 @@
+diff a/swadharma/next_output.log b/swadharma/next_output.log	(rejected hunks)
+@@ -5,9 +5,16 @@
+ ▲ Next.js 16.2.6 (Turbopack)
+ - Local:         http://localhost:3000
+ - Network:       http://192.168.0.2:3000
+-✓ Ready in 541ms
++✓ Ready in 546ms
++Attention: Next.js now collects completely anonymous telemetry regarding usage.
++This information is used to shape Next.js' roadmap and prioritize features.
++You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
++https://nextjs.org/telemetry
++
+ ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+ 
+ ○ Compiling /quiz ...
+- GET /quiz 200 in 6.6s (next.js: 5.6s, proxy.ts: 130ms, application-code: 840ms)
+- GET /quiz 200 in 97ms (next.js: 6ms, proxy.ts: 10ms, application-code: 82ms)
++ GET /quiz 200 in 8.2s (next.js: 7.2s, proxy.ts: 126ms, application-code: 876ms)
++ GET /quiz 200 in 98ms (next.js: 6ms, proxy.ts: 9ms, application-code: 82ms)
++ GET /quiz 200 in 74ms (next.js: 5ms, proxy.ts: 5ms, application-code: 63ms)
++ GET /quiz 200 in 88ms (next.js: 6ms, proxy.ts: 6ms, application-code: 76ms)

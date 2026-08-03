@@ -1,0 +1,27 @@
+diff a/swadharma/apps/web/src/engines/panchakarma.ts b/swadharma/apps/web/src/engines/panchakarma.ts	(rejected hunks)
+@@ -1,23 +1,8 @@
+ import type { AyurvedaProfile } from '../types/assessment';
+ import panchakarmaData from '../data/panchakarma.json';
+ 
+-export interface PanchakarmaTherapy {
+-  id: string;
+-  name: string;
+-  dosha: string;
+-  indicatedDoshas?: string[];
+-  benefits: string[];
+-  contraindications: string[];
+-  duration: string;
+-  description?: string;
+-}
+-
+-export interface PurvakarmaStep {
+-  id: string;
+-  task: string;
+-  description: string;
+-  step?: string;
+-}
++import type { PanchakarmaTherapy, PurvakarmaStep } from "../types/assessment";
++export type { PanchakarmaTherapy, PurvakarmaStep };
+ 
+ /**
+  * Gets recommended Panchakarma therapies based on the user's dominant dosha profile.
