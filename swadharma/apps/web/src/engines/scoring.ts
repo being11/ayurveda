@@ -58,6 +58,18 @@ export function calculateQuizScores(answers: Record<string, string | string[]>):
     }
   }
 
+  // If no specific prakriti scores were found (maybe no prakriti questions were answered),
+  // fallback to making prakriti and vikriti the same based on whatever we have.
+  const totalPrakriti = prakritiScores.vata + prakritiScores.pitta + prakritiScores.kapha;
+  const totalVikriti = vikritiScores.vata + vikritiScores.pitta + vikritiScores.kapha;
+  
+  if (totalPrakriti === 0 && totalVikriti > 0) {
+      return {
+          prakriti: normalizeScores(vikritiScores),
+          vikriti: normalizeScores(vikritiScores)
+      };
+  }
+
   return {
     prakriti: normalizeScores(prakritiScores),
     vikriti: normalizeScores(vikritiScores)

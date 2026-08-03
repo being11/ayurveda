@@ -16,6 +16,10 @@ export function QuizResults({ prakriti, vikriti, onRetake }: QuizResultsProps) {
   const router = useRouter();
   const prakritiDominance = detectDoshaDominance(prakriti);
   const vikritiDominance = detectDoshaDominance(vikriti);
+  
+  // Implementation note: 
+  // Prakriti (birth constitution) is derived from innate questions (e.g. frame, childhood)
+  // Vikriti (current imbalance) is derived from dynamic questions (e.g. sleep, digestion)
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-[#FBF8F2] p-4 text-center">
