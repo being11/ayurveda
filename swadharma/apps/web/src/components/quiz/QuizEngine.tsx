@@ -1,6 +1,6 @@
 'use client';
 
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { useAssessmentStore } from '@/src/stores/assessmentStore';
 import { categories } from '@/src/data/index';
 import { useEffect, useState, useRef, useCallback } from 'react';
@@ -9,6 +9,7 @@ import { QuestionCard } from './QuestionCard';
 import { QuizComplete } from './QuizComplete';
 import { QuizTransition } from './QuizTransition';
 import { QuizFooter } from './QuizFooter';
+import { QuizProgress } from './QuizProgress';
 import { calculateDoshaScores } from '@/src/engines/scoring';
 import { useQuizNavigation } from '@/src/hooks/useQuizNavigation';
 
