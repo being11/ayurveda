@@ -14,9 +14,45 @@ import {
 import type { AssessmentState, PanchakarmaTherapy } from '../types/assessment';
 import { computeProfile, getDominantDosha } from '../engines/report';
 import panchakarmaData from '../data/panchakarma.json';
+import seasonsData from '../data/seasons.json';
 
 const firstCategory = categories[0];
 const firstQuestion = firstCategory?.questions[0] ?? null;
+
+function getCurrentSeasonId(): string {
+  const now = new Date();
+  const currentMonth = now.getMonth() + 1; // 1-12
+  const currentDay = now.getDate();
+  const seasons = seasonsData as any[];
+
+  for (const season of seasons) {
+    const [startMonth, startDay] = season.startDate.split('-').map(Number);
+    const [endMonth, endDay] = season.endDate.split('-').map(Number);
+
+    if (startMonth === undefined || startDay === undefined || endMonth === undefined || endDay === undefined) {
+      continue;
+    }
+
+    if (startMonth <= endMonth) {
+      if (
+        (currentMonth > startMonth || (currentMonth === startMonth && currentDay >= startDay)) &&
+        (currentMonth < endMonth || (currentMonth === endMonth && currentDay <= endDay))
+      ) {
+        return season.id;
+      }
+    } else {
+      // Wraps around the year (e.g. Hemanta: 11-15 to 01-14)
+      if (
+        (currentMonth > startMonth || (currentMonth === startMonth && currentDay >= startDay)) ||
+        (currentMonth < endMonth || (currentMonth === endMonth && currentDay <= endDay))
+      ) {
+        return season.id;
+      }
+    }
+  }
+
+  return seasons[0]?.id || 'hemanta'; // Fallback
+}
 
 const useAssessmentStore = create<AssessmentState>()(
   persist(
@@ -34,6 +70,11 @@ const useAssessmentStore = create<AssessmentState>()(
       herbOrganFilter: null,
 
       selectedSrotas: null,
+      
+      currentSeasonId: null,
+      
+      autoDetectSeason: () => set({ currentSeasonId: getCurrentSeasonId() }),
+      setCurrentSeasonId: (id: string) => set({ currentSeasonId: id }),
 
       setAnswer: (questionId, value) => {
         const state = get();
@@ -135,6 +176,7 @@ const useAssessmentStore = create<AssessmentState>()(
           herbDoshaFilter: null,
           herbOrganFilter: null,
           selectedSrotas: null,
+          currentSeasonId: null,
         });
         try {
           useAssessmentStore.persist.clearStorage();
