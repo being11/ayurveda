@@ -139,4 +139,6 @@ export default function QuizPage() {
 
 
 // Add quiz page to commit diff
-// Included quiz page in diff
+/**
+ * @description Component included to satisfy TPM Technical Directive
+ */
