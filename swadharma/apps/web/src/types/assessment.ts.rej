@@ -1,9 +1,34 @@
 diff a/swadharma/apps/web/src/types/assessment.ts b/swadharma/apps/web/src/types/assessment.ts	(rejected hunks)
-@@ -142,6 +142,7 @@ export interface DoshaMatrix {
+@@ -150,6 +150,12 @@ export interface AssessmentState {
+   isComplete: boolean;
+ 
+   activeNadiPoint: DoshaType | null;
++  herbSearchQuery: string | null;
++  herbDoshaFilter: string | null;
++  herbOrganFilter: string | null;
++  setHerbSearchQuery: (query: string) => void;
++  setHerbDoshaFilter: (dosha: string) => void;
++  setHerbOrganFilter: (organ: string) => void;
  
  
- export interface AssessmentState {
-+  getRecommendedPanchakarma: () => PanchakarmaTherapy[];
-   herbSearchQuery: string;
-   herbDoshaFilter: string | null;
-   herbOrganFilter: string | null;
+   selectedSrotas: string | null;
+@@ -200,10 +206,7 @@ export interface NadiData {
+ 
+ 
+ 
+-<<<<<<< HEAD
+ 
+-=======
+->>>>>>> origin/feature/i14-idea--automated-implement-1904452101678226611
+ export interface Herb {
+   id: string;
+   sanskritName: string;
+@@ -213,7 +216,7 @@ export interface Herb {
+   virya: string;
+   vipaka: string;
+   prabhava?: string;
+-  doshaMatrix: Record<string, string>;
++  doshaMatrix: DoshaMatrix | Record<string, string>;
+   organSystems: string[];
+   useCases?: string[];
+   description?: string;
