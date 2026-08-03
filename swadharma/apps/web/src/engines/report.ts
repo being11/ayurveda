@@ -47,12 +47,25 @@ function splitObservations(observations: Record<string, number>): { prakrti: Rec
   const prakrti: Record<string, number> = {};
   const vikrti: Record<string, number> = {};
 
+  // For this application, let's identify Prakriti by categorizing specific answers
+  // or by reading explicit Prakriti dimensions if available.
+  
+  // Here we use a combination of keyword matching and fallback logic.
   Object.entries(observations).forEach(([obsKey, weight]) => {
     const lower = obsKey.toLowerCase();
-    // Keywords identifying Prakriti
-    if (lower.includes('prakrti') || lower.includes('childhood') || lower.includes('baseline')) {
+    
+    // Check if the observation explicitly mentions Prakriti concepts
+    if (
+      lower.includes('prakrti') || 
+      lower.includes('prakriti') || 
+      lower.includes('childhood') || 
+      lower.includes('baseline') ||
+      lower.includes('innate') ||
+      lower.includes('birth')
+    ) {
       prakrti[obsKey] = weight;
     } else {
+      // By default, assume it's part of the current state (Vikriti)
       vikrti[obsKey] = weight;
     }
   });

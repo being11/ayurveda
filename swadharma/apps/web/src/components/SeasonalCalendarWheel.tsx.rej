@@ -1,9 +1,10 @@
 diff a/swadharma/apps/web/src/components/SeasonalCalendarWheel.tsx b/swadharma/apps/web/src/components/SeasonalCalendarWheel.tsx	(rejected hunks)
-@@ -3,12 +3,13 @@
+@@ -2,13 +2,14 @@
+ 
  import React from 'react';
  import { useAssessmentStore } from '../stores/assessmentStore';
- import type { Season } from '../types/seasons';
 +import { useSeasonsStore } from '../stores/seasonsStore';
+ import type { Season } from '../types/seasons';
  import seasonsData from '../data/seasons.json';
  
  const seasons: Season[] = seasonsData as Season[];

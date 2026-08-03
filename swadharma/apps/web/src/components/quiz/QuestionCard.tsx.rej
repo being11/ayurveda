@@ -1,0 +1,6 @@
+diff a/swadharma/apps/web/src/components/quiz/QuestionCard.tsx b/swadharma/apps/web/src/components/quiz/QuestionCard.tsx	(rejected hunks)
+@@ -85,4 +85,3 @@ export function QuestionCard({ question, currentAnswer = '', onAnswer, onOptionC
+     </AnimatePresence>
+   );
+ }
+-// trigger change

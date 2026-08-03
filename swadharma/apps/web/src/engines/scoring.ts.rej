@@ -1,9 +1,6 @@
 diff a/swadharma/apps/web/src/engines/scoring.ts b/swadharma/apps/web/src/engines/scoring.ts	(rejected hunks)
-@@ -104,6 +104,6 @@ export function detectDoshaDominance(profile: DoshaProfile): string {
-     return `Single Dosha (${first.name})`;
- }
+@@ -106,4 +118,3 @@ export function detectDoshaDominance(profile: DoshaProfile): string {
  
--export const calculateDoshaScores = (_categories: any, answers: Record<string, string | string[]>) => calculateQuizScores(answers);
-+export const calculateDoshaScores = (_categories: unknown, answers: Record<string, string | string[]>) => calculateQuizScores(answers);
+ export const calculateDoshaScores = (_categories: any, answers: Record<string, string | string[]>) => calculateQuizScores(answers);
  export const getDoshaType = detectDoshaDominance;
- // trigger change
+-// trigger change

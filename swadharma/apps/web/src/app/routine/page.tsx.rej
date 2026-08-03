@@ -1,4 +1,12 @@
 diff a/swadharma/apps/web/src/app/routine/page.tsx b/swadharma/apps/web/src/app/routine/page.tsx	(rejected hunks)
+@@ -3,6 +3,7 @@
+ 
+ import React, { useEffect, useState } from 'react';
+ import { useAssessmentStore } from '../../stores/assessmentStore';
++import { useSeasonsStore } from '../../stores/seasonsStore';
+ import { computeProfile, getDominantDosha } from '../../engines/report';
+ import { getRoutineForProfile } from '../../engines/routine';
+ import { RoutineTimeline } from '../../components/routine/RoutineTimeline';
 @@ -15,7 +16,8 @@ const seasons: Season[] = seasonsData as Season[];
  
  export default function RoutinePage() {
