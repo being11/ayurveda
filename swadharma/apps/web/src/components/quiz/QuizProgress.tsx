@@ -1,5 +1,4 @@
 import React from 'react';
-import { cn } from '@workspace/ui/lib/utils';
 import { ArrowLeft } from 'lucide-react';
 
 interface QuizProgressProps {

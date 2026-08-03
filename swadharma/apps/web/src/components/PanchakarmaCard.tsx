@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
-import type { PanchakarmaTherapy } from '../types/assessment';
+import type { PanchakarmaTherapy } from '../engines/panchakarma';
 
 interface PanchakarmaCardProps {
   therapy: PanchakarmaTherapy;

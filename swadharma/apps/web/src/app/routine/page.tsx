@@ -3,6 +3,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { useAssessmentStore } from '../../stores/assessmentStore';
+import { useSeasonsStore } from '../../stores/seasonsStore';
 import { computeProfile, getDominantDosha } from '../../engines/report';
 import { getRoutineForProfile } from '../../engines/routine';
 import { RoutineTimeline } from '../../components/routine/RoutineTimeline';
@@ -15,7 +16,8 @@ const seasons: Season[] = seasonsData as Season[];
 
 export default function RoutinePage() {
   const [mounted, setMounted] = useState(false);
-  const { observations, answers, currentSeasonId, autoDetectSeason } = useAssessmentStore();
+  const { observations, answers } = useAssessmentStore();
+  const { currentSeasonId, autoDetectSeason } = useSeasonsStore();
 
   useEffect(() => {
     setMounted(true);
