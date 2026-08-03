@@ -18,6 +18,8 @@ export function QuizHeader(props: QuizHeaderProps) {
   return (
     <header className="w-full px-4 py-6 md:px-8 max-w-4xl mx-auto flex flex-col gap-4 z-10 sticky top-0 bg-white/80 backdrop-blur-md">
       <QuizProgress
+        currentStep={props.currentCategoryIndex + 1}
+        totalSteps={props.totalCategories}
         progressPercentage={props.progressPercentage}
         categoryTitle={props.categoryTitle}
         currentCategoryIndex={props.currentCategoryIndex}
