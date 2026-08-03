@@ -1,5 +1,11 @@
 diff a/swadharma/apps/web/src/app/routine/page.tsx b/swadharma/apps/web/src/app/routine/page.tsx	(rejected hunks)
-@@ -9,7 +9,6 @@ import { getRoutineForProfile } from '../../engines/routine';
+@@ -3,13 +3,11 @@
+ 
+ import React, { useEffect, useState } from 'react';
+ import { useAssessmentStore } from '../../stores/assessmentStore';
+-import { useSeasonsStore } from '../../stores/seasonsStore';
+ import { computeProfile, getDominantDosha } from '../../engines/report';
+ import { getRoutineForProfile } from '../../engines/routine';
  import { RoutineTimeline } from '../../components/routine/RoutineTimeline';
  import { SeasonalAdjustmentCard } from '../../components/routine/SeasonalAdjustmentCard';
  import Navigation from '../../components/Navigation';
