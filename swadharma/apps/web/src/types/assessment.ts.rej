@@ -1,34 +1,36 @@
 diff a/swadharma/apps/web/src/types/assessment.ts b/swadharma/apps/web/src/types/assessment.ts	(rejected hunks)
-@@ -150,6 +150,12 @@ export interface AssessmentState {
-   isComplete: boolean;
+@@ -143,22 +157,9 @@ export interface AssessmentState {
  
    activeNadiPoint: DoshaType | null;
-+  herbSearchQuery: string | null;
-+  herbDoshaFilter: string | null;
-+  herbOrganFilter: string | null;
-+  setHerbSearchQuery: (query: string) => void;
-+  setHerbDoshaFilter: (dosha: string) => void;
-+  setHerbOrganFilter: (organ: string) => void;
+ 
+-  herbSearchQuery: string;
+-  herbDoshaFilter: string | null;
+-  herbOrganFilter: string | null;
+-
+-  setHerbSearchQuery: (query: string) => void;
+-  setHerbDoshaFilter: (dosha: string | null) => void;
+-  setHerbOrganFilter: (organ: string | null) => void;
  
  
    selectedSrotas: string | null;
-@@ -200,10 +206,7 @@ export interface NadiData {
+-  herbSearchQuery: string;
+-  herbDoshaFilter: string | null;
+-  herbOrganFilter: string | null;
+-  setHerbSearchQuery: (query: string) => void;
+-  setHerbDoshaFilter: (dosha: string | null) => void;
+-  setHerbOrganFilter: (organ: string | null) => void;
+ 
+   currentSeasonId: string | null;
+   setCurrentSeasonId: (seasonId: string | null) => void;
+@@ -169,11 +170,9 @@ export interface AssessmentState {
+   prevQuestion: () => void;
+   reset: () => void;
+   setActiveNadiPoint: (point: DoshaType | null) => void;
+-  getRecommendedPanchakarma: () => PanchakarmaTherapy[];
  
  
+   setSelectedSrotas: (srotasId: string | null) => void;
+-  getRecommendedPanchakarma: () => PanchakarmaTherapy[];
+ }
  
--<<<<<<< HEAD
- 
--=======
-->>>>>>> origin/feature/i14-idea--automated-implement-1904452101678226611
- export interface Herb {
-   id: string;
-   sanskritName: string;
-@@ -213,7 +216,7 @@ export interface Herb {
-   virya: string;
-   vipaka: string;
-   prabhava?: string;
--  doshaMatrix: Record<string, string>;
-+  doshaMatrix: DoshaMatrix | Record<string, string>;
-   organSystems: string[];
-   useCases?: string[];
-   description?: string;
+ // Nadi Pariksha Educational Guide Types
