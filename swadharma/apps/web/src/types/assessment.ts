@@ -142,6 +142,12 @@ export interface DoshaMatrix {
 
 
 export interface AssessmentState {
+  herbSearchQuery: string;
+  herbDoshaFilter: string | null;
+  herbOrganFilter: string | null;
+  setHerbSearchQuery: (query: string) => void;
+  setHerbDoshaFilter: (dosha: string | null) => void;
+  setHerbOrganFilter: (organ: string | null) => void;
   answers: Record<string, string | string[]>;
   observations: Record<string, number>;
   currentCategoryIndex: number;
@@ -200,40 +206,3 @@ export interface NadiData {
 
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/feature/i14-idea--automated-implement-1904452101678226611
-export interface Herb {
-  id: string;
-  sanskritName: string;
-  commonName: string;
-  botanicalName: string;
-  rasa: string[];
-  virya: string;
-  vipaka: string;
-  prabhava?: string;
-  doshaMatrix: Record<string, string>;
-  organSystems: string[];
-  useCases?: string[];
-  description?: string;
-  traditionalUses?: string[];
-  cautions?: string[];
-}
-
-export interface PanchakarmaTherapy {
-  id: string;
-  name: string;
-  dosha: string;
-  indicatedDoshas: string[];
-  benefits: string[];
-  contraindications: string[];
-  duration: string;
-  description: string;
-}
-
-export interface PurvakarmaStep {
-  id: string;
-  step: string;
-  description: string;
-}

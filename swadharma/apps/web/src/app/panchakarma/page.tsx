@@ -3,8 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAssessmentStore } from '../../stores/assessmentStore';
-import { computeProfile } from '../../engines/report';
-import { getRecommendedTherapies, getPurvakarmaChecklist } from '../../engines/panchakarma';
+import { getPurvakarmaChecklist } from '../../engines/panchakarma';
 import { PanchakarmaCard } from '../../components/panchakarma/PanchakarmaCard';
 import { PurvakarmaChecklist } from '../../components/panchakarma/PurvakarmaChecklist';
 import { Button } from '../../components/ui/button';
@@ -13,9 +12,8 @@ export default function PanchakarmaPage() {
   const [isMounted, setIsMounted] = useState(false);
   const router = useRouter();
   
-  const observations = useAssessmentStore(state => state.observations);
-  const answers = useAssessmentStore(state => state.answers);
   const isComplete = useAssessmentStore(state => state.isComplete);
+  const getRecommendedPanchakarma = useAssessmentStore(state => state.getRecommendedPanchakarma);
 
   useEffect(() => {
     setIsMounted(true);
@@ -30,7 +28,7 @@ export default function PanchakarmaPage() {
   }
 
   // Redirect if assessment is not complete or no data exists
-  if (!isComplete || Object.keys(observations).length === 0) {
+  if (!isComplete) {
     return (
       <div className="min-h-screen bg-stone-50 flex flex-col items-center justify-center p-4">
         <div className="max-w-md w-full bg-white p-8 rounded-xl shadow-sm text-center">
@@ -49,8 +47,7 @@ export default function PanchakarmaPage() {
     );
   }
 
-  const profile = computeProfile(observations, answers);
-  const recommendedTherapies = getRecommendedTherapies(profile);
+  const recommendedTherapies = getRecommendedPanchakarma();
   const purvakarmaTasks = getPurvakarmaChecklist();
 
   return (

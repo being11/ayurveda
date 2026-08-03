@@ -1,5 +1,5 @@
 import { Card, CardHeader, CardTitle, CardContent } from '../ui/card';
-import { PanchakarmaTherapy } from '../../engines/panchakarma';
+import type { PanchakarmaTherapy } from '../../types/assessment';
 
 interface PanchakarmaCardProps {
   therapy: PanchakarmaTherapy;
