@@ -1,0 +1,52 @@
+--- swadharma/apps/web/src/engines/scoring.ts
++++ swadharma/apps/web/src/engines/scoring.ts
+@@ -3,6 +3,11 @@
+ 
+ const PRAKRITI_CATEGORIES = ['introduction', 'body', 'childhood', 'aging'];
+ 
++/**
++ * Dosha Scoring Engine
++ * Calculates weighted scoring for Vata, Pitta, Kapha across all question categories.
++ * Separates Prakriti (birth constitution) from Vikriti (current imbalance).
++ */
+ export function calculateQuizScores(answers: Record<string, string | string[]>): {
+   prakriti: DoshaProfile;
+   vikriti: DoshaProfile;
+@@ -49,6 +54,9 @@
+   };
+ }
+ 
++/**
++ * Evaluates dual-dosha and tri-dosha detection logic based on score differentials.
++ */
+ export function detectDoshaDominance(profile: DoshaProfile): string {
+     const { vata, pitta, kapha } = profile;
+     const scores = [
+--- swadharma/apps/web/src/components/quiz/QuizProgress.tsx
++++ swadharma/apps/web/src/components/quiz/QuizProgress.tsx
+@@ -1,6 +1,5 @@
+ import React from 'react';
+-import { cn } from '@workspace/ui/lib/utils';
+ 
+ interface QuizProgressProps {
+   currentStep: number;
+--- swadharma/apps/web/src/components/quiz/QuestionCard.tsx
++++ swadharma/apps/web/src/components/quiz/QuestionCard.tsx
+@@ -62,7 +62,7 @@
+         
+         {question.type === 'multiple' && (
+-             <div className="text-sm text-gray-500 mt-4 text-center md:text-left">
++             <div className="text-sm text-stone-500 mt-4 text-center md:text-left">
+                 Select all that apply. Press continue when ready.
+              </div>
+         )}
+--- swadharma/apps/web/src/app/quiz/page.tsx
++++ swadharma/apps/web/src/app/quiz/page.tsx
+@@ -95,6 +95,7 @@
+ 
+       {/* Main Content */}
+       <main className="flex-1 flex flex-col justify-center max-w-3xl mx-auto w-full px-4 pb-32 pt-8">
++         {/* QuestionCard component for Likert scale or multiple choice options */}
+          <QuestionCard 
+             question={currentQuestion}
+             currentAnswer={currentAnswer}

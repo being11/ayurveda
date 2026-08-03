@@ -102,6 +102,7 @@ export default function QuizPage() {
 
       {/* Main Content */}
       <main className="flex-1 flex flex-col justify-center max-w-3xl mx-auto w-full px-4 pb-32 pt-8">
+         {/* QuestionCard component for Likert scale or multiple choice options */}
          <QuestionCard 
             question={currentQuestion}
             currentAnswer={currentAnswer}

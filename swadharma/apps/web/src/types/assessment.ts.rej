@@ -1,35 +1,47 @@
 diff a/swadharma/apps/web/src/types/assessment.ts b/swadharma/apps/web/src/types/assessment.ts	(rejected hunks)
-@@ -72,9 +72,33 @@ export interface AssessmentState {
-   currentQuestionId: string | null;
-   history: string[];
-   isComplete: boolean;
-+  herbSearchQuery: string;
-+  herbDoshaFilter: string | null;
+@@ -91,6 +91,25 @@ export interface RoutineData {
+   seasons: Record<string, SeasonAdjustment>;
+ }
  
-   setAnswer: (questionId: string, value: string | string[]) => void;
-   nextQuestion: () => void;
-   prevQuestion: () => void;
-   reset: () => void;
-+
-+  setHerbSearchQuery: (query: string) => void;
-+  setHerbDoshaFilter: (dosha: string | null) => void;
-+}
-+
-+export interface HerbDoshaEffect {
-+  vata: string;
-+  pitta: string;
-+  kapha: string;
-+}
-+
 +export interface Herb {
 +  id: string;
 +  sanskritName: string;
++  commonName: string;
 +  botanicalName: string;
 +  rasa: string[];
 +  virya: string;
 +  vipaka: string;
 +  prabhava: string;
-+  doshas: HerbDoshaEffect;
++  doshaMatrix: {
++    vata: string;
++    pitta: string;
++    kapha: string;
++  };
 +  organSystems: string[];
 +  useCases: string[];
++  description: string;
++}
++
+ export interface AssessmentState {
+   answers: Record<string, string | string[]>;
+   observations: Record<string, number>;
+@@ -100,12 +119,19 @@ export interface AssessmentState {
+   isComplete: boolean;
+ 
+   activeNadiPoint: DoshaType | null;
++  
++  herbSearchQuery: string;
++  herbDoshaFilter: string | null;
++  herbOrganFilter: string | null;
+ 
+   setAnswer: (questionId: string, value: string | string[]) => void;
+   nextQuestion: () => void;
+   prevQuestion: () => void;
+   reset: () => void;
+   setActiveNadiPoint: (point: DoshaType | null) => void;
++  setHerbSearchQuery: (query: string) => void;
++  setHerbDoshaFilter: (dosha: string | null) => void;
++  setHerbOrganFilter: (organ: string | null) => void;
  }
+ 
+ // Nadi Pariksha Educational Guide Types
