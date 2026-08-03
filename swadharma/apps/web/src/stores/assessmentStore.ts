@@ -11,7 +11,9 @@ import {
   calculateObservations,
   countRemainingQuestions,
 } from '../engines/logic';
-import type { AssessmentState } from '../types/assessment';
+import type { AssessmentState, PanchakarmaTherapy } from '../types/assessment';
+import { computeProfile, getDominantDosha } from '../engines/report';
+import panchakarmaData from '../data/panchakarma.json';
 
 const firstCategory = categories[0];
 const firstQuestion = firstCategory?.questions[0] ?? null;
@@ -112,6 +114,14 @@ const useAssessmentStore = create<AssessmentState>()(
         });
       },
 
+      getRecommendedPanchakarma: () => {
+        const state = get();
+        const profile = computeProfile(state.observations, state.answers);
+        const dominantDosha = getDominantDosha(profile.prakrtiDosha).toLowerCase();
+        return (panchakarmaData as PanchakarmaTherapy[]).filter((therapy) =>
+          therapy.indicatedDoshas.includes(dominantDosha)
+        );
+      },
       reset: () => {
         set({
           answers: {},
