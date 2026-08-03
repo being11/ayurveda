@@ -26,6 +26,11 @@ const useAssessmentStore = create<AssessmentState>()(
       history: firstQuestion ? [firstQuestion.id] : [],
       isComplete: false,
 
+      // Herbs State
+      herbSearchQuery: '',
+      selectedHerbDosha: null,
+      selectedHerbOrganSystem: null,
+
       setAnswer: (questionId, value) => {
         const state = get();
         const allQuestions = categories.flatMap(cat => cat.questions);
@@ -113,11 +118,19 @@ const useAssessmentStore = create<AssessmentState>()(
           currentQuestionId: firstQuestion?.id ?? null,
           history: firstQuestion ? [firstQuestion.id] : [],
           isComplete: false,
+          herbSearchQuery: '',
+          selectedHerbDosha: null,
+          selectedHerbOrganSystem: null,
         });
         try {
           useAssessmentStore.persist.clearStorage();
         } catch {}
       },
+
+      // Herbs Actions
+      setHerbSearchQuery: (query) => set({ herbSearchQuery: query }),
+      setSelectedHerbDosha: (dosha) => set({ selectedHerbDosha: dosha }),
+      setSelectedHerbOrganSystem: (organSystem) => set({ selectedHerbOrganSystem: organSystem }),
     }),
     {
       name: 'swadharma-assessment',

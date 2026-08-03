@@ -73,8 +73,39 @@ export interface AssessmentState {
   history: string[];
   isComplete: boolean;
 
+  // Herbs State
+  herbSearchQuery: string;
+  selectedHerbDosha: 'vata' | 'pitta' | 'kapha' | null;
+  selectedHerbOrganSystem: string | null;
+
   setAnswer: (questionId: string, value: string | string[]) => void;
   nextQuestion: () => void;
   prevQuestion: () => void;
   reset: () => void;
+
+  // Herbs Actions
+  setHerbSearchQuery: (query: string) => void;
+  setSelectedHerbDosha: (dosha: 'vata' | 'pitta' | 'kapha' | null) => void;
+  setSelectedHerbOrganSystem: (organSystem: string | null) => void;
+}
+
+export interface DoshaEffect {
+  vata: 'balances' | 'aggravates' | 'neutral';
+  pitta: 'balances' | 'aggravates' | 'neutral';
+  kapha: 'balances' | 'aggravates' | 'neutral';
+}
+
+export interface Herb {
+  id: string;
+  sanskritName: string;
+  commonName: string;
+  botanicalName: string;
+  rasa: string[];
+  virya: string;
+  vipaka: string;
+  prabhava: string | null;
+  dosha: DoshaEffect;
+  organSystems: string[];
+  useCases: string[];
+  description: string;
 }

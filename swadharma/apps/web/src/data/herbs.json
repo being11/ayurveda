@@ -1,0 +1,2918 @@
+[
+  {
+    "id": "ashwagandha",
+    "sanskritName": "Ashwagandha",
+    "commonName": "Ashwagandha Common",
+    "botanicalName": "Botanica ashwagandha",
+    "rasa": [
+      "Sweet",
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": "Special Action",
+    "dosha": {
+      "vata": "balances",
+      "pitta": "aggravates",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Digestive",
+      "Nervous"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Ashwagandha, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "shatavari",
+    "sanskritName": "Shatavari",
+    "commonName": "Shatavari Common",
+    "botanicalName": "Botanica shatavari",
+    "rasa": [
+      "Sour",
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "aggravates",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Reproductive"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Shatavari, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "brahmi",
+    "sanskritName": "Brahmi",
+    "commonName": "Brahmi Common",
+    "botanicalName": "Botanica brahmi",
+    "rasa": [
+      "Salty",
+      "Pungent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "neutral",
+      "pitta": "balances",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Nervous",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Brahmi, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "tulsi",
+    "sanskritName": "Tulsi",
+    "commonName": "Tulsi Common",
+    "botanicalName": "Botanica tulsi",
+    "rasa": [
+      "Pungent",
+      "Bitter"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "neutral",
+      "pitta": "neutral",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Reproductive",
+      "Excretory"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Tulsi, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "turmeric",
+    "sanskritName": "Turmeric",
+    "commonName": "Turmeric Common",
+    "botanicalName": "Botanica turmeric",
+    "rasa": [
+      "Bitter",
+      "Astringent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "balances",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Circulatory",
+      "Skeletal"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Turmeric, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "ginger",
+    "sanskritName": "Ginger",
+    "commonName": "Ginger Common",
+    "botanicalName": "Botanica ginger",
+    "rasa": [
+      "Astringent",
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special Action",
+    "dosha": {
+      "vata": "balances",
+      "pitta": "aggravates",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Excretory",
+      "Muscular"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Ginger, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "amalaki",
+    "sanskritName": "Amalaki",
+    "commonName": "Amalaki Common",
+    "botanicalName": "Botanica amalaki",
+    "rasa": [
+      "Sweet",
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "neutral",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Skeletal",
+      "Digestive"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Amalaki, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "haritaki",
+    "sanskritName": "Haritaki",
+    "commonName": "Haritaki Common",
+    "botanicalName": "Botanica haritaki",
+    "rasa": [
+      "Sour",
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "neutral",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Muscular",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Haritaki, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "bibhitaki",
+    "sanskritName": "Bibhitaki",
+    "commonName": "Bibhitaki Common",
+    "botanicalName": "Botanica bibhitaki",
+    "rasa": [
+      "Salty",
+      "Pungent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "balances",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Digestive",
+      "Nervous"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Bibhitaki, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "guduchi",
+    "sanskritName": "Guduchi",
+    "commonName": "Guduchi Common",
+    "botanicalName": "Botanica guduchi",
+    "rasa": [
+      "Pungent",
+      "Bitter"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "balances",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Reproductive"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Guduchi, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "arjuna",
+    "sanskritName": "Arjuna",
+    "commonName": "Arjuna Common",
+    "botanicalName": "Botanica arjuna",
+    "rasa": [
+      "Bitter",
+      "Astringent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": "Special Action",
+    "dosha": {
+      "vata": "balances",
+      "pitta": "aggravates",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Nervous",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Arjuna, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "guggulu",
+    "sanskritName": "Guggulu",
+    "commonName": "Guggulu Common",
+    "botanicalName": "Botanica guggulu",
+    "rasa": [
+      "Astringent",
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "aggravates",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Reproductive",
+      "Excretory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Guggulu, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "triphala",
+    "sanskritName": "Triphala",
+    "commonName": "Triphala Common",
+    "botanicalName": "Botanica triphala",
+    "rasa": [
+      "Sweet",
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "neutral",
+      "pitta": "neutral",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Circulatory",
+      "Skeletal"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Triphala, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "neem",
+    "sanskritName": "Neem",
+    "commonName": "Neem Common",
+    "botanicalName": "Botanica neem",
+    "rasa": [
+      "Sour",
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "aggravates",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Excretory",
+      "Muscular"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Neem, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "licorice",
+    "sanskritName": "Licorice",
+    "commonName": "Licorice Common",
+    "botanicalName": "Botanica licorice",
+    "rasa": [
+      "Salty",
+      "Pungent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "neutral",
+      "pitta": "neutral",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Skeletal",
+      "Digestive"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Licorice, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "gotu-kola",
+    "sanskritName": "Gotu Kola",
+    "commonName": "Gotu Kola Common",
+    "botanicalName": "Botanica gotu kola",
+    "rasa": [
+      "Pungent",
+      "Bitter"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": "Special Action",
+    "dosha": {
+      "vata": "balances",
+      "pitta": "balances",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Muscular",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Gotu Kola, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "cardamom",
+    "sanskritName": "Cardamom",
+    "commonName": "Cardamom Common",
+    "botanicalName": "Botanica cardamom",
+    "rasa": [
+      "Bitter",
+      "Astringent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "neutral",
+      "pitta": "aggravates",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Digestive",
+      "Nervous"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Cardamom, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "cinnamon",
+    "sanskritName": "Cinnamon",
+    "commonName": "Cinnamon Common",
+    "botanicalName": "Botanica cinnamon",
+    "rasa": [
+      "Astringent",
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "neutral",
+      "pitta": "neutral",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Reproductive"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Cinnamon, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "clove",
+    "sanskritName": "Clove",
+    "commonName": "Clove Common",
+    "botanicalName": "Botanica clove",
+    "rasa": [
+      "Sweet",
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "aggravates",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Nervous",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Clove, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "fennel",
+    "sanskritName": "Fennel",
+    "commonName": "Fennel Common",
+    "botanicalName": "Botanica fennel",
+    "rasa": [
+      "Sour",
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "neutral",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Reproductive",
+      "Excretory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Fennel, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "cumin",
+    "sanskritName": "Cumin",
+    "commonName": "Cumin Common",
+    "botanicalName": "Botanica cumin",
+    "rasa": [
+      "Salty",
+      "Pungent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": "Special Action",
+    "dosha": {
+      "vata": "neutral",
+      "pitta": "aggravates",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Circulatory",
+      "Skeletal"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Cumin, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "coriander",
+    "sanskritName": "Coriander",
+    "commonName": "Coriander Common",
+    "botanicalName": "Botanica coriander",
+    "rasa": [
+      "Pungent",
+      "Bitter"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "aggravates",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Excretory",
+      "Muscular"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Coriander, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "pippali",
+    "sanskritName": "Pippali",
+    "commonName": "Pippali Common",
+    "botanicalName": "Botanica pippali",
+    "rasa": [
+      "Bitter",
+      "Astringent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "aggravates",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Skeletal",
+      "Digestive"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Pippali, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "black-pepper",
+    "sanskritName": "Black Pepper",
+    "commonName": "Black Pepper Common",
+    "botanicalName": "Botanica black pepper",
+    "rasa": [
+      "Astringent",
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "neutral",
+      "pitta": "neutral",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Muscular",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Black Pepper, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "musta",
+    "sanskritName": "Musta",
+    "commonName": "Musta Common",
+    "botanicalName": "Botanica musta",
+    "rasa": [
+      "Sweet",
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "neutral",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Digestive",
+      "Nervous"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Musta, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "punarnava",
+    "sanskritName": "Punarnava",
+    "commonName": "Punarnava Common",
+    "botanicalName": "Botanica punarnava",
+    "rasa": [
+      "Sour",
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": "Special Action",
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "neutral",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Reproductive"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Punarnava, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "gokshura",
+    "sanskritName": "Gokshura",
+    "commonName": "Gokshura Common",
+    "botanicalName": "Botanica gokshura",
+    "rasa": [
+      "Salty",
+      "Pungent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "balances",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Nervous",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Gokshura, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "manjistha",
+    "sanskritName": "Manjistha",
+    "commonName": "Manjistha Common",
+    "botanicalName": "Botanica manjistha",
+    "rasa": [
+      "Pungent",
+      "Bitter"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "aggravates",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Reproductive",
+      "Excretory"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Manjistha, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "kutki",
+    "sanskritName": "Kutki",
+    "commonName": "Kutki Common",
+    "botanicalName": "Botanica kutki",
+    "rasa": [
+      "Bitter",
+      "Astringent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "neutral",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Circulatory",
+      "Skeletal"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Kutki, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "bhringaraj",
+    "sanskritName": "Bhringaraj",
+    "commonName": "Bhringaraj Common",
+    "botanicalName": "Botanica bhringaraj",
+    "rasa": [
+      "Astringent",
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "aggravates",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Excretory",
+      "Muscular"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Bhringaraj, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "bala",
+    "sanskritName": "Bala",
+    "commonName": "Bala Common",
+    "botanicalName": "Botanica bala",
+    "rasa": [
+      "Sweet",
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": "Special Action",
+    "dosha": {
+      "vata": "balances",
+      "pitta": "balances",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Skeletal",
+      "Digestive"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Bala, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "vidari",
+    "sanskritName": "Vidari",
+    "commonName": "Vidari Common",
+    "botanicalName": "Botanica vidari",
+    "rasa": [
+      "Sour",
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "balances",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Muscular",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Vidari, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "kapikacchu",
+    "sanskritName": "Kapikacchu",
+    "commonName": "Kapikacchu Common",
+    "botanicalName": "Botanica kapikacchu",
+    "rasa": [
+      "Salty",
+      "Pungent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "aggravates",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Digestive",
+      "Nervous"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Kapikacchu, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "shilajit",
+    "sanskritName": "Shilajit",
+    "commonName": "Shilajit Common",
+    "botanicalName": "Botanica shilajit",
+    "rasa": [
+      "Pungent",
+      "Bitter"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "neutral",
+      "pitta": "neutral",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Reproductive"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Shilajit, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "aloe-vera",
+    "sanskritName": "Aloe Vera",
+    "commonName": "Aloe Vera Common",
+    "botanicalName": "Botanica aloe vera",
+    "rasa": [
+      "Bitter",
+      "Astringent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "aggravates",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Nervous",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Aloe Vera, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "ajamoda",
+    "sanskritName": "Ajamoda",
+    "commonName": "Ajamoda Common",
+    "botanicalName": "Botanica ajamoda",
+    "rasa": [
+      "Astringent",
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special Action",
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "aggravates",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Reproductive",
+      "Excretory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Ajamoda, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "vacha",
+    "sanskritName": "Vacha",
+    "commonName": "Vacha Common",
+    "botanicalName": "Botanica vacha",
+    "rasa": [
+      "Sweet",
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "balances",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Circulatory",
+      "Skeletal"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Vacha, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "tagar",
+    "sanskritName": "Tagar",
+    "commonName": "Tagar Common",
+    "botanicalName": "Botanica tagar",
+    "rasa": [
+      "Sour",
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "balances",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Excretory",
+      "Muscular"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Tagar, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "jatamansi",
+    "sanskritName": "Jatamansi",
+    "commonName": "Jatamansi Common",
+    "botanicalName": "Botanica jatamansi",
+    "rasa": [
+      "Salty",
+      "Pungent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "balances",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Skeletal",
+      "Digestive"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Jatamansi, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "shankhapushpi",
+    "sanskritName": "Shankhapushpi",
+    "commonName": "Shankhapushpi Common",
+    "botanicalName": "Botanica shankhapushpi",
+    "rasa": [
+      "Pungent",
+      "Bitter"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "neutral",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Muscular",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Shankhapushpi, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "kutaja",
+    "sanskritName": "Kutaja",
+    "commonName": "Kutaja Common",
+    "botanicalName": "Botanica kutaja",
+    "rasa": [
+      "Bitter",
+      "Astringent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": "Special Action",
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "balances",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Digestive",
+      "Nervous"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Kutaja, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "bilva",
+    "sanskritName": "Bilva",
+    "commonName": "Bilva Common",
+    "botanicalName": "Botanica bilva",
+    "rasa": [
+      "Astringent",
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "balances",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Reproductive"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Bilva, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "dadima",
+    "sanskritName": "Dadima",
+    "commonName": "Dadima Common",
+    "botanicalName": "Botanica dadima",
+    "rasa": [
+      "Sweet",
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "neutral",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Nervous",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Dadima, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "daruharidra",
+    "sanskritName": "Daruharidra",
+    "commonName": "Daruharidra Common",
+    "botanicalName": "Botanica daruharidra",
+    "rasa": [
+      "Sour",
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "aggravates",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Reproductive",
+      "Excretory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Daruharidra, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "kantakari",
+    "sanskritName": "Kantakari",
+    "commonName": "Kantakari Common",
+    "botanicalName": "Botanica kantakari",
+    "rasa": [
+      "Salty",
+      "Pungent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "neutral",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Circulatory",
+      "Skeletal"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Kantakari, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "vasaka",
+    "sanskritName": "Vasaka",
+    "commonName": "Vasaka Common",
+    "botanicalName": "Botanica vasaka",
+    "rasa": [
+      "Pungent",
+      "Bitter"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": "Special Action",
+    "dosha": {
+      "vata": "balances",
+      "pitta": "aggravates",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Excretory",
+      "Muscular"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Vasaka, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "pushkarmool",
+    "sanskritName": "Pushkarmool",
+    "commonName": "Pushkarmool Common",
+    "botanicalName": "Botanica pushkarmool",
+    "rasa": [
+      "Bitter",
+      "Astringent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "neutral",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Skeletal",
+      "Digestive"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Pushkarmool, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "yastimadhu",
+    "sanskritName": "Yastimadhu",
+    "commonName": "Yastimadhu Common",
+    "botanicalName": "Botanica yastimadhu",
+    "rasa": [
+      "Astringent",
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "neutral",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Muscular",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Yastimadhu, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "sariva",
+    "sanskritName": "Sariva",
+    "commonName": "Sariva Common",
+    "botanicalName": "Botanica sariva",
+    "rasa": [
+      "Sweet",
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "balances",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Digestive",
+      "Nervous"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Sariva, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "ushira",
+    "sanskritName": "Ushira",
+    "commonName": "Ushira Common",
+    "botanicalName": "Botanica ushira",
+    "rasa": [
+      "Sour",
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "neutral",
+      "pitta": "neutral",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Reproductive"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Ushira, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "chandana",
+    "sanskritName": "Chandana",
+    "commonName": "Chandana Common",
+    "botanicalName": "Botanica chandana",
+    "rasa": [
+      "Salty",
+      "Pungent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": "Special Action",
+    "dosha": {
+      "vata": "neutral",
+      "pitta": "balances",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Nervous",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Chandana, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "jati",
+    "sanskritName": "Jati",
+    "commonName": "Jati Common",
+    "botanicalName": "Botanica jati",
+    "rasa": [
+      "Pungent",
+      "Bitter"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "neutral",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Reproductive",
+      "Excretory"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Jati, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "khadira",
+    "sanskritName": "Khadira",
+    "commonName": "Khadira Common",
+    "botanicalName": "Botanica khadira",
+    "rasa": [
+      "Bitter",
+      "Astringent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "aggravates",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Circulatory",
+      "Skeletal"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Khadira, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "babool",
+    "sanskritName": "Babool",
+    "commonName": "Babool Common",
+    "botanicalName": "Botanica babool",
+    "rasa": [
+      "Astringent",
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "aggravates",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Excretory",
+      "Muscular"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Babool, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "bakuchi",
+    "sanskritName": "Bakuchi",
+    "commonName": "Bakuchi Common",
+    "botanicalName": "Botanica bakuchi",
+    "rasa": [
+      "Sweet",
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "aggravates",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Skeletal",
+      "Digestive"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Bakuchi, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "chitraka",
+    "sanskritName": "Chitraka",
+    "commonName": "Chitraka Common",
+    "botanicalName": "Botanica chitraka",
+    "rasa": [
+      "Sour",
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": "Special Action",
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "balances",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Muscular",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Chitraka, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "danti",
+    "sanskritName": "Danti",
+    "commonName": "Danti Common",
+    "botanicalName": "Botanica danti",
+    "rasa": [
+      "Salty",
+      "Pungent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "neutral",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Digestive",
+      "Nervous"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Danti, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "trivrit",
+    "sanskritName": "Trivrit",
+    "commonName": "Trivrit Common",
+    "botanicalName": "Botanica trivrit",
+    "rasa": [
+      "Pungent",
+      "Bitter"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "aggravates",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Reproductive"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Trivrit, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "jayapala",
+    "sanskritName": "Jayapala",
+    "commonName": "Jayapala Common",
+    "botanicalName": "Botanica jayapala",
+    "rasa": [
+      "Bitter",
+      "Astringent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "aggravates",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Nervous",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Jayapala, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "kupeelu",
+    "sanskritName": "Kupeelu",
+    "commonName": "Kupeelu Common",
+    "botanicalName": "Botanica kupeelu",
+    "rasa": [
+      "Astringent",
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "neutral",
+      "pitta": "balances",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Reproductive",
+      "Excretory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Kupeelu, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "vatsanabha",
+    "sanskritName": "Vatsanabha",
+    "commonName": "Vatsanabha Common",
+    "botanicalName": "Botanica vatsanabha",
+    "rasa": [
+      "Sweet",
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": "Special Action",
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "neutral",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Circulatory",
+      "Skeletal"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Vatsanabha, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "bhallataka",
+    "sanskritName": "Bhallataka",
+    "commonName": "Bhallataka Common",
+    "botanicalName": "Botanica bhallataka",
+    "rasa": [
+      "Sour",
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "aggravates",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Excretory",
+      "Muscular"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Bhallataka, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "gunja",
+    "sanskritName": "Gunja",
+    "commonName": "Gunja Common",
+    "botanicalName": "Botanica gunja",
+    "rasa": [
+      "Salty",
+      "Pungent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "neutral",
+      "pitta": "aggravates",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Skeletal",
+      "Digestive"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Gunja, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "snuhi",
+    "sanskritName": "Snuhi",
+    "commonName": "Snuhi Common",
+    "botanicalName": "Botanica snuhi",
+    "rasa": [
+      "Pungent",
+      "Bitter"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "neutral",
+      "pitta": "neutral",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Muscular",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Snuhi, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "arka",
+    "sanskritName": "Arka",
+    "commonName": "Arka Common",
+    "botanicalName": "Botanica arka",
+    "rasa": [
+      "Bitter",
+      "Astringent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "neutral",
+      "pitta": "aggravates",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Digestive",
+      "Nervous"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Arka, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "karavira",
+    "sanskritName": "Karavira",
+    "commonName": "Karavira Common",
+    "botanicalName": "Botanica karavira",
+    "rasa": [
+      "Astringent",
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special Action",
+    "dosha": {
+      "vata": "balances",
+      "pitta": "neutral",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Reproductive"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Karavira, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "dhattura",
+    "sanskritName": "Dhattura",
+    "commonName": "Dhattura Common",
+    "botanicalName": "Botanica dhattura",
+    "rasa": [
+      "Sweet",
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "aggravates",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Nervous",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Dhattura, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "lajjalu",
+    "sanskritName": "Lajjalu",
+    "commonName": "Lajjalu Common",
+    "botanicalName": "Botanica lajjalu",
+    "rasa": [
+      "Sour",
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "neutral",
+      "pitta": "aggravates",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Reproductive",
+      "Excretory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Lajjalu, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "apamarga",
+    "sanskritName": "Apamarga",
+    "commonName": "Apamarga Common",
+    "botanicalName": "Botanica apamarga",
+    "rasa": [
+      "Salty",
+      "Pungent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "neutral",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Circulatory",
+      "Skeletal"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Apamarga, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "agnimantha",
+    "sanskritName": "Agnimantha",
+    "commonName": "Agnimantha Common",
+    "botanicalName": "Botanica agnimantha",
+    "rasa": [
+      "Pungent",
+      "Bitter"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "balances",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Excretory",
+      "Muscular"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Agnimantha, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "shyonaka",
+    "sanskritName": "Shyonaka",
+    "commonName": "Shyonaka Common",
+    "botanicalName": "Botanica shyonaka",
+    "rasa": [
+      "Bitter",
+      "Astringent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": "Special Action",
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "aggravates",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Skeletal",
+      "Digestive"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Shyonaka, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "patala",
+    "sanskritName": "Patala",
+    "commonName": "Patala Common",
+    "botanicalName": "Botanica patala",
+    "rasa": [
+      "Astringent",
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "neutral",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Muscular",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Patala, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "gambhari",
+    "sanskritName": "Gambhari",
+    "commonName": "Gambhari Common",
+    "botanicalName": "Botanica gambhari",
+    "rasa": [
+      "Sweet",
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "neutral",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Digestive",
+      "Nervous"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Gambhari, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "brihati",
+    "sanskritName": "Brihati",
+    "commonName": "Brihati Common",
+    "botanicalName": "Botanica brihati",
+    "rasa": [
+      "Sour",
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "neutral",
+      "pitta": "aggravates",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Reproductive"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Brihati, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "prishniparni",
+    "sanskritName": "Prishniparni",
+    "commonName": "Prishniparni Common",
+    "botanicalName": "Botanica prishniparni",
+    "rasa": [
+      "Salty",
+      "Pungent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "aggravates",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Nervous",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Prishniparni, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "shalaparni",
+    "sanskritName": "Shalaparni",
+    "commonName": "Shalaparni Common",
+    "botanicalName": "Botanica shalaparni",
+    "rasa": [
+      "Pungent",
+      "Bitter"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": "Special Action",
+    "dosha": {
+      "vata": "neutral",
+      "pitta": "neutral",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Reproductive",
+      "Excretory"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Shalaparni, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "mudgaparni",
+    "sanskritName": "Mudgaparni",
+    "commonName": "Mudgaparni Common",
+    "botanicalName": "Botanica mudgaparni",
+    "rasa": [
+      "Bitter",
+      "Astringent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "neutral",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Circulatory",
+      "Skeletal"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Mudgaparni, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "mashaparni",
+    "sanskritName": "Mashaparni",
+    "commonName": "Mashaparni Common",
+    "botanicalName": "Botanica mashaparni",
+    "rasa": [
+      "Astringent",
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "neutral",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Excretory",
+      "Muscular"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Mashaparni, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "karkatashringi",
+    "sanskritName": "Karkatashringi",
+    "commonName": "Karkatashringi Common",
+    "botanicalName": "Botanica karkatashringi",
+    "rasa": [
+      "Sweet",
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "balances",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Skeletal",
+      "Digestive"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Karkatashringi, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "puskarmula",
+    "sanskritName": "Puskarmula",
+    "commonName": "Puskarmula Common",
+    "botanicalName": "Botanica puskarmula",
+    "rasa": [
+      "Sour",
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "neutral",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Muscular",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Puskarmula, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "bharngi",
+    "sanskritName": "Bharngi",
+    "commonName": "Bharngi Common",
+    "botanicalName": "Botanica bharngi",
+    "rasa": [
+      "Salty",
+      "Pungent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": "Special Action",
+    "dosha": {
+      "vata": "balances",
+      "pitta": "neutral",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Digestive",
+      "Nervous"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Bharngi, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "rasna",
+    "sanskritName": "Rasna",
+    "commonName": "Rasna Common",
+    "botanicalName": "Botanica rasna",
+    "rasa": [
+      "Pungent",
+      "Bitter"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "neutral",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Reproductive"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Rasna, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "eranda",
+    "sanskritName": "Eranda",
+    "commonName": "Eranda Common",
+    "botanicalName": "Botanica eranda",
+    "rasa": [
+      "Bitter",
+      "Astringent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "neutral",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Nervous",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Eranda, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "nirgundi",
+    "sanskritName": "Nirgundi",
+    "commonName": "Nirgundi Common",
+    "botanicalName": "Botanica nirgundi",
+    "rasa": [
+      "Astringent",
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "aggravates",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Reproductive",
+      "Excretory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Nirgundi, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "shallaki",
+    "sanskritName": "Shallaki",
+    "commonName": "Shallaki Common",
+    "botanicalName": "Botanica shallaki",
+    "rasa": [
+      "Sweet",
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "neutral",
+      "pitta": "neutral",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Circulatory",
+      "Skeletal"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Shallaki, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "asthishrinkhala",
+    "sanskritName": "Asthishrinkhala",
+    "commonName": "Asthishrinkhala Common",
+    "botanicalName": "Botanica asthishrinkhala",
+    "rasa": [
+      "Sour",
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": "Special Action",
+    "dosha": {
+      "vata": "neutral",
+      "pitta": "neutral",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Excretory",
+      "Muscular"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Asthishrinkhala, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "laksha",
+    "sanskritName": "Laksha",
+    "commonName": "Laksha Common",
+    "botanicalName": "Botanica laksha",
+    "rasa": [
+      "Salty",
+      "Pungent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "aggravates",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Skeletal",
+      "Digestive"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Laksha, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "lodhra",
+    "sanskritName": "Lodhra",
+    "commonName": "Lodhra Common",
+    "botanicalName": "Botanica lodhra",
+    "rasa": [
+      "Pungent",
+      "Bitter"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "balances",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Muscular",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Lodhra, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "ashoka",
+    "sanskritName": "Ashoka",
+    "commonName": "Ashoka Common",
+    "botanicalName": "Botanica ashoka",
+    "rasa": [
+      "Bitter",
+      "Astringent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "neutral",
+      "pitta": "neutral",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Digestive",
+      "Nervous"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Ashoka, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "kumari",
+    "sanskritName": "Kumari",
+    "commonName": "Kumari Common",
+    "botanicalName": "Botanica kumari",
+    "rasa": [
+      "Astringent",
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "neutral",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Reproductive"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Kumari, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "kanyasara",
+    "sanskritName": "Kanyasara",
+    "commonName": "Kanyasara Common",
+    "botanicalName": "Botanica kanyasara",
+    "rasa": [
+      "Sweet",
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": "Special Action",
+    "dosha": {
+      "vata": "balances",
+      "pitta": "aggravates",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Nervous",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Kanyasara, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "haridra",
+    "sanskritName": "Haridra",
+    "commonName": "Haridra Common",
+    "botanicalName": "Botanica haridra",
+    "rasa": [
+      "Sour",
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "balances",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Reproductive",
+      "Excretory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Haridra, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "dhanyaka",
+    "sanskritName": "Dhanyaka",
+    "commonName": "Dhanyaka Common",
+    "botanicalName": "Botanica dhanyaka",
+    "rasa": [
+      "Salty",
+      "Pungent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "neutral",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Circulatory",
+      "Skeletal"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Dhanyaka, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "jeeraka",
+    "sanskritName": "Jeeraka",
+    "commonName": "Jeeraka Common",
+    "botanicalName": "Botanica jeeraka",
+    "rasa": [
+      "Pungent",
+      "Bitter"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "aggravates",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Excretory",
+      "Muscular"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Jeeraka, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "mishreya",
+    "sanskritName": "Mishreya",
+    "commonName": "Mishreya Common",
+    "botanicalName": "Botanica mishreya",
+    "rasa": [
+      "Bitter",
+      "Astringent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "neutral",
+      "pitta": "neutral",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Skeletal",
+      "Digestive"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Mishreya, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "yavani",
+    "sanskritName": "Yavani",
+    "commonName": "Yavani Common",
+    "botanicalName": "Botanica yavani",
+    "rasa": [
+      "Astringent",
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": "Special Action",
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "neutral",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Muscular",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Yavani, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "hingu",
+    "sanskritName": "Hingu",
+    "commonName": "Hingu Common",
+    "botanicalName": "Botanica hingu",
+    "rasa": [
+      "Sweet",
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "neutral",
+      "pitta": "neutral",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Digestive",
+      "Nervous"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Hingu, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "saindhava",
+    "sanskritName": "Saindhava",
+    "commonName": "Saindhava Common",
+    "botanicalName": "Botanica saindhava",
+    "rasa": [
+      "Sour",
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "balances",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Reproductive"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Saindhava, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "sauvarchala",
+    "sanskritName": "Sauvarchala",
+    "commonName": "Sauvarchala Common",
+    "botanicalName": "Botanica sauvarchala",
+    "rasa": [
+      "Salty",
+      "Pungent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "aggravates",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Nervous",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Sauvarchala, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "vida",
+    "sanskritName": "Vida",
+    "commonName": "Vida Common",
+    "botanicalName": "Botanica vida",
+    "rasa": [
+      "Pungent",
+      "Bitter"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "aggravates",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Reproductive",
+      "Excretory"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Vida, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "audbhida",
+    "sanskritName": "Audbhida",
+    "commonName": "Audbhida Common",
+    "botanicalName": "Botanica audbhida",
+    "rasa": [
+      "Bitter",
+      "Astringent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": "Special Action",
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "balances",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Circulatory",
+      "Skeletal"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Audbhida, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "samudra",
+    "sanskritName": "Samudra",
+    "commonName": "Samudra Common",
+    "botanicalName": "Botanica samudra",
+    "rasa": [
+      "Astringent",
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "aggravates",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Excretory",
+      "Muscular"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Samudra, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "tila",
+    "sanskritName": "Tila",
+    "commonName": "Tila Common",
+    "botanicalName": "Botanica tila",
+    "rasa": [
+      "Sweet",
+      "Sour"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sweet",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "neutral",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Skeletal",
+      "Digestive"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Tila, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "sarshapa",
+    "sanskritName": "Sarshapa",
+    "commonName": "Sarshapa Common",
+    "botanicalName": "Botanica sarshapa",
+    "rasa": [
+      "Sour",
+      "Salty"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "balances",
+      "pitta": "neutral",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Muscular",
+      "Respiratory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Sarshapa, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "atasi",
+    "sanskritName": "Atasi",
+    "commonName": "Atasi Common",
+    "botanicalName": "Botanica atasi",
+    "rasa": [
+      "Salty",
+      "Pungent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "aggravates",
+      "pitta": "balances",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Digestive",
+      "Nervous"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Atasi, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "eranda-taila",
+    "sanskritName": "Eranda Taila",
+    "commonName": "Eranda Taila Common",
+    "botanicalName": "Botanica eranda taila",
+    "rasa": [
+      "Pungent",
+      "Bitter"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Sweet",
+    "prabhava": "Special Action",
+    "dosha": {
+      "vata": "balances",
+      "pitta": "aggravates",
+      "kapha": "neutral"
+    },
+    "organSystems": [
+      "Respiratory",
+      "Reproductive"
+    ],
+    "useCases": [
+      "Stress"
+    ],
+    "description": "A powerful Ayurvedic herb known as Eranda Taila, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "ghrita",
+    "sanskritName": "Ghrita",
+    "commonName": "Ghrita Common",
+    "botanicalName": "Botanica ghrita",
+    "rasa": [
+      "Bitter",
+      "Astringent"
+    ],
+    "virya": "Heating",
+    "vipaka": "Sour",
+    "prabhava": null,
+    "dosha": {
+      "vata": "neutral",
+      "pitta": "balances",
+      "kapha": "aggravates"
+    },
+    "organSystems": [
+      "Nervous",
+      "Circulatory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion"
+    ],
+    "description": "A powerful Ayurvedic herb known as Ghrita, traditionally used to balance the doshas and promote overall wellness."
+  },
+  {
+    "id": "madhu",
+    "sanskritName": "Madhu",
+    "commonName": "Madhu Common",
+    "botanicalName": "Botanica madhu",
+    "rasa": [
+      "Astringent",
+      "Sweet"
+    ],
+    "virya": "Cooling",
+    "vipaka": "Pungent",
+    "prabhava": null,
+    "dosha": {
+      "vata": "neutral",
+      "pitta": "neutral",
+      "kapha": "balances"
+    },
+    "organSystems": [
+      "Reproductive",
+      "Excretory"
+    ],
+    "useCases": [
+      "Stress",
+      "Digestion",
+      "Immunity"
+    ],
+    "description": "A powerful Ayurvedic herb known as Madhu, traditionally used to balance the doshas and promote overall wellness."
+  }
+]
