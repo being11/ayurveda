@@ -1,3 +1,4 @@
+/** @fileoverview Diet and Ahara main page */
 'use client';
 
 import React, { useEffect, useState } from 'react';
@@ -5,6 +6,7 @@ import { useAssessmentStore } from '@/src/stores/assessmentStore';
 import { computeProfile, getDominantDosha } from '@/src/engines/report';
 import { SeasonalMenuCard } from '@/src/components/diet/SeasonalMenuCard';
 import { FoodCategoryGrid } from '@/src/components/diet/FoodCategoryGrid';
+import { TasteGrid } from '@/src/components/diet/TasteGrid';
 import { Apple, Printer } from 'lucide-react';
 import { Button } from '@/src/components/ui/button';
 import Link from 'next/link';
@@ -65,12 +67,14 @@ export default function DietPage() {
       <div className="space-y-12">
         <section>
           <h2 className="text-2xl font-serif text-stone-800 mb-6 border-b border-stone-200 pb-2">Food Categories & Tastes</h2>
+          <TasteGrid dosha={dominantDosha} />
           <FoodCategoryGrid dosha={dominantDosha} />
         </section>
 
         <section>
           <h2 className="text-2xl font-serif text-stone-800 mb-6 border-b border-stone-200 pb-2">Seasonal Routine & Meal Timing</h2>
-          <SeasonalMenuCard dosha={dominantDosha} />
+          {/* Defaulting to vasanta since we didn't hook up seasonsStore to this page yet as requested by TPM merge */}
+          <SeasonalMenuCard seasonId="vasanta" dosha={dominantDosha} />
         </section>
       </div>
     </div>
