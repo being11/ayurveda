@@ -97,23 +97,23 @@
   "purvakarma": [
     {
       "id": "snehana_internal",
-      "task": "Internal Snehana (Oleation)",
-      "description": "Drinking medicated ghee or oil in increasing doses every morning on an empty stomach to loosen toxins."
+      "description": "Drinking medicated ghee or oil in increasing doses every morning on an empty stomach to loosen toxins.",
+      "step": "Internal Snehana (Oleation)"
     },
     {
       "id": "snehana_external",
-      "task": "External Snehana (Abhyanga)",
-      "description": "Full-body warm herbal oil massage to move loosened toxins towards the gastrointestinal tract."
+      "description": "Full-body warm herbal oil massage to move loosened toxins towards the gastrointestinal tract.",
+      "step": "External Snehana (Abhyanga)"
     },
     {
       "id": "svedana",
-      "task": "Svedana (Sweating/Fomentation)",
-      "description": "Herbal steam therapy to dilate bodily channels (srotas) and facilitate the movement of toxins."
+      "description": "Herbal steam therapy to dilate bodily channels (srotas) and facilitate the movement of toxins.",
+      "step": "Svedana (Sweating/Fomentation)"
     },
     {
       "id": "dietary",
-      "task": "Dietary Preparation (Kitchari Cleanse)",
-      "description": "Eating a simple, mono-diet of Kitchari (mung beans and rice) to rest the digestive system (Agni) and prevent the formation of new Ama (toxins)."
+      "description": "Eating a simple, mono-diet of Kitchari (mung beans and rice) to rest the digestive system (Agni) and prevent the formation of new Ama (toxins).",
+      "step": "Dietary Preparation (Kitchari Cleanse)"
     }
   ]
 }

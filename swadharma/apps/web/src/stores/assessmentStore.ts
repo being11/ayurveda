@@ -1,6 +1,3 @@
-// apps/web/src/stores/assessmentStore.ts
-'use client'
-
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 import { categories } from '../data/index';
@@ -122,7 +119,7 @@ const useAssessmentStore = create<AssessmentState>()(
         const profile = computeProfile(state.observations, state.answers);
         const dominantDosha = getDominantDosha(profile.prakrtiDosha).toLowerCase();
         return (panchakarmaData.therapies as unknown as PanchakarmaTherapy[]).filter((therapy) =>
-          therapy.indicatedDoshas?.includes(dominantDosha) || therapy.dosha === dominantDosha
+          therapy.indicatedDoshas?.includes(dominantDosha) || therapy.dosha.toLowerCase() === dominantDosha
         );
       },
       reset: () => {

@@ -34,12 +34,14 @@ export function getRecommendedTherapies(profile: AyurvedaProfile): PanchakarmaTh
   }
 
   // Filter therapies targeting the dominant dosha
-  return panchakarmaData.therapies.filter(therapy => therapy.dosha === dominantDosha);
+  return (panchakarmaData.therapies as unknown as PanchakarmaTherapy[]).filter(therapy =>
+    therapy.indicatedDoshas?.includes(dominantDosha.toLowerCase()) || therapy.dosha === dominantDosha
+  );
 }
 
 /**
  * Retrieves the Purvakarma preparation checklist.
  */
-export function getPurvakarmaChecklist(): PurvakarmaTask[] {
-  return panchakarmaData.purvakarma;
+export function getPurvakarmaChecklist(): PurvakarmaStep[] {
+  return panchakarmaData.purvakarma as PurvakarmaStep[];
 }
