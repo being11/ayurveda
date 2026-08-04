@@ -120,6 +120,7 @@ export interface AssessmentState {
   herbDoshaFilter: string | null;
   herbOrganFilter: string | null;
   setHerbSearchQuery: (query: string) => void;
+  getFilteredHerbs: () => any[];
   setHerbDoshaFilter: (dosha: string | null) => void;
   setHerbOrganFilter: (organ: string | null) => void;
 
