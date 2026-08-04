@@ -23,9 +23,10 @@ export function calculateQuizScores(answers: Record<string, string | string[]>):
   const vikritiScores = { vata: 0, pitta: 0, kapha: 0 };
 
   const allQuestions = categories.flatMap(c => c.questions);
+  const questionMap = new Map(allQuestions.map(q => [q.id, q]));
 
   for (const [questionId, answer] of Object.entries(answers)) {
-    const question = allQuestions.find(q => q.id === questionId);
+    const question = questionMap.get(questionId);
     if (!question) continue;
 
     const isPrakriti = PRAKRITI_CATEGORIES.includes(question.category);
