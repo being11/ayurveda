@@ -1,163 +1,55 @@
-import type { AyurvedaProfile, ObservationResult, DoshaProfile } from '../types/assessment';
-import { categories } from '../data/index';
-import { getObservationsForAnswer } from './logic';
+// apps/web/src/engines/report.ts
+// Scaffold — subagent 10 will expand this with full computation logic
+import type { AyurvedaProfile, ObservationResult } from '../types/assessment';
 
-// --- Constants ---
-const DOSHA_KEYWORDS: Record<string, string[]> = {
-  vata: ['vata', 'vishama agni', 'vata nidra', 'vata manas', 'vata frame', 'vata apana',
-         'vata lifestyle', 'vata aggravation', 'vata bala', 'vata in', 'vata artava',
-         'vata shukra', 'vata majja', 'vata rasa', 'vata prakrti', 'vata vriddha'],
-  pitta: ['pitta', 'tikshna agni', 'pitta nidra', 'pitta manas', 'pitta frame',
-          'pitta lifestyle', 'pitta aggravation', 'pitta in', 'pitta artava',
-          'pitta rakta', 'pitta twak', 'pitta prakrti', 'pitta social'],
-  kapha: ['kapha', 'manda agni', 'kapha nidra', 'kapha manas', 'kapha frame',
-          'kapha lifestyle', 'kapha aggravation', 'kapha in', 'kapha ama',
-          'kapha sedentary', 'kapha bala', 'kapha stiffness', 'kapha prakrti'],
-};
-
-const AGNI_KEYWORDS: Record<AyurvedaProfile['agni'], string[]> = {
-  vishama: ['vishama agni', 'vishama ahara', 'vishama nidra', 'meal skipping'],
-  tikshna: ['tikshna agni', 'pitta in amashaya', 'tikshna agni /'],
-  manda:   ['manda agni', 'kapha ama accumulation', 'manda nidra'],
-  sama:    ['sama agni', 'sama artava', 'sama nidra', 'balanced nidra'],
-  unknown: [],
-};
-
-// Compute dosha totals from all observations
-function computeDoshaProfile(observations: Record<string, number>): DoshaProfile {
-  const totals = { vata: 0, pitta: 0, kapha: 0 };
-  Object.entries(observations).forEach(([obsKey, weight]) => {
-    const lower = obsKey.toLowerCase();
-    for (const dosha of ['vata', 'pitta', 'kapha'] as const) {
-      if (DOSHA_KEYWORDS[dosha]?.some(kw => lower.includes(kw))) {
-        totals[dosha] += weight;
-      }
-    }
-  });
-  const total = totals.vata + totals.pitta + totals.kapha || 1;
-  return {
-    vata: Math.round((totals.vata / total) * 100) / 100,
-    pitta: Math.round((totals.pitta / total) * 100) / 100,
-    kapha: Math.round((totals.kapha / total) * 100) / 100,
-  };
-}
-
-// Split observations into Prakriti (childhood/baseline) and Vikriti (current)
-function splitObservations(observations: Record<string, number>): { prakrti: Record<string, number>, vikrti: Record<string, number> } {
-  const prakrti: Record<string, number> = {};
-  const vikrti: Record<string, number> = {};
-
-  // For this application, let's identify Prakriti by categorizing specific answers
-  // or by reading explicit Prakriti dimensions if available.
-  
-  // Here we use a combination of keyword matching and fallback logic.
-  Object.entries(observations).forEach(([obsKey, weight]) => {
-    const lower = obsKey.toLowerCase();
-    
-    // Check if the observation explicitly mentions Prakriti concepts
-    if (
-      lower.includes('prakrti') || 
-      lower.includes('prakriti') || 
-      lower.includes('childhood') || 
-      lower.includes('baseline') ||
-      lower.includes('innate') ||
-      lower.includes('birth')
-    ) {
-      prakrti[obsKey] = weight;
-    } else {
-      // By default, assume it's part of the current state (Vikriti)
-      vikrti[obsKey] = weight;
-    }
-  });
-
-  return { prakrti, vikrti };
-}
-
-// Determine dominant Agni type
-function computeAgni(observations: Record<string, number>): AyurvedaProfile['agni'] {
-  const agniScores: Record<string, number> = { vishama: 0, tikshna: 0, manda: 0, sama: 0 };
-  Object.entries(observations).forEach(([obsKey, weight]) => {
-    const lower = obsKey.toLowerCase();
-    for (const [agniType, keywords] of Object.entries(AGNI_KEYWORDS)) {
-      if (agniType === 'unknown') continue;
-      if (keywords?.some(kw => lower.includes(kw))) {
-        if (agniScores[agniType] !== undefined) {
-          agniScores[agniType] += weight;
-        }
-      }
-    }
-  });
-  const dominant = Object.entries(agniScores).reduce((a, b) => a[1] >= b[1] ? a : b);
-  return dominant[1] > 0 ? dominant[0] as AyurvedaProfile['agni'] : 'unknown';
-}
-
-// Compute Ojas level
-function computeOjas(observations: Record<string, number>): AyurvedaProfile['ojas'] {
-  let ojasScore = 0;
-  Object.entries(observations).forEach(([obsKey, weight]) => {
-    const lower = obsKey.toLowerCase();
-    if (lower.includes('low ojas') || lower.includes('ojas depletion')) ojasScore -= weight;
-    if (lower.includes('high ojas') || lower.includes('ojas strength')) ojasScore += weight;
-  });
-  if (ojasScore >= 3) return 'high';
-  if (ojasScore <= -3) return 'low';
-  return 'moderate';
-}
-
-// Compute Manas type
-function computeManas(observations: Record<string, number>): AyurvedaProfile['manas'] {
-  const scores = { vata_dominant: 0, pitta_dominant: 0, kapha_dominant: 0 };
-  Object.entries(observations).forEach(([obsKey, weight]) => {
-    const lower = obsKey.toLowerCase();
-    if (lower.includes('vata manas')) scores.vata_dominant += weight;
-    if (lower.includes('pitta manas')) scores.pitta_dominant += weight;
-    if (lower.includes('kapha manas')) scores.kapha_dominant += weight;
-  });
-  const max = Math.max(...Object.values(scores));
-  if (max === 0) return 'balanced';
-  const dominant = Object.entries(scores).find(([, v]) => v === max);
-  return dominant ? dominant[0] as AyurvedaProfile['manas'] : 'balanced';
-}
-
-// Main export
 export function computeProfile(
   observations: Record<string, number>,
   answers: Record<string, string | string[]>
 ): AyurvedaProfile {
-  const { prakrti, vikrti } = splitObservations(observations);
-  
-  const prakrtiDosha = computeDoshaProfile(prakrti);
-  const vikrtiDosha = computeDoshaProfile(vikrti);
-  
-  // If no specific prakrti observations exist, fallback to all observations
-  const finalPrakrtiDosha = Object.keys(prakrti).length > 0 ? prakrtiDosha : computeDoshaProfile(observations);
-  
-  // If no specific vikrti observations exist, fallback to all observations
-  const finalVikrtiDosha = Object.keys(vikrti).length > 0 ? vikrtiDosha : computeDoshaProfile(observations);
+  const dim: Record<string, number> = {};
 
-  const agni = computeAgni(observations);
-  const ojas = computeOjas(observations);
-  const manas = computeManas(observations);
-  const gender = (answers['intro_gender'] as AyurvedaProfile['gender']) ?? null;
+  Object.entries(observations).forEach(([key, weight]) => {
+    const k = key.toLowerCase();
+    if (k.includes('vata')) dim['dosha:vata'] = (dim['dosha:vata'] || 0) + weight;
+    if (k.includes('pitta')) dim['dosha:pitta'] = (dim['dosha:pitta'] || 0) + weight;
+    if (k.includes('kapha')) dim['dosha:kapha'] = (dim['dosha:kapha'] || 0) + weight;
+    if (k.includes('vishama agni')) dim['agni:vishama'] = (dim['agni:vishama'] || 0) + weight;
+    if (k.includes('tikshna agni')) dim['agni:tikshna'] = (dim['agni:tikshna'] || 0) + weight;
+    if (k.includes('manda agni')) dim['agni:manda'] = (dim['agni:manda'] || 0) + weight;
+    if (k.includes('sama agni')) dim['agni:sama'] = (dim['agni:sama'] || 0) + weight;
+  });
 
-  const obsResults: ObservationResult[] = Object.entries(observations)
-    .sort(([, a], [, b]) => b - a)
-    .map(([key, weight]) => ({ key, weight, dimensions: [] }));
+  const v = dim['dosha:vata'] || 0;
+  const p = dim['dosha:pitta'] || 0;
+  const ka = dim['dosha:kapha'] || 0;
+  const total = v + p + ka || 1;
+
+  type AgniKey = 'agni:vishama' | 'agni:tikshna' | 'agni:manda' | 'agni:sama';
+  const agniKeys: AgniKey[] = ['agni:vishama', 'agni:tikshna', 'agni:manda', 'agni:sama'];
+  const topAgni = agniKeys.reduce<AgniKey>((a, b) => (dim[a] || 0) >= (dim[b] || 0) ? a : b, 'agni:sama');
+  const agni = (dim[topAgni] || 0) > 0
+    ? (topAgni.split(':')[1] as AyurvedaProfile['agni'])
+    : 'unknown';
+
+  const gender = (answers['id_gender'] as AyurvedaProfile['gender']) ?? null;
+
+  const obsResults: ObservationResult[] = Object.entries(observations).map(([key, weight]) => ({
+    key, weight, dimensions: [],
+  }));
 
   return {
-    prakrtiDosha: finalPrakrtiDosha,
-    vikrtiDosha: finalVikrtiDosha,
+    prakrtiDosha: { vata: v / total, pitta: p / total, kapha: ka / total },
+    vikrtiDosha: { vata: v / total, pitta: p / total, kapha: ka / total },
     agni,
     dominantGunas: [],
-    ojas,
-    manas,
+    ojas: 'unknown',
+    manas: 'unknown',
     observations: obsResults,
     gender,
   };
 }
 
-// Helper: get dominant dosha label
-export function getDominantDosha(profile: DoshaProfile): string {
+export function getDominantDosha(profile: { vata: number; pitta: number; kapha: number }): string {
   const max = Math.max(profile.vata, profile.pitta, profile.kapha);
   if (max === 0) return 'Balanced';
   if (profile.vata === max) return 'Vata';
@@ -165,8 +57,7 @@ export function getDominantDosha(profile: DoshaProfile): string {
   return 'Kapha';
 }
 
-// Helper: get constitution description
-export function getConstitutionDescription(profile: DoshaProfile): string {
+export function getConstitutionDescription(profile: { vata: number; pitta: number; kapha: number }): string {
   const sorted = Object.entries(profile).sort(([, a], [, b]) => b - a);
   const first = sorted[0];
   const second = sorted[1];
@@ -177,12 +68,10 @@ export function getConstitutionDescription(profile: DoshaProfile): string {
   const gap = (first[1] as number) - (second[1] as number);
   const gapThird = (first[1] as number) - (third[1] as number);
   
-  // If all three doshas are within 15% of each other, it's Tridoshic
   if (gapThird < 0.15) {
      return `Tridoshic (balanced Vata, Pitta, Kapha)`;
   }
   
-  // If the top two doshas are within 15% of each other, it's a Dual Constitution
   if (gap < 0.15) {
     return `${capitalize(first[0] as string)}-${capitalize(second[0] as string)} (dual constitution)`;
   }
