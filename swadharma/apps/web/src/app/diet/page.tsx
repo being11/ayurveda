@@ -74,7 +74,7 @@ export default function DietPage() {
         <section>
           <h2 className="text-2xl font-serif text-stone-800 mb-6 border-b border-stone-200 pb-2">Seasonal Routine & Meal Timing</h2>
           {/* Defaulting to vasanta since we didn't hook up seasonsStore to this page yet as requested by TPM merge */}
-          <SeasonalMenuCard seasonId="vasanta" dosha={dominantDosha} />
+          <SeasonalMenuCard dosha={dominantDosha} />
         </section>
       </div>
     </div>
