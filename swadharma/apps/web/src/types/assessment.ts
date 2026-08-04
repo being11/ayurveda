@@ -63,7 +63,6 @@ export interface AyurvedaProfile {
   age?: number;
 }
 
-
 export interface PanchakarmaTherapy {
   id: string;
   name: string;

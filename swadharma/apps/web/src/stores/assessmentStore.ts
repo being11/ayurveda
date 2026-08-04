@@ -127,26 +127,18 @@ const useAssessmentStore = create<AssessmentState>()(
           therapy.indicatedDoshas?.includes(dominantDosha) || therapy.dosha.toLowerCase() === dominantDosha
         );
       },
-      reset: () => {
+                  reset: () => {
+        try {
+          useAssessmentStore.persist.clearStorage();
+        } catch (e) {}
         set({
           answers: {},
           observations: {},
           currentCategoryIndex: 0,
-          currentQuestionId: firstQuestion?.id ?? null,
-          history: firstQuestion ? [firstQuestion.id] : [],
+          currentQuestionId: categories[0]?.questions[0]?.id || null,
+          history: [],
           isComplete: false,
-          activeNadiPoint: null,
-          herbSearchQuery: '',
-          herbDoshaFilter: null,
-          herbOrganFilter: null,
-          selectedSrotas: null,
-          selectedSubdosha: null,
-          currentSeasonId: null,
-
         });
-        try {
-          useAssessmentStore.persist.clearStorage();
-        } catch {}
       },
       
       setActiveNadiPoint: (point) => set({ activeNadiPoint: point }),
