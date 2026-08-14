@@ -1,0 +1,49 @@
+{
+  "shuddhiLevels": {
+    "pravara": {
+      "name": "Pravara Shuddhi (Maximum Purification)",
+      "durationDays": 7,
+      "meals": 12,
+      "schedule": [
+        { "mealIndex": 1, "day": 1, "time": "Evening", "diet": "Peya", "description": "Thin rice gruel (mostly liquid)" },
+        { "mealIndex": 2, "day": 2, "time": "Morning", "diet": "Peya", "description": "Thin rice gruel (mostly liquid)" },
+        { "mealIndex": 3, "day": 2, "time": "Evening", "diet": "Peya", "description": "Thin rice gruel (mostly liquid)" },
+        { "mealIndex": 4, "day": 3, "time": "Morning", "diet": "Vilepi", "description": "Thick rice gruel (more solid)" },
+        { "mealIndex": 5, "day": 3, "time": "Evening", "diet": "Vilepi", "description": "Thick rice gruel (more solid)" },
+        { "mealIndex": 6, "day": 4, "time": "Morning", "diet": "Vilepi", "description": "Thick rice gruel (more solid)" },
+        { "mealIndex": 7, "day": 4, "time": "Evening", "diet": "Akrita Yusha", "description": "Unspiced green gram soup" },
+        { "mealIndex": 8, "day": 5, "time": "Morning", "diet": "Krita Yusha", "description": "Spiced green gram soup (with salt/ghee)" },
+        { "mealIndex": 9, "day": 5, "time": "Evening", "diet": "Krita Yusha", "description": "Spiced green gram soup (with salt/ghee)" },
+        { "mealIndex": 10, "day": 6, "time": "Morning", "diet": "Mamsa Rasa", "description": "Meat soup / Nourishing vegetable broth" },
+        { "mealIndex": 11, "day": 6, "time": "Evening", "diet": "Mamsa Rasa", "description": "Meat soup / Nourishing vegetable broth" },
+        { "mealIndex": 12, "day": 7, "time": "Morning", "diet": "Mamsa Rasa", "description": "Meat soup / Nourishing vegetable broth" }
+      ]
+    },
+    "madhyama": {
+      "name": "Madhyama Shuddhi (Moderate Purification)",
+      "durationDays": 5,
+      "meals": 8,
+      "schedule": [
+        { "mealIndex": 1, "day": 1, "time": "Evening", "diet": "Peya", "description": "Thin rice gruel (mostly liquid)" },
+        { "mealIndex": 2, "day": 2, "time": "Morning", "diet": "Peya", "description": "Thin rice gruel (mostly liquid)" },
+        { "mealIndex": 3, "day": 2, "time": "Evening", "diet": "Vilepi", "description": "Thick rice gruel (more solid)" },
+        { "mealIndex": 4, "day": 3, "time": "Morning", "diet": "Vilepi", "description": "Thick rice gruel (more solid)" },
+        { "mealIndex": 5, "day": 3, "time": "Evening", "diet": "Akrita Yusha", "description": "Unspiced green gram soup" },
+        { "mealIndex": 6, "day": 4, "time": "Morning", "diet": "Krita Yusha", "description": "Spiced green gram soup (with salt/ghee)" },
+        { "mealIndex": 7, "day": 4, "time": "Evening", "diet": "Mamsa Rasa", "description": "Meat soup / Nourishing vegetable broth" },
+        { "mealIndex": 8, "day": 5, "time": "Morning", "diet": "Mamsa Rasa", "description": "Meat soup / Nourishing vegetable broth" }
+      ]
+    },
+    "avara": {
+      "name": "Avara Shuddhi (Minimum Purification)",
+      "durationDays": 3,
+      "meals": 4,
+      "schedule": [
+        { "mealIndex": 1, "day": 1, "time": "Evening", "diet": "Peya", "description": "Thin rice gruel (mostly liquid)" },
+        { "mealIndex": 2, "day": 2, "time": "Morning", "diet": "Vilepi", "description": "Thick rice gruel (more solid)" },
+        { "mealIndex": 3, "day": 2, "time": "Evening", "diet": "Krita Yusha", "description": "Spiced green gram soup" },
+        { "mealIndex": 4, "day": 3, "time": "Morning", "diet": "Mamsa Rasa", "description": "Meat soup / Nourishing vegetable broth" }
+      ]
+    }
+  }
+}
