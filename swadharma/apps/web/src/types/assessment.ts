@@ -212,3 +212,18 @@ export interface Herb {
 
 
 
+
+export interface SamsarjanaDietItem {
+  mealIndex: number;
+  day: number;
+  time: string;
+  diet: string;
+  description: string;
+}
+
+export interface PaschatkarmaProtocol {
+  name: string;
+  durationDays: number;
+  meals: number;
+  schedule: SamsarjanaDietItem[];
+}

@@ -7,6 +7,7 @@ import { computeProfile, getDominantDosha } from '@/src/engines/report';
 import { SeasonalMenuCard } from '@/src/components/diet/SeasonalMenuCard';
 import { FoodCategoryGrid } from '@/src/components/diet/FoodCategoryGrid';
 import { TasteGrid } from '@/src/components/diet/TasteGrid';
+import { PaschatkarmaDashboard } from '@/src/components/PaschatkarmaDashboard';
 import { Apple, Printer } from 'lucide-react';
 import { Button } from '@/src/components/ui/button';
 import Link from 'next/link';
@@ -75,6 +76,11 @@ export default function DietPage() {
           <h2 className="text-2xl font-serif text-stone-800 mb-6 border-b border-stone-200 pb-2">Seasonal Routine & Meal Timing</h2>
           {/* Defaulting to vasanta since we didn't hook up seasonsStore to this page yet as requested by TPM merge */}
           <SeasonalMenuCard seasonId="vasanta" dosha={dominantDosha} />
+        </section>
+
+        <section className="print:break-before-page">
+          <h2 className="text-2xl font-serif text-stone-800 mb-6 border-b border-stone-200 pb-2">Post-Purification Diet (Paschatkarma)</h2>
+          <PaschatkarmaDashboard />
         </section>
       </div>
     </div>
